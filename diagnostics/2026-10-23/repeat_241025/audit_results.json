@@ -1,0 +1,103 @@
+{
+  "entropy_gradient": {
+    "entropy": 0.9753797038649656,
+    "coordinates_checked": 14,
+    "epsilon": 1e-05,
+    "gamma": {
+      "max_absolute_error": 9.888874441532636e-12,
+      "max_relative_error": 2.0837865055099675e-09,
+      "passed_at_1e-6_absolute": true
+    },
+    "beta": {
+      "max_absolute_error": 2.1741835328631387e-11,
+      "max_relative_error": 5.757209183803071e-09,
+      "passed_at_1e-6_absolute": true
+    }
+  },
+  "state_and_splits": {
+    "split_sizes": {
+      "source_fit": 900,
+      "meta_train": 400,
+      "meta_cal": 200,
+      "final_test": 297
+    },
+    "pairwise_intersection_counts": {
+      "source_fit/meta_train": 0,
+      "source_fit/meta_cal": 0,
+      "source_fit/final_test": 0,
+      "meta_train/meta_cal": 0,
+      "meta_train/final_test": 0,
+      "meta_cal/final_test": 0
+    },
+    "union_size": 1797,
+    "complete_dataset_partition": true,
+    "action_checks": {
+      "SOURCE": {
+        "source_state_unchanged": true,
+        "probabilities_finite": true,
+        "probability_sum_max_error": 4.440892098500626e-16,
+        "query_context_max_difference": 4.85722573273506e-17,
+        "pointwise_query_at_1e-10": true
+      },
+      "BN": {
+        "source_state_unchanged": true,
+        "probabilities_finite": true,
+        "probability_sum_max_error": 4.440892098500626e-16,
+        "query_context_max_difference": 4.5102810375396984e-17,
+        "pointwise_query_at_1e-10": true
+      },
+      "ENTROPY": {
+        "source_state_unchanged": true,
+        "probabilities_finite": true,
+        "probability_sum_max_error": 3.3306690738754696e-16,
+        "query_context_max_difference": 3.3306690738754696e-16,
+        "pointwise_query_at_1e-10": true
+      }
+    },
+    "support_entropy_before": 0.2735637210437232,
+    "support_entropy_after": 0.2658700040188494,
+    "entropy_decreased_on_checked_support": true
+  },
+  "outcome_checks": {
+    "episodes": 640,
+    "primary_heldout_family_test_episodes": 64,
+    "support_query_overlap_episode_ids": [],
+    "group_pool_containment_failures": [],
+    "pairwise_meta_pool_overlap": {
+      "train_pool_0/train_pool_1": 0,
+      "train_pool_0/cal_pool": 0,
+      "train_pool_0/test_pool": 0,
+      "train_pool_1/cal_pool": 0,
+      "train_pool_1/test_pool": 0,
+      "cal_pool/test_pool": 0
+    },
+    "query_labels_match_original_dataset": true,
+    "error_reconstruction_max_difference": 0.0,
+    "heldout_families_absent_from_train_and_cal": true,
+    "feature_values_finite": {
+      "cheap": true,
+      "rich": true
+    },
+    "rich_prefix_equals_cheap": true,
+    "timing_checks": {
+      "action_cost_ms": {
+        "finite": true,
+        "positive": true,
+        "median_ms": 0.18940899826702662
+      },
+      "cheap_cost_ms": {
+        "finite": true,
+        "positive": true,
+        "median_ms": 0.35877600021194667
+      },
+      "rich_extra_cost_ms": {
+        "finite": true,
+        "positive": true,
+        "median_ms": 0.9253080024791416
+      }
+    },
+    "query_unique_min": 15,
+    "episodes_with_repeated_query_draws": 320,
+    "test_image_ids_available": 297
+  }
+}

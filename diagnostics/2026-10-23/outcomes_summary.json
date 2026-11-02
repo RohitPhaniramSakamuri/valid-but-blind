@@ -1,0 +1,16 @@
+{
+  "episodes": 640,
+  "by_split": {
+    "cal": 144,
+    "test": 208,
+    "train": 288
+  },
+  "heldout_test_episodes": 64,
+  "cheap_dimensions": 82,
+  "rich_dimensions": 110,
+  "elapsed_seconds": 2.751168789996882,
+  "original_image_pools_disjoint": true,
+  "support_query_overlaps": 0,
+  "source_fit_pool_disjoint": true,
+  "input_code_sha256": "b085f46ce742e1963de649df779f8efc200a2f4858cc8a6074695dcf88b26991"
+}

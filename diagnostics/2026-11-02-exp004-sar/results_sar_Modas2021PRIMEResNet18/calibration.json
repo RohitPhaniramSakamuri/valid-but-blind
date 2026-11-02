@@ -1,0 +1,9 @@
+{
+ "model": "Modas2021PRIMEResNet18",
+ "r0": 0.22500000894069672,
+ "q_hat0": 0.7319999933242798,
+ "false_alarm0": 0.17100000381469727,
+ "n_calib": 1000,
+ "torch": "2.4.1+cu124",
+ "gpu": "NVIDIA H100 80GB HBM3"
+}

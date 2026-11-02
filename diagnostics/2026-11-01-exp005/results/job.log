@@ -1,0 +1,44 @@
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/root/exp005/raw
+11G	raw
+Traceback (most recent call last):
+  File "/root/exp005/run_fair.py", line 281, in <module>
+    prepare(a.raw, a.data)
+  File "/root/exp005/run_fair.py", line 39, in prepare
+    import pyarrow.parquet as pq
+  File "/root/exp005/.venv/lib/python3.11/site-packages/pyarrow/__init__.py", line 59, in <module>
+    from pyarrow.lib import (BuildInfo, CppBuildInfo, RuntimeInfo, set_timezone_db_path,
+  File "pyarrow/lib.pyx", line 42, in init pyarrow.lib
+ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.3
+/root/exp005/raw
+11G	raw
+train (162770, 96, 96, 3) {'Blond_Hair': 0.149087669718007, 'Smiling': 0.47969527554217606, 'Male': 0.4193708914419119}
+valid (19867, 96, 96, 3) {'Blond_Hair': 0.15382292243418735, 'Smiling': 0.48331403835506115, 'Male': 0.42573111189409574}
+test (19962, 96, 96, 3) {'Blond_Hair': 0.13325318104398357, 'Smiling': 0.5003005710850617, 'Male': 0.38648432020839596}
+identity-disjoint ok
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 23%|██▎       | 10.4M/44.7M [00:00<00:00, 108MB/s] 48%|████▊     | 21.6M/44.7M [00:00<00:00, 113MB/s] 74%|███████▎  | 32.9M/44.7M [00:00<00:00, 115MB/s] 99%|█████████▉| 44.1M/44.7M [00:00<00:00, 116MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 115MB/s]
+Blond_Hair 1 valid_acc=0.9534 66s
+Blond_Hair 2 valid_acc=0.9529 66s
+Blond_Hair 3 valid_acc=0.9533 67s
+Smiling 1 valid_acc=0.9268 65s
+Smiling 2 valid_acc=0.9313 64s
+Smiling 3 valid_acc=0.9284 65s
+valid Blond_Hair 1 elapsed=163s
+valid Blond_Hair 2 elapsed=320s
+valid Blond_Hair 3 elapsed=476s
+valid Smiling 1 elapsed=629s
+valid Smiling 2 elapsed=780s
+valid Smiling 3 elapsed=936s
+test Blond_Hair 1 elapsed=1206s
+test Blond_Hair 2 elapsed=1461s
+test Blond_Hair 3 elapsed=1713s
+test Smiling 1 elapsed=1943s
+test Smiling 2 elapsed=2212s
+test Smiling 3 elapsed=2475s
+complete 2475s
+{"bn": {"supported": false, "generalizes": false}, "tent": {"supported": false, "generalizes": false}}
+=== FAIR DONE

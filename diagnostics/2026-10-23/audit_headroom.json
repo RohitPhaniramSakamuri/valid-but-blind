@@ -1,0 +1,36 @@
+{
+  "scope": "Analysis of frozen source model, support batches and deployed selector choices; no model/controller refit",
+  "primary_episodes": 64,
+  "source_error": 0.2353515625,
+  "observed_full_query_oracle_error": 0.1708984375,
+  "observed_full_query_oracle_gain_over_source": 0.064453125,
+  "cross_query_identity_oracle": {
+    "split_repeats": 300,
+    "mean_transfer_error": 0.18134440104166666,
+    "mean_transfer_gain_over_source": 0.05400716145833334,
+    "split_randomization_error_quantiles_2_5_97_5": [
+      0.17578125,
+      0.18994140625
+    ],
+    "action_choice_counts": {
+      "SOURCE": 25128,
+      "BN": 13272,
+      "ENTROPY": 0
+    },
+    "definition": "Within each episode split unique query IDs in two; use labels to select action on half and score other half, reverse and combine all 32 scoring draws. Repeated identity draws stay together. Ties favor SOURCE.",
+    "limits": "Label-assisted retrospective diagnostic, not a deployable oracle or estimate of unlimited-data true action risk. Split quantiles measure random partition sensitivity, not independent population uncertainty."
+  },
+  "cheap_vs_rich_query_identity_cluster_bootstrap": {
+    "mean_error_reduction": 0.01318359375,
+    "interval_95": [
+      0.008547008547008548,
+      0.01815505397448479
+    ],
+    "bootstrap_repeats": 4000,
+    "unique_query_identity_clusters": 296,
+    "query_occurrences": 2048,
+    "positive_bootstrap_fraction": 1.0,
+    "definition": "Resample original query identities, keeping every occurrence of a sampled identity across all final episodes together; recompute weighted cheap-minus-rich error reduction.",
+    "limits": "Policies, source fit, support sets and family construction remain fixed. Correlation induced by repeated support IDs and shared fitted models is not removed. This is a more dependence-aware conditional sensitivity analysis, not a full population confidence guarantee."
+  }
+}

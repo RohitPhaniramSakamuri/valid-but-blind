@@ -1,0 +1,23 @@
+Hendrycks2020AugMix_ResNeXt 1 22 dirichlet/clean/0/0.01 err=0.420 twin=0.356 elapsed=46s
+Hendrycks2020AugMix_ResNeXt 2 22 dirichlet/clean/0/0.05 err=0.747 twin=0.356 elapsed=84s
+Hendrycks2020AugMix_ResNeXt 3 22 balanced_wr/clean/0/0.01 err=0.836 twin=0.241 elapsed=121s
+Hendrycks2020AugMix_ResNeXt 4 22 balanced_wr/clean/0/0.05 err=0.976 twin=0.241 elapsed=159s
+Hendrycks2020AugMix_ResNeXt 5 22 dirichlet/snow/1/0.01 err=0.459 twin=0.338 elapsed=197s
+Hendrycks2020AugMix_ResNeXt 6 22 dirichlet/snow/1/0.05 err=0.911 twin=0.338 elapsed=235s
+Hendrycks2020AugMix_ResNeXt 7 22 balanced_wr/snow/1/0.01 err=0.826 twin=0.254 elapsed=273s
+Hendrycks2020AugMix_ResNeXt 8 22 balanced_wr/snow/1/0.05 err=0.983 twin=0.254 elapsed=305s
+Hendrycks2020AugMix_ResNeXt 9 22 dirichlet/fog/1/0.01 err=0.387 twin=0.373 elapsed=331s
+Hendrycks2020AugMix_ResNeXt 10 22 dirichlet/fog/1/0.05 err=0.908 twin=0.373 elapsed=357s
+Hendrycks2020AugMix_ResNeXt 11 22 balanced_wr/fog/1/0.01 err=0.819 twin=0.239 elapsed=383s
+Hendrycks2020AugMix_ResNeXt 12 22 balanced_wr/fog/1/0.05 err=0.978 twin=0.239 elapsed=409s
+Hendrycks2020AugMix_ResNeXt 13 22 dirichlet/contrast/1/0.01 err=0.506 twin=0.423 elapsed=435s
+Hendrycks2020AugMix_ResNeXt 14 22 dirichlet/contrast/1/0.05 err=0.895 twin=0.423 elapsed=461s
+Hendrycks2020AugMix_ResNeXt 15 22 balanced_wr/contrast/1/0.01 err=0.851 twin=0.242 elapsed=488s
+Hendrycks2020AugMix_ResNeXt 16 22 balanced_wr/contrast/1/0.05 err=0.978 twin=0.242 elapsed=512s
+Hendrycks2020AugMix_ResNeXt 17 22 dirichlet/jpeg_compression/1/0.01 err=0.518 twin=0.527 elapsed=534s
+Hendrycks2020AugMix_ResNeXt 18 22 dirichlet/jpeg_compression/1/0.05 err=0.690 twin=0.527 elapsed=555s
+Hendrycks2020AugMix_ResNeXt 19 22 balanced_wr/jpeg_compression/1/0.01 err=0.871 twin=0.323 elapsed=576s
+Hendrycks2020AugMix_ResNeXt 20 22 balanced_wr/jpeg_compression/1/0.05 err=0.980 twin=0.323 elapsed=598s
+Hendrycks2020AugMix_ResNeXt 21 22 by_class/clean/0/0.001 err=0.765 twin=0.714 elapsed=619s
+Hendrycks2020AugMix_ResNeXt 22 22 by_class/clean/0/0.01 err=0.969 twin=0.714 elapsed=640s
+complete Hendrycks2020AugMix_ResNeXt 640s

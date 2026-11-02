@@ -1,0 +1,16 @@
+{
+  "args": {
+    "data_dir": "data/CIFAR-100-C",
+    "ckpt": "models/Hendrycks2020AugMix_ResNeXt.pt",
+    "out": "results_strong",
+    "seed": 1
+  },
+  "cfg": {
+    "alpha": 0.1,
+    "lr": 0.0002,
+    "any_safe_lr": false
+  },
+  "torch": "2.4.1+cu124",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "status": "exploratory, post-hoc"
+}

@@ -1,0 +1,4 @@
+date,source,query,result_count,results_url,relevant_papers,blocked_notes
+2026-11-02,arXiv primary-record/fulltext final adversarial follow-up,https://arxiv.org/abs/2608.05945,1 primary paper,evidence/tta_causes/2608.05945.pdf,Jiang2026ZAEC,ZAEC referenced appendices absent from downloaded9-pagePDF
+2026-11-02,arXiv primary-record/fulltext final adversarial follow-up,https://arxiv.org/abs/2610.37658,1 primary paper,evidence/tta_causes/2610.37658.pdf,Zhang2026PORTAL,
+2026-11-02,arXiv primary-record/fulltext final adversarial follow-up,https://arxiv.org/abs/2610.35500,1 primary paper,evidence/tta_causes/2610.35500.pdf,Ren2026StaRTTA,

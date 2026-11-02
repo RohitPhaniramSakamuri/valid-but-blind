@@ -1,0 +1,38 @@
+# Downloadable datasets and checkpoints
+demo/data/
+demo/models/
+**/data/
+**/models/*.pt
+*.pt
+*.pth
+*.npy
+*.npz
+*.tar
+*.tgz
+*.parquet
+authors_streams.npz
+
+# Third-party papers and raw retrieval snapshots (copyright; sources are cited in references.bib)
+*.pdf
+!paper/manuscript_preview.pdf
+sources/
+notes/**/evidence/
+notes/**/record-backups/
+notes/**/agents/**/*.json
+notes/session-logs/
+notes/handoff-*/artifact-manifest.json
+venue-retrieval*.json
+venue-retrieval*.out
+
+# Generated or local
+.venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.~lock.*
+*.aux
+*.bbl.bak
+.DS_Store
+notes/future-work-mining-*/text/
+notes/review-refresh-*/primary-snapshots/
+notes/review-refresh-*/verifier-evidence/

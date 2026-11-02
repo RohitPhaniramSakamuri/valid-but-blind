@@ -1,0 +1,197 @@
+{
+"verdict": "FIX WORKS",
+"chosen": [
+1.0,
+1
+],
+"dev_pick": {
+"w": 1.0,
+"c": 1,
+"safe": 79,
+"false_alarms": 1,
+"strict": 48,
+"missed": 12,
+"strict_all": 59,
+"missed_all": 14,
+"collapsed": 0,
+"collapsed_alarmed": 0,
+"bound_valid": 0.7738095238095238
+},
+"scored": 6,
+"models_lower": 6,
+"fix": [
+30,
+115
+],
+"released": [
+94,
+109
+],
+"drop": 0.6015157558835262,
+"held_safe": 121,
+"held_false_alarms": 5,
+"held_safe_by_kind": {
+"dirichlet": [
+3,
+46
+],
+"balanced_wr": [
+2,
+69
+]
+},
+"clean_safe": [
+0,
+6
+],
+"per": {
+"Hendrycks2020AugMix_ResNeXt": {
+"fix": [
+0,
+21
+],
+"released": [
+20,
+20
+],
+"certified0": [
+21,
+21
+],
+"certified1": [
+21,
+21
+]
+},
+"Modas2021PRIMEResNet18": {
+"fix": [
+0,
+25
+],
+"released": [
+13,
+24
+],
+"certified0": [
+25,
+25
+],
+"certified1": [
+25,
+25
+]
+},
+"Hendrycks2020AugMix_WRN": {
+"fix": [
+1,
+23
+],
+"released": [
+22,
+22
+],
+"certified0": [
+23,
+23
+],
+"certified1": [
+23,
+23
+]
+},
+"Addepalli2021Towards_PARN18": {
+"fix": [
+10,
+13
+],
+"released": [
+12,
+12
+],
+"certified0": [
+13,
+13
+],
+"certified1": [
+13,
+13
+]
+},
+"Addepalli2021Towards_WRN34": {
+"fix": [
+12,
+16
+],
+"released": [
+15,
+15
+],
+"certified0": [
+16,
+16
+],
+"certified1": [
+16,
+16
+]
+},
+"Addepalli2022Efficient_WRN_34_10": {
+"fix": [
+7,
+17
+],
+"released": [
+12,
+16
+],
+"certified0": [
+17,
+17
+],
+"certified1": [
+17,
+17
+]
+}
+},
+"median_first_alarm": 34.0,
+"means": {
+"dirichlet": {
+"err": 0.5,
+"twin_err": 0.54,
+"agree": 0.666,
+"flagged": 0.657,
+"conf": 0.671,
+"conf_twin": 0.359
+},
+"balanced_wr": {
+"err": 0.443,
+"twin_err": 0.453,
+"agree": 0.651,
+"flagged": 0.586,
+"conf": 0.516,
+"conf_twin": 0.287
+}
+},
+"n": 468
+}
+dev {'w': 0.0, 'c': 0, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 46, 'strict_all': 59, 'missed_all': 57, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 1.0}
+dev {'w': 0.0, 'c': 1, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 47, 'strict_all': 59, 'missed_all': 58, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 1.0}
+dev {'w': 0.25, 'c': 0, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 41, 'strict_all': 59, 'missed_all': 52, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 1.0}
+dev {'w': 0.25, 'c': 1, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 44, 'strict_all': 59, 'missed_all': 55, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 1.0}
+dev {'w': 0.5, 'c': 0, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 31, 'strict_all': 59, 'missed_all': 39, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.9583333333333334}
+dev {'w': 0.5, 'c': 1, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 37, 'strict_all': 59, 'missed_all': 47, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.9940476190476191}
+dev {'w': 0.75, 'c': 0, 'safe': 79, 'false_alarms': 1, 'strict': 48, 'missed': 22, 'strict_all': 59, 'missed_all': 26, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.8154761904761905}
+dev {'w': 0.75, 'c': 1, 'safe': 79, 'false_alarms': 0, 'strict': 48, 'missed': 29, 'strict_all': 59, 'missed_all': 36, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.9166666666666666}
+dev {'w': 1.0, 'c': 0, 'safe': 79, 'false_alarms': 4, 'strict': 48, 'missed': 8, 'strict_all': 59, 'missed_all': 10, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.5654761904761905}
+dev {'w': 1.0, 'c': 1, 'safe': 79, 'false_alarms': 1, 'strict': 48, 'missed': 12, 'strict_all': 59, 'missed_all': 14, 'collapsed': 0, 'collapsed_alarmed': 0, 'bound_valid': 0.7738095238095238}
+held {'w': 0.0, 'c': 0, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 115, 'strict_all': 125, 'missed_all': 125, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9966666666666667}
+held {'w': 0.0, 'c': 1, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 115, 'strict_all': 125, 'missed_all': 125, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 1.0}
+held {'w': 0.25, 'c': 0, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 100, 'strict_all': 125, 'missed_all': 110, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9933333333333333}
+held {'w': 0.25, 'c': 1, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 111, 'strict_all': 125, 'missed_all': 121, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9966666666666667}
+held {'w': 0.5, 'c': 0, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 78, 'strict_all': 125, 'missed_all': 88, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9533333333333334}
+held {'w': 0.5, 'c': 1, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 94, 'strict_all': 125, 'missed_all': 104, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9866666666666667}
+held {'w': 0.75, 'c': 0, 'safe': 121, 'false_alarms': 2, 'strict': 115, 'missed': 57, 'strict_all': 125, 'missed_all': 66, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.81}
+held {'w': 0.75, 'c': 1, 'safe': 121, 'false_alarms': 0, 'strict': 115, 'missed': 66, 'strict_all': 125, 'missed_all': 75, 'collapsed': 1, 'collapsed_alarmed': 0, 'bound_valid': 0.9166666666666666}
+held {'w': 1.0, 'c': 0, 'safe': 121, 'false_alarms': 11, 'strict': 115, 'missed': 24, 'strict_all': 125, 'missed_all': 31, 'collapsed': 1, 'collapsed_alarmed': 1, 'bound_valid': 0.5733333333333334}
+held {'w': 1.0, 'c': 1, 'safe': 121, 'false_alarms': 5, 'strict': 115, 'missed': 30, 'strict_all': 125, 'missed_all': 37, 'collapsed': 1, 'collapsed_alarmed': 1, 'bound_valid': 0.7466666666666667}

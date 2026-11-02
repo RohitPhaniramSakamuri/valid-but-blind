@@ -1,0 +1,28 @@
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Using CPython 3.10.12 interpreter at: /usr/bin/python3.10
+Creating virtual environment at: .venv_cs
+Activate with: source .venv_cs/bin/activate
+d10d6d4b88a468da  models/Addepalli2021Towards_PARN18.pt
+89cf5cf005049cdc  models/Addepalli2021Towards_WRN34.pt
+82ab8bdc2feff930  models/Addepalli2022Efficient_WRN_34_10.pt
+ce86bde2485fbc74  models/Hendrycks2020AugMix_ResNeXt.pt
+8747cfde9934180a  models/Hendrycks2020AugMix_WRN.pt
+737bf08d175fd508  models/Modas2021PRIMEResNet18.pt
+ M lib/load_dataset.py
+Downloading cpython-3.9.25-linux-x86_64-gnu (download) (27.0MiB)
+ Downloaded cpython-3.9.25-linux-x86_64-gnu (download)
+Using CPython 3.9.25
+Creating virtual environment at: .venv_auth
+Activate with: source .venv_auth/bin/activate
+30ee6543a1bfd049
+=== authors one-stream gate
+Calibration pfa:  tensor(0.1750, device='cuda:0')
+Calibration pfn:  tensor([0.0700], device='cuda:0')
+Calibration E_hat:  torch.Size([1000]) tensor(0.1827, device='cuda:0') tensor(0.2297, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8695, device='cuda:0')
+1 authors_Hendrycks2020AugMix_ResNeXt.jsonl
+=== STREAMS DONE
+=== ALL DONE
+=== AFTER DONE
+=== RETRY DONE

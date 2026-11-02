@@ -1,0 +1,23 @@
+Addepalli2022Efficient_WRN_34_10 1 22 dirichlet/clean/0/0.01 err=0.536 twin=0.453 elapsed=60s
+Addepalli2022Efficient_WRN_34_10 2 22 dirichlet/clean/0/0.05 err=0.800 twin=0.453 elapsed=116s
+Addepalli2022Efficient_WRN_34_10 3 22 balanced_wr/clean/0/0.01 err=0.826 twin=0.338 elapsed=171s
+Addepalli2022Efficient_WRN_34_10 4 22 balanced_wr/clean/0/0.05 err=0.976 twin=0.338 elapsed=226s
+Addepalli2022Efficient_WRN_34_10 5 22 dirichlet/snow/1/0.01 err=0.528 twin=0.409 elapsed=282s
+Addepalli2022Efficient_WRN_34_10 6 22 dirichlet/snow/1/0.05 err=0.764 twin=0.409 elapsed=323s
+Addepalli2022Efficient_WRN_34_10 7 22 balanced_wr/snow/1/0.01 err=0.826 twin=0.347 elapsed=361s
+Addepalli2022Efficient_WRN_34_10 8 22 balanced_wr/snow/1/0.05 err=0.979 twin=0.347 elapsed=399s
+Addepalli2022Efficient_WRN_34_10 9 22 dirichlet/fog/1/0.01 err=0.559 twin=0.447 elapsed=438s
+Addepalli2022Efficient_WRN_34_10 10 22 dirichlet/fog/1/0.05 err=0.938 twin=0.447 elapsed=476s
+Addepalli2022Efficient_WRN_34_10 11 22 balanced_wr/fog/1/0.01 err=0.837 twin=0.353 elapsed=512s
+Addepalli2022Efficient_WRN_34_10 12 22 balanced_wr/fog/1/0.05 err=0.982 twin=0.353 elapsed=543s
+Addepalli2022Efficient_WRN_34_10 13 22 dirichlet/contrast/1/0.01 err=0.820 twin=0.544 elapsed=575s
+Addepalli2022Efficient_WRN_34_10 14 22 dirichlet/contrast/1/0.05 err=0.800 twin=0.544 elapsed=606s
+Addepalli2022Efficient_WRN_34_10 15 22 balanced_wr/contrast/1/0.01 err=0.831 twin=0.340 elapsed=637s
+Addepalli2022Efficient_WRN_34_10 16 22 balanced_wr/contrast/1/0.05 err=0.974 twin=0.340 elapsed=659s
+Addepalli2022Efficient_WRN_34_10 17 22 dirichlet/jpeg_compression/1/0.01 err=0.629 twin=0.586 elapsed=680s
+Addepalli2022Efficient_WRN_34_10 18 22 dirichlet/jpeg_compression/1/0.05 err=0.919 twin=0.586 elapsed=702s
+Addepalli2022Efficient_WRN_34_10 19 22 balanced_wr/jpeg_compression/1/0.01 err=0.849 twin=0.361 elapsed=723s
+Addepalli2022Efficient_WRN_34_10 20 22 balanced_wr/jpeg_compression/1/0.05 err=0.973 twin=0.361 elapsed=744s
+Addepalli2022Efficient_WRN_34_10 21 22 by_class/clean/0/0.001 err=0.912 twin=0.732 elapsed=766s
+Addepalli2022Efficient_WRN_34_10 22 22 by_class/clean/0/0.01 err=0.974 twin=0.732 elapsed=787s
+complete Addepalli2022Efficient_WRN_34_10 787s

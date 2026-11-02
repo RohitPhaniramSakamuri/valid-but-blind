@@ -1,0 +1,610 @@
+[
+  {
+    "key": "Yu2023BenchmarkTTA",
+    "title": "Benchmarking Test-Time Adaptation against Distribution Shifts in Image Classification",
+    "authors": [
+      "Yongcan Yu",
+      "Lijun Sheng",
+      "Ran He",
+      "Jian Liang"
+    ],
+    "year": 2023,
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2307.03133",
+    "read_scope": "Primary metadata, abstract, author repository README; no full experiment audit",
+    "locations": [
+      "Abstract",
+      "Repository README"
+    ],
+    "method_overlap": "Unified 13 methods/variants and online/offline, instance/batch/domain adaptation over CIFAR10/100-C, ImageNet-C, DomainNet, Office-Home.",
+    "limitation": "Version and access regimes must be matched; source does not establish 2026 leaderboard.",
+    "publication_status": "arXiv preprint 2307.03133; no later venue verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "code_url": "https://github.com/yuyongcan/Benchmark-TTA"
+  },
+  {
+    "key": "Alfarra2024TimeConstraints",
+    "title": "Evaluation of Test-Time Adaptation Under Computational Time Constraints",
+    "authors": [
+      "Motasem Alfarra",
+      "Hani Itani",
+      "Alejandro Pardo",
+      "Shyma Yaser Alhuwaider",
+      "Merey Ramazanova",
+      "Juan Camilo Perez",
+      "Zhipeng Cai",
+      "Matthias Müller",
+      "Bernard Ghanem"
+    ],
+    "year": 2024,
+    "venue": "ICML 2024, PMLR 235:976-991",
+    "url": "https://proceedings.mlr.press/v235/alfarra24a.html",
+    "read_scope": "Official proceedings abstract/metadata and original arXiv abstract; no full method audit",
+    "locations": [
+      "Abstract",
+      "Official BibTeX"
+    ],
+    "method_overlap": "Already evaluates online adaptation using a constant-rate stream that reduces adaptation access for slower methods.",
+    "limitation": "Choice of arrival model matters; this protocol is not all possible latency-sensitive deployment.",
+    "publication_status": "Official ICML2024 proceedings verified; preprint began April2023",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/2304.04795"
+  },
+  {
+    "key": "Croce2021RobustBench",
+    "title": "RobustBench: a standardized adversarial robustness benchmark",
+    "authors": [
+      "Francesco Croce",
+      "Maksym Andriushchenko",
+      "Vikash Sehwag",
+      "Edoardo Debenedetti",
+      "Nicolas Flammarion",
+      "Mung Chiang",
+      "Prateek Mittal",
+      "Matthias Hein"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021 Datasets and Benchmarks track",
+    "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/a3c65c2974270fd093ee8a9bf8ae7d0b-Abstract-round2.html",
+    "read_scope": "Official abstract and current author-maintained repository/site; not all leaderboard methods audited",
+    "locations": [
+      "Abstract",
+      "Repository common-corruption section",
+      "Site May2022 news"
+    ],
+    "method_overlap": "Standardized models and corruption metrics/checkpoints; ImageNet-3DCC extension.",
+    "limitation": "Primarily robustness benchmark; a fixed checkpoint score does not uniquely specify a streaming TTA protocol.",
+    "publication_status": "Official proceedings verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "code_url": "https://github.com/RobustBench/robustbench"
+  },
+  {
+    "key": "Schneider2020CovariateAdaptation",
+    "title": "Improving robustness against common corruptions by covariate shift adaptation",
+    "authors": [
+      "Steffen Schneider",
+      "Evgenia Rusak",
+      "Luisa Eck",
+      "Oliver Bringmann",
+      "Wieland Brendel",
+      "Matthias Bethge"
+    ],
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "url": "https://papers.nips.cc/paper_files/paper/2020/hash/85690f81aadc1749175c187784afc9ee-Abstract.html",
+    "read_scope": "Primary abstract, metadata, author project page; selective PDF header inspection",
+    "locations": [
+      "Abstract",
+      "Project explanation"
+    ],
+    "method_overlap": "Strong simple BN-statistics adaptation across models; essential cheap baseline and robust-source comparison.",
+    "limitation": "Multiple target examples and contamination/class-mixture assumptions matter; improvements do not prove arbitrary covariate-shift correction.",
+    "publication_status": "Official NeurIPS2020 verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/2006.16971",
+    "code_url": "https://github.com/bethgelab/robustness"
+  },
+  {
+    "key": "Hendrycks2020AugMix",
+    "title": "AugMix: A Simple Data Processing Method to Improve Robustness and Uncertainty",
+    "authors": [
+      "Dan Hendrycks",
+      "Norman Mu",
+      "Ekin D. Cubuk",
+      "Barret Zoph",
+      "Justin Gilmer",
+      "Balaji Lakshminarayanan"
+    ],
+    "year": 2020,
+    "venue": "ICLR 2020",
+    "url": "https://iclr.cc/virtual_2020/poster_S1gmrxHFvB.html",
+    "read_scope": "Official conference abstract/author metadata, arXiv and author repository method/checkpoint description",
+    "locations": [
+      "Abstract",
+      "Repository Introduction and Pretrained weights"
+    ],
+    "method_overlap": "Robust source-training control using mixed augmentations and consistency; available ResNet50 checkpoint.",
+    "limitation": "Source training intervention, not test-time policy selection; compare same preparation and checkpoint quality.",
+    "publication_status": "Official ICLR2020 verified; preprint2019",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/1912.02781",
+    "code_url": "https://github.com/google-research/augmix"
+  },
+  {
+    "key": "Sagawa2021WILDSUnlabeled",
+    "title": "Extending the WILDS Benchmark for Unsupervised Adaptation",
+    "authors": [
+      "Shiori Sagawa",
+      "Pang Wei Koh",
+      "Tony Lee",
+      "Irena Gao",
+      "Sang Michael Xie",
+      "Kendrick Shen",
+      "Ananya Kumar",
+      "Weihua Hu",
+      "Michihiro Yasunaga",
+      "Henrik Marklund",
+      "Sara Beery",
+      "Etienne David",
+      "Ian Stavness",
+      "Wei Guo",
+      "Jure Leskovec",
+      "Kate Saenko",
+      "Tatsunori Hashimoto",
+      "Sergey Levine",
+      "Chelsea Finn",
+      "Percy Liang"
+    ],
+    "year": 2021,
+    "venue": "arXiv preprint; WILDS 2.0 update",
+    "url": "https://arxiv.org/abs/2112.05090",
+    "read_scope": "Primary abstract/metadata, official WILDS data and submission documentation; no full experimental audit",
+    "locations": [
+      "Abstract",
+      "Official data documentation"
+    ],
+    "method_overlap": "Adds curated unlabeled splits to 8 of10 WILDS datasets with unchanged labeled splits/metrics; adaptation success is limited.",
+    "limitation": "Designated unlabeled adaptation before final evaluation differs from adapting on test inputs.",
+    "publication_status": "Preprint submitted December2021; latest arXiv v2 April2022; venue not independently verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "code_url": "https://github.com/p-lambda/wilds"
+  },
+  {
+    "key": "Sakaridis2021ACDC",
+    "title": "ACDC: The Adverse Conditions Dataset With Correspondences for Semantic Driving Scene Understanding",
+    "authors": [
+      "Christos Sakaridis",
+      "Dengxin Dai",
+      "Luc Van Gool"
+    ],
+    "year": 2021,
+    "venue": "ICCV 2021, pages10765-10775",
+    "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Sakaridis_ACDC_The_Adverse_Conditions_Dataset_With_Correspondences_for_Semantic_Driving_ICCV_2021_paper.html",
+    "read_scope": "Official proceedings metadata/abstract and author dataset overview",
+    "locations": [
+      "Abstract",
+      "Dataset overview and splits"
+    ],
+    "method_overlap": "Real fog/night/rain/snow driving scenes and normal correspondences; dense prediction extension beyond artificial corruptions.",
+    "limitation": "Later TPAMI extension has revised title, additional authors/annotations; do not silently merge versions or use panoptic metrics as semantic mIoU.",
+    "publication_status": "Official ICCV2021 verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "project_url": "https://acdc.vision.ee.ethz.ch/"
+  },
+  {
+    "key": "Kar2022ImageNet3DCC",
+    "title": "3D Common Corruptions for Object Recognition",
+    "authors": [
+      "Oguzhan Fatih Kar",
+      "Teresa Yeo",
+      "Amir Zamir"
+    ],
+    "year": 2022,
+    "venue": "ICML 2022 Shift Happens workshop / benchmark report",
+    "url": "https://openreview.net/pdf?id=Evar7nqAQtL",
+    "read_scope": "Benchmark PDF title/authors, abstract and sections1-2; author project news and RobustBench link",
+    "locations": [
+      "Abstract",
+      "Section2",
+      "Project May2022 news"
+    ],
+    "method_overlap": "ImageNet-3DCC12 corruptions, many incorporating inferred depth; useful held-out physical-transformation families.",
+    "limitation": "OpenReview HTML challenged; short paper generic ICML footer is not proof of main-track status; derived images share clean IDs with ImageNet-C.",
+    "publication_status": "2022 benchmark report verified; workshop designation supported by linked project ecosystem, main-track not established",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "project_url": "https://3dcommoncorruptions.epfl.ch/"
+  },
+  {
+    "key": "Du2024UniTTA",
+    "title": "UniTTA: Unified Benchmark and Versatile Framework Towards Realistic Test-Time Adaptation",
+    "authors": [
+      "Chaoqun Du",
+      "Yulin Wang",
+      "Jiayi Guo",
+      "Yizeng Han",
+      "Jie Zhou",
+      "Gao Huang"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2407.20080",
+    "read_scope": "Abstract, sections3-5 and AppendixB selected passages, official README",
+    "locations": [
+      "Section3",
+      "Section4",
+      "Section5",
+      "AppendixB",
+      "README sampler qualification"
+    ],
+    "method_overlap": "Markov domain/class correlation and imbalance;36 formal cases,24 evaluated; domain-class balanced statistics, dynamic domain expansion and correlated feature adaptation.",
+    "limitation": "Independent domain/class sampling is a modeled regime, not arbitrary real causal dependence. Repo warns optimized sampler may change published numbers.",
+    "publication_status": "arXiv July2024; later venue not verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "html_url": "https://arxiv.org/html/2407.20080v1",
+    "code_url": "https://github.com/LeapLabTHU/UniTTA"
+  },
+  {
+    "key": "Zanella2025StatA",
+    "title": "Realistic Test-Time Adaptation of Vision-Language Models",
+    "authors": [
+      "Maxime Zanella",
+      "Clément Fuchs",
+      "Christophe De Vleeschouwer",
+      "Ismail Ben Ayed"
+    ],
+    "year": 2025,
+    "venue": "CVPR 2025, pages25103-25112",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zanella_Realistic_Test-Time_Adaptation_of_Vision-Language_Models_CVPR_2025_paper.html",
+    "read_scope": "Official abstract/metadata and PDF introduction/figure1; partial reading",
+    "locations": [
+      "Abstract",
+      "Figure1",
+      "Introduction"
+    ],
+    "method_overlap": "Variable effective class count and non-i.i.d. batches can undermine VLM adaptation; StatA anchors initial text knowledge.",
+    "limitation": "CLIP/VLM and cluster/semantic priors differ from ordinary source classifiers; no claim that all methods collapse universally.",
+    "publication_status": "Official CVPR2025 verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/2501.03729",
+    "code_url": "https://github.com/MaxZanella/StatA"
+  },
+  {
+    "key": "Huang2026TTABC",
+    "title": "What Drives Test-Time Adaptation for CLIP? A Controlled Empirical Study from an Update Perspective",
+    "authors": [
+      "Jiazhen Huang",
+      "Xiao Chen",
+      "Zhiming Liu",
+      "Yaru Sun",
+      "Jingyan Jiang",
+      "Zhi Wang"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint; author-reported NeurIPS2026 E&D",
+    "url": "https://arxiv.org/abs/2606.14299",
+    "read_scope": "arXiv v3 metadata and selective fulltext reading sections2-5, AppendixB/E; author site. Lead additionally checked Table4 and table/prose consistency.",
+    "locations": [
+      "Sections2-5; Table4",
+      "AppendixB Limitations",
+      "AppendixE datasets/stream construction"
+    ],
+    "method_overlap": "20+ CLIP methods, parameter/state/inference taxonomy, shift-dependent paradigm preferences; dynamic paradigm selection listed as future problem.",
+    "limitation": "CLIP classification; paradigm preferences do not certify novel routing. Venue author-reported, not independently checked in proceedings. V3 natural-average prose and tables disagree (e.g. TPS63.01 vs64.46); numerical use must identify its exact table. Metadata title uses 'an Update', HTML heading 'a Update'.",
+    "publication_status": "ArXiv v1 June12 and v3 October12 2026 verified; venue author-reported",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "html_url": "https://arxiv.org/html/2606.14299v3",
+    "code_url": "https://github.com/walawalagoose/TTABC",
+    "project_url": "https://walawalagoose.github.io/TTABC/"
+  },
+  {
+    "key": "Zhou2026RecoveryComplexity",
+    "title": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+    "authors": [
+      "Zhi Zhou",
+      "Ming Yang",
+      "Shi-Yu Tian",
+      "Kun-Yang Yu",
+      "Lan-Zhe Guo",
+      "Yu-Feng Li"
+    ],
+    "year": 2026,
+    "venue": "ICML2026, PMLR306:166172-166195",
+    "url": "https://proceedings.mlr.press/v306/zhou26be.html",
+    "read_scope": "Official proceedings abstract and metadata only; full proofs not read",
+    "locations": [
+      "Abstract",
+      "Official BibTeX"
+    ],
+    "method_overlap": "Recovery time, nonstationary streams and adaptivity-information limits already formalized.",
+    "limitation": "Cannot rely on specific bounds without reading assumptions/proofs; abstract does not imply a deployable selector guarantee.",
+    "publication_status": "Official ICML2026 proceedings verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json"
+  },
+  {
+    "key": "Recht2019ImageNetV2",
+    "title": "Do ImageNet Classifiers Generalize to ImageNet?",
+    "authors": [
+      "Benjamin Recht",
+      "Rebecca Roelofs",
+      "Ludwig Schmidt",
+      "Vaishaal Shankar"
+    ],
+    "year": 2019,
+    "venue": "ICML2019, PMLR97:5389-5400",
+    "url": "https://proceedings.mlr.press/v97/recht19a.html",
+    "read_scope": "Official abstract and metadata",
+    "locations": [
+      "Abstract"
+    ],
+    "method_overlap": "Natural resampling shift test for CIFAR/ImageNet.",
+    "limitation": "Dataset collection difficulty differs from identifiable corruption cause; specify V2 subset.",
+    "publication_status": "Official ICML2019 verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json"
+  },
+  {
+    "key": "Hendrycks2021ManyFaces",
+    "title": "The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization",
+    "authors": [
+      "Dan Hendrycks",
+      "Steven Basart",
+      "Norman Mu",
+      "Saurav Kadavath",
+      "Frank Wang",
+      "Evan Dorundo",
+      "Rahul Desai",
+      "Tyler Zhu",
+      "Samyak Parajuli",
+      "Mike Guo",
+      "Dawn Song",
+      "Jacob Steinhardt",
+      "Justin Gilmer"
+    ],
+    "year": 2021,
+    "venue": "ICCV2021, pages8340-8349 per CVF",
+    "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Hendrycks_The_Many_Faces_of_Robustness_A_Critical_Analysis_of_Out-of-Distribution_ICCV_2021_paper.html",
+    "read_scope": "CVF metadata/abstract and selective PDF robustness discussion",
+    "locations": [
+      "Abstract",
+      "PDF synthetic-to-natural robustness discussion"
+    ],
+    "method_overlap": "ImageNet-R and other real shifts; DeepAugment robust-source controls; simultaneous multiple shifts.",
+    "limitation": "Improvements on local texture/corruption do not imply gains on geographic shifts; source training differs from test-time routing.",
+    "publication_status": "Official ICCV2021 verified; CVF page pagination followed",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json"
+  },
+  {
+    "key": "Hendrycks2021NaturalAdversarial",
+    "title": "Natural Adversarial Examples",
+    "authors": [
+      "Dan Hendrycks",
+      "Kevin Zhao",
+      "Steven Basart",
+      "Jacob Steinhardt",
+      "Dawn Song"
+    ],
+    "year": 2021,
+    "venue": "CVPR2021",
+    "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Hendrycks_Natural_Adversarial_Examples_CVPR_2021_paper.pdf",
+    "read_scope": "Official PDF header/abstract/introduction/figure1",
+    "locations": [
+      "Abstract",
+      "Figure1",
+      "Introduction"
+    ],
+    "method_overlap": "ImageNet-A natural hard examples; ImageNet-O unseen-class detection is a separate task.",
+    "limitation": "Subset class mapping and adversarial filtration matter; performance is not an illumination-only test.",
+    "publication_status": "Official CVPR2021 PDF verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/1907.07174"
+  },
+  {
+    "key": "Wang2019ImageNetSketch",
+    "title": "Learning Robust Global Representations by Penalizing Local Predictive Power",
+    "authors": [
+      "Haohan Wang",
+      "Songwei Ge",
+      "Zachary Lipton",
+      "Eric P. Xing"
+    ],
+    "year": 2019,
+    "venue": "NeurIPS2019",
+    "url": "https://papers.nips.cc/paper_files/paper/2019/hash/3eefceb8087e964f89c2d59e8a249915-Abstract.html",
+    "read_scope": "Official abstract/author metadata and arXiv abstract",
+    "locations": [
+      "Abstract"
+    ],
+    "method_overlap": "Introduces ImageNet-Sketch; source representation should rely on global structure rather than local shortcuts.",
+    "limitation": "Proceedings author order used; arXiv listing order differs. Sketch is representation/style shift not physical sensor corruption.",
+    "publication_status": "Official NeurIPS2019 verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/1905.13549"
+  },
+  {
+    "key": "WILDS2026SubmissionRules",
+    "title": "WILDS leaderboard submission guidelines",
+    "authors": [
+      "WILDS benchmark maintainers"
+    ],
+    "year": 2026,
+    "venue": "Official benchmark documentation",
+    "url": "https://wilds.stanford.edu/submit/",
+    "read_scope": "Full standard/non-standard submission rules and current leaderboard metric headers",
+    "locations": [
+      "Standard submissions items1-7",
+      "Non-standard submissions items1-2",
+      "Dataset-specific leaderboard headers"
+    ],
+    "method_overlap": "Test training and model selection prohibited even for non-standard submissions; batch statistics prohibited standard; designated unlabeled adaptation is different.",
+    "limitation": "Accessed2026 date is not publication date. Official leaderboard contains historical ARM-BN and Test-time BN adaptation baseline rows; these do not establish permission for new test-trained submissions. Inference-only adaptation legality should not be blanket asserted. Declare a custom online-updating research protocol separately.",
+    "publication_status": "Official live documentation accessed26October2026",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "kind": "benchmark_documentation",
+    "publication_year_unknown": true,
+    "related_urls": [
+      "https://wilds.stanford.edu/leaderboard/",
+      "https://wilds.stanford.edu/datasets/"
+    ]
+  },
+  {
+    "key": "TestTimeLearning2026Leaderboard",
+    "title": "Test-Time Adaptation Leaderboard",
+    "authors": [
+      "Test-Time-Learning maintainers"
+    ],
+    "year": 2026,
+    "venue": "Living benchmark website and repository",
+    "url": "https://test-time.cc/tta-leaderboard/",
+    "read_scope": "Full about/protocol/efficiency documentation; no underlying runs reproduced",
+    "locations": [
+      "About",
+      "Tasks Benchmarks Source Models",
+      "Protocols and Efficiency",
+      "Code and Reproduce"
+    ],
+    "method_overlap": "Shared-framework five-seed performance across classification/segmentation/detection, fixed models, RTX4090 cost; online/continual/Dirichlet settings.",
+    "limitation": "Website code link remains TBD; reproductions/independence not verified. No cross-source SOTA ranking inferred.",
+    "publication_status": "Live website/repository verified26October2026; scholarly publication not established",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "kind": "benchmark_documentation",
+    "publication_year_unknown": true,
+    "code_url": "https://github.com/Test-Time-Learning/tta-leaderboard"
+  },
+  {
+    "key": "Zhao2023Pitfalls",
+    "title": "On Pitfalls of Test-Time Adaptation",
+    "authors": [
+      "Hao Zhao",
+      "Yuejiang Liu",
+      "Alexandre Alahi",
+      "Tao Lin"
+    ],
+    "year": 2023,
+    "venue": "ICML, PMLR 202:42058–42080",
+    "url": "https://proceedings.mlr.press/v202/zhao23d.html",
+    "pdf_url": "https://proceedings.mlr.press/v202/zhao23d/zhao23d.pdf",
+    "read_scope": "abstract, setting/model-selection discussion, label/temporal shift results and conclusion",
+    "locations": [
+      "Sections 1, 3",
+      "Table 3",
+      "Section 7"
+    ],
+    "method_overlap": "TTAB documents hyperparameter dependence, model-property effects and failure under difficult shifts.",
+    "limitation": "Even labeled oracle tuning has online batch-dependence complications; model-selection assumptions must be explicit.",
+    "code_url": "https://github.com/LINs-lab/ttab",
+    "publication_status": "conference paper",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "refresh_read_scope": "Fresh official abstract and selective PDF sections1-2 plus implementation/protocol passages",
+    "refresh_locations": "Abstract and sections1-2; repository",
+    "refresh_limitation": "Official abstract nine vs PDF ten algorithms discrepancy retained; not substantive.",
+    "verified_on": "2026-10-26"
+  },
+  {
+    "key": "Peng2019DomainNet",
+    "title": "Moment Matching for Multi-Source Domain Adaptation",
+    "authors": [
+      "Xingchao Peng",
+      "Qinxun Bai",
+      "Xide Xia",
+      "Zijun Huang",
+      "Kate Saenko",
+      "Bo Wang"
+    ],
+    "year": 2019,
+    "venue": "ICCV 2019",
+    "publication_status": "Conference paper",
+    "url": "https://arxiv.org/abs/1812.01754",
+    "read_scope": "Dataset description in paper and author dataset page; not full method",
+    "locations": [
+      "DomainNet dataset and experiment sections"
+    ],
+    "method_overlap": "Natural visual domains for external validation.",
+    "limitation": "Full DomainNet and the commonly used DomainNet-126 subset are different protocols and must be named accurately.",
+    "code_url": "https://ai.bu.edu/DomainNet/",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "refresh_read_scope": "Fresh author-site overview, cleaned split definitions, citation metadata",
+    "refresh_locations": "Author site dataset and citation",
+    "refresh_limitation": "Do not conflate full345-class six-domain dataset with DomainNet126.",
+    "verified_on": "2026-10-26"
+  },
+  {
+    "key": "Sreeram2026Tempora",
+    "title": "Tempora: Characterising the Time-Contingent Utility of Online Test-Time Adaptation",
+    "authors": [
+      "Sudarshan Sreeram",
+      "Young D. Kwon",
+      "Cecilia Mascolo"
+    ],
+    "year": 2026,
+    "venue": "ICML, PMLR 306:115420–115456",
+    "url": "https://proceedings.mlr.press/v306/sreeram26a.html",
+    "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/sreeram26a/sreeram26a.pdf",
+    "read_scope": "Sections 3–5, version metadata and hardware appendix descriptions",
+    "locations": [
+      "Sections 3.1–3.3",
+      "Section 4",
+      "Section 5, Limitations/Future Work",
+      "Appendix C.8"
+    ],
+    "method_overlap": "Method utility under physical deadlines, latency penalties and amortized compute budgets; ranking changes with hardware and shift.",
+    "limitation": "Main episodic IID/default-hyperparameter comparisons leave integration with continual/nonstationary realism as future work; latency-aware ranking itself is established.",
+    "code_url": "https://github.com/sudotensor/tempora",
+    "publication_status": "conference paper; inspected arXiv v2 dated 31 May 2026",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "local_pdf": "sources/pdfs/Sreeram2026Tempora.pdf",
+    "pdf_sha256": "c82b4a7bdb3be2502bb954d7ba30d63ae3f5d19376a3f48c30ffa28369c8fcbf",
+    "refresh_read_scope": "Fresh proceedings abstract/metadata; selective author PDF utility definitions",
+    "refresh_locations": "Abstract; sections3 utility definitions",
+    "refresh_limitation": "Ranking depends on time objective and hardware; utility must be fixed before comparing.",
+    "verified_on": "2026-10-26"
+  },
+  {
+    "key": "Danilowski2026BoTTA",
+    "title": "BoTTA: Benchmarking On-device Test Time Adaptation",
+    "authors": [
+      "Michal Danilowski",
+      "Soumyajit Chatterjee",
+      "Abhirup Ghosh"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems, pages 465–477",
+    "doi": "10.1145/3774906.3800498",
+    "url": "https://doi.org/10.1145/3774906.3800498",
+    "preprint_url": "https://arxiv.org/abs/2504.10149v2",
+    "pdf_url": null,
+    "read_scope": "Publisher metadata/abstract, sections 2 and 4, system metric descriptions and conclusion; preprint metadata checked separately",
+    "locations": [
+      "Abstract",
+      "Section 2",
+      "Section 4",
+      "System metrics",
+      "Conclusion"
+    ],
+    "method_overlap": "Limited target data, incomplete category coverage, overlapping shifts and hardware-constrained periodic adaptation are already benchmarked.",
+    "limitation": "This is an evaluation framework, not the proposed learned multi-action acquisition policy. Paper-linked code URL https://github.com/m-danilow/BoTTA returned 404 in this review, so availability is not established.",
+    "code_url": null,
+    "publication_status": "Publisher full text identifies SenSys 2026, published 10 May 2026; older arXiv:2504.10149v2 record instead carries a SenSys 2025 report-number statement. Preserve this discrepancy; publisher version is used for conference citation.",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "refresh_read_scope": "Fresh publisher fulltext excerpt surfaced in search; DOI direct access returned403",
+    "refresh_locations": "Abstract; sections2-4 and listed hardware",
+    "refresh_limitation": "Periodic adaptation differs from same-batch adaptation; quantitative tables not audited in refresh.",
+    "verified_on": "2026-10-26"
+  }
+]

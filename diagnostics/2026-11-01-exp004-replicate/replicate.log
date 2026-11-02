@@ -1,0 +1,768 @@
+e29291f5c1c97a823c14c23f67008ed9cedb7eb0a5bad931be9720371bfa2112  arch_resnet.py
+a43531f9fff226183ba45c67dd2bfa175219ba7ddb1e71cae682b4657cb119e2  arch_wide_resnet.py
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Using CPython 3.10.12 interpreter at: /usr/bin/python3.10
+Creating virtual environment at: .venv_cs
+Activate with: source .venv_cs/bin/activate
+d10d6d4b88a468da  models/Addepalli2021Towards_PARN18.pt
+89cf5cf005049cdc  models/Addepalli2021Towards_WRN34.pt
+82ab8bdc2feff930  models/Addepalli2022Efficient_WRN_34_10.pt
+ce86bde2485fbc74  models/Hendrycks2020AugMix_ResNeXt.pt
+8747cfde9934180a  models/Hendrycks2020AugMix_WRN.pt
+737bf08d175fd508  models/Modas2021PRIMEResNet18.pt
+30ee6543a1bfd049
+=== model Hendrycks2020AugMix_ResNeXt
+{'model': 'Hendrycks2020AugMix_ResNeXt', 'r0': 0.1990000158548355, 'q_hat0': 0.11999999731779099, 'false_alarm0': 0.17000000178813934, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Hendrycks2020AugMix_ResNeXt 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.716 elapsed=2s
+Hendrycks2020AugMix_ResNeXt 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.494 elapsed=24s
+Hendrycks2020AugMix_ResNeXt 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.497 elapsed=25s
+Hendrycks2020AugMix_ResNeXt 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.423 elapsed=46s
+Hendrycks2020AugMix_ResNeXt 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.644 elapsed=48s
+Hendrycks2020AugMix_ResNeXt 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.445 elapsed=69s
+Hendrycks2020AugMix_ResNeXt 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.681 elapsed=70s
+Hendrycks2020AugMix_ResNeXt 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.431 elapsed=92s
+Hendrycks2020AugMix_ResNeXt 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.720 elapsed=93s
+Hendrycks2020AugMix_ResNeXt 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.425 elapsed=114s
+Hendrycks2020AugMix_ResNeXt 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.730 elapsed=116s
+Hendrycks2020AugMix_ResNeXt 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.458 elapsed=138s
+Hendrycks2020AugMix_ResNeXt 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.495 elapsed=140s
+Hendrycks2020AugMix_ResNeXt 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.392 elapsed=161s
+Hendrycks2020AugMix_ResNeXt 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.617 elapsed=163s
+Hendrycks2020AugMix_ResNeXt 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.463 elapsed=184s
+Hendrycks2020AugMix_ResNeXt 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.499 elapsed=186s
+Hendrycks2020AugMix_ResNeXt 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.357 elapsed=208s
+Hendrycks2020AugMix_ResNeXt 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.576 elapsed=209s
+Hendrycks2020AugMix_ResNeXt 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.454 elapsed=231s
+Hendrycks2020AugMix_ResNeXt 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.730 elapsed=233s
+Hendrycks2020AugMix_ResNeXt 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.418 elapsed=259s
+Hendrycks2020AugMix_ResNeXt 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.659 elapsed=261s
+Hendrycks2020AugMix_ResNeXt 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.408 elapsed=288s
+Hendrycks2020AugMix_ResNeXt 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.238 elapsed=289s
+Hendrycks2020AugMix_ResNeXt 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.335 elapsed=316s
+Hendrycks2020AugMix_ResNeXt 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.328 elapsed=318s
+Hendrycks2020AugMix_ResNeXt 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.356 elapsed=344s
+Hendrycks2020AugMix_ResNeXt 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.316 elapsed=346s
+Hendrycks2020AugMix_ResNeXt 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.367 elapsed=370s
+Hendrycks2020AugMix_ResNeXt 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.438 elapsed=372s
+Hendrycks2020AugMix_ResNeXt 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.651 elapsed=399s
+Hendrycks2020AugMix_ResNeXt 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.353 elapsed=401s
+Hendrycks2020AugMix_ResNeXt 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.473 elapsed=427s
+Hendrycks2020AugMix_ResNeXt 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.400 elapsed=429s
+Hendrycks2020AugMix_ResNeXt 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.497 elapsed=456s
+Hendrycks2020AugMix_ResNeXt 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.208 elapsed=457s
+Hendrycks2020AugMix_ResNeXt 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.266 elapsed=484s
+Hendrycks2020AugMix_ResNeXt 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.211 elapsed=486s
+Hendrycks2020AugMix_ResNeXt 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.298 elapsed=508s
+Hendrycks2020AugMix_ResNeXt 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.290 elapsed=509s
+Hendrycks2020AugMix_ResNeXt 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.384 elapsed=530s
+Hendrycks2020AugMix_ResNeXt 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.317 elapsed=532s
+Hendrycks2020AugMix_ResNeXt 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.311 elapsed=553s
+Hendrycks2020AugMix_ResNeXt 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.316 elapsed=555s
+Hendrycks2020AugMix_ResNeXt 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.322 elapsed=576s
+Hendrycks2020AugMix_ResNeXt 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.290 elapsed=577s
+Hendrycks2020AugMix_ResNeXt 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.350 elapsed=598s
+Hendrycks2020AugMix_ResNeXt 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.372 elapsed=600s
+Hendrycks2020AugMix_ResNeXt 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.408 elapsed=621s
+Hendrycks2020AugMix_ResNeXt 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.523 elapsed=623s
+Hendrycks2020AugMix_ResNeXt 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.441 elapsed=644s
+Hendrycks2020AugMix_ResNeXt 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.382 elapsed=645s
+Hendrycks2020AugMix_ResNeXt 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.453 elapsed=666s
+Hendrycks2020AugMix_ResNeXt 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.452 elapsed=668s
+Hendrycks2020AugMix_ResNeXt 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.405 elapsed=689s
+Hendrycks2020AugMix_ResNeXt 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.404 elapsed=691s
+Hendrycks2020AugMix_ResNeXt 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.468 elapsed=712s
+Hendrycks2020AugMix_ResNeXt 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.557 elapsed=713s
+Hendrycks2020AugMix_ResNeXt 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.479 elapsed=734s
+Hendrycks2020AugMix_ResNeXt 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.234 elapsed=736s
+Hendrycks2020AugMix_ResNeXt 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.336 elapsed=757s
+Hendrycks2020AugMix_ResNeXt 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.265 elapsed=759s
+Hendrycks2020AugMix_ResNeXt 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.348 elapsed=780s
+Hendrycks2020AugMix_ResNeXt 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.279 elapsed=781s
+Hendrycks2020AugMix_ResNeXt 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.381 elapsed=803s
+Hendrycks2020AugMix_ResNeXt 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.212 elapsed=804s
+Hendrycks2020AugMix_ResNeXt 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.280 elapsed=825s
+Hendrycks2020AugMix_ResNeXt 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.342 elapsed=827s
+Hendrycks2020AugMix_ResNeXt 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.458 elapsed=848s
+Hendrycks2020AugMix_ResNeXt 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.293 elapsed=849s
+Hendrycks2020AugMix_ResNeXt 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.310 elapsed=870s
+Hendrycks2020AugMix_ResNeXt 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.229 elapsed=872s
+Hendrycks2020AugMix_ResNeXt 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.384 elapsed=893s
+Hendrycks2020AugMix_ResNeXt 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.247 elapsed=895s
+Hendrycks2020AugMix_ResNeXt 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.356 elapsed=916s
+Hendrycks2020AugMix_ResNeXt 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.276 elapsed=917s
+Hendrycks2020AugMix_ResNeXt 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.441 elapsed=938s
+Hendrycks2020AugMix_ResNeXt 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.277 elapsed=940s
+Hendrycks2020AugMix_ResNeXt 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.413 elapsed=961s
+Hendrycks2020AugMix_ResNeXt 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.271 elapsed=963s
+Hendrycks2020AugMix_ResNeXt 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.319 elapsed=984s
+Hendrycks2020AugMix_ResNeXt 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.354 elapsed=985s
+Hendrycks2020AugMix_ResNeXt 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.429 elapsed=1006s
+complete Hendrycks2020AugMix_ResNeXt 1006s
+=== model Modas2021PRIMEResNet18
+{'model': 'Modas2021PRIMEResNet18', 'r0': 0.22500000894069672, 'q_hat0': 0.7319999933242798, 'false_alarm0': 0.17100000381469727, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Modas2021PRIMEResNet18 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.394 elapsed=0s
+Modas2021PRIMEResNet18 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.559 elapsed=6s
+Modas2021PRIMEResNet18 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.261 elapsed=6s
+Modas2021PRIMEResNet18 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.455 elapsed=11s
+Modas2021PRIMEResNet18 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.347 elapsed=12s
+Modas2021PRIMEResNet18 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.505 elapsed=17s
+Modas2021PRIMEResNet18 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.334 elapsed=17s
+Modas2021PRIMEResNet18 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.425 elapsed=22s
+Modas2021PRIMEResNet18 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.377 elapsed=22s
+Modas2021PRIMEResNet18 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.409 elapsed=27s
+Modas2021PRIMEResNet18 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.383 elapsed=28s
+Modas2021PRIMEResNet18 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.504 elapsed=33s
+Modas2021PRIMEResNet18 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.348 elapsed=33s
+Modas2021PRIMEResNet18 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.420 elapsed=38s
+Modas2021PRIMEResNet18 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.317 elapsed=39s
+Modas2021PRIMEResNet18 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.429 elapsed=44s
+Modas2021PRIMEResNet18 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.281 elapsed=44s
+Modas2021PRIMEResNet18 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.424 elapsed=49s
+Modas2021PRIMEResNet18 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.267 elapsed=49s
+Modas2021PRIMEResNet18 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.448 elapsed=54s
+Modas2021PRIMEResNet18 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.364 elapsed=55s
+Modas2021PRIMEResNet18 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.370 elapsed=60s
+Modas2021PRIMEResNet18 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.342 elapsed=60s
+Modas2021PRIMEResNet18 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.464 elapsed=65s
+Modas2021PRIMEResNet18 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.329 elapsed=65s
+Modas2021PRIMEResNet18 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.429 elapsed=70s
+Modas2021PRIMEResNet18 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.425 elapsed=71s
+Modas2021PRIMEResNet18 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.397 elapsed=76s
+Modas2021PRIMEResNet18 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.412 elapsed=76s
+Modas2021PRIMEResNet18 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.511 elapsed=81s
+Modas2021PRIMEResNet18 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.673 elapsed=82s
+Modas2021PRIMEResNet18 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.730 elapsed=87s
+Modas2021PRIMEResNet18 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.532 elapsed=87s
+Modas2021PRIMEResNet18 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.521 elapsed=92s
+Modas2021PRIMEResNet18 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.597 elapsed=92s
+Modas2021PRIMEResNet18 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.637 elapsed=97s
+Modas2021PRIMEResNet18 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.235 elapsed=98s
+Modas2021PRIMEResNet18 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.272 elapsed=103s
+Modas2021PRIMEResNet18 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.227 elapsed=103s
+Modas2021PRIMEResNet18 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.326 elapsed=108s
+Modas2021PRIMEResNet18 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.326 elapsed=108s
+Modas2021PRIMEResNet18 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.525 elapsed=113s
+Modas2021PRIMEResNet18 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.415 elapsed=114s
+Modas2021PRIMEResNet18 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.392 elapsed=119s
+Modas2021PRIMEResNet18 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.327 elapsed=119s
+Modas2021PRIMEResNet18 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.315 elapsed=124s
+Modas2021PRIMEResNet18 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.325 elapsed=125s
+Modas2021PRIMEResNet18 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.408 elapsed=130s
+Modas2021PRIMEResNet18 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.331 elapsed=130s
+Modas2021PRIMEResNet18 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.444 elapsed=135s
+Modas2021PRIMEResNet18 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.452 elapsed=135s
+Modas2021PRIMEResNet18 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.512 elapsed=140s
+Modas2021PRIMEResNet18 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.402 elapsed=141s
+Modas2021PRIMEResNet18 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.545 elapsed=146s
+Modas2021PRIMEResNet18 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.389 elapsed=146s
+Modas2021PRIMEResNet18 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.399 elapsed=151s
+Modas2021PRIMEResNet18 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.328 elapsed=151s
+Modas2021PRIMEResNet18 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.510 elapsed=157s
+Modas2021PRIMEResNet18 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.498 elapsed=157s
+Modas2021PRIMEResNet18 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.549 elapsed=162s
+Modas2021PRIMEResNet18 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.288 elapsed=162s
+Modas2021PRIMEResNet18 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.430 elapsed=167s
+Modas2021PRIMEResNet18 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.318 elapsed=168s
+Modas2021PRIMEResNet18 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.385 elapsed=173s
+Modas2021PRIMEResNet18 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.330 elapsed=173s
+Modas2021PRIMEResNet18 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.495 elapsed=178s
+Modas2021PRIMEResNet18 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.248 elapsed=178s
+Modas2021PRIMEResNet18 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.270 elapsed=183s
+Modas2021PRIMEResNet18 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.400 elapsed=184s
+Modas2021PRIMEResNet18 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.518 elapsed=189s
+Modas2021PRIMEResNet18 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.326 elapsed=189s
+Modas2021PRIMEResNet18 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.390 elapsed=194s
+Modas2021PRIMEResNet18 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.321 elapsed=195s
+Modas2021PRIMEResNet18 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.517 elapsed=200s
+Modas2021PRIMEResNet18 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.267 elapsed=200s
+Modas2021PRIMEResNet18 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.368 elapsed=205s
+Modas2021PRIMEResNet18 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.320 elapsed=205s
+Modas2021PRIMEResNet18 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.510 elapsed=210s
+Modas2021PRIMEResNet18 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.357 elapsed=211s
+Modas2021PRIMEResNet18 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.499 elapsed=216s
+Modas2021PRIMEResNet18 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.306 elapsed=216s
+Modas2021PRIMEResNet18 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.310 elapsed=221s
+Modas2021PRIMEResNet18 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.414 elapsed=221s
+Modas2021PRIMEResNet18 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.507 elapsed=226s
+complete Modas2021PRIMEResNet18 226s
+=== model Hendrycks2020AugMix_WRN
+{'model': 'Hendrycks2020AugMix_WRN', 'r0': 0.23800000548362732, 'q_hat0': 0.23999999463558197, 'false_alarm0': 0.11800000816583633, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Hendrycks2020AugMix_WRN 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.601 elapsed=0s
+Hendrycks2020AugMix_WRN 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.558 elapsed=6s
+Hendrycks2020AugMix_WRN 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.479 elapsed=6s
+Hendrycks2020AugMix_WRN 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.466 elapsed=11s
+Hendrycks2020AugMix_WRN 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.557 elapsed=11s
+Hendrycks2020AugMix_WRN 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.532 elapsed=16s
+Hendrycks2020AugMix_WRN 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.632 elapsed=16s
+Hendrycks2020AugMix_WRN 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.472 elapsed=21s
+Hendrycks2020AugMix_WRN 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.708 elapsed=21s
+Hendrycks2020AugMix_WRN 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.498 elapsed=26s
+Hendrycks2020AugMix_WRN 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.680 elapsed=27s
+Hendrycks2020AugMix_WRN 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.458 elapsed=32s
+Hendrycks2020AugMix_WRN 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.426 elapsed=32s
+Hendrycks2020AugMix_WRN 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.460 elapsed=37s
+Hendrycks2020AugMix_WRN 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.507 elapsed=37s
+Hendrycks2020AugMix_WRN 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.454 elapsed=42s
+Hendrycks2020AugMix_WRN 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.453 elapsed=42s
+Hendrycks2020AugMix_WRN 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.409 elapsed=47s
+Hendrycks2020AugMix_WRN 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.517 elapsed=47s
+Hendrycks2020AugMix_WRN 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.470 elapsed=52s
+Hendrycks2020AugMix_WRN 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.631 elapsed=53s
+Hendrycks2020AugMix_WRN 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.475 elapsed=57s
+Hendrycks2020AugMix_WRN 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.630 elapsed=58s
+Hendrycks2020AugMix_WRN 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.472 elapsed=63s
+Hendrycks2020AugMix_WRN 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.373 elapsed=63s
+Hendrycks2020AugMix_WRN 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.436 elapsed=68s
+Hendrycks2020AugMix_WRN 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.465 elapsed=68s
+Hendrycks2020AugMix_WRN 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.416 elapsed=73s
+Hendrycks2020AugMix_WRN 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.453 elapsed=73s
+Hendrycks2020AugMix_WRN 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.453 elapsed=78s
+Hendrycks2020AugMix_WRN 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.753 elapsed=78s
+Hendrycks2020AugMix_WRN 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.689 elapsed=83s
+Hendrycks2020AugMix_WRN 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.561 elapsed=84s
+Hendrycks2020AugMix_WRN 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.501 elapsed=88s
+Hendrycks2020AugMix_WRN 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.714 elapsed=89s
+Hendrycks2020AugMix_WRN 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.588 elapsed=94s
+Hendrycks2020AugMix_WRN 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.232 elapsed=94s
+Hendrycks2020AugMix_WRN 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.286 elapsed=99s
+Hendrycks2020AugMix_WRN 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.245 elapsed=99s
+Hendrycks2020AugMix_WRN 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.334 elapsed=104s
+Hendrycks2020AugMix_WRN 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.306 elapsed=104s
+Hendrycks2020AugMix_WRN 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.424 elapsed=109s
+Hendrycks2020AugMix_WRN 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.303 elapsed=109s
+Hendrycks2020AugMix_WRN 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.354 elapsed=114s
+Hendrycks2020AugMix_WRN 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.325 elapsed=115s
+Hendrycks2020AugMix_WRN 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.349 elapsed=119s
+Hendrycks2020AugMix_WRN 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.311 elapsed=120s
+Hendrycks2020AugMix_WRN 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.363 elapsed=125s
+Hendrycks2020AugMix_WRN 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.426 elapsed=125s
+Hendrycks2020AugMix_WRN 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.461 elapsed=130s
+Hendrycks2020AugMix_WRN 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.517 elapsed=130s
+Hendrycks2020AugMix_WRN 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.508 elapsed=135s
+Hendrycks2020AugMix_WRN 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.400 elapsed=135s
+Hendrycks2020AugMix_WRN 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.485 elapsed=140s
+Hendrycks2020AugMix_WRN 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.438 elapsed=141s
+Hendrycks2020AugMix_WRN 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.459 elapsed=145s
+Hendrycks2020AugMix_WRN 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.382 elapsed=146s
+Hendrycks2020AugMix_WRN 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.499 elapsed=151s
+Hendrycks2020AugMix_WRN 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.556 elapsed=151s
+Hendrycks2020AugMix_WRN 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.516 elapsed=156s
+Hendrycks2020AugMix_WRN 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.304 elapsed=156s
+Hendrycks2020AugMix_WRN 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.426 elapsed=161s
+Hendrycks2020AugMix_WRN 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.325 elapsed=161s
+Hendrycks2020AugMix_WRN 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.401 elapsed=166s
+Hendrycks2020AugMix_WRN 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.315 elapsed=166s
+Hendrycks2020AugMix_WRN 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.440 elapsed=171s
+Hendrycks2020AugMix_WRN 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.251 elapsed=172s
+Hendrycks2020AugMix_WRN 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.322 elapsed=176s
+Hendrycks2020AugMix_WRN 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.359 elapsed=177s
+Hendrycks2020AugMix_WRN 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.447 elapsed=182s
+Hendrycks2020AugMix_WRN 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.317 elapsed=182s
+Hendrycks2020AugMix_WRN 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.411 elapsed=187s
+Hendrycks2020AugMix_WRN 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.295 elapsed=187s
+Hendrycks2020AugMix_WRN 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.435 elapsed=192s
+Hendrycks2020AugMix_WRN 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.282 elapsed=192s
+Hendrycks2020AugMix_WRN 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.359 elapsed=197s
+Hendrycks2020AugMix_WRN 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.289 elapsed=197s
+Hendrycks2020AugMix_WRN 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.436 elapsed=202s
+Hendrycks2020AugMix_WRN 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.340 elapsed=203s
+Hendrycks2020AugMix_WRN 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.475 elapsed=207s
+Hendrycks2020AugMix_WRN 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.294 elapsed=208s
+Hendrycks2020AugMix_WRN 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.340 elapsed=213s
+Hendrycks2020AugMix_WRN 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.352 elapsed=213s
+Hendrycks2020AugMix_WRN 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.448 elapsed=218s
+complete Hendrycks2020AugMix_WRN 218s
+=== model Addepalli2021Towards_PARN18
+{'model': 'Addepalli2021Towards_PARN18', 'r0': 0.367000013589859, 'q_hat0': 0.8460000157356262, 'false_alarm0': 0.1720000058412552, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Addepalli2021Towards_PARN18 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.502 elapsed=0s
+Addepalli2021Towards_PARN18 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.622 elapsed=6s
+Addepalli2021Towards_PARN18 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.336 elapsed=6s
+Addepalli2021Towards_PARN18 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.475 elapsed=11s
+Addepalli2021Towards_PARN18 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.387 elapsed=11s
+Addepalli2021Towards_PARN18 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.489 elapsed=16s
+Addepalli2021Towards_PARN18 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.483 elapsed=17s
+Addepalli2021Towards_PARN18 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.490 elapsed=22s
+Addepalli2021Towards_PARN18 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.537 elapsed=22s
+Addepalli2021Towards_PARN18 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.476 elapsed=27s
+Addepalli2021Towards_PARN18 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.522 elapsed=27s
+Addepalli2021Towards_PARN18 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.525 elapsed=32s
+Addepalli2021Towards_PARN18 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.412 elapsed=32s
+Addepalli2021Towards_PARN18 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.435 elapsed=37s
+Addepalli2021Towards_PARN18 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.490 elapsed=38s
+Addepalli2021Towards_PARN18 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.452 elapsed=43s
+Addepalli2021Towards_PARN18 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.361 elapsed=43s
+Addepalli2021Towards_PARN18 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.413 elapsed=48s
+Addepalli2021Towards_PARN18 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.467 elapsed=48s
+Addepalli2021Towards_PARN18 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.498 elapsed=53s
+Addepalli2021Towards_PARN18 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.476 elapsed=53s
+Addepalli2021Towards_PARN18 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.465 elapsed=58s
+Addepalli2021Towards_PARN18 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.537 elapsed=59s
+Addepalli2021Towards_PARN18 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.539 elapsed=64s
+Addepalli2021Towards_PARN18 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.425 elapsed=64s
+Addepalli2021Towards_PARN18 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.414 elapsed=69s
+Addepalli2021Towards_PARN18 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.564 elapsed=69s
+Addepalli2021Towards_PARN18 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.536 elapsed=74s
+Addepalli2021Towards_PARN18 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.541 elapsed=74s
+Addepalli2021Towards_PARN18 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.543 elapsed=79s
+Addepalli2021Towards_PARN18 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.792 elapsed=80s
+Addepalli2021Towards_PARN18 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.711 elapsed=85s
+Addepalli2021Towards_PARN18 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.699 elapsed=85s
+Addepalli2021Towards_PARN18 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.556 elapsed=90s
+Addepalli2021Towards_PARN18 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.750 elapsed=90s
+Addepalli2021Towards_PARN18 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.569 elapsed=95s
+Addepalli2021Towards_PARN18 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.397 elapsed=95s
+Addepalli2021Towards_PARN18 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.392 elapsed=100s
+Addepalli2021Towards_PARN18 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.428 elapsed=101s
+Addepalli2021Towards_PARN18 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.473 elapsed=106s
+Addepalli2021Towards_PARN18 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.537 elapsed=106s
+Addepalli2021Towards_PARN18 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.573 elapsed=111s
+Addepalli2021Towards_PARN18 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.566 elapsed=111s
+Addepalli2021Towards_PARN18 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.486 elapsed=116s
+Addepalli2021Towards_PARN18 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.501 elapsed=116s
+Addepalli2021Towards_PARN18 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.392 elapsed=121s
+Addepalli2021Towards_PARN18 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.517 elapsed=122s
+Addepalli2021Towards_PARN18 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.516 elapsed=127s
+Addepalli2021Towards_PARN18 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.449 elapsed=127s
+Addepalli2021Towards_PARN18 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.544 elapsed=132s
+Addepalli2021Towards_PARN18 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.515 elapsed=132s
+Addepalli2021Towards_PARN18 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.603 elapsed=137s
+Addepalli2021Towards_PARN18 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.498 elapsed=137s
+Addepalli2021Towards_PARN18 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.622 elapsed=142s
+Addepalli2021Towards_PARN18 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.424 elapsed=143s
+Addepalli2021Towards_PARN18 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.453 elapsed=148s
+Addepalli2021Towards_PARN18 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.333 elapsed=148s
+Addepalli2021Towards_PARN18 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.483 elapsed=153s
+Addepalli2021Towards_PARN18 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.565 elapsed=153s
+Addepalli2021Towards_PARN18 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.577 elapsed=158s
+Addepalli2021Towards_PARN18 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.500 elapsed=158s
+Addepalli2021Towards_PARN18 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.458 elapsed=163s
+Addepalli2021Towards_PARN18 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.457 elapsed=164s
+Addepalli2021Towards_PARN18 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.509 elapsed=169s
+Addepalli2021Towards_PARN18 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.525 elapsed=169s
+Addepalli2021Towards_PARN18 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.610 elapsed=174s
+Addepalli2021Towards_PARN18 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.444 elapsed=174s
+Addepalli2021Towards_PARN18 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.363 elapsed=179s
+Addepalli2021Towards_PARN18 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.612 elapsed=179s
+Addepalli2021Towards_PARN18 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.590 elapsed=184s
+Addepalli2021Towards_PARN18 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.494 elapsed=185s
+Addepalli2021Towards_PARN18 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.484 elapsed=190s
+Addepalli2021Towards_PARN18 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.509 elapsed=190s
+Addepalli2021Towards_PARN18 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.533 elapsed=195s
+Addepalli2021Towards_PARN18 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.432 elapsed=195s
+Addepalli2021Towards_PARN18 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.452 elapsed=200s
+Addepalli2021Towards_PARN18 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.550 elapsed=200s
+Addepalli2021Towards_PARN18 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.570 elapsed=205s
+Addepalli2021Towards_PARN18 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.584 elapsed=206s
+Addepalli2021Towards_PARN18 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.585 elapsed=211s
+Addepalli2021Towards_PARN18 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.494 elapsed=211s
+Addepalli2021Towards_PARN18 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.428 elapsed=216s
+Addepalli2021Towards_PARN18 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.568 elapsed=216s
+Addepalli2021Towards_PARN18 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.520 elapsed=221s
+complete Addepalli2021Towards_PARN18 221s
+=== model Addepalli2021Towards_WRN34
+{'model': 'Addepalli2021Towards_WRN34', 'r0': 0.3370000123977661, 'q_hat0': 0.777999997138977, 'false_alarm0': 0.2590000033378601, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Addepalli2021Towards_WRN34 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.484 elapsed=3s
+Addepalli2021Towards_WRN34 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.623 elapsed=46s
+Addepalli2021Towards_WRN34 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.316 elapsed=49s
+Addepalli2021Towards_WRN34 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.455 elapsed=92s
+Addepalli2021Towards_WRN34 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.402 elapsed=95s
+Addepalli2021Towards_WRN34 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.512 elapsed=137s
+Addepalli2021Towards_WRN34 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.473 elapsed=140s
+Addepalli2021Towards_WRN34 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.457 elapsed=183s
+Addepalli2021Towards_WRN34 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.541 elapsed=186s
+Addepalli2021Towards_WRN34 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.483 elapsed=228s
+Addepalli2021Towards_WRN34 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.525 elapsed=231s
+Addepalli2021Towards_WRN34 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.501 elapsed=274s
+Addepalli2021Towards_WRN34 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.394 elapsed=277s
+Addepalli2021Towards_WRN34 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.458 elapsed=319s
+Addepalli2021Towards_WRN34 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.444 elapsed=322s
+Addepalli2021Towards_WRN34 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.447 elapsed=365s
+Addepalli2021Towards_WRN34 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.338 elapsed=368s
+Addepalli2021Towards_WRN34 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.460 elapsed=410s
+Addepalli2021Towards_WRN34 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.413 elapsed=413s
+Addepalli2021Towards_WRN34 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.482 elapsed=456s
+Addepalli2021Towards_WRN34 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.490 elapsed=459s
+Addepalli2021Towards_WRN34 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.453 elapsed=501s
+Addepalli2021Towards_WRN34 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.513 elapsed=504s
+Addepalli2021Towards_WRN34 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.500 elapsed=547s
+Addepalli2021Towards_WRN34 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.382 elapsed=550s
+Addepalli2021Towards_WRN34 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.456 elapsed=592s
+Addepalli2021Towards_WRN34 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.486 elapsed=595s
+Addepalli2021Towards_WRN34 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.488 elapsed=638s
+Addepalli2021Towards_WRN34 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.464 elapsed=641s
+Addepalli2021Towards_WRN34 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.524 elapsed=683s
+Addepalli2021Towards_WRN34 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.691 elapsed=686s
+Addepalli2021Towards_WRN34 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.723 elapsed=729s
+Addepalli2021Towards_WRN34 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.622 elapsed=732s
+Addepalli2021Towards_WRN34 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.552 elapsed=774s
+Addepalli2021Towards_WRN34 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.651 elapsed=777s
+Addepalli2021Towards_WRN34 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.649 elapsed=820s
+Addepalli2021Towards_WRN34 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.363 elapsed=823s
+Addepalli2021Towards_WRN34 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.357 elapsed=865s
+Addepalli2021Towards_WRN34 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.406 elapsed=868s
+Addepalli2021Towards_WRN34 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.457 elapsed=911s
+Addepalli2021Towards_WRN34 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.484 elapsed=914s
+Addepalli2021Towards_WRN34 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.578 elapsed=956s
+Addepalli2021Towards_WRN34 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.553 elapsed=959s
+Addepalli2021Towards_WRN34 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.444 elapsed=1002s
+Addepalli2021Towards_WRN34 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.487 elapsed=1005s
+Addepalli2021Towards_WRN34 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.389 elapsed=1047s
+Addepalli2021Towards_WRN34 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.487 elapsed=1050s
+Addepalli2021Towards_WRN34 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.493 elapsed=1093s
+Addepalli2021Towards_WRN34 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.419 elapsed=1096s
+Addepalli2021Towards_WRN34 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.550 elapsed=1138s
+Addepalli2021Towards_WRN34 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.499 elapsed=1141s
+Addepalli2021Towards_WRN34 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.590 elapsed=1184s
+Addepalli2021Towards_WRN34 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.486 elapsed=1187s
+Addepalli2021Towards_WRN34 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.621 elapsed=1229s
+Addepalli2021Towards_WRN34 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.401 elapsed=1232s
+Addepalli2021Towards_WRN34 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.422 elapsed=1275s
+Addepalli2021Towards_WRN34 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.313 elapsed=1278s
+Addepalli2021Towards_WRN34 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.456 elapsed=1320s
+Addepalli2021Towards_WRN34 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.526 elapsed=1323s
+Addepalli2021Towards_WRN34 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.544 elapsed=1366s
+Addepalli2021Towards_WRN34 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.472 elapsed=1369s
+Addepalli2021Towards_WRN34 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.475 elapsed=1411s
+Addepalli2021Towards_WRN34 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.432 elapsed=1414s
+Addepalli2021Towards_WRN34 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.471 elapsed=1457s
+Addepalli2021Towards_WRN34 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.504 elapsed=1460s
+Addepalli2021Towards_WRN34 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.567 elapsed=1502s
+Addepalli2021Towards_WRN34 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.434 elapsed=1505s
+Addepalli2021Towards_WRN34 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.375 elapsed=1548s
+Addepalli2021Towards_WRN34 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.591 elapsed=1551s
+Addepalli2021Towards_WRN34 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.595 elapsed=1594s
+Addepalli2021Towards_WRN34 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.502 elapsed=1596s
+Addepalli2021Towards_WRN34 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.477 elapsed=1639s
+Addepalli2021Towards_WRN34 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.474 elapsed=1642s
+Addepalli2021Towards_WRN34 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.558 elapsed=1685s
+Addepalli2021Towards_WRN34 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.401 elapsed=1687s
+Addepalli2021Towards_WRN34 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.421 elapsed=1730s
+Addepalli2021Towards_WRN34 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.527 elapsed=1733s
+Addepalli2021Towards_WRN34 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.550 elapsed=1776s
+Addepalli2021Towards_WRN34 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.555 elapsed=1778s
+Addepalli2021Towards_WRN34 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.574 elapsed=1821s
+Addepalli2021Towards_WRN34 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.477 elapsed=1824s
+Addepalli2021Towards_WRN34 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.385 elapsed=1867s
+Addepalli2021Towards_WRN34 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.530 elapsed=1869s
+Addepalli2021Towards_WRN34 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.512 elapsed=1912s
+complete Addepalli2021Towards_WRN34 1912s
+=== model Addepalli2022Efficient_WRN_34_10
+{'model': 'Addepalli2022Efficient_WRN_34_10', 'r0': 0.31300002336502075, 'q_hat0': 0.8400000333786011, 'false_alarm0': 0.1469999998807907, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+Addepalli2022Efficient_WRN_34_10 1 84 source/gaussian_noise/3/dirichlet/0.1/0 err=0.454 elapsed=3s
+Addepalli2022Efficient_WRN_34_10 2 84 tent/gaussian_noise/3/dirichlet/0.1/0 err=0.642 elapsed=46s
+Addepalli2022Efficient_WRN_34_10 3 84 source/gaussian_noise/3/dirichlet/0.1/1 err=0.327 elapsed=49s
+Addepalli2022Efficient_WRN_34_10 4 84 tent/gaussian_noise/3/dirichlet/0.1/1 err=0.475 elapsed=92s
+Addepalli2022Efficient_WRN_34_10 5 84 source/gaussian_noise/3/dirichlet/0.1/2 err=0.398 elapsed=95s
+Addepalli2022Efficient_WRN_34_10 6 84 tent/gaussian_noise/3/dirichlet/0.1/2 err=0.483 elapsed=137s
+Addepalli2022Efficient_WRN_34_10 7 84 source/gaussian_noise/5/dirichlet/0.1/0 err=0.514 elapsed=140s
+Addepalli2022Efficient_WRN_34_10 8 84 tent/gaussian_noise/5/dirichlet/0.1/0 err=0.429 elapsed=183s
+Addepalli2022Efficient_WRN_34_10 9 84 source/gaussian_noise/5/dirichlet/0.1/1 err=0.560 elapsed=186s
+Addepalli2022Efficient_WRN_34_10 10 84 tent/gaussian_noise/5/dirichlet/0.1/1 err=0.473 elapsed=228s
+Addepalli2022Efficient_WRN_34_10 11 84 source/gaussian_noise/5/dirichlet/0.1/2 err=0.521 elapsed=231s
+Addepalli2022Efficient_WRN_34_10 12 84 tent/gaussian_noise/5/dirichlet/0.1/2 err=0.510 elapsed=274s
+Addepalli2022Efficient_WRN_34_10 13 84 source/shot_noise/3/dirichlet/0.1/0 err=0.382 elapsed=277s
+Addepalli2022Efficient_WRN_34_10 14 84 tent/shot_noise/3/dirichlet/0.1/0 err=0.420 elapsed=319s
+Addepalli2022Efficient_WRN_34_10 15 84 source/shot_noise/3/dirichlet/0.1/1 err=0.477 elapsed=322s
+Addepalli2022Efficient_WRN_34_10 16 84 tent/shot_noise/3/dirichlet/0.1/1 err=0.426 elapsed=365s
+Addepalli2022Efficient_WRN_34_10 17 84 source/shot_noise/3/dirichlet/0.1/2 err=0.348 elapsed=368s
+Addepalli2022Efficient_WRN_34_10 18 84 tent/shot_noise/3/dirichlet/0.1/2 err=0.421 elapsed=410s
+Addepalli2022Efficient_WRN_34_10 19 84 source/shot_noise/5/dirichlet/0.1/0 err=0.456 elapsed=413s
+Addepalli2022Efficient_WRN_34_10 20 84 tent/shot_noise/5/dirichlet/0.1/0 err=0.515 elapsed=456s
+Addepalli2022Efficient_WRN_34_10 21 84 source/shot_noise/5/dirichlet/0.1/1 err=0.521 elapsed=459s
+Addepalli2022Efficient_WRN_34_10 22 84 tent/shot_noise/5/dirichlet/0.1/1 err=0.429 elapsed=501s
+Addepalli2022Efficient_WRN_34_10 23 84 source/shot_noise/5/dirichlet/0.1/2 err=0.552 elapsed=504s
+Addepalli2022Efficient_WRN_34_10 24 84 tent/shot_noise/5/dirichlet/0.1/2 err=0.485 elapsed=547s
+Addepalli2022Efficient_WRN_34_10 25 84 source/impulse_noise/3/dirichlet/0.1/0 err=0.494 elapsed=550s
+Addepalli2022Efficient_WRN_34_10 26 84 tent/impulse_noise/3/dirichlet/0.1/0 err=0.437 elapsed=592s
+Addepalli2022Efficient_WRN_34_10 27 84 source/impulse_noise/3/dirichlet/0.1/1 err=0.544 elapsed=595s
+Addepalli2022Efficient_WRN_34_10 28 84 tent/impulse_noise/3/dirichlet/0.1/1 err=0.461 elapsed=638s
+Addepalli2022Efficient_WRN_34_10 29 84 source/impulse_noise/3/dirichlet/0.1/2 err=0.512 elapsed=641s
+Addepalli2022Efficient_WRN_34_10 30 84 tent/impulse_noise/3/dirichlet/0.1/2 err=0.535 elapsed=683s
+Addepalli2022Efficient_WRN_34_10 31 84 source/impulse_noise/5/dirichlet/0.1/0 err=0.764 elapsed=686s
+Addepalli2022Efficient_WRN_34_10 32 84 tent/impulse_noise/5/dirichlet/0.1/0 err=0.733 elapsed=729s
+Addepalli2022Efficient_WRN_34_10 33 84 source/impulse_noise/5/dirichlet/0.1/1 err=0.771 elapsed=732s
+Addepalli2022Efficient_WRN_34_10 34 84 tent/impulse_noise/5/dirichlet/0.1/1 err=0.534 elapsed=775s
+Addepalli2022Efficient_WRN_34_10 35 84 source/impulse_noise/5/dirichlet/0.1/2 err=0.795 elapsed=777s
+Addepalli2022Efficient_WRN_34_10 36 84 tent/impulse_noise/5/dirichlet/0.1/2 err=0.584 elapsed=820s
+Addepalli2022Efficient_WRN_34_10 37 84 source/defocus_blur/3/dirichlet/0.1/0 err=0.339 elapsed=823s
+Addepalli2022Efficient_WRN_34_10 38 84 tent/defocus_blur/3/dirichlet/0.1/0 err=0.344 elapsed=866s
+Addepalli2022Efficient_WRN_34_10 39 84 source/defocus_blur/3/dirichlet/0.1/1 err=0.366 elapsed=868s
+Addepalli2022Efficient_WRN_34_10 40 84 tent/defocus_blur/3/dirichlet/0.1/1 err=0.415 elapsed=911s
+Addepalli2022Efficient_WRN_34_10 41 84 source/defocus_blur/3/dirichlet/0.1/2 err=0.419 elapsed=914s
+Addepalli2022Efficient_WRN_34_10 42 84 tent/defocus_blur/3/dirichlet/0.1/2 err=0.585 elapsed=957s
+Addepalli2022Efficient_WRN_34_10 43 84 source/defocus_blur/5/dirichlet/0.1/0 err=0.490 elapsed=960s
+Addepalli2022Efficient_WRN_34_10 44 84 tent/defocus_blur/5/dirichlet/0.1/0 err=0.396 elapsed=1002s
+Addepalli2022Efficient_WRN_34_10 45 84 source/defocus_blur/5/dirichlet/0.1/1 err=0.442 elapsed=1005s
+Addepalli2022Efficient_WRN_34_10 46 84 tent/defocus_blur/5/dirichlet/0.1/1 err=0.366 elapsed=1048s
+Addepalli2022Efficient_WRN_34_10 47 84 source/defocus_blur/5/dirichlet/0.1/2 err=0.448 elapsed=1051s
+Addepalli2022Efficient_WRN_34_10 48 84 tent/defocus_blur/5/dirichlet/0.1/2 err=0.492 elapsed=1093s
+Addepalli2022Efficient_WRN_34_10 49 84 source/glass_blur/3/dirichlet/0.1/0 err=0.383 elapsed=1096s
+Addepalli2022Efficient_WRN_34_10 50 84 tent/glass_blur/3/dirichlet/0.1/0 err=0.496 elapsed=1139s
+Addepalli2022Efficient_WRN_34_10 51 84 source/glass_blur/3/dirichlet/0.1/1 err=0.432 elapsed=1142s
+Addepalli2022Efficient_WRN_34_10 52 84 tent/glass_blur/3/dirichlet/0.1/1 err=0.578 elapsed=1184s
+Addepalli2022Efficient_WRN_34_10 53 84 source/glass_blur/3/dirichlet/0.1/2 err=0.421 elapsed=1187s
+Addepalli2022Efficient_WRN_34_10 54 84 tent/glass_blur/3/dirichlet/0.1/2 err=0.588 elapsed=1230s
+Addepalli2022Efficient_WRN_34_10 55 84 source/glass_blur/5/dirichlet/0.1/0 err=0.422 elapsed=1233s
+Addepalli2022Efficient_WRN_34_10 56 84 tent/glass_blur/5/dirichlet/0.1/0 err=0.415 elapsed=1275s
+Addepalli2022Efficient_WRN_34_10 57 84 source/glass_blur/5/dirichlet/0.1/1 err=0.351 elapsed=1278s
+Addepalli2022Efficient_WRN_34_10 58 84 tent/glass_blur/5/dirichlet/0.1/1 err=0.476 elapsed=1321s
+Addepalli2022Efficient_WRN_34_10 59 84 source/glass_blur/5/dirichlet/0.1/2 err=0.513 elapsed=1324s
+Addepalli2022Efficient_WRN_34_10 60 84 tent/glass_blur/5/dirichlet/0.1/2 err=0.545 elapsed=1366s
+Addepalli2022Efficient_WRN_34_10 61 84 source/motion_blur/3/dirichlet/0.1/0 err=0.417 elapsed=1369s
+Addepalli2022Efficient_WRN_34_10 62 84 tent/motion_blur/3/dirichlet/0.1/0 err=0.420 elapsed=1412s
+Addepalli2022Efficient_WRN_34_10 63 84 source/motion_blur/3/dirichlet/0.1/1 err=0.411 elapsed=1415s
+Addepalli2022Efficient_WRN_34_10 64 84 tent/motion_blur/3/dirichlet/0.1/1 err=0.465 elapsed=1457s
+Addepalli2022Efficient_WRN_34_10 65 84 source/motion_blur/3/dirichlet/0.1/2 err=0.461 elapsed=1460s
+Addepalli2022Efficient_WRN_34_10 66 84 tent/motion_blur/3/dirichlet/0.1/2 err=0.504 elapsed=1503s
+Addepalli2022Efficient_WRN_34_10 67 84 source/motion_blur/5/dirichlet/0.1/0 err=0.384 elapsed=1506s
+Addepalli2022Efficient_WRN_34_10 68 84 tent/motion_blur/5/dirichlet/0.1/0 err=0.279 elapsed=1548s
+Addepalli2022Efficient_WRN_34_10 69 84 source/motion_blur/5/dirichlet/0.1/1 err=0.555 elapsed=1551s
+Addepalli2022Efficient_WRN_34_10 70 84 tent/motion_blur/5/dirichlet/0.1/1 err=0.589 elapsed=1594s
+Addepalli2022Efficient_WRN_34_10 71 84 source/motion_blur/5/dirichlet/0.1/2 err=0.456 elapsed=1597s
+Addepalli2022Efficient_WRN_34_10 72 84 tent/motion_blur/5/dirichlet/0.1/2 err=0.423 elapsed=1639s
+Addepalli2022Efficient_WRN_34_10 73 84 source/zoom_blur/3/dirichlet/0.1/0 err=0.461 elapsed=1642s
+Addepalli2022Efficient_WRN_34_10 74 84 tent/zoom_blur/3/dirichlet/0.1/0 err=0.542 elapsed=1685s
+Addepalli2022Efficient_WRN_34_10 75 84 source/zoom_blur/3/dirichlet/0.1/1 err=0.386 elapsed=1688s
+Addepalli2022Efficient_WRN_34_10 76 84 tent/zoom_blur/3/dirichlet/0.1/1 err=0.400 elapsed=1731s
+Addepalli2022Efficient_WRN_34_10 77 84 source/zoom_blur/3/dirichlet/0.1/2 err=0.454 elapsed=1733s
+Addepalli2022Efficient_WRN_34_10 78 84 tent/zoom_blur/3/dirichlet/0.1/2 err=0.548 elapsed=1776s
+Addepalli2022Efficient_WRN_34_10 79 84 source/zoom_blur/5/dirichlet/0.1/0 err=0.512 elapsed=1779s
+Addepalli2022Efficient_WRN_34_10 80 84 tent/zoom_blur/5/dirichlet/0.1/0 err=0.607 elapsed=1822s
+Addepalli2022Efficient_WRN_34_10 81 84 source/zoom_blur/5/dirichlet/0.1/1 err=0.420 elapsed=1824s
+Addepalli2022Efficient_WRN_34_10 82 84 tent/zoom_blur/5/dirichlet/0.1/1 err=0.351 elapsed=1867s
+Addepalli2022Efficient_WRN_34_10 83 84 source/zoom_blur/5/dirichlet/0.1/2 err=0.480 elapsed=1870s
+Addepalli2022Efficient_WRN_34_10 84 84 tent/zoom_blur/5/dirichlet/0.1/2 err=0.517 elapsed=1913s
+complete Addepalli2022Efficient_WRN_34_10 1913s
+{
+"primary": {
+"verdict": "REPLICATED",
+"scored": [
+"Hendrycks2020AugMix_ResNeXt",
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent_higher": [
+"Hendrycks2020AugMix_ResNeXt",
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent": [
+147,
+166
+],
+"source": [
+44,
+110
+],
+"gap": 0.4855421686746988
+},
+"without_resnext": {
+"verdict": "REPLICATED",
+"scored": [
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent_higher": [
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent": [
+115,
+134
+],
+"source": [
+35,
+88
+],
+"gap": 0.4604816824966079
+},
+"sqrt": {
+"verdict": "REPLICATED",
+"scored": [
+"Hendrycks2020AugMix_ResNeXt",
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent_higher": [
+"Hendrycks2020AugMix_ResNeXt",
+"Modas2021PRIMEResNet18",
+"Hendrycks2020AugMix_WRN",
+"Addepalli2021Towards_PARN18",
+"Addepalli2021Towards_WRN34",
+"Addepalli2022Efficient_WRN_34_10"
+],
+"tent": [
+154,
+166
+],
+"source": [
+68,
+110
+],
+"gap": 0.3095290251916758
+},
+"paired": {
+"both": 97,
+"tent_missed": 86,
+"source_missed": 39,
+"tent_only_missed": 49,
+"source_only_missed": 2
+},
+"bands": {
+"tent/0.15-0.25": [
+103,
+111
+],
+"source/0.15-0.25": [
+40,
+67
+],
+"tent/0.25-0.35": [
+38,
+49
+],
+"source/0.25-0.35": [
+4,
+17
+],
+"tent/0.35-9": [
+6,
+6
+],
+"source/0.35-9": [
+0,
+26
+]
+},
+"model_bootstrap_gap_95": [
+0.3177409483271425,
+0.6204268292682927
+],
+"table": {
+"Hendrycks2020AugMix_ResNeXt": {
+"r0": 0.1990000158548355,
+"conf": 0.9099067382632742,
+"tent_err": 0.4021368944307879,
+"source_err": 0.4105396722694711,
+"tent_strict": 32,
+"tent_missed": 32,
+"source_strict": 22,
+"source_missed": 9,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": [
+"tent/motion_blur/3/dirichlet/0.1/2",
+"source/motion_blur/5/dirichlet/0.1/2",
+"tent/zoom_blur/3/dirichlet/0.1/1",
+"tent/zoom_blur/5/dirichlet/0.1/1"
+]
+},
+"Modas2021PRIMEResNet18": {
+"r0": 0.22500000894069672,
+"conf": 0.5845608189347244,
+"tent_err": 0.4532678458130076,
+"source_err": 0.36027776894736147,
+"tent_strict": 35,
+"tent_missed": 20,
+"source_strict": 15,
+"source_missed": 2,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": [
+"source/shot_noise/3/dirichlet/0.1/1",
+"source/zoom_blur/3/dirichlet/0.1/1"
+]
+},
+"Hendrycks2020AugMix_WRN": {
+"r0": 0.23800000548362732,
+"conf": 0.829722047443428,
+"tent_err": 0.44728173477841277,
+"source_err": 0.4358313385545024,
+"tent_strict": 34,
+"tent_missed": 33,
+"source_strict": 22,
+"source_missed": 6,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": [
+"source/shot_noise/3/dirichlet/0.1/0",
+"tent/motion_blur/5/dirichlet/0.1/0",
+"source/motion_blur/5/dirichlet/0.1/2",
+"tent/zoom_blur/3/dirichlet/0.1/0"
+]
+},
+"Addepalli2021Towards_PARN18": {
+"r0": 0.367000013589859,
+"conf": 0.4193207518478471,
+"tent_err": 0.5101408607873414,
+"source_err": 0.5043948285281659,
+"tent_strict": 19,
+"tent_missed": 19,
+"source_strict": 17,
+"source_missed": 14,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": [
+"source/gaussian_noise/3/dirichlet/0.1/2",
+"source/glass_blur/3/dirichlet/0.1/0"
+]
+},
+"Addepalli2021Towards_WRN34": {
+"r0": 0.3370000123977661,
+"conf": 0.5829535811311669,
+"tent_err": 0.5020515750738836,
+"source_err": 0.47513292453118733,
+"tent_strict": 21,
+"tent_missed": 21,
+"source_strict": 17,
+"source_missed": 8,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": []
+},
+"Addepalli2022Efficient_WRN_34_10": {
+"r0": 0.31300002336502075,
+"conf": 0.6035149072075174,
+"tent_err": 0.48411109910775274,
+"source_err": 0.47183530537618523,
+"tent_strict": 25,
+"tent_missed": 22,
+"source_strict": 17,
+"source_missed": 5,
+"tent_collapsed": 0,
+"source_collapsed": 0,
+"n_per_arm": 42,
+"fallback": [
+"source/shot_noise/5/dirichlet/0.1/0",
+"tent/defocus_blur/3/dirichlet/0.1/0",
+"tent/motion_blur/5/dirichlet/0.1/0",
+"source/zoom_blur/3/dirichlet/0.1/0",
+"source/zoom_blur/5/dirichlet/0.1/1"
+]
+}
+}
+}
+=== REPLICATION DONE
+=== ALL DONE

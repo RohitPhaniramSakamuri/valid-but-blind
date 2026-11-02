@@ -1,0 +1,17 @@
+[
+  {
+    "key": "Vianna2025ChannelSelective",
+    "title": "Channel-Selective Normalization for Label-Shift Robust Test-Time Adaptation",
+    "authors": ["Pedro Vianna", "Muawiz Sajjad Chaudhary", "Paria Mehrbod", "An Tang", "Guy Cloutier", "Guy Wolf", "Michael Eickenberg", "Eugene Belilovsky"],
+    "year": 2025,
+    "venue": "Proceedings of The 3rd Conference on Lifelong Learning Agents, PMLR 274:514–533",
+    "publication_status": "Published proceedings record uses year 2025; record event/version dates separately if expanded",
+    "url": "https://proceedings.mlr.press/v274/vianna25a.html",
+    "pdf_url": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/vianna25a/vianna25a.pdf",
+    "read_scope": "Primary proceedings metadata and abstract only during approach selection; full method not read",
+    "locations": ["Abstract", "Official BibTeX"],
+    "method_overlap": "Selective normalization channels reduce label-shift sensitivity; evaluates covariate and label shifts together on CIFAR10-C, ImageNet-C and fatty-liver classification.",
+    "limitation": "Direct predecessor for imbalance-aware normalization. A simple SOURCE/normalization gate and showing normalization fails under imbalance do not establish novelty. Exact matched-concentration evaluation overlap requires full-method inspection.",
+    "code_url": null
+  }
+]

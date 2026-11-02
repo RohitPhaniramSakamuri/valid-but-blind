@@ -1,0 +1,44 @@
+{
+  "dataset": "sklearn bundled digits, 1797 grayscale 8x8 images, labels0-9",
+  "dataset_sha256": "f6d9e39f37dc45d327f6db33428ee58970ccceabb2535a5c179de35886b70443",
+  "scaling": "divide pixels by16; no fitting of scaling on held-out data",
+  "seed": 241024,
+  "source_fit_n": 900,
+  "feature_width": 32,
+  "encoder": "MLPClassifier hidden32 ReLU, lbfgs alpha0.01 max_iter250",
+  "head": "source-standardized hidden features + LogisticRegression C1 max_iter500",
+  "python": "3.13.9",
+  "numpy": "2.2.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.8.0",
+  "threads": 1,
+  "source_checks": {
+    "source_fit": {
+      "n": 900,
+      "accuracy": 1.0,
+      "nll": 0.019389787542662164
+    },
+    "meta_train": {
+      "n": 400,
+      "accuracy": 0.98,
+      "nll": 0.06982339652119932
+    },
+    "meta_cal": {
+      "n": 200,
+      "accuracy": 0.975,
+      "nll": 0.09263301486929468
+    }
+  },
+  "warnings": [
+    "lbfgs failed to converge after 250 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=250).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+  ],
+  "elapsed_seconds": 0.5434405179985333,
+  "adaptation": {
+    "normalization": "support-only hidden means/variances frozen for query",
+    "entropy_steps": 3,
+    "entropy_lr": 0.05,
+    "gamma_beta_only": true,
+    "head_encoder_frozen": true
+  },
+  "scope": "Alternate-data CPU mechanism demonstration; not native Tent/CIFAR-C reproduction"
+}

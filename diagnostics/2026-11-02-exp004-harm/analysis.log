@@ -1,0 +1,337 @@
+{
+"verdict": "NOT SHOWN",
+"target": [
+51,
+61
+],
+"models_with_target": 6,
+"false_alarms": [
+1,
+6
+],
+"released_target": [
+23,
+61
+],
+"released_false": [
+3,
+6
+],
+"cert0_target": [
+0,
+61
+],
+"cert1_target": [
+9,
+61
+],
+"median_first": {
+"twin": 28.0,
+"released": 29.0
+},
+"collapsed_target": {
+"n": 56,
+"twin": [
+48,
+56
+],
+"released": [
+21,
+56
+]
+},
+"noncollapsed_target": {
+"twin": [
+3,
+5
+],
+"released": [
+2,
+5
+]
+},
+"per_model": {
+"Hendrycks2020AugMix_ResNeXt": {
+"twin": [
+8,
+8
+],
+"released": [
+4,
+8
+],
+"safe_twin": [
+0,
+0
+]
+},
+"Modas2021PRIMEResNet18": {
+"twin": [
+10,
+10
+],
+"released": [
+5,
+10
+],
+"safe_twin": [
+0,
+0
+]
+},
+"Hendrycks2020AugMix_WRN": {
+"twin": [
+4,
+5
+],
+"released": [
+4,
+5
+],
+"safe_twin": [
+1,
+2
+]
+},
+"Addepalli2021Towards_PARN18": {
+"twin": [
+7,
+12
+],
+"released": [
+4,
+12
+],
+"safe_twin": [
+0,
+3
+]
+},
+"Addepalli2021Towards_WRN34": {
+"twin": [
+10,
+14
+],
+"released": [
+0,
+14
+],
+"safe_twin": [
+0,
+1
+]
+},
+"Addepalli2022Efficient_WRN_34_10": {
+"twin": [
+12,
+12
+],
+"released": [
+6,
+12
+],
+"safe_twin": [
+0,
+0
+]
+}
+},
+"per_lr": {
+"0.01": {
+"twin": [
+17,
+27
+],
+"released": [
+20,
+27
+]
+},
+"0.05": {
+"twin": [
+34,
+34
+],
+"released": [
+3,
+34
+]
+}
+},
+"by_class": [
+{
+"model": "Hendrycks2020AugMix_ResNeXt",
+"lr": 0.001,
+"err": 0.764916646713391,
+"twin_ex": 0.514749963581562,
+"excess": 0.5659166308585555,
+"collapsed": false,
+"first": {
+"twin": 14,
+"released": 13,
+"cert0": 30,
+"cert1": null
+}
+},
+{
+"model": "Hendrycks2020AugMix_ResNeXt",
+"lr": 0.01,
+"err": 0.9694999696065982,
+"twin_ex": 0.514749963581562,
+"excess": 0.7704999537517627,
+"collapsed": true,
+"first": {
+"twin": 11,
+"released": 14,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Modas2021PRIMEResNet18",
+"lr": 0.001,
+"err": 0.8916666459602615,
+"twin_ex": 0.4879999741911888,
+"excess": 0.6666666370195647,
+"collapsed": true,
+"first": {
+"twin": 17,
+"released": 15,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Modas2021PRIMEResNet18",
+"lr": 0.01,
+"err": 0.9779999743370961,
+"twin_ex": 0.4879999741911888,
+"excess": 0.7529999653963994,
+"collapsed": true,
+"first": {
+"twin": 10,
+"released": 9,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Hendrycks2020AugMix_WRN",
+"lr": 0.001,
+"err": 0.7357499803571651,
+"twin_ex": 0.48899998515844345,
+"excess": 0.4977499748735378,
+"collapsed": false,
+"first": {
+"twin": 15,
+"released": 12,
+"cert0": 19,
+"cert1": 30
+}
+},
+{
+"model": "Hendrycks2020AugMix_WRN",
+"lr": 0.01,
+"err": 0.9370833127914617,
+"twin_ex": 0.48899998515844345,
+"excess": 0.6990833073078344,
+"collapsed": true,
+"first": {
+"twin": 14,
+"released": 13,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2021Towards_PARN18",
+"lr": 0.001,
+"err": 0.8356666478794068,
+"twin_ex": 0.3989999681711197,
+"excess": 0.4686666342895478,
+"collapsed": true,
+"first": {
+"twin": 66,
+"released": 27,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2021Towards_PARN18",
+"lr": 0.01,
+"err": 0.9666666403257599,
+"twin_ex": 0.3989999681711197,
+"excess": 0.5996666267359009,
+"collapsed": true,
+"first": {
+"twin": 29,
+"released": 15,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2021Towards_WRN34",
+"lr": 0.001,
+"err": 0.8449999804608523,
+"twin_ex": 0.4099999696016312,
+"excess": 0.5079999680630862,
+"collapsed": true,
+"first": {
+"twin": 37,
+"released": 27,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2021Towards_WRN34",
+"lr": 0.01,
+"err": 0.9660833059654882,
+"twin_ex": 0.4099999696016312,
+"excess": 0.6290832935677221,
+"collapsed": true,
+"first": {
+"twin": 24,
+"released": 19,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2022Efficient_WRN_34_10",
+"lr": 0.001,
+"err": 0.9120833106649419,
+"twin_ex": 0.4189999610185623,
+"excess": 0.5990832872999211,
+"collapsed": true,
+"first": {
+"twin": 27,
+"released": 17,
+"cert0": null,
+"cert1": null
+}
+},
+{
+"model": "Addepalli2022Efficient_WRN_34_10",
+"lr": 0.01,
+"err": 0.9744166432879865,
+"twin_ex": 0.4189999610185623,
+"excess": 0.6614166199229657,
+"collapsed": true,
+"first": {
+"twin": 15,
+"released": 10,
+"cert0": null,
+"cert1": null
+}
+}
+],
+"streams": 132,
+"status": {
+"target": 61,
+"safe": 6,
+"other": 53
+}
+}

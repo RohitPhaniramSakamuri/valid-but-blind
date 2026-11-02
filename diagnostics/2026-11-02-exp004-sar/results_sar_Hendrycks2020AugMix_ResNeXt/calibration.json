@@ -1,0 +1,9 @@
+{
+ "model": "Hendrycks2020AugMix_ResNeXt",
+ "r0": 0.1990000158548355,
+ "q_hat0": 0.11999999731779099,
+ "false_alarm0": 0.17000000178813934,
+ "n_calib": 1000,
+ "torch": "2.4.1+cu124",
+ "gpu": "NVIDIA H100 80GB HBM3"
+}

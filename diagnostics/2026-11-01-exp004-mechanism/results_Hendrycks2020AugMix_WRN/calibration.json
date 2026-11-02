@@ -1,0 +1,9 @@
+{
+ "model": "Hendrycks2020AugMix_WRN",
+ "r0": 0.23800000548362732,
+ "q_hat0": 0.23999999463558197,
+ "false_alarm0": 0.11700000613927841,
+ "n_calib": 1000,
+ "torch": "2.4.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 4090"
+}

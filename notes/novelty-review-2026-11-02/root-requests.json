@@ -1,0 +1,116 @@
+[
+  {
+    "filename": "Schirmer2025Monitoring-neurips.pdf",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/746960ad49ddb47248970a0e1404230c-Paper-Conference.pdf",
+    "source": "Schirmer2025Monitoring-neurips",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "NeurIPS2023.html",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023",
+    "source": "NeurIPS2023",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "NeurIPS2024.html",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024",
+    "source": "NeurIPS2024",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "NeurIPS2025.html",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+    "source": "NeurIPS2025",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "NeurIPS2026.html",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2026",
+    "source": "NeurIPS2026",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "CVPR2023.html",
+    "url": "https://openaccess.thecvf.com/CVPR2023?day=all",
+    "source": "CVPR2023",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "CVPR2024.html",
+    "url": "https://openaccess.thecvf.com/CVPR2024?day=all",
+    "source": "CVPR2024",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "CVPR2025.html",
+    "url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+    "source": "CVPR2025",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "CVPR2026.html",
+    "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+    "source": "CVPR2026",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "ICML2023.html",
+    "url": "https://proceedings.mlr.press/v202/",
+    "source": "ICML2023",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "ICML2024.html",
+    "url": "https://proceedings.mlr.press/v235/",
+    "source": "ICML2024",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "ICML2025.html",
+    "url": "https://proceedings.mlr.press/v267/",
+    "source": "ICML2025",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "ICML2026.html",
+    "url": "https://proceedings.mlr.press/v306/",
+    "source": "ICML2026",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "JMLR-v24.html",
+    "url": "https://www.jmlr.org/papers/v24/",
+    "source": "JMLR-v24",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "JMLR-v25.html",
+    "url": "https://www.jmlr.org/papers/v25/",
+    "source": "JMLR-v25",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "JMLR-v26.html",
+    "url": "https://www.jmlr.org/papers/v26/",
+    "source": "JMLR-v26",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "JMLR-v27.html",
+    "url": "https://www.jmlr.org/papers/v27/",
+    "source": "JMLR-v27",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "ECVA.html",
+    "url": "https://www.ecva.net/papers.php",
+    "source": "ECVA",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  },
+  {
+    "filename": "DMLR.html",
+    "url": "https://data.mlr.press/",
+    "source": "DMLR",
+    "query": "public proceedings title list; screen test-time/adaptation, risk monitoring, failure detection, calibration, conformal, accuracy/performance estimation"
+  }
+]

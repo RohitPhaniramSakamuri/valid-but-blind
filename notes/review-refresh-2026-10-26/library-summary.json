@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "total_distinct_records": 103,
+  "scholarly_records": 101,
+  "benchmark_documentation_records": 2,
+  "inherited_records": 48,
+  "added_distinct_records": 55,
+  "freshly_inspected_distinct_records": 68,
+  "new_paper_note_count": 55,
+  "aliases": {
+    "Schneider2020CovariateAdaptation": "Schneider2020BNAdapt",
+    "Zhou2026RecoveryComplexity": "Zhou2026Learnability",
+    "Park2023LabelShiftAdapter": "Park2023LSA"
+  },
+  "historical_primary_pdf_count": 9,
+  "additional_primary_pdfs": [
+    "notes/review-refresh-2026-10-26/verifier-evidence/Vianna2025ChannelSelective.pdf"
+  ],
+  "scope": "Selective reading, primary-source metadata verification, and document critique. No research experiments or implementation tests."
+}

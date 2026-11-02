@@ -1,0 +1,3964 @@
+[26/11/01 15:10:14] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:14] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['gaussian_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151014.txt
+LOG_TIME: 261101_151014
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_gaussian_noise_5_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_gaussian_noise_5_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:10:14] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:14] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['gaussian_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151014.txt
+LOG_TIME: 261101_151014
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_gaussian_noise_3_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_gaussian_noise_3_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:10:14] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:14] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['gaussian_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151014.txt
+LOG_TIME: 261101_151014
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_gaussian_noise_3_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_gaussian_noise_3_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 37, in evaluate
+    base_model = load_model(cfg).cuda()
+  File "/root/exp004/tta-monitor/lib/load_model.py", line 73, in load_model
+    model = robustbench.utils.load_model(
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 601, in _apply
+    param_applied = fn(param)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+[26/11/01 15:10:20] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:20] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['shot_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151020.txt
+LOG_TIME: 261101_151020
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_shot_noise_3_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_shot_noise_3_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:10:39] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:10:39] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:10:39] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:10:39] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:10:39] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:10:39] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:10:39] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:10:39] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:10:39] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:10:39] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:10:47] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:10:47] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:10:47] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:10:47] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:10:47] [monitor.py:   83]: ********* CALIBRATION **********
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[26/11/01 15:10:54] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:54] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['shot_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151054.txt
+LOG_TIME: 261101_151054
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_shot_noise_3_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_shot_noise_3_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:10:54] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:54] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['shot_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151054.txt
+LOG_TIME: 261101_151054
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_shot_noise_5_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_shot_noise_5_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:10:54] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:10:54] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['shot_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151054.txt
+LOG_TIME: 261101_151054
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_shot_noise_5_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_shot_noise_5_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:11:28] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:11:28] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:11:28] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:11:28] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:11:28] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:11:29] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:11:29] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:11:29] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:11:29] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:11:29] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:11:29] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:11:29] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:11:29] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:11:29] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:11:29] [monitor.py:   83]: ********* CALIBRATION **********
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[26/11/01 15:11:40] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:11:40] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['impulse_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151140.txt
+LOG_TIME: 261101_151140
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_impulse_noise_3_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_impulse_noise_3_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:11:40] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:11:40] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['impulse_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151140.txt
+LOG_TIME: 261101_151140
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_impulse_noise_3_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_impulse_noise_3_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:11:40] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:11:40] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['impulse_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151140.txt
+LOG_TIME: 261101_151140
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_impulse_noise_5_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_impulse_noise_5_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:12:13] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:13] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:13] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:13] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:13] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:12:14] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:14] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:14] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:14] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:14] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:12:14] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:14] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:14] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:14] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:14] [monitor.py:   83]: ********* CALIBRATION **********
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[26/11/01 15:12:19] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:12:19] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['impulse_noise']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151219.txt
+LOG_TIME: 261101_151219
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_impulse_noise_5_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_impulse_noise_5_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:12:19] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:12:19] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['defocus_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151219.txt
+LOG_TIME: 261101_151219
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_defocus_blur_3_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_defocus_blur_3_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:12:19] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:12:19] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['defocus_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151219.txt
+LOG_TIME: 261101_151219
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_defocus_blur_3_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_defocus_blur_3_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:12:53] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:53] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:53] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:53] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:53] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:12:53] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:53] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:53] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:53] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:53] [monitor.py:   83]: ********* CALIBRATION **********
+[26/11/01 15:12:53] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:12:53] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:12:53] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:12:53] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:12:53] [monitor.py:   83]: ********* CALIBRATION **********
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 250.00 MiB (GPU 0; 23.52 GiB total capacity; 103.12 MiB already allocated; 185.19 MiB free; 108.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[26/11/01 15:12:58] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:12:58] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['defocus_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151258.txt
+LOG_TIME: 261101_151258
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_defocus_blur_5_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_defocus_blur_5_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 106.00 MiB (GPU 0; 23.52 GiB total capacity; 353.12 MiB already allocated; 81.19 MiB free; 358.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[26/11/01 15:13:11] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:13:11] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['defocus_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151311.txt
+LOG_TIME: 261101_151311
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_defocus_blur_5_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_defocus_blur_5_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:13:31] [monitor.py:   45]: test-time adaptation: TENT
+[26/11/01 15:13:31] [monitor.py:  232]: model for adaptation: Hendrycks2020AugMixResNeXtNet(
+  (conv_1_3x3): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn_1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+  (stage_1): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_2): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (stage_3): Sequential(
+    (0): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (1): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+    (2): ResNeXtBottleneck(
+      (conv_reduce): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_reduce): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4, bias=False)
+      (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      (conv_expand): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn_expand): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (classifier): Linear(in_features=1024, out_features=100, bias=True)
+)
+[26/11/01 15:13:31] [monitor.py:  233]: params for adaptation: ['bn_1.weight', 'bn_1.bias', 'stage_1.0.bn_reduce.weight', 'stage_1.0.bn_reduce.bias', 'stage_1.0.bn.weight', 'stage_1.0.bn.bias', 'stage_1.0.bn_expand.weight', 'stage_1.0.bn_expand.bias', 'stage_1.0.downsample.1.weight', 'stage_1.0.downsample.1.bias', 'stage_1.1.bn_reduce.weight', 'stage_1.1.bn_reduce.bias', 'stage_1.1.bn.weight', 'stage_1.1.bn.bias', 'stage_1.1.bn_expand.weight', 'stage_1.1.bn_expand.bias', 'stage_1.2.bn_reduce.weight', 'stage_1.2.bn_reduce.bias', 'stage_1.2.bn.weight', 'stage_1.2.bn.bias', 'stage_1.2.bn_expand.weight', 'stage_1.2.bn_expand.bias', 'stage_2.0.bn_reduce.weight', 'stage_2.0.bn_reduce.bias', 'stage_2.0.bn.weight', 'stage_2.0.bn.bias', 'stage_2.0.bn_expand.weight', 'stage_2.0.bn_expand.bias', 'stage_2.0.downsample.1.weight', 'stage_2.0.downsample.1.bias', 'stage_2.1.bn_reduce.weight', 'stage_2.1.bn_reduce.bias', 'stage_2.1.bn.weight', 'stage_2.1.bn.bias', 'stage_2.1.bn_expand.weight', 'stage_2.1.bn_expand.bias', 'stage_2.2.bn_reduce.weight', 'stage_2.2.bn_reduce.bias', 'stage_2.2.bn.weight', 'stage_2.2.bn.bias', 'stage_2.2.bn_expand.weight', 'stage_2.2.bn_expand.bias', 'stage_3.0.bn_reduce.weight', 'stage_3.0.bn_reduce.bias', 'stage_3.0.bn.weight', 'stage_3.0.bn.bias', 'stage_3.0.bn_expand.weight', 'stage_3.0.bn_expand.bias', 'stage_3.0.downsample.1.weight', 'stage_3.0.downsample.1.bias', 'stage_3.1.bn_reduce.weight', 'stage_3.1.bn_reduce.bias', 'stage_3.1.bn.weight', 'stage_3.1.bn.bias', 'stage_3.1.bn_expand.weight', 'stage_3.1.bn_expand.bias', 'stage_3.2.bn_reduce.weight', 'stage_3.2.bn_reduce.bias', 'stage_3.2.bn.weight', 'stage_3.2.bn.bias', 'stage_3.2.bn_expand.weight', 'stage_3.2.bn_expand.bias']
+[26/11/01 15:13:31] [monitor.py:  234]: optimizer for adaptation: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0
+)
+[26/11/01 15:13:31] [monitor.py:   83]: ********* CALIBRATION **********
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 250.00 MiB (GPU 0; 23.52 GiB total capacity; 103.12 MiB already allocated; 25.19 MiB free; 108.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 85, in evaluate
+    calib_dict = calibrate_on_source(cfg)
+  File "/root/exp004/tta-monitor/lib/calibration.py", line 33, in calibrate_on_source
+    logits, labels = eval.forward_pass(model, calib_data)
+  File "/root/exp004/tta-monitor/lib/evaluation.py", line 205, in forward_pass
+    outputs = model(imgs.to(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/cifar100.py", line 95, in forward
+    return super().forward(x)
+  File "/root/exp004/tta-monitor/robustbench/model_zoo/architectures/resnext.py", line 163, in forward
+    x = self.conv_1_3x3(x)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+You can try to repro this exception using the following code snippet. If that doesn't trigger the error, please include your original repro script when reporting this issue.
+
+import torch
+torch.backends.cuda.matmul.allow_tf32 = True
+torch.backends.cudnn.benchmark = True
+torch.backends.cudnn.deterministic = False
+torch.backends.cudnn.allow_tf32 = True
+data = torch.randn([1000, 3, 32, 32], dtype=torch.float, device='cuda', requires_grad=True)
+net = torch.nn.Conv2d(3, 64, kernel_size=[3, 3], padding=[1, 1], stride=[1, 1], dilation=[1, 1], groups=1)
+net = net.cuda().float()
+out = net(data)
+out.backward(torch.randn_like(out))
+torch.cuda.synchronize()
+
+ConvolutionParams 
+    data_type = CUDNN_DATA_FLOAT
+    padding = [1, 1, 0]
+    stride = [1, 1, 0]
+    dilation = [1, 1, 0]
+    groups = 1
+    deterministic = false
+    allow_tf32 = true
+input: TensorDescriptor 0x55b858c61970
+    type = CUDNN_DATA_FLOAT
+    nbDims = 4
+    dimA = 1000, 3, 32, 32, 
+    strideA = 3072, 1024, 32, 1, 
+output: TensorDescriptor 0x55b858c61520
+    type = CUDNN_DATA_FLOAT
+    nbDims = 4
+    dimA = 1000, 64, 32, 32, 
+    strideA = 65536, 1024, 32, 1, 
+weight: FilterDescriptor 0x55b84e903e30
+    type = CUDNN_DATA_FLOAT
+    tensor_format = CUDNN_TENSOR_NCHW
+    nbDims = 4
+    dimA = 64, 3, 3, 3, 
+Pointer addresses: 
+    input: 0x7de3eac00000
+    output: 0x7de3da000000
+    weight: 0x7de3f39fbe00
+
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/../authors_stream.py", line 49, in <module>
+    monitor.evaluate("evaluation")
+  File "/root/exp004/tta-monitor/monitor.py", line 37, in evaluate
+    base_model = load_model(cfg).cuda()
+  File "/root/exp004/tta-monitor/lib/load_model.py", line 73, in load_model
+    model = robustbench.utils.load_model(
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 601, in _apply
+    param_applied = fn(param)
+  File "/root/exp004/.venv_auth/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+[26/11/01 15:13:36] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:13:36] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['glass_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151336.txt
+LOG_TIME: 261101_151336
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_glass_blur_3_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_glass_blur_3_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:13:37] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:13:37] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [3]
+  TYPE: ['glass_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151337.txt
+LOG_TIME: 261101_151337
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_glass_blur_3_1
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_glass_blur_3_1
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None
+[26/11/01 15:13:37] [conf.py:  390]: PyTorch Version: torch=1.11.0+cu115, cuda=11.5, cudnn=8302
+[26/11/01 15:13:37] [conf.py:  391]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: /root/exp004/models
+CKPT_SEED: 1
+CORRUPTION:
+  ADD_LABEL_SHIFT: 9999
+  DATASET: cifar100
+  NUM_CLASS: 0
+  NUM_EX: 10000
+  SEVERITY: [5]
+  TYPE: ['glass_blur']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: /root/exp004/data
+DESC: 
+EATA:
+  D_MARGIN: 0.4
+  E_MARGIN: 0.12041199826
+  FISHER_ALPHA: 1
+  FISHER_SIZE: 2000
+  GPU: cuda
+LAME:
+  AFFINITY_TYPE: knn
+  KNN: 5
+  SIGMA: 1
+LGFE:
+  BATCH_NORM: False
+  COMPUTE_LOG_PARTITION: True
+  COVSTRUCTURE: full
+  INV_PRIOR: False
+  JITTER: 1e-05
+  K_KAPPA_OBS: False
+  K_KAPPA_TRANS: False
+  LEARN_0_NOISE: True
+  LEARN_MU_0: True
+  LEARN_OBS_NOISE: True
+  LEARN_PI: True
+  LEARN_TRANS_NOISE: True
+  MEAN_INIT_MODE: last_mean
+  NORMALIZE: True
+  OBS_NOISE_INIT: 100
+  PREDICTION_MODE: post_mean
+  REGULARIZATION: jitter
+  REG_JITTER: 1e-05
+  RESET_OBS_NOISE: False
+  RESET_TRANS_NOISE: False
+  RETURN_LOGITS: True
+  S: 3
+  SAMPLE: False
+  TRANS_NOISE_INIT: 100
+LOG_DEST: tent_261101_151337.txt
+LOG_TIME: 261101_151337
+MODEL:
+  ADAPTATION: tent
+  ARCH: Hendrycks2020AugMix_ResNeXt
+  CKPT: None
+  EPISODIC: False
+  RESET_EVERY: None
+MONITORING:
+  ALPHA_PROD_1: 0.15
+  ALPHA_PROD_2: 0.025
+  ALPHA_SOURCE: 0.025
+  CALIB_PROC: max_f1
+  CALIB_SEED: 12
+  CALIB_SIZE: 1000
+  CONT_CALIB: True
+  CONT_CALIB_PROC: max_f1
+  CS: predictably-mixed
+  E: 0_1_loss
+  EPSILON_TOL: 0.1
+  ERROR_DIST: expectation
+  E_HAT: max_class_prob
+  FDP_CUTOFF: 0.2
+  FDP_CUTOFF_CONT_CALIB_DELTA: None
+  Q_HAT_MAX: 0.99
+  Q_HAT_MIN: 0.001
+  Q_HAT_STEP: 0.001
+  Q_MAX: 0.9
+  Q_MIN: 0.01
+  Q_STEP: 0.01
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  MT: 0.999
+  NESTEROV: True
+  RST: 0.01
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 12
+RUN_NAME: _Hendrycks2020AugMix_ResNeXt_glass_blur_5_0
+RoTTA:
+  ALPHA: 0.05
+  LAMBDA_T: 1.0
+  LAMBDA_U: 1.0
+  MEMORY_SIZE: 64
+  NU: 0.001
+  UPDATE_FREQUENCY: 64
+SAR:
+  MARGIN_E0: 0.12041199826
+  P: 0.05
+SAVE_DIR: ./output
+SAVE_PATH: /root/exp004/authors_tmp/tent_Hendrycks2020AugMix_ResNeXt_glass_blur_5_0
+SHOT:
+  BETA: 0.1
+  update_bn_only: False
+T3A:
+  CACHED_LOADER: False
+  FILTER_K: None
+TEST:
+  BATCH_ORDER: uniform
+  BATCH_SIZE: 100
+  LABEL_SHIFT: False
+  RESET: new_corruption
+  SAVE: True
+  SHUFFLE: False
+  SUBSAMPLE_P: None

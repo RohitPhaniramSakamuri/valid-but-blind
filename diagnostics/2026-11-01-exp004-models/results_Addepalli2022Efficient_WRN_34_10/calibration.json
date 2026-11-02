@@ -1,0 +1,9 @@
+{
+ "model": "Addepalli2022Efficient_WRN_34_10",
+ "r0": 0.31300002336502075,
+ "q_hat0": 0.8400000333786011,
+ "false_alarm0": 0.1469999998807907,
+ "n_calib": 1000,
+ "torch": "2.4.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 4090"
+}

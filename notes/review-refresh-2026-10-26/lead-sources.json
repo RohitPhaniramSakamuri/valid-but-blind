@@ -1,0 +1,207 @@
+[
+  {
+    "key": "Ross2011DAgger", "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+    "authors": ["Stephane Ross", "Geoffrey Gordon", "Drew Bagnell"], "year": 2011,
+    "venue": "AISTATS 2011, PMLR 15:627–635", "entry_type": "inproceedings",
+    "url": "https://proceedings.mlr.press/v15/ross11a.html",
+    "read_scope": "Official proceedings metadata, abstract and PDF introduction; selective reading.",
+    "locations": ["Abstract", "Introduction"],
+    "method_overlap": "DAgger addresses learning on the distribution of states induced by the learner's own decisions. This principle is prior art for autonomous adaptation controllers.",
+    "limitation": "Its expert-feedback and reduction assumptions must not be silently transferred to unlabeled target TTA. Auxiliary labeled rollouts are development supervision.",
+    "publication_status": "Official AISTATS proceedings verified on 26 October 2026."
+  },
+  {
+    "key": "Sun2020TTT", "title": "Test-Time Training with Self-Supervision for Generalization under Distribution Shifts",
+    "authors": ["Yu Sun", "Xiaolong Wang", "Zhuang Liu", "John Miller", "Alexei Efros", "Moritz Hardt"], "year": 2020,
+    "venue": "ICML 2020, PMLR 119:9229–9248", "entry_type": "inproceedings",
+    "url": "https://proceedings.mlr.press/v119/sun20b.html",
+    "read_scope": "Official metadata, abstract and PDF introduction/method summary, not full experimental audit.",
+    "locations": ["Abstract", "Introduction", "Section 4 overview"],
+    "method_overlap": "Learns from an auxiliary self-supervised task at test time; online variant retains updates. Gradient alignment gives a restricted condition for improvement.",
+    "limitation": "Requires source-stage preparation of the auxiliary task. Our interpretation: improvement of that task need not imply improvement of classification on a new shift.",
+    "publication_status": "ICML 2020 official proceedings; linked 2019 preprint is the same work."
+  },
+  {
+    "key": "Liang2020SHOT", "title": "Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation",
+    "authors": ["Jian Liang", "Dapeng Hu", "Jiashi Feng"], "year": 2020,
+    "venue": "ICML 2020, PMLR 119:6028–6039", "entry_type": "inproceedings",
+    "url": "https://proceedings.mlr.press/v119/liang20a.html",
+    "read_scope": "Official proceedings metadata and abstract only.", "locations": ["Abstract"],
+    "method_overlap": "Freezes the source classifier and adapts the target feature extractor with information maximization and pseudo-labeling; foundational source-free adaptation comparator.",
+    "limitation": "Source-free domain adaptation is not automatically one-pass online TTA. Target access, clustering passes and source training must be matched before numerical comparison.",
+    "publication_status": "Official ICML proceedings verified."
+  },
+  {
+    "key": "Schneider2020BNAdapt", "title": "Improving robustness against common corruptions by covariate shift adaptation",
+    "authors": ["Steffen Schneider", "Evgenia Rusak", "Luisa Eck", "Oliver Bringmann", "Wieland Brendel", "Matthias Bethge"], "year": 2020,
+    "venue": "NeurIPS 2020, Advances in Neural Information Processing Systems 33", "entry_type": "inproceedings",
+    "url": "https://papers.neurips.cc/paper_files/paper/2020/hash/85690f81aadc1749175c187784afc9ee-Abstract.html",
+    "read_scope": "Official abstract, PDF introduction and normalization formulation; selective reading.",
+    "locations": ["Abstract", "Section 2", "Section 4 discussion of mixed shifts"],
+    "method_overlap": "Replacing or interpolating BatchNorm statistics is a strong, cheap corruption baseline, including on robust source checkpoints.",
+    "limitation": "Moment correction assumes useful shared target statistics; mixed conditions and class-mixture effects constrain it. Small batches require estimation/shrinkage choices.",
+    "publication_status": "Official NeurIPS 2020 proceedings verified."
+  },
+  {
+    "key": "Iwasawa2021T3A", "title": "Test-Time Classifier Adjustment Module for Model-Agnostic Domain Generalization",
+    "authors": ["Yusuke Iwasawa", "Yutaka Matsuo"], "year": 2021,
+    "venue": "NeurIPS 2021, Advances in Neural Information Processing Systems 34", "entry_type": "inproceedings",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/1415fe9fea0fa1e45dddcff5682239a0-Abstract.html",
+    "read_scope": "Official proceedings abstract and metadata; PDF first page.", "locations": ["Abstract"],
+    "method_overlap": "Updates pseudo-prototype class templates using unlabeled features without backpropagation; important inexpensive alternative to parameter adaptation.",
+    "limitation": "Our interpretation: pseudo-prototype quality depends on source features and pseudo-labels. Its DG source-training protocol differs from single-source corruption experiments.",
+    "publication_status": "Official NeurIPS 2021 proceedings verified."
+  },
+  {
+    "key": "Boudiaf2022LAME", "title": "Parameter-Free Online Test-Time Adaptation",
+    "authors": ["Malik Boudiaf", "Romain Mueller", "Ismail Ben Ayed", "Luca Bertinetto"], "year": 2022,
+    "venue": "CVPR 2022, pages 8344–8353", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Boudiaf_Parameter-Free_Online_Test-Time_Adaptation_CVPR_2022_paper.html",
+    "code_url": "https://github.com/fiveai/LAME",
+    "read_scope": "Official abstract/metadata and PDF objective/cross-shift validation passages.",
+    "locations": ["Abstract", "Equation 3", "Figure 3"],
+    "method_overlap": "Conservative graph-regularized output correction with frozen model parameters; already studies failure of scenario-specific tuning across shifts.",
+    "limitation": "Our interpretation: graph quality and the number/composition of simultaneously available samples limit refinement. Parameter-free does not mean hyperparameter-free.",
+    "publication_status": "Official CVPR proceedings and author repository verified."
+  },
+  {
+    "key": "Zhang2022MEMO", "title": "MEMO: Test Time Robustness via Adaptation and Augmentation",
+    "authors": ["Marvin Zhang", "Sergey Levine", "Chelsea Finn"], "year": 2022,
+    "venue": "NeurIPS 2022, Advances in Neural Information Processing Systems 35", "entry_type": "inproceedings",
+    "url": "https://papers.neurips.cc/paper_files/paper/2022/hash/fc28053a08f59fccb48b11f2e31e81c7-Abstract-Conference.html",
+    "doi": "10.52202/068431-2799",
+    "read_scope": "Official metadata/abstract and PDF introductory method description.", "locations": ["Abstract", "Introduction"],
+    "method_overlap": "Minimizes entropy of predictions averaged over augmented views of one input; removes a multi-input batch requirement.",
+    "limitation": "Our interpretation: multiple views and adaptation cost must be charged; the chosen transformations encode invariance assumptions that can fail under severe shifts.",
+    "publication_status": "Official NeurIPS proceedings verified."
+  },
+  {
+    "key": "Mirza2022DUA", "title": "The Norm Must Go On: Dynamic Unsupervised Domain Adaptation by Normalization",
+    "authors": ["M. Jehanzeb Mirza", "Jakub Micorek", "Horst Possegger", "Horst Bischof"], "year": 2022,
+    "venue": "CVPR 2022, pages 14765–14775", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Mirza_The_Norm_Must_Go_On_Dynamic_Unsupervised_Domain_Adaptation_by_CVPR_2022_paper.html",
+    "read_scope": "Official metadata/abstract and PDF first-page adaptive-momentum description.", "locations": ["Abstract", "Figure 1"],
+    "method_overlap": "Continuously updates BN statistics with adaptive momentum from limited unlabeled data; dynamic statistics control predates the proposed router.",
+    "limitation": "BN-dependent; our interpretation is that statistics updates cannot recover arbitrary lost semantic features and can mix incompatible stream conditions.",
+    "publication_status": "Official CVPR proceedings verified; related 2021 preprint linked work."
+  },
+  {
+    "key": "Gandelsman2022TTTMAE", "title": "Test-Time Training with Masked Autoencoders",
+    "authors": ["Yossi Gandelsman", "Yu Sun", "Xinlei Chen", "Alexei Efros"], "year": 2022,
+    "venue": "NeurIPS 2022, Advances in Neural Information Processing Systems 35", "entry_type": "inproceedings",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/bcdec1c2d60f94a93b6e36f937aa0530-Abstract-Conference.html",
+    "doi": "10.52202/068431-2130", "code_url": "https://github.com/yossigandelsman/test_time_training_mae",
+    "read_scope": "Official abstract, metadata, PDF introduction and source repository overview.", "locations": ["Abstract", "Introduction"],
+    "method_overlap": "Single-sample reconstruction-based adaptation supplies a self-supervised alternative to confidence minimization.",
+    "limitation": "Requires a reconstruction-compatible source setup. Our interpretation: reconstruction quality and classification utility can diverge; runtime includes repeated adaptation.",
+    "publication_status": "Official NeurIPS proceedings verified."
+  },
+  {
+    "key": "Shu2022TPT", "title": "Test-Time Prompt Tuning for Zero-Shot Generalization in Vision-Language Models",
+    "authors": ["Manli Shu", "Weili Nie", "De-An Huang", "Zhiding Yu", "Tom Goldstein", "Anima Anandkumar", "Chaowei Xiao"], "year": 2022,
+    "venue": "NeurIPS 2022, Advances in Neural Information Processing Systems 35", "entry_type": "inproceedings",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/5bf2b802e24106064dc547ae9283bb0c-Abstract-Conference.html",
+    "doi": "10.52202/068431-1038", "code_url": "https://github.com/azshue/tpt",
+    "read_scope": "Official proceedings abstract/metadata and repository setting descriptions.", "locations": ["Abstract", "Repository overview"],
+    "method_overlap": "Optimizes text prompts on confidence-selected augmented views of a single test image for CLIP zero-shot classification.",
+    "limitation": "VLM setup and multiple views differ from CNN BN adaptation; source/pretrained prompt initialization and adaptation latency must be declared.",
+    "publication_status": "Official NeurIPS proceedings verified."
+  },
+  {
+    "key": "Press2023RDumb", "title": "RDumb: A simple approach that questions our progress in continual test-time adaptation",
+    "authors": ["Ori Press", "Steffen Schneider", "Matthias Kümmerer", "Matthias Bethge"], "year": 2023,
+    "venue": "NeurIPS 2023, Advances in Neural Information Processing Systems 36", "entry_type": "inproceedings",
+    "url": "https://papers.neurips.cc/paper_files/paper/2023/hash/7d640f377893fc5f22b5610e175ef7c3-Abstract-Conference.html",
+    "doi": "10.52202/075280-1735",
+    "read_scope": "Official metadata/abstract and selected PDF collapse/toy-model appendix passages.", "locations": ["Abstract", "Figure 8", "Appendix toy-model analysis"],
+    "method_overlap": "Introduces CCC long streams and a periodic-reset baseline that challenges apparent continual-adaptation gains.",
+    "limitation": "Our interpretation: fixed resets discard useful state and introduce a schedule, but sophisticated controllers must first beat this inexpensive comparator.",
+    "publication_status": "Official NeurIPS proceedings verified."
+  },
+  {
+    "key": "Dobler2023RMT", "title": "Robust Mean Teacher for Continual and Gradual Test-Time Adaptation",
+    "authors": ["Mario Döbler", "Robert A. Marsden", "Bin Yang"], "year": 2023,
+    "venue": "CVPR 2023, pages 7704–7714", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Dobler_Robust_Mean_Teacher_for_Continual_and_Gradual_Test-Time_Adaptation_CVPR_2023_paper.html",
+    "code_url": "https://github.com/mariodoebler/test-time-adaptation",
+    "read_scope": "Official metadata, abstract and PDF introduction describing source-free/source-data variants and DomainNet-126.", "locations": ["Abstract", "Introduction"],
+    "method_overlap": "Symmetric consistency loss and source-anchored contrastive adaptation for continual/gradual shifts; establishes continual DomainNet-126 protocol.",
+    "limitation": "Source-access and source-free variants differ; teachers, augmentation and contrastive computation must be charged. Our interpretation: pseudo-label error remains a constraint.",
+    "publication_status": "Official CVPR proceedings verified."
+  },
+  {
+    "key": "Yeo2023RNA", "title": "Rapid Network Adaptation: Learning to Adapt Neural Networks Using Test-Time Feedback",
+    "authors": ["Teresa Yeo", "Oğuzhan Fatih Kar", "Zahra Sodagar", "Amir Zamir"], "year": 2023,
+    "venue": "ICCV 2023", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yeo_Rapid_Network_Adaptation_Learning_to_Adapt_Neural_Networks_Using_Test-Time_ICCV_2023_paper.pdf",
+    "read_scope": "Indexed official CVF PDF title block/abstract/introduction and author project adaptation-signal descriptions; full training rollouts not audited.", "locations": ["Abstract", "Figure 1", "Author project Employed Test-time Adaptation Signals"],
+    "method_overlap": "Learns an amortized adaptation controller from error feedback; closed-loop learned updates and controller terminology are prior art.",
+    "limitation": "Classification examples use coarse/retrieval feedback from labeled training images; depth uses sparse geometric feedback. Not a weights-only unlabeled comparator. Exact training-state coverage remains to check; project code link is not verified RNA code.",
+    "project_url": "https://rapid-network-adaptation.epfl.ch/",
+    "publication_status": "Official ICCV PDF and author site verified; CVF HTML returned 403 during refresh."
+  },
+  {
+    "key": "Gao2024UniEnt", "title": "Unified Entropy Optimization for Open-Set Test-Time Adaptation",
+    "authors": ["Zhengqing Gao", "Xu-Yao Zhang", "Cheng-Lin Liu"], "year": 2024,
+    "venue": "CVPR 2024, pages 23975–23984", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Gao_Unified_Entropy_Optimization_for_Open-Set_Test-Time_Adaptation_CVPR_2024_paper.html",
+    "code_url": "https://github.com/gaozhengqing/UniEnt",
+    "read_scope": "Official abstract/metadata and PDF first-page setup.", "locations": ["Abstract", "Introduction"],
+    "method_overlap": "Separates candidate known/unknown inputs and applies opposing entropy objectives; selecting an objective according to shift/sample type is established.",
+    "limitation": "Our interpretation: noisy unknown/known partitions can corrupt adaptation. Closed-set accuracy alone misses unknown detection failures; its open-set scope is separate.",
+    "publication_status": "Official CVPR proceedings verified."
+  },
+  {
+    "key": "Karmanov2024TDA", "title": "Efficient Test-Time Adaptation of Vision-Language Models",
+    "authors": ["Adilbek Karmanov", "Dayan Guan", "Shijian Lu", "Abdulmotaleb El Saddik", "Eric Xing"], "year": 2024,
+    "venue": "CVPR 2024, pages 14162–14171", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Karmanov_Efficient_Test-Time_Adaptation_of_Vision-Language_Models_CVPR_2024_paper.pdf",
+    "code_url": "https://github.com/kdiAAA/TDA",
+    "read_scope": "Official CVF PDF first page, efficiency/comparison passages and author repository.", "locations": ["Abstract", "Section 4.2", "Tables 1–3"],
+    "method_overlap": "Dynamic positive/negative pseudo-label caches refine CLIP outputs without gradient updates; a useful inexpensive VLM reference.",
+    "limitation": "Our interpretation: caches depend on feature/pseudo-label quality and history. Backbone and natural-shift protocol must match; published timing is device-specific.",
+    "publication_status": "Official CVF PDF verified; HTML access returned 403."
+  },
+  {
+    "key": "Dai2025FreeTTA", "title": "Free on the Fly: Enhancing Flexibility in Test-Time Adaptation with Online EM",
+    "authors": ["Qiyuan Dai", "Sibei Yang"], "year": 2025,
+    "venue": "CVPR 2025, pages 9538–9548", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Dai_Free_on_the_Fly_Enhancing_Flexibility_in_Test-Time_Adaptation_with_CVPR_2025_paper.html",
+    "read_scope": "Official abstract/metadata and PDF comparison passages only.", "locations": ["Abstract", "Comparison on cross-domain/OOD benchmarks"],
+    "method_overlap": "Models target distributions using online expectation-maximization and zero-shot VLM priors without retaining individual past test samples.",
+    "limitation": "The abstract's 'no assumptions' is author framing, not accepted literally here. Our interpretation: model family and pseudo-posterior assumptions still govern updates.",
+    "publication_status": "Official CVPR 2025 proceedings verified; 2025 arXiv is linked version."
+  },
+  {
+    "key": "Bao2025Mint", "title": "Mint: A Simple Test-Time Adaptation of Vision-Language Models against Common Corruptions",
+    "authors": ["Wenxuan Bao", "Ruxi Deng", "Jingrui He"], "year": 2025,
+    "venue": "NeurIPS 2025, Advances in Neural Information Processing Systems 38", "entry_type": "inproceedings",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/54df19dc823e2cacff6d26640bac6c10-Paper-Conference.pdf",
+    "code_url": "https://github.com/baowenxuan/Mint",
+    "read_scope": "Official proceedings PDF first page and primary arXiv abstract/metadata; partial reading.", "locations": ["Abstract", "Introduction"],
+    "method_overlap": "Targets corruption-related collapse of embedding variance by maximizing estimated inter-class variance using accumulators.",
+    "limitation": "Our interpretation: pseudo-label-based variance estimates can change with class priors; successful corruption adaptation does not establish arbitrary mixed-prior robustness.",
+    "publication_status": "NeurIPS 2025 main proceedings PDF verified, beyond author-reported arXiv acceptance."
+  },
+  {
+    "key": "Lai2026GOLD", "title": "The Golden Subspace: Where Efficiency Meets Generalization in Continual Test-Time Adaptation",
+    "authors": ["Guannan Lai", "Da-Wei Zhou", "Zhenguo Li", "Han-Jia Ye"], "year": 2026,
+    "venue": "CVPR 2026, pages 3866–3875", "entry_type": "inproceedings",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lai_The_Golden_Subspace_Where_Efficiency_Meets_Generalization_in_Continual_Test-Time_CVPR_2026_paper.html",
+    "code_url": "https://github.com/AIGNLAI/GOLD",
+    "read_scope": "Official CVF metadata and abstract only.", "locations": ["Abstract"],
+    "method_overlap": "Low-rank directional feature adaptation with online subspace maintenance addresses efficiency/generalization in continual classification and segmentation.",
+    "limitation": "The stated subspace result is restricted to a single-step setting; no general multi-step stability theorem was verified. Full empirical protocol remains to read.",
+    "publication_status": "Official CVPR 2026 proceedings verified."
+  },
+  {
+    "key": "Sabour2026DriftTTA", "title": "Hidden Trajectories Don't Lie: Correcting Corruption Drift for Test-Time Adaptation",
+    "authors": ["Amirhossein Sabour", "Amir Khasahmadi", "Mengliu Zhao"], "year": 2026,
+    "venue": "arXiv:2610.24220v1", "entry_type": "misc",
+    "url": "https://arxiv.org/abs/2610.24220", "html_url": "https://arxiv.org/html/2610.24220v1",
+    "read_scope": "Primary metadata, abstract, introduction, Sections 3.1–3.3 and setting table; selective reading.", "locations": ["Sections 3.1–3.3", "Tables 1–2", "Appendix D heading"],
+    "method_overlap": "Learns offline hidden-trajectory correction adapters; online entropy optimization changes correction-strength scalars. Intermediate-feature shift gates are prior art.",
+    "limitation": "Source-free training still uses corrupted/further-corrupted pairs; Table 1 describes episodic online adaptation. Held-out-family training details need full audit before comparisons.",
+    "publication_status": "Preprint submitted 16 October 2026; no accepted venue verified."
+  }
+]

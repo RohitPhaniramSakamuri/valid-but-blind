@@ -1,0 +1,1282 @@
+{
+ "pools": {
+  "valid": {
+   "Blond_Hair": {
+    "bn": {
+     "did_pp": 0.95,
+     "ci95": [
+      -2.13,
+      3.8
+     ],
+     "per_seed": {
+      "1": 1.25,
+      "2": 2.25,
+      "3": -0.66
+     },
+     "per_corruption": {
+      "gaussian_blur": 2.33,
+      "gaussian_noise": -0.44
+     },
+     "ce_arm": 0.16,
+     "ce_source": -0.78,
+     "did_male_minority": -2.71,
+     "did_other_minority": 4.61,
+     "supported": false
+    },
+    "tent": {
+     "did_pp": -5.54,
+     "ci95": [
+      -7.85,
+      -1.54
+     ],
+     "per_seed": {
+      "1": -5.13,
+      "2": -7.07,
+      "3": -4.41
+     },
+     "per_corruption": {
+      "gaussian_blur": -3.58,
+      "gaussian_noise": -7.49
+     },
+     "ce_arm": -6.32,
+     "ce_source": -0.78,
+     "did_male_minority": 0.22,
+     "did_other_minority": -11.29,
+     "supported": true
+    },
+    "eta": {
+     "did_pp": -5.98,
+     "ci95": [
+      -9.14,
+      -2.24
+     ],
+     "per_seed": {
+      "1": -8.53,
+      "2": -4.56,
+      "3": -4.85
+     },
+     "per_corruption": {
+      "gaussian_blur": -3.91,
+      "gaussian_noise": -8.04
+     },
+     "ce_arm": -6.76,
+     "ce_source": -0.78,
+     "did_male_minority": -1.18,
+     "did_other_minority": -10.78,
+     "supported": true
+    },
+    "blend": {
+     "did_pp": 1.14,
+     "ci95": [
+      -0.85,
+      2.92
+     ],
+     "per_seed": {
+      "1": 0.68,
+      "2": 2.07,
+      "3": 0.68
+     },
+     "per_corruption": {
+      "gaussian_blur": 0.7,
+      "gaussian_noise": 1.58
+     },
+     "ce_arm": 0.36,
+     "ce_source": -0.78,
+     "did_male_minority": -1.88,
+     "did_other_minority": 4.17,
+     "supported": false
+    },
+    "descriptive": {
+     "source/natural": {
+      "ba_male": 50.79,
+      "ba_other": 57.64,
+      "gap": 6.86,
+      "cells": {
+       "y0g0": 99.9,
+       "y0g1": 100.0,
+       "y1g0": 15.4,
+       "y1g1": 1.6
+      }
+     },
+     "source/m10": {
+      "ba_male": 50.0,
+      "ba_other": 57.49,
+      "gap": 7.49,
+      "cells": {
+       "y0g0": 99.9,
+       "y0g1": 100.0,
+       "y1g0": 15.1,
+       "y1g1": 0.0
+      }
+     },
+     "source/m50": {
+      "ba_male": 50.85,
+      "ba_other": 57.61,
+      "gap": 6.76,
+      "cells": {
+       "y0g0": 99.8,
+       "y0g1": 100.0,
+       "y1g0": 15.4,
+       "y1g1": 1.7
+      }
+     },
+     "source/m90": {
+      "ba_male": 50.64,
+      "ba_other": 56.89,
+      "gap": 6.24,
+      "cells": {
+       "y0g0": 99.9,
+       "y0g1": 100.0,
+       "y1g0": 13.9,
+       "y1g1": 1.3
+      }
+     },
+     "bn/natural": {
+      "ba_male": 62.66,
+      "ba_other": 83.92,
+      "gap": 21.26,
+      "cells": {
+       "y0g0": 97.1,
+       "y0g1": 99.6,
+       "y1g0": 70.7,
+       "y1g1": 25.8
+      }
+     },
+     "bn/m10": {
+      "ba_male": 60.79,
+      "ba_other": 77.99,
+      "gap": 17.2,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 57.4,
+       "y1g1": 21.8
+      }
+     },
+     "bn/m50": {
+      "ba_male": 64.35,
+      "ba_other": 84.96,
+      "gap": 20.61,
+      "cells": {
+       "y0g0": 96.9,
+       "y0g1": 99.4,
+       "y1g0": 73.1,
+       "y1g1": 29.3
+      }
+     },
+     "bn/m90": {
+      "ba_male": 73.27,
+      "ba_other": 88.84,
+      "gap": 15.58,
+      "cells": {
+       "y0g0": 93.0,
+       "y0g1": 97.9,
+       "y1g0": 84.7,
+       "y1g1": 48.6
+      }
+     },
+     "tent/natural": {
+      "ba_male": 58.07,
+      "ba_other": 78.31,
+      "gap": 20.24,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 58.1,
+       "y1g1": 16.3
+      }
+     },
+     "tent/m10": {
+      "ba_male": 56.77,
+      "ba_other": 69.79,
+      "gap": 13.02,
+      "cells": {
+       "y0g0": 99.5,
+       "y0g1": 100.0,
+       "y1g0": 40.1,
+       "y1g1": 13.6
+      }
+     },
+     "tent/m50": {
+      "ba_male": 57.4,
+      "ba_other": 77.09,
+      "gap": 19.69,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 55.6,
+       "y1g1": 15.0
+      }
+     },
+     "tent/m90": {
+      "ba_male": 54.03,
+      "ba_other": 65.09,
+      "gap": 11.06,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 31.6,
+       "y1g1": 8.3
+      }
+     },
+     "eta/natural": {
+      "ba_male": 56.81,
+      "ba_other": 75.97,
+      "gap": 19.16,
+      "cells": {
+       "y0g0": 98.8,
+       "y0g1": 99.8,
+       "y1g0": 53.2,
+       "y1g1": 13.8
+      }
+     },
+     "eta/m10": {
+      "ba_male": 55.55,
+      "ba_other": 68.03,
+      "gap": 12.47,
+      "cells": {
+       "y0g0": 99.5,
+       "y0g1": 100.0,
+       "y1g0": 36.5,
+       "y1g1": 11.1
+      }
+     },
+     "eta/m50": {
+      "ba_male": 57.57,
+      "ba_other": 76.88,
+      "gap": 19.3,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 55.1,
+       "y1g1": 15.3
+      }
+     },
+     "eta/m90": {
+      "ba_male": 53.77,
+      "ba_other": 65.39,
+      "gap": 11.62,
+      "cells": {
+       "y0g0": 98.6,
+       "y0g1": 99.8,
+       "y1g0": 32.2,
+       "y1g1": 7.7
+      }
+     },
+     "blend/natural": {
+      "ba_male": 60.83,
+      "ba_other": 81.72,
+      "gap": 20.89,
+      "cells": {
+       "y0g0": 97.6,
+       "y0g1": 99.7,
+       "y1g0": 65.8,
+       "y1g1": 22.0
+      }
+     },
+     "blend/m10": {
+      "ba_male": 58.9,
+      "ba_other": 76.56,
+      "gap": 17.66,
+      "cells": {
+       "y0g0": 98.7,
+       "y0g1": 99.9,
+       "y1g0": 54.4,
+       "y1g1": 17.9
+      }
+     },
+     "blend/m50": {
+      "ba_male": 61.63,
+      "ba_other": 82.83,
+      "gap": 21.2,
+      "cells": {
+       "y0g0": 97.5,
+       "y0g1": 99.6,
+       "y1g0": 68.2,
+       "y1g1": 23.7
+      }
+     },
+     "blend/m90": {
+      "ba_male": 68.18,
+      "ba_other": 86.28,
+      "gap": 18.1,
+      "cells": {
+       "y0g0": 94.4,
+       "y0g1": 98.8,
+       "y1g0": 78.1,
+       "y1g1": 37.5
+      }
+     }
+    },
+    "clean_source_ba": {
+     "male": 68.61,
+     "other": 90.87
+    }
+   },
+   "Smiling": {
+    "bn": {
+     "did_pp": -0.23,
+     "ci95": [
+      -0.84,
+      0.42
+     ],
+     "per_seed": {
+      "1": -0.74,
+      "2": 0.42,
+      "3": -0.38
+     },
+     "per_corruption": {
+      "gaussian_blur": -0.29,
+      "gaussian_noise": -0.17
+     },
+     "ce_arm": -0.17,
+     "ce_source": 0.06,
+     "did_male_minority": -1.19,
+     "did_other_minority": 0.72,
+     "supported": false
+    },
+    "tent": {
+     "did_pp": -0.03,
+     "ci95": [
+      -1.36,
+      1.12
+     ],
+     "per_seed": {
+      "1": -1.11,
+      "2": 0.61,
+      "3": 0.4
+     },
+     "per_corruption": {
+      "gaussian_blur": -0.7,
+      "gaussian_noise": 0.63
+     },
+     "ce_arm": 0.03,
+     "ce_source": 0.06,
+     "did_male_minority": -1.06,
+     "did_other_minority": 0.99,
+     "supported": false
+    },
+    "eta": {
+     "did_pp": -0.06,
+     "ci95": [
+      -0.91,
+      0.84
+     ],
+     "per_seed": {
+      "1": -0.47,
+      "2": 0.34,
+      "3": -0.05
+     },
+     "per_corruption": {
+      "gaussian_blur": -0.66,
+      "gaussian_noise": 0.54
+     },
+     "ce_arm": 0.0,
+     "ce_source": 0.06,
+     "did_male_minority": -1.03,
+     "did_other_minority": 0.91,
+     "supported": false
+    },
+    "blend": {
+     "did_pp": 0.2,
+     "ci95": [
+      -0.3,
+      0.55
+     ],
+     "per_seed": {
+      "1": -0.11,
+      "2": 0.44,
+      "3": 0.26
+     },
+     "per_corruption": {
+      "gaussian_blur": -0.04,
+      "gaussian_noise": 0.44
+     },
+     "ce_arm": 0.26,
+     "ce_source": 0.06,
+     "did_male_minority": -0.53,
+     "did_other_minority": 0.92,
+     "supported": false
+    },
+    "descriptive": {
+     "source/natural": {
+      "ba_male": 55.33,
+      "ba_other": 56.41,
+      "gap": 1.08,
+      "cells": {
+       "y0g0": 100.0,
+       "y0g1": 100.0,
+       "y1g0": 12.8,
+       "y1g1": 10.7
+      }
+     },
+     "source/m10": {
+      "ba_male": 55.74,
+      "ba_other": 56.74,
+      "gap": 1.0,
+      "cells": {
+       "y0g0": 100.0,
+       "y0g1": 100.0,
+       "y1g0": 13.5,
+       "y1g1": 11.5
+      }
+     },
+     "source/m50": {
+      "ba_male": 55.15,
+      "ba_other": 56.79,
+      "gap": 1.64,
+      "cells": {
+       "y0g0": 100.0,
+       "y0g1": 99.9,
+       "y1g0": 13.6,
+       "y1g1": 10.4
+      }
+     },
+     "source/m90": {
+      "ba_male": 55.0,
+      "ba_other": 56.32,
+      "gap": 1.32,
+      "cells": {
+       "y0g0": 100.0,
+       "y0g1": 100.0,
+       "y1g0": 12.6,
+       "y1g1": 10.0
+      }
+     },
+     "bn/natural": {
+      "ba_male": 85.21,
+      "ba_other": 88.41,
+      "gap": 3.2,
+      "cells": {
+       "y0g0": 94.5,
+       "y0g1": 93.8,
+       "y1g0": 82.3,
+       "y1g1": 76.6
+      }
+     },
+     "bn/m10": {
+      "ba_male": 85.01,
+      "ba_other": 88.0,
+      "gap": 2.99,
+      "cells": {
+       "y0g0": 95.9,
+       "y0g1": 94.8,
+       "y1g0": 80.1,
+       "y1g1": 75.2
+      }
+     },
+     "bn/m50": {
+      "ba_male": 85.61,
+      "ba_other": 88.46,
+      "gap": 2.85,
+      "cells": {
+       "y0g0": 94.3,
+       "y0g1": 93.6,
+       "y1g0": 82.6,
+       "y1g1": 77.6
+      }
+     },
+     "bn/m90": {
+      "ba_male": 86.14,
+      "ba_other": 88.71,
+      "gap": 2.57,
+      "cells": {
+       "y0g0": 92.5,
+       "y0g1": 90.8,
+       "y1g0": 84.9,
+       "y1g1": 81.5
+      }
+     },
+     "tent/natural": {
+      "ba_male": 84.47,
+      "ba_other": 87.88,
+      "gap": 3.4,
+      "cells": {
+       "y0g0": 96.0,
+       "y0g1": 95.5,
+       "y1g0": 79.7,
+       "y1g1": 73.4
+      }
+     },
+     "tent/m10": {
+      "ba_male": 84.64,
+      "ba_other": 87.23,
+      "gap": 2.6,
+      "cells": {
+       "y0g0": 97.3,
+       "y0g1": 95.9,
+       "y1g0": 77.2,
+       "y1g1": 73.4
+      }
+     },
+     "tent/m50": {
+      "ba_male": 85.11,
+      "ba_other": 88.14,
+      "gap": 3.03,
+      "cells": {
+       "y0g0": 96.1,
+       "y0g1": 95.2,
+       "y1g0": 80.2,
+       "y1g1": 75.0
+      }
+     },
+     "tent/m90": {
+      "ba_male": 86.21,
+      "ba_other": 88.66,
+      "gap": 2.45,
+      "cells": {
+       "y0g0": 94.4,
+       "y0g1": 92.8,
+       "y1g0": 82.9,
+       "y1g1": 79.6
+      }
+     },
+     "eta/natural": {
+      "ba_male": 85.53,
+      "ba_other": 88.5,
+      "gap": 2.97,
+      "cells": {
+       "y0g0": 95.4,
+       "y0g1": 94.4,
+       "y1g0": 81.6,
+       "y1g1": 76.7
+      }
+     },
+     "eta/m10": {
+      "ba_male": 85.51,
+      "ba_other": 87.89,
+      "gap": 2.37,
+      "cells": {
+       "y0g0": 96.9,
+       "y0g1": 95.5,
+       "y1g0": 78.8,
+       "y1g1": 75.5
+      }
+     },
+     "eta/m50": {
+      "ba_male": 85.96,
+      "ba_other": 88.57,
+      "gap": 2.62,
+      "cells": {
+       "y0g0": 95.4,
+       "y0g1": 94.4,
+       "y1g0": 81.8,
+       "y1g1": 77.5
+      }
+     },
+     "eta/m90": {
+      "ba_male": 86.65,
+      "ba_other": 89.02,
+      "gap": 2.37,
+      "cells": {
+       "y0g0": 94.1,
+       "y0g1": 92.4,
+       "y1g0": 83.9,
+       "y1g1": 80.9
+      }
+     },
+     "blend/natural": {
+      "ba_male": 83.83,
+      "ba_other": 86.88,
+      "gap": 3.04,
+      "cells": {
+       "y0g0": 95.6,
+       "y0g1": 93.8,
+       "y1g0": 78.1,
+       "y1g1": 73.9
+      }
+     },
+     "blend/m10": {
+      "ba_male": 84.27,
+      "ba_other": 86.37,
+      "gap": 2.1,
+      "cells": {
+       "y0g0": 96.6,
+       "y0g1": 94.7,
+       "y1g0": 76.1,
+       "y1g1": 73.8
+      }
+     },
+     "blend/m50": {
+      "ba_male": 84.21,
+      "ba_other": 86.96,
+      "gap": 2.76,
+      "cells": {
+       "y0g0": 95.3,
+       "y0g1": 93.6,
+       "y1g0": 78.6,
+       "y1g1": 74.8
+      }
+     },
+     "blend/m90": {
+      "ba_male": 84.69,
+      "ba_other": 87.42,
+      "gap": 2.73,
+      "cells": {
+       "y0g0": 94.1,
+       "y0g1": 91.3,
+       "y1g0": 80.7,
+       "y1g1": 78.1
+      }
+     }
+    },
+    "clean_source_ba": {
+     "male": 91.69,
+     "other": 93.15
+    }
+   }
+  },
+  "test": {
+   "Blond_Hair": {
+    "bn": {
+     "did_pp": -4.15,
+     "ci95": [
+      -7.19,
+      0.04
+     ],
+     "per_seed": {
+      "1": -4.62,
+      "2": -4.37,
+      "3": -3.47
+     },
+     "per_corruption": {
+      "brightness": -6.09,
+      "contrast": -5.44,
+      "haze": -7.15,
+      "pixelate": 2.08
+     },
+     "ce_arm": -4.36,
+     "ce_source": -0.21,
+     "did_male_minority": -10.18,
+     "did_other_minority": 1.88,
+     "supported": false
+    },
+    "tent": {
+     "did_pp": -3.53,
+     "ci95": [
+      -6.23,
+      0.03
+     ],
+     "per_seed": {
+      "1": -5.4,
+      "2": -2.44,
+      "3": -2.74
+     },
+     "per_corruption": {
+      "brightness": -4.53,
+      "contrast": 0.62,
+      "haze": -6.8,
+      "pixelate": -3.41
+     },
+     "ce_arm": -3.74,
+     "ce_source": -0.21,
+     "did_male_minority": -0.47,
+     "did_other_minority": -6.59,
+     "supported": false
+    },
+    "eta": {
+     "did_pp": -5.23,
+     "ci95": [
+      -8.52,
+      -1.12
+     ],
+     "per_seed": {
+      "1": -7.08,
+      "2": -4.36,
+      "3": -4.26
+     },
+     "per_corruption": {
+      "brightness": -8.22,
+      "contrast": -0.09,
+      "haze": -8.43,
+      "pixelate": -4.2
+     },
+     "ce_arm": -5.45,
+     "ce_source": -0.21,
+     "did_male_minority": -2.18,
+     "did_other_minority": -8.29,
+     "supported": true
+    },
+    "blend": {
+     "did_pp": -2.91,
+     "ci95": [
+      -5.8,
+      1.56
+     ],
+     "per_seed": {
+      "1": -2.4,
+      "2": -3.43,
+      "3": -2.91
+     },
+     "per_corruption": {
+      "brightness": -5.4,
+      "contrast": -4.79,
+      "haze": -5.33,
+      "pixelate": 3.86
+     },
+     "ce_arm": -3.13,
+     "ce_source": -0.21,
+     "did_male_minority": -7.68,
+     "did_other_minority": 1.85,
+     "supported": false
+    },
+    "descriptive": {
+     "source/natural": {
+      "ba_male": 58.77,
+      "ba_other": 75.96,
+      "gap": 17.18,
+      "cells": {
+       "y0g0": 94.4,
+       "y0g1": 99.3,
+       "y1g0": 57.5,
+       "y1g1": 18.3
+      }
+     },
+     "source/m10": {
+      "ba_male": 59.31,
+      "ba_other": 75.92,
+      "gap": 16.61,
+      "cells": {
+       "y0g0": 94.6,
+       "y0g1": 99.4,
+       "y1g0": 57.3,
+       "y1g1": 19.2
+      }
+     },
+     "source/m50": {
+      "ba_male": 59.83,
+      "ba_other": 75.58,
+      "gap": 15.76,
+      "cells": {
+       "y0g0": 94.4,
+       "y0g1": 99.3,
+       "y1g0": 56.7,
+       "y1g1": 20.4
+      }
+     },
+     "source/m90": {
+      "ba_male": 58.93,
+      "ba_other": 75.68,
+      "gap": 16.75,
+      "cells": {
+       "y0g0": 94.7,
+       "y0g1": 99.3,
+       "y1g0": 56.7,
+       "y1g1": 18.6
+      }
+     },
+     "bn/natural": {
+      "ba_male": 69.58,
+      "ba_other": 88.25,
+      "gap": 18.67,
+      "cells": {
+       "y0g0": 95.9,
+       "y0g1": 99.1,
+       "y1g0": 80.6,
+       "y1g1": 40.1
+      }
+     },
+     "bn/m10": {
+      "ba_male": 62.42,
+      "ba_other": 84.93,
+      "gap": 22.51,
+      "cells": {
+       "y0g0": 97.2,
+       "y0g1": 99.6,
+       "y1g0": 72.6,
+       "y1g1": 25.3
+      }
+     },
+     "bn/m50": {
+      "ba_male": 73.12,
+      "ba_other": 89.24,
+      "gap": 16.12,
+      "cells": {
+       "y0g0": 95.4,
+       "y0g1": 98.8,
+       "y1g0": 83.1,
+       "y1g1": 47.5
+      }
+     },
+     "bn/m90": {
+      "ba_male": 78.75,
+      "ba_other": 91.22,
+      "gap": 12.46,
+      "cells": {
+       "y0g0": 92.9,
+       "y0g1": 96.8,
+       "y1g0": 89.5,
+       "y1g1": 60.7
+      }
+     },
+     "tent/natural": {
+      "ba_male": 62.23,
+      "ba_other": 81.82,
+      "gap": 19.59,
+      "cells": {
+       "y0g0": 97.9,
+       "y0g1": 99.7,
+       "y1g0": 65.8,
+       "y1g1": 24.8
+      }
+     },
+     "tent/m10": {
+      "ba_male": 62.17,
+      "ba_other": 80.13,
+      "gap": 17.96,
+      "cells": {
+       "y0g0": 98.1,
+       "y0g1": 99.6,
+       "y1g0": 62.1,
+       "y1g1": 24.7
+      }
+     },
+     "tent/m50": {
+      "ba_male": 63.16,
+      "ba_other": 83.63,
+      "gap": 20.47,
+      "cells": {
+       "y0g0": 97.7,
+       "y0g1": 99.6,
+       "y1g0": 69.5,
+       "y1g1": 26.7
+      }
+     },
+     "tent/m90": {
+      "ba_male": 60.64,
+      "ba_other": 77.13,
+      "gap": 16.49,
+      "cells": {
+       "y0g0": 98.0,
+       "y0g1": 99.6,
+       "y1g0": 56.3,
+       "y1g1": 21.7
+      }
+     },
+     "eta/natural": {
+      "ba_male": 60.81,
+      "ba_other": 80.28,
+      "gap": 19.47,
+      "cells": {
+       "y0g0": 98.1,
+       "y0g1": 99.7,
+       "y1g0": 62.4,
+       "y1g1": 21.9
+      }
+     },
+     "eta/m10": {
+      "ba_male": 59.31,
+      "ba_other": 78.0,
+      "gap": 18.68,
+      "cells": {
+       "y0g0": 98.5,
+       "y0g1": 99.7,
+       "y1g0": 57.5,
+       "y1g1": 18.9
+      }
+     },
+     "eta/m50": {
+      "ba_male": 62.02,
+      "ba_other": 82.35,
+      "gap": 20.33,
+      "cells": {
+       "y0g0": 97.9,
+       "y0g1": 99.7,
+       "y1g0": 66.8,
+       "y1g1": 24.3
+      }
+     },
+     "eta/m90": {
+      "ba_male": 58.89,
+      "ba_other": 74.15,
+      "gap": 15.26,
+      "cells": {
+       "y0g0": 98.4,
+       "y0g1": 99.6,
+       "y1g0": 49.9,
+       "y1g1": 18.2
+      }
+     },
+     "blend/natural": {
+      "ba_male": 68.53,
+      "ba_other": 88.18,
+      "gap": 19.64,
+      "cells": {
+       "y0g0": 95.6,
+       "y0g1": 99.2,
+       "y1g0": 80.7,
+       "y1g1": 37.9
+      }
+     },
+     "blend/m10": {
+      "ba_male": 63.01,
+      "ba_other": 85.44,
+      "gap": 22.42,
+      "cells": {
+       "y0g0": 96.8,
+       "y0g1": 99.5,
+       "y1g0": 74.0,
+       "y1g1": 26.5
+      }
+     },
+     "blend/m50": {
+      "ba_male": 71.21,
+      "ba_other": 88.98,
+      "gap": 17.77,
+      "cells": {
+       "y0g0": 95.2,
+       "y0g1": 98.9,
+       "y1g0": 82.7,
+       "y1g1": 43.5
+      }
+     },
+     "blend/m90": {
+      "ba_male": 76.24,
+      "ba_other": 90.93,
+      "gap": 14.69,
+      "cells": {
+       "y0g0": 93.1,
+       "y0g1": 97.6,
+       "y1g0": 88.8,
+       "y1g1": 54.8
+      }
+     }
+    },
+    "clean_source_ba": {
+     "male": 69.53,
+     "other": 90.87
+    }
+   },
+   "Smiling": {
+    "bn": {
+     "did_pp": -0.49,
+     "ci95": [
+      -0.9,
+      -0.09
+     ],
+     "per_seed": {
+      "1": -0.37,
+      "2": -0.59,
+      "3": -0.51
+     },
+     "per_corruption": {
+      "brightness": -0.66,
+      "contrast": -0.98,
+      "haze": -0.28,
+      "pixelate": -0.03
+     },
+     "ce_arm": -0.23,
+     "ce_source": 0.26,
+     "did_male_minority": -0.77,
+     "did_other_minority": -0.21,
+     "supported": false
+    },
+    "tent": {
+     "did_pp": -0.15,
+     "ci95": [
+      -0.74,
+      0.4
+     ],
+     "per_seed": {
+      "1": 0.15,
+      "2": -0.54,
+      "3": -0.07
+     },
+     "per_corruption": {
+      "brightness": 0.11,
+      "contrast": -0.88,
+      "haze": -0.09,
+      "pixelate": 0.25
+     },
+     "ce_arm": 0.11,
+     "ce_source": 0.26,
+     "did_male_minority": -0.38,
+     "did_other_minority": 0.08,
+     "supported": false
+    },
+    "eta": {
+     "did_pp": -0.55,
+     "ci95": [
+      -1.03,
+      -0.09
+     ],
+     "per_seed": {
+      "1": -0.46,
+      "2": -0.67,
+      "3": -0.51
+     },
+     "per_corruption": {
+      "brightness": -0.1,
+      "contrast": -0.75,
+      "haze": -0.18,
+      "pixelate": -1.17
+     },
+     "ce_arm": -0.29,
+     "ce_source": 0.26,
+     "did_male_minority": -0.83,
+     "did_other_minority": -0.27,
+     "supported": false
+    },
+    "blend": {
+     "did_pp": -0.49,
+     "ci95": [
+      -0.91,
+      -0.06
+     ],
+     "per_seed": {
+      "1": -0.56,
+      "2": -0.44,
+      "3": -0.46
+     },
+     "per_corruption": {
+      "brightness": -0.62,
+      "contrast": -1.07,
+      "haze": -0.28,
+      "pixelate": 0.03
+     },
+     "ce_arm": -0.22,
+     "ce_source": 0.26,
+     "did_male_minority": -0.75,
+     "did_other_minority": -0.23,
+     "supported": false
+    },
+    "descriptive": {
+     "source/natural": {
+      "ba_male": 79.6,
+      "ba_other": 82.73,
+      "gap": 3.13,
+      "cells": {
+       "y0g0": 97.8,
+       "y0g1": 97.8,
+       "y1g0": 67.7,
+       "y1g1": 61.4
+      }
+     },
+     "source/m10": {
+      "ba_male": 80.14,
+      "ba_other": 82.93,
+      "gap": 2.78,
+      "cells": {
+       "y0g0": 97.9,
+       "y0g1": 97.8,
+       "y1g0": 67.9,
+       "y1g1": 62.5
+      }
+     },
+     "source/m50": {
+      "ba_male": 79.72,
+      "ba_other": 82.71,
+      "gap": 2.99,
+      "cells": {
+       "y0g0": 97.7,
+       "y0g1": 97.6,
+       "y1g0": 67.7,
+       "y1g1": 61.8
+      }
+     },
+     "source/m90": {
+      "ba_male": 79.53,
+      "ba_other": 82.8,
+      "gap": 3.27,
+      "cells": {
+       "y0g0": 97.8,
+       "y0g1": 97.7,
+       "y1g0": 67.8,
+       "y1g1": 61.3
+      }
+     },
+     "bn/natural": {
+      "ba_male": 87.79,
+      "ba_other": 90.55,
+      "gap": 2.76,
+      "cells": {
+       "y0g0": 94.4,
+       "y0g1": 93.7,
+       "y1g0": 86.7,
+       "y1g1": 81.9
+      }
+     },
+     "bn/m10": {
+      "ba_male": 87.69,
+      "ba_other": 90.36,
+      "gap": 2.67,
+      "cells": {
+       "y0g0": 95.7,
+       "y0g1": 95.3,
+       "y1g0": 85.0,
+       "y1g1": 80.1
+      }
+     },
+     "bn/m50": {
+      "ba_male": 88.04,
+      "ba_other": 90.55,
+      "gap": 2.51,
+      "cells": {
+       "y0g0": 93.7,
+       "y0g1": 92.7,
+       "y1g0": 87.4,
+       "y1g1": 83.4
+      }
+     },
+     "bn/m90": {
+      "ba_male": 88.55,
+      "ba_other": 90.44,
+      "gap": 1.89,
+      "cells": {
+       "y0g0": 90.9,
+       "y0g1": 90.1,
+       "y1g0": 90.0,
+       "y1g1": 87.0
+      }
+     },
+     "tent/natural": {
+      "ba_male": 87.69,
+      "ba_other": 90.34,
+      "gap": 2.65,
+      "cells": {
+       "y0g0": 95.4,
+       "y0g1": 94.5,
+       "y1g0": 85.3,
+       "y1g1": 80.9
+      }
+     },
+     "tent/m10": {
+      "ba_male": 87.9,
+      "ba_other": 90.4,
+      "gap": 2.5,
+      "cells": {
+       "y0g0": 95.7,
+       "y0g1": 95.0,
+       "y1g0": 85.1,
+       "y1g1": 80.8
+      }
+     },
+     "tent/m50": {
+      "ba_male": 87.85,
+      "ba_other": 90.24,
+      "gap": 2.39,
+      "cells": {
+       "y0g0": 94.8,
+       "y0g1": 93.6,
+       "y1g0": 85.7,
+       "y1g1": 82.1
+      }
+     },
+     "tent/m90": {
+      "ba_male": 88.43,
+      "ba_other": 90.42,
+      "gap": 1.99,
+      "cells": {
+       "y0g0": 92.6,
+       "y0g1": 91.8,
+       "y1g0": 88.2,
+       "y1g1": 85.0
+      }
+     },
+     "eta/natural": {
+      "ba_male": 88.07,
+      "ba_other": 90.62,
+      "gap": 2.55,
+      "cells": {
+       "y0g0": 94.8,
+       "y0g1": 93.8,
+       "y1g0": 86.5,
+       "y1g1": 82.3
+      }
+     },
+     "eta/m10": {
+      "ba_male": 88.17,
+      "ba_other": 90.5,
+      "gap": 2.33,
+      "cells": {
+       "y0g0": 95.4,
+       "y0g1": 94.8,
+       "y1g0": 85.6,
+       "y1g1": 81.6
+      }
+     },
+     "eta/m50": {
+      "ba_male": 88.57,
+      "ba_other": 90.76,
+      "gap": 2.19,
+      "cells": {
+       "y0g0": 93.8,
+       "y0g1": 92.7,
+       "y1g0": 87.8,
+       "y1g1": 84.5
+      }
+     },
+     "eta/m90": {
+      "ba_male": 88.65,
+      "ba_other": 90.59,
+      "gap": 1.94,
+      "cells": {
+       "y0g0": 91.9,
+       "y0g1": 90.8,
+       "y1g0": 89.3,
+       "y1g1": 86.4
+      }
+     },
+     "blend/natural": {
+      "ba_male": 87.44,
+      "ba_other": 90.2,
+      "gap": 2.76,
+      "cells": {
+       "y0g0": 94.7,
+       "y0g1": 94.0,
+       "y1g0": 85.7,
+       "y1g1": 80.9
+      }
+     },
+     "blend/m10": {
+      "ba_male": 87.45,
+      "ba_other": 90.06,
+      "gap": 2.61,
+      "cells": {
+       "y0g0": 95.9,
+       "y0g1": 95.5,
+       "y1g0": 84.2,
+       "y1g1": 79.4
+      }
+     },
+     "blend/m50": {
+      "ba_male": 87.77,
+      "ba_other": 90.22,
+      "gap": 2.45,
+      "cells": {
+       "y0g0": 94.2,
+       "y0g1": 93.2,
+       "y1g0": 86.3,
+       "y1g1": 82.4
+      }
+     },
+     "blend/m90": {
+      "ba_male": 88.22,
+      "ba_other": 90.09,
+      "gap": 1.88,
+      "cells": {
+       "y0g0": 91.3,
+       "y0g1": 90.8,
+       "y1g0": 88.8,
+       "y1g1": 85.7
+      }
+     }
+    },
+    "clean_source_ba": {
+     "male": 91.0,
+     "other": 93.73
+    }
+   }
+  }
+ },
+ "verdict": {
+  "bn": {
+   "supported": false,
+   "generalizes": false
+  },
+  "tent": {
+   "supported": false,
+   "generalizes": false
+  }
+ }
+}

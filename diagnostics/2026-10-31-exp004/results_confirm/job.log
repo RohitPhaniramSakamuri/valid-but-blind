@@ -1,0 +1,406 @@
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Using CPython 3.10.12 interpreter at: /usr/bin/python3.10
+Creating virtual environment at: .venv_cs
+Activate with: source .venv_cs/bin/activate
+Using Python 3.10.12 environment at: .venv_cs
+Resolved 26 packages in 390ms
+Downloading pillow (6.6MiB)
+Downloading pygments (1.2MiB)
+Downloading numpy (17.4MiB)
+Downloading fonttools (5.0MiB)
+Downloading matplotlib (8.4MiB)
+Downloading scipy (35.9MiB)
+Downloading pandas (12.2MiB)
+Downloading kiwisolver (1.6MiB)
+ Downloaded kiwisolver
+ Downloaded pygments
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded pandas
+ Downloaded scipy
+Prepared 25 packages in 438ms
+Installed 26 packages in 234ms
+ + confseq==0.0.11
+ + contourpy==1.3.2
+ + cycler==0.12.1
+ + dill==0.4.1
+ + exceptiongroup==1.3.1
+ + fonttools==4.65.0
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.9
+ + multiprocess==0.70.19
+ + numpy==1.26.4
+ + packaging==26.3
+ + pandas==2.3.3
+ + pillow==12.3.0
+ + pluggy==1.7.0
+ + pybind11==3.1.0
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.2.0
+ + python-dateutil==3.0.0
+ + pytz==2026.6
+ + scipy==1.15.3
+ + six==1.17.0
+ + tomli==2.5.0
+ + typing-extensions==4.16.0
+ + tzdata==2026.6
+confseq ok
+30ee6543a1bfd049fa33834b7c1ada301e7064b7fbe8fc38340eb8b62ced4b33  data/CIFAR-100-C.tar
+85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7  data/cifar-100-python.tar.gz
+=== streams
+{'r0': 0.1990000158548355, 'q_hat0': 0.11999999731779099, 'false_alarm0': 0.17100000381469727, 'n_calib': 1000, 'stream_ids_sha': '-8959343248955502256', 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA A40'}
+1 285 source/snow/3/balanced_wr/0/0 err=0.301 elapsed=3s
+2 285 tent/snow/3/balanced_wr/0/0 err=0.283 elapsed=43s
+3 285 eta/snow/3/balanced_wr/0/0 err=0.281 elapsed=82s
+4 285 source/snow/3/by_class/0/0 err=0.304 elapsed=85s
+5 285 tent/snow/3/by_class/0/0 err=0.798 elapsed=124s
+6 285 eta/snow/3/by_class/0/0 err=0.782 elapsed=163s
+7 285 source/snow/3/dirichlet/0.1/0 err=0.322 elapsed=166s
+8 285 tent/snow/3/dirichlet/0.1/0 err=0.373 elapsed=205s
+9 285 eta/snow/3/dirichlet/0.1/0 err=0.349 elapsed=244s
+10 285 source/snow/3/dirichlet/0.1/1 err=0.438 elapsed=246s
+11 285 tent/snow/3/dirichlet/0.1/1 err=0.499 elapsed=285s
+12 285 eta/snow/3/dirichlet/0.1/1 err=0.448 elapsed=325s
+13 285 source/snow/5/balanced_wr/0/0 err=0.388 elapsed=327s
+14 285 tent/snow/5/balanced_wr/0/0 err=0.301 elapsed=366s
+15 285 eta/snow/5/balanced_wr/0/0 err=0.298 elapsed=405s
+16 285 source/snow/5/by_class/0/0 err=0.394 elapsed=408s
+17 285 tent/snow/5/by_class/0/0 err=0.815 elapsed=447s
+18 285 eta/snow/5/by_class/0/0 err=0.801 elapsed=486s
+19 285 source/snow/5/dirichlet/0.1/0 err=0.311 elapsed=489s
+20 285 tent/snow/5/dirichlet/0.1/0 err=0.374 elapsed=528s
+21 285 eta/snow/5/dirichlet/0.1/0 err=0.326 elapsed=567s
+22 285 source/snow/5/dirichlet/0.1/1 err=0.404 elapsed=570s
+23 285 tent/snow/5/dirichlet/0.1/1 err=0.466 elapsed=609s
+24 285 eta/snow/5/dirichlet/0.1/1 err=0.432 elapsed=648s
+25 285 source/snow/5/dirichlet/0.5/0 err=0.393 elapsed=650s
+26 285 tent/snow/5/dirichlet/0.5/0 err=0.317 elapsed=689s
+27 285 eta/snow/5/dirichlet/0.5/0 err=0.309 elapsed=728s
+28 285 source/snow/5/dirichlet/1.0/0 err=0.337 elapsed=731s
+29 285 tent/snow/5/dirichlet/1.0/0 err=0.263 elapsed=770s
+30 285 eta/snow/5/dirichlet/1.0/0 err=0.250 elapsed=809s
+31 285 source/frost/3/balanced_wr/0/0 err=0.376 elapsed=812s
+32 285 tent/frost/3/balanced_wr/0/0 err=0.297 elapsed=851s
+33 285 eta/frost/3/balanced_wr/0/0 err=0.290 elapsed=890s
+34 285 source/frost/3/by_class/0/0 err=0.373 elapsed=893s
+35 285 tent/frost/3/by_class/0/0 err=0.802 elapsed=932s
+36 285 eta/frost/3/by_class/0/0 err=0.783 elapsed=971s
+37 285 source/frost/3/dirichlet/0.1/0 err=0.358 elapsed=973s
+38 285 tent/frost/3/dirichlet/0.1/0 err=0.425 elapsed=1012s
+39 285 eta/frost/3/dirichlet/0.1/0 err=0.397 elapsed=1052s
+40 285 source/frost/3/dirichlet/0.1/1 err=0.293 elapsed=1054s
+41 285 tent/frost/3/dirichlet/0.1/1 err=0.353 elapsed=1093s
+42 285 eta/frost/3/dirichlet/0.1/1 err=0.356 elapsed=1132s
+43 285 source/frost/5/balanced_wr/0/0 err=0.454 elapsed=1135s
+44 285 tent/frost/5/balanced_wr/0/0 err=0.318 elapsed=1174s
+45 285 eta/frost/5/balanced_wr/0/0 err=0.313 elapsed=1213s
+46 285 source/frost/5/by_class/0/0 err=0.452 elapsed=1216s
+47 285 tent/frost/5/by_class/0/0 err=0.816 elapsed=1255s
+48 285 eta/frost/5/by_class/0/0 err=0.788 elapsed=1294s
+49 285 source/frost/5/dirichlet/0.1/0 err=0.447 elapsed=1296s
+50 285 tent/frost/5/dirichlet/0.1/0 err=0.405 elapsed=1335s
+51 285 eta/frost/5/dirichlet/0.1/0 err=0.366 elapsed=1374s
+52 285 source/frost/5/dirichlet/0.1/1 err=0.537 elapsed=1377s
+53 285 tent/frost/5/dirichlet/0.1/1 err=0.416 elapsed=1416s
+54 285 eta/frost/5/dirichlet/0.1/1 err=0.357 elapsed=1455s
+55 285 source/frost/5/dirichlet/0.5/0 err=0.416 elapsed=1458s
+56 285 tent/frost/5/dirichlet/0.5/0 err=0.303 elapsed=1497s
+57 285 eta/frost/5/dirichlet/0.5/0 err=0.296 elapsed=1536s
+58 285 source/frost/5/dirichlet/1.0/0 err=0.446 elapsed=1539s
+59 285 tent/frost/5/dirichlet/1.0/0 err=0.329 elapsed=1578s
+60 285 eta/frost/5/dirichlet/1.0/0 err=0.321 elapsed=1617s
+61 285 source/fog/3/balanced_wr/0/0 err=0.275 elapsed=1620s
+62 285 tent/fog/3/balanced_wr/0/0 err=0.245 elapsed=1659s
+63 285 eta/fog/3/balanced_wr/0/0 err=0.249 elapsed=1698s
+64 285 source/fog/3/by_class/0/0 err=0.272 elapsed=1700s
+65 285 tent/fog/3/by_class/0/0 err=0.783 elapsed=1739s
+66 285 eta/fog/3/by_class/0/0 err=0.770 elapsed=1778s
+67 285 source/fog/3/dirichlet/0.1/0 err=0.287 elapsed=1781s
+68 285 tent/fog/3/dirichlet/0.1/0 err=0.345 elapsed=1820s
+69 285 eta/fog/3/dirichlet/0.1/0 err=0.312 elapsed=1859s
+70 285 source/fog/3/dirichlet/0.1/1 err=0.254 elapsed=1862s
+71 285 tent/fog/3/dirichlet/0.1/1 err=0.336 elapsed=1901s
+72 285 eta/fog/3/dirichlet/0.1/1 err=0.319 elapsed=1940s
+73 285 source/fog/5/balanced_wr/0/0 err=0.489 elapsed=1943s
+74 285 tent/fog/5/balanced_wr/0/0 err=0.328 elapsed=1982s
+75 285 eta/fog/5/balanced_wr/0/0 err=0.323 elapsed=2021s
+76 285 source/fog/5/by_class/0/0 err=0.498 elapsed=2024s
+77 285 tent/fog/5/by_class/0/0 err=0.814 elapsed=2063s
+78 285 eta/fog/5/by_class/0/0 err=0.801 elapsed=2102s
+79 285 source/fog/5/dirichlet/0.1/0 err=0.506 elapsed=2104s
+80 285 tent/fog/5/dirichlet/0.1/0 err=0.386 elapsed=2143s
+81 285 eta/fog/5/dirichlet/0.1/0 err=0.346 elapsed=2182s
+82 285 source/fog/5/dirichlet/0.1/1 err=0.508 elapsed=2185s
+83 285 tent/fog/5/dirichlet/0.1/1 err=0.381 elapsed=2224s
+84 285 eta/fog/5/dirichlet/0.1/1 err=0.345 elapsed=2263s
+85 285 source/fog/5/dirichlet/0.5/0 err=0.504 elapsed=2266s
+86 285 tent/fog/5/dirichlet/0.5/0 err=0.332 elapsed=2305s
+87 285 eta/fog/5/dirichlet/0.5/0 err=0.305 elapsed=2344s
+88 285 source/fog/5/dirichlet/1.0/0 err=0.503 elapsed=2347s
+89 285 tent/fog/5/dirichlet/1.0/0 err=0.315 elapsed=2386s
+90 285 eta/fog/5/dirichlet/1.0/0 err=0.297 elapsed=2425s
+91 285 source/brightness/3/balanced_wr/0/0 err=0.231 elapsed=2428s
+92 285 tent/brightness/3/balanced_wr/0/0 err=0.219 elapsed=2467s
+93 285 eta/brightness/3/balanced_wr/0/0 err=0.221 elapsed=2506s
+94 285 source/brightness/3/by_class/0/0 err=0.233 elapsed=2509s
+95 285 tent/brightness/3/by_class/0/0 err=0.770 elapsed=2547s
+96 285 eta/brightness/3/by_class/0/0 err=0.754 elapsed=2587s
+97 285 source/brightness/3/dirichlet/0.1/0 err=0.214 elapsed=2589s
+98 285 tent/brightness/3/dirichlet/0.1/0 err=0.300 elapsed=2628s
+99 285 eta/brightness/3/dirichlet/0.1/0 err=0.263 elapsed=2667s
+100 285 source/brightness/3/dirichlet/0.1/1 err=0.149 elapsed=2670s
+101 285 tent/brightness/3/dirichlet/0.1/1 err=0.311 elapsed=2709s
+102 285 eta/brightness/3/dirichlet/0.1/1 err=0.284 elapsed=2748s
+103 285 source/brightness/5/balanced_wr/0/0 err=0.299 elapsed=2751s
+104 285 tent/brightness/5/balanced_wr/0/0 err=0.241 elapsed=2790s
+105 285 eta/brightness/5/balanced_wr/0/0 err=0.240 elapsed=2829s
+106 285 source/brightness/5/by_class/0/0 err=0.297 elapsed=2832s
+107 285 tent/brightness/5/by_class/0/0 err=0.785 elapsed=2871s
+108 285 eta/brightness/5/by_class/0/0 err=0.776 elapsed=2910s
+109 285 source/brightness/5/dirichlet/0.1/0 err=0.229 elapsed=2913s
+110 285 tent/brightness/5/dirichlet/0.1/0 err=0.425 elapsed=2951s
+111 285 eta/brightness/5/dirichlet/0.1/0 err=0.380 elapsed=2991s
+112 285 source/brightness/5/dirichlet/0.1/1 err=0.204 elapsed=2993s
+113 285 tent/brightness/5/dirichlet/0.1/1 err=0.249 elapsed=3032s
+114 285 eta/brightness/5/dirichlet/0.1/1 err=0.234 elapsed=3071s
+115 285 source/brightness/5/dirichlet/0.5/0 err=0.282 elapsed=3074s
+116 285 tent/brightness/5/dirichlet/0.5/0 err=0.234 elapsed=3113s
+117 285 eta/brightness/5/dirichlet/0.5/0 err=0.222 elapsed=3152s
+118 285 source/brightness/5/dirichlet/1.0/0 err=0.277 elapsed=3155s
+119 285 tent/brightness/5/dirichlet/1.0/0 err=0.233 elapsed=3194s
+120 285 eta/brightness/5/dirichlet/1.0/0 err=0.223 elapsed=3233s
+121 285 source/contrast/3/balanced_wr/0/0 err=0.278 elapsed=3236s
+122 285 tent/contrast/3/balanced_wr/0/0 err=0.251 elapsed=3275s
+123 285 eta/contrast/3/balanced_wr/0/0 err=0.244 elapsed=3314s
+124 285 source/contrast/3/by_class/0/0 err=0.277 elapsed=3317s
+125 285 tent/contrast/3/by_class/0/0 err=0.795 elapsed=3356s
+126 285 eta/contrast/3/by_class/0/0 err=0.772 elapsed=3395s
+127 285 source/contrast/3/dirichlet/0.1/0 err=0.224 elapsed=3398s
+128 285 tent/contrast/3/dirichlet/0.1/0 err=0.427 elapsed=3437s
+129 285 eta/contrast/3/dirichlet/0.1/0 err=0.403 elapsed=3476s
+130 285 source/contrast/3/dirichlet/0.1/1 err=0.258 elapsed=3479s
+131 285 tent/contrast/3/dirichlet/0.1/1 err=0.351 elapsed=3517s
+132 285 eta/contrast/3/dirichlet/0.1/1 err=0.282 elapsed=3557s
+133 285 source/contrast/5/balanced_wr/0/0 err=0.541 elapsed=3559s
+134 285 tent/contrast/5/balanced_wr/0/0 err=0.299 elapsed=3598s
+135 285 eta/contrast/5/balanced_wr/0/0 err=0.270 elapsed=3637s
+136 285 source/contrast/5/by_class/0/0 err=0.548 elapsed=3640s
+137 285 tent/contrast/5/by_class/0/0 err=0.838 elapsed=3679s
+138 285 eta/contrast/5/by_class/0/0 err=0.794 elapsed=3718s
+139 285 source/contrast/5/dirichlet/0.1/0 err=0.504 elapsed=3721s
+140 285 tent/contrast/5/dirichlet/0.1/0 err=0.333 elapsed=3760s
+141 285 eta/contrast/5/dirichlet/0.1/0 err=0.295 elapsed=3799s
+142 285 source/contrast/5/dirichlet/0.1/1 err=0.479 elapsed=3802s
+143 285 tent/contrast/5/dirichlet/0.1/1 err=0.295 elapsed=3841s
+144 285 eta/contrast/5/dirichlet/0.1/1 err=0.267 elapsed=3880s
+145 285 source/contrast/5/dirichlet/0.5/0 err=0.580 elapsed=3883s
+146 285 tent/contrast/5/dirichlet/0.5/0 err=0.304 elapsed=3922s
+147 285 eta/contrast/5/dirichlet/0.5/0 err=0.277 elapsed=3961s
+148 285 source/contrast/5/dirichlet/1.0/0 err=0.531 elapsed=3964s
+149 285 tent/contrast/5/dirichlet/1.0/0 err=0.300 elapsed=4003s
+150 285 eta/contrast/5/dirichlet/1.0/0 err=0.292 elapsed=4042s
+151 285 source/elastic_transform/3/balanced_wr/0/0 err=0.251 elapsed=4045s
+152 285 tent/elastic_transform/3/balanced_wr/0/0 err=0.246 elapsed=4084s
+153 285 eta/elastic_transform/3/balanced_wr/0/0 err=0.238 elapsed=4123s
+154 285 source/elastic_transform/3/by_class/0/0 err=0.251 elapsed=4125s
+155 285 tent/elastic_transform/3/by_class/0/0 err=0.784 elapsed=4164s
+156 285 eta/elastic_transform/3/by_class/0/0 err=0.771 elapsed=4204s
+157 285 source/elastic_transform/3/dirichlet/0.1/0 err=0.289 elapsed=4206s
+158 285 tent/elastic_transform/3/dirichlet/0.1/0 err=0.320 elapsed=4245s
+159 285 eta/elastic_transform/3/dirichlet/0.1/0 err=0.296 elapsed=4284s
+160 285 source/elastic_transform/3/dirichlet/0.1/1 err=0.243 elapsed=4287s
+161 285 tent/elastic_transform/3/dirichlet/0.1/1 err=0.296 elapsed=4326s
+162 285 eta/elastic_transform/3/dirichlet/0.1/1 err=0.267 elapsed=4365s
+163 285 source/elastic_transform/5/balanced_wr/0/0 err=0.363 elapsed=4368s
+164 285 tent/elastic_transform/5/balanced_wr/0/0 err=0.326 elapsed=4407s
+165 285 eta/elastic_transform/5/balanced_wr/0/0 err=0.326 elapsed=4446s
+166 285 source/elastic_transform/5/by_class/0/0 err=0.369 elapsed=4449s
+167 285 tent/elastic_transform/5/by_class/0/0 err=0.824 elapsed=4488s
+168 285 eta/elastic_transform/5/by_class/0/0 err=0.802 elapsed=4527s
+169 285 source/elastic_transform/5/dirichlet/0.1/0 err=0.328 elapsed=4530s
+170 285 tent/elastic_transform/5/dirichlet/0.1/0 err=0.450 elapsed=4568s
+171 285 eta/elastic_transform/5/dirichlet/0.1/0 err=0.408 elapsed=4608s
+172 285 source/elastic_transform/5/dirichlet/0.1/1 err=0.388 elapsed=4610s
+173 285 tent/elastic_transform/5/dirichlet/0.1/1 err=0.382 elapsed=4649s
+174 285 eta/elastic_transform/5/dirichlet/0.1/1 err=0.357 elapsed=4688s
+175 285 source/elastic_transform/5/dirichlet/0.5/0 err=0.373 elapsed=4691s
+176 285 tent/elastic_transform/5/dirichlet/0.5/0 err=0.349 elapsed=4730s
+177 285 eta/elastic_transform/5/dirichlet/0.5/0 err=0.335 elapsed=4769s
+178 285 source/elastic_transform/5/dirichlet/1.0/0 err=0.413 elapsed=4772s
+179 285 tent/elastic_transform/5/dirichlet/1.0/0 err=0.362 elapsed=4811s
+180 285 eta/elastic_transform/5/dirichlet/1.0/0 err=0.340 elapsed=4850s
+181 285 source/pixelate/3/balanced_wr/0/0 err=0.307 elapsed=4853s
+182 285 tent/pixelate/3/balanced_wr/0/0 err=0.244 elapsed=4892s
+183 285 eta/pixelate/3/balanced_wr/0/0 err=0.248 elapsed=4931s
+184 285 source/pixelate/3/by_class/0/0 err=0.308 elapsed=4933s
+185 285 tent/pixelate/3/by_class/0/0 err=0.773 elapsed=4972s
+186 285 eta/pixelate/3/by_class/0/0 err=0.759 elapsed=5012s
+187 285 source/pixelate/3/dirichlet/0.1/0 err=0.336 elapsed=5014s
+188 285 tent/pixelate/3/dirichlet/0.1/0 err=0.314 elapsed=5053s
+189 285 eta/pixelate/3/dirichlet/0.1/0 err=0.267 elapsed=5092s
+190 285 source/pixelate/3/dirichlet/0.1/1 err=0.308 elapsed=5095s
+191 285 tent/pixelate/3/dirichlet/0.1/1 err=0.321 elapsed=5134s
+192 285 eta/pixelate/3/dirichlet/0.1/1 err=0.290 elapsed=5173s
+193 285 source/pixelate/5/balanced_wr/0/0 err=0.748 elapsed=5176s
+194 285 tent/pixelate/5/balanced_wr/0/0 err=0.287 elapsed=5215s
+195 285 eta/pixelate/5/balanced_wr/0/0 err=0.285 elapsed=5254s
+196 285 source/pixelate/5/by_class/0/0 err=0.748 elapsed=5257s
+197 285 tent/pixelate/5/by_class/0/0 err=0.797 elapsed=5296s
+198 285 eta/pixelate/5/by_class/0/0 err=0.785 elapsed=5335s
+199 285 source/pixelate/5/dirichlet/0.1/0 err=0.831 elapsed=5338s
+200 285 tent/pixelate/5/dirichlet/0.1/0 err=0.520 elapsed=5376s
+201 285 eta/pixelate/5/dirichlet/0.1/0 err=0.468 elapsed=5416s
+202 285 source/pixelate/5/dirichlet/0.1/1 err=0.671 elapsed=5418s
+203 285 tent/pixelate/5/dirichlet/0.1/1 err=0.330 elapsed=5457s
+204 285 eta/pixelate/5/dirichlet/0.1/1 err=0.289 elapsed=5497s
+205 285 source/pixelate/5/dirichlet/0.5/0 err=0.680 elapsed=5499s
+206 285 tent/pixelate/5/dirichlet/0.5/0 err=0.271 elapsed=5538s
+207 285 eta/pixelate/5/dirichlet/0.5/0 err=0.245 elapsed=5577s
+208 285 source/pixelate/5/dirichlet/1.0/0 err=0.760 elapsed=5580s
+209 285 tent/pixelate/5/dirichlet/1.0/0 err=0.253 elapsed=5619s
+210 285 eta/pixelate/5/dirichlet/1.0/0 err=0.244 elapsed=5658s
+211 285 source/jpeg_compression/3/balanced_wr/0/0 err=0.346 elapsed=5661s
+212 285 tent/jpeg_compression/3/balanced_wr/0/0 err=0.335 elapsed=5700s
+213 285 eta/jpeg_compression/3/balanced_wr/0/0 err=0.331 elapsed=5739s
+214 285 source/jpeg_compression/3/by_class/0/0 err=0.352 elapsed=5742s
+215 285 tent/jpeg_compression/3/by_class/0/0 err=0.815 elapsed=5781s
+216 285 eta/jpeg_compression/3/by_class/0/0 err=0.805 elapsed=5820s
+217 285 source/jpeg_compression/3/dirichlet/0.1/0 err=0.292 elapsed=5823s
+218 285 tent/jpeg_compression/3/dirichlet/0.1/0 err=0.393 elapsed=5861s
+219 285 eta/jpeg_compression/3/dirichlet/0.1/0 err=0.344 elapsed=5901s
+220 285 source/jpeg_compression/3/dirichlet/0.1/1 err=0.421 elapsed=5903s
+221 285 tent/jpeg_compression/3/dirichlet/0.1/1 err=0.429 elapsed=5942s
+222 285 eta/jpeg_compression/3/dirichlet/0.1/1 err=0.411 elapsed=5981s
+223 285 source/jpeg_compression/5/balanced_wr/0/0 err=0.412 elapsed=5984s
+224 285 tent/jpeg_compression/5/balanced_wr/0/0 err=0.372 elapsed=6023s
+225 285 eta/jpeg_compression/5/balanced_wr/0/0 err=0.364 elapsed=6062s
+226 285 source/jpeg_compression/5/by_class/0/0 err=0.414 elapsed=6065s
+227 285 tent/jpeg_compression/5/by_class/0/0 err=0.825 elapsed=6104s
+228 285 eta/jpeg_compression/5/by_class/0/0 err=0.815 elapsed=6143s
+229 285 source/jpeg_compression/5/dirichlet/0.1/0 err=0.426 elapsed=6146s
+230 285 tent/jpeg_compression/5/dirichlet/0.1/0 err=0.496 elapsed=6185s
+231 285 eta/jpeg_compression/5/dirichlet/0.1/0 err=0.465 elapsed=6224s
+232 285 source/jpeg_compression/5/dirichlet/0.1/1 err=0.412 elapsed=6227s
+233 285 tent/jpeg_compression/5/dirichlet/0.1/1 err=0.541 elapsed=6266s
+234 285 eta/jpeg_compression/5/dirichlet/0.1/1 err=0.459 elapsed=6305s
+235 285 source/jpeg_compression/5/dirichlet/0.5/0 err=0.417 elapsed=6308s
+236 285 tent/jpeg_compression/5/dirichlet/0.5/0 err=0.378 elapsed=6346s
+237 285 eta/jpeg_compression/5/dirichlet/0.5/0 err=0.369 elapsed=6386s
+238 285 source/jpeg_compression/5/dirichlet/1.0/0 err=0.392 elapsed=6388s
+239 285 tent/jpeg_compression/5/dirichlet/1.0/0 err=0.346 elapsed=6427s
+240 285 eta/jpeg_compression/5/dirichlet/1.0/0 err=0.344 elapsed=6467s
+241 285 source/clean/0/balanced_wr/0/0 err=0.201 elapsed=6470s
+242 285 tent/clean/0/balanced_wr/0/0 err=0.213 elapsed=6509s
+243 285 eta/clean/0/balanced_wr/0/0 err=0.210 elapsed=6549s
+244 285 source/clean/0/by_class/0/0 err=0.206 elapsed=6551s
+245 285 tent/clean/0/by_class/0/0 err=0.765 elapsed=6591s
+246 285 eta/clean/0/by_class/0/0 err=0.748 elapsed=6630s
+247 285 source/clean/0/dirichlet/0.1/0 err=0.226 elapsed=6633s
+248 285 tent/clean/0/dirichlet/0.1/0 err=0.356 elapsed=6672s
+249 285 eta/clean/0/dirichlet/0.1/0 err=0.321 elapsed=6712s
+250 285 source/clean/0/dirichlet/0.5/0 err=0.211 elapsed=6714s
+251 285 tent/clean/0/dirichlet/0.5/0 err=0.217 elapsed=6754s
+252 285 eta/clean/0/dirichlet/0.5/0 err=0.214 elapsed=6793s
+253 285 source/clean/0/dirichlet/1.0/0 err=0.192 elapsed=6796s
+254 285 tent/clean/0/dirichlet/1.0/0 err=0.191 elapsed=6835s
+255 285 eta/clean/0/dirichlet/1.0/0 err=0.189 elapsed=6875s
+256 285 source/clean/0/balanced_wr/0/1 err=0.206 elapsed=6878s
+257 285 tent/clean/0/balanced_wr/0/1 err=0.211 elapsed=6917s
+258 285 eta/clean/0/balanced_wr/0/1 err=0.213 elapsed=6956s
+259 285 source/clean/0/by_class/0/1 err=0.206 elapsed=6959s
+260 285 tent/clean/0/by_class/0/1 err=0.765 elapsed=6999s
+261 285 eta/clean/0/by_class/0/1 err=0.748 elapsed=7038s
+262 285 source/clean/0/dirichlet/0.1/1 err=0.198 elapsed=7041s
+263 285 tent/clean/0/dirichlet/0.1/1 err=0.366 elapsed=7080s
+264 285 eta/clean/0/dirichlet/0.1/1 err=0.338 elapsed=7120s
+265 285 source/clean/0/dirichlet/0.5/1 err=0.213 elapsed=7123s
+266 285 tent/clean/0/dirichlet/0.5/1 err=0.208 elapsed=7162s
+267 285 eta/clean/0/dirichlet/0.5/1 err=0.205 elapsed=7201s
+268 285 source/clean/0/dirichlet/1.0/1 err=0.205 elapsed=7204s
+269 285 tent/clean/0/dirichlet/1.0/1 err=0.211 elapsed=7243s
+270 285 eta/clean/0/dirichlet/1.0/1 err=0.211 elapsed=7283s
+271 285 source/clean/0/balanced_wr/0/2 err=0.202 elapsed=7286s
+272 285 tent/clean/0/balanced_wr/0/2 err=0.210 elapsed=7325s
+273 285 eta/clean/0/balanced_wr/0/2 err=0.210 elapsed=7365s
+274 285 source/clean/0/by_class/0/2 err=0.206 elapsed=7367s
+275 285 tent/clean/0/by_class/0/2 err=0.765 elapsed=7407s
+276 285 eta/clean/0/by_class/0/2 err=0.748 elapsed=7446s
+277 285 source/clean/0/dirichlet/0.1/2 err=0.185 elapsed=7449s
+278 285 tent/clean/0/dirichlet/0.1/2 err=0.258 elapsed=7488s
+279 285 eta/clean/0/dirichlet/0.1/2 err=0.252 elapsed=7528s
+280 285 source/clean/0/dirichlet/0.5/2 err=0.230 elapsed=7530s
+281 285 tent/clean/0/dirichlet/0.5/2 err=0.241 elapsed=7570s
+282 285 eta/clean/0/dirichlet/0.5/2 err=0.233 elapsed=7609s
+283 285 source/clean/0/dirichlet/1.0/2 err=0.205 elapsed=7612s
+284 285 tent/clean/0/dirichlet/1.0/2 err=0.208 elapsed=7651s
+285 285 eta/clean/0/dirichlet/1.0/2 err=0.205 elapsed=7691s
+complete 7691s
+{
+"primary": {
+"n": 32,
+"err": 0.383,
+"conf": 0.915,
+"pos": 0.159,
+"pfn": 0.279,
+"asm": 0.0,
+"collapsed": 0,
+"strict": 20,
+"missed": 20,
+"missed_sqrt": 20,
+"others_alarmed": 0,
+"others": 12,
+"final_bound": 0.0
+},
+"control": {
+"n": 16,
+"err": 0.802,
+"conf": 0.644,
+"pos": 0.772,
+"pfn": 0.16,
+"asm": 0.0,
+"collapsed": 3,
+"strict": 13,
+"missed": 0,
+"missed_sqrt": 0,
+"others_alarmed": 0,
+"others": 0,
+"final_bound": 0.558
+},
+"balanced_wr": {
+"n": 16,
+"err": 0.287,
+"conf": 0.842,
+"pos": 0.333,
+"pfn": 0.091,
+"asm": 0.01,
+"collapsed": 0,
+"strict": 1,
+"missed": 1,
+"missed_sqrt": 1,
+"others_alarmed": 0,
+"others": 15,
+"final_bound": 0.123
+},
+"checks": {
+"enough_violations": true,
+"missed_share": 1.0,
+"missed_lower95": 0.8315665290169146,
+"control_missed_share": 0.0,
+"assumption_mean": 0.0,
+"replacement_gap": 0.096,
+"confirmed": true
+},
+"aucs": {
+"source_disagreement": 0.702,
+"top_share": 0.828,
+"positive_rate": 0.288,
+"uncertainty": 0.311
+}
+}
+=== CONFIRM DONE

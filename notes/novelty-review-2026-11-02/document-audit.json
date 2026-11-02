@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-02",
+  "scope": "Document/source consistency only; no implementation tests or experiments",
+  "catalog_records": 148,
+  "bibtex_records": 148,
+  "duplicate_catalog_keys": [],
+  "duplicate_bibtex_keys": [],
+  "catalog_without_bibtex": [],
+  "bibtex_without_catalog": [],
+  "csv_rows": {
+    "search-log.csv": 388,
+    "screened-papers.csv": 2818,
+    "closest-work.csv": 27,
+    "claim-evidence.csv": 29,
+    "venue-coverage.csv": 65
+  },
+  "csv_structure_issues": [],
+  "missing_scoped_local_links": [],
+  "verdicts": {
+    "C1": "No report found",
+    "C2": "No report found",
+    "C3": "Substantially anticipated",
+    "C4": "Already published",
+    "C5": "Partially covered"
+  },
+  "exactly_five_verdict_rows": true,
+  "pending_local_outcome_preserved": true,
+  "interpretation_labels_present": true,
+  "blocking_findings": false
+}

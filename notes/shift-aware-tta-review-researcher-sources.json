@@ -1,0 +1,391 @@
+{
+  "review_date": "2026-10-23",
+  "role": "researcher",
+  "scope": "Closest prior art for shift-aware dynamic adaptation policy selection; selected primary reading only, no experiments.",
+  "sources": [
+    {
+      "key": "Su2026SLRF",
+      "title": "Shift-level regulated continual test-time adaptation framework",
+      "authors": [
+        "Rui Su",
+        "Hang Xu",
+        "Wendong Zheng",
+        "Husheng Guo",
+        "Wenjian Wang"
+      ],
+      "year": 2026,
+      "venue": "Data Mining and Knowledge Discovery 40, article 63",
+      "publicationstatus": "Published 2 July 2026; DOI 10.1007/s10618-026-01222-x",
+      "url": "https://link.springer.com/article/10.1007/s10618-026-01222-x",
+      "read_scope": "Publisher abstract, metadata, data availability and visible reference list; subscription full text not read.",
+      "locations": [
+        "Abstract",
+        "Data Availability"
+      ],
+      "method_overlap": "ASLD categorizes aligned/weak/strong shifts; ASDM selects corresponding adaptation strategies. This directly overlaps shift inference followed by policy selection.",
+      "limitation": "Exact detector, objectives and protocol require full text. Do not infer omitted experiments from paywall. No code verified.",
+      "code_url": null,
+      "pdf_url": null
+    },
+    {
+      "key": "Park2025HybridTTA",
+      "title": "Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection",
+      "authors": [
+        "Hyewon Park",
+        "Hyejin Park",
+        "Jueun Ko",
+        "Dongbo Min"
+      ],
+      "year": 2025,
+      "venue": "ICCV 2025",
+      "publicationstatus": "Conference paper; arXiv first September 2024, inspected v2 August 2025",
+      "url": "https://arxiv.org/abs/2409.08566",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Park_Hybrid-TTA_Continual_Test-time_Adaptation_via_Dynamic_Domain_Shift_Detection_ICCV_2025_paper.pdf",
+      "html_url": "https://arxiv.org/html/2409.08566v2",
+      "read_scope": "Abstract, introduction, section 4 mechanism and experiment/appendix headings; selected results, not exhaustive full paper.",
+      "locations": [
+        "Section 4.1 Dynamic Domain Shift Detection",
+        "Section 4.2 Masked Image Modeling Adaptation",
+        "Section 5",
+        "Appendix source forgetting/long-term adaptation"
+      ],
+      "method_overlap": "Teacher/student discrepancy with dynamic loss thresholding detects domain changes and switches between full tuning and adapter tuning for each input.",
+      "limitation": "Segmentation-specific FT/ET menu and reconstruction preparation; not a general selector over arbitrary TTA algorithms. Still invalidates broad novelty of dynamic policy switching.",
+      "code_url": null
+    },
+    {
+      "key": "Lee2024BECoTTA",
+      "title": "BECoTTA: Input-dependent Online Blending of Experts for Continual Test-time Adaptation",
+      "authors": [
+        "Daeun Lee",
+        "Jaehong Yoon",
+        "Sung Ju Hwang"
+      ],
+      "year": 2024,
+      "venue": "ICML 2024, PMLR 235:27072–27093",
+      "publicationstatus": "Conference paper; arXiv v3 31 May 2024 inspected",
+      "url": "https://proceedings.mlr.press/v235/lee24ab.html",
+      "pdf_url": "https://arxiv.org/pdf/2402.08712v3",
+      "html_url": "https://arxiv.org/html/2402.08712v3",
+      "read_scope": "Abstract, introduction, method and benchmark design descriptions plus author project page.",
+      "locations": [
+        "Section 3.2 Domain-Augmented Initialization",
+        "Section 3.3 MoDE",
+        "Section 3.4 CTTA process",
+        "Continual gradual shifts construction"
+      ],
+      "method_overlap": "Pseudo-domain inference routes inputs to low-rank experts; updates relevant experts and blends domain-adaptive knowledge.",
+      "limitation": "Expert routing is distinct from selecting complete standalone TTA methods. Initialization and source augmentation variants must be distinguished; gradual/mixed shifts alone are covered.",
+      "code_url": "https://github.com/daeunni/becotta"
+    },
+    {
+      "key": "Danilowski2026MORPHEUS",
+      "title": "MORPHEUS: Meta Test-Time Adaptation via Neural Collapse Geometry",
+      "authors": [
+        "Michal Danilowski",
+        "Alexander Murphy",
+        "Young D. Kwon",
+        "Abhirup Ghosh"
+      ],
+      "year": 2026,
+      "venue": "ICLR 2026 Test-Time Updates Workshop",
+      "publicationstatus": "Workshop paper, not main-track ICLR; author research page corroborates",
+      "url": "https://openreview.net/forum?id=YfyApJH1Rj",
+      "pdf_url": "https://openreview.net/pdf?id=YfyApJH1Rj",
+      "read_scope": "Indexed primary OpenReview PDF abstract, introduction and section 2 excerpts; live direct PDF fetch encountered browser challenge.",
+      "locations": [
+        "Abstract",
+        "Introduction contributions",
+        "Section 2 Problem and Methodology"
+      ],
+      "method_overlap": "Predicts per-TTA post-adaptation accuracy from source-model entropy and Neural-Collapse embedding statistics, then selects a complete TTA method without executing all candidates. Direct collision with a learned pre-adaptation router.",
+      "limitation": "Detailed meta-training split/code require further verification. Do not claim feature-only method selection or cheap single-forward routing is new.",
+      "code_url": null
+    },
+    {
+      "key": "Lim2023TTN",
+      "title": "TTN: A Domain-Shift Aware Batch Normalization in Test-Time Adaptation",
+      "authors": [
+        "Hyesu Lim",
+        "Byeonggeun Kim",
+        "Jaegul Choo",
+        "Sungha Choi"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "publicationstatus": "Conference paper; arXiv 2302.05155",
+      "url": "https://arxiv.org/abs/2302.05155",
+      "pdf_url": "https://openreview.net/pdf?id=EQfeudmWLQ",
+      "read_scope": "Abstract and author project-page sections on layer/channel shift sensitivity and post-training.",
+      "locations": [
+        "Method: Test-Time Normalization Layer",
+        "Post-training prior",
+        "Optimize interpolating weights"
+      ],
+      "method_overlap": "Combines source and current-batch normalization using layer/channel shift sensitivity; shifts alter appropriate reliance on source/test statistics.",
+      "limitation": "Interpolation weights are learned using labeled source data during post-training and frozen at deployment. Do not conflate this with label-free source preparation or whole-method routing.",
+      "code_url": null
+    },
+    {
+      "key": "Ye2025DATTA",
+      "title": "DATTA: Domain Diversity Aware Test-Time Adaptation for Dynamic Domain Shift Data Streams",
+      "authors": [
+        "Chuyang Ye",
+        "Dongyan Wei",
+        "Zhendong Liu",
+        "Yuanyi Pang",
+        "Yixi Lin",
+        "Qinting Jiang",
+        "Jingyan Jiang",
+        "Dongbiao He"
+      ],
+      "year": 2025,
+      "venue": "ICME 2025",
+      "publicationstatus": "Accepted oral per author arXiv record; DOI 10.1109/ICME59968.2025.11209053; preprint first2024, v2 Dec2025 inspected",
+      "url": "https://arxiv.org/abs/2408.08056",
+      "pdf_url": "https://arxiv.org/pdf/2408.08056v2",
+      "html_url": "https://arxiv.org/html/2408.08056v2",
+      "read_scope": "Abstract, introduction, method overview and section headings.",
+      "locations": [
+        "Section III-A Domain-Diversity Discrimination",
+        "Section III-B DABN",
+        "Section III-C DAFT"
+      ],
+      "method_overlap": "Recognizes single-versus-multiple-domain batches, changes normalization interpolation and selectively fine-tunes to mitigate gradient conflict.",
+      "limitation": "Domain diversity is not physical shift-cause identification. Dynamic heterogeneous input batches already studied; a generic multi-domain claim is insufficient.",
+      "code_url": "https://github.com/DYW77/DATTA"
+    },
+    {
+      "key": "Sahoo2025GALA",
+      "title": "A Layer Selection Approach to Test Time Adaptation",
+      "authors": [
+        "Sabyasachi Sahoo",
+        "Mostafa ElAraby",
+        "Jonas Ngnawe",
+        "Yann Pequignot",
+        "Frederic Precioso",
+        "Christian Gagne"
+      ],
+      "year": 2025,
+      "venue": "AAAI 2025",
+      "publicationstatus": "Accepted per arXiv record; firstpreprint April2024, v2 Feb2025 inspected",
+      "url": "https://arxiv.org/abs/2404.03784",
+      "pdf_url": "https://arxiv.org/pdf/2404.03784v2",
+      "html_url": "https://arxiv.org/html/2404.03784v2",
+      "read_scope": "Abstract, introduction, section2 description, discussion/appendix analysis of current gradients versus accumulated state.",
+      "locations": [
+        "Section 2.1 layer selection",
+        "Section 2.2 cosine criterion",
+        "Section 2.3 reset",
+        "Appendix A.5.4 alignment vs magnitude"
+      ],
+      "method_overlap": "Uses proposed gradients relative to accumulated parameter displacement to select one layer, skip updates or reset alignment history. Adaptation utility depends on state, loss and shift.",
+      "limitation": "Selecting update layers is not arbitrary whole-method selection, but state/drift/gradient features and skip/reset are established; cannot sell these alone as a gap.",
+      "code_url": null
+    },
+    {
+      "key": "Karimi2026ShiftACT",
+      "title": "Shift-ACT: Test-time adaptation via shift-aware class-specific dynamic thresholding for domain generalization",
+      "authors": [
+        "Saeed Karimi",
+        "Hamdi Dibeklioglu"
+      ],
+      "year": 2026,
+      "venue": "Neurocomputing 663, article132013",
+      "publicationstatus": "Published28January2026, DOI10.1016/j.neucom.2025.132013",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026852",
+      "pdf_url": null,
+      "read_scope": "Publisher abstract/metadata and author repository README.",
+      "locations": [
+        "Abstract",
+        "Repository preparation/run instructions"
+      ],
+      "method_overlap": "Class-specific source-target confidence gaps adjust thresholds; reliable samples get entropy minimization, unreliable samples get prototype contrastive alignment.",
+      "limitation": "Source-derived class confidence information required; selected method passages/full detailed protocol not read. Class-wise signal-dependent objective choice is already present.",
+      "code_url": "https://github.com/saeedkarimi90/Shift-act"
+    },
+    {
+      "key": "Grover2025DynaTTA",
+      "title": "Shift-Aware Test Time Adaptation and Benchmarking for Time-Series Forecasting",
+      "authors": [
+        "Shivam Grover",
+        "Ali Etemad"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025 Workshop on Test-Time Adaptation: Putting Updates to the Test!",
+      "publicationstatus": "Workshop oral, not verified main-track ICML; official workshop list verifies acceptance",
+      "url": "https://openreview.net/forum?id=a399SmgWGl",
+      "pdf_url": "https://openreview.net/pdf?id=a399SmgWGl",
+      "read_scope": "Indexed primary PDF abstract/introduction excerpts, official workshop list and author talk summary.",
+      "locations": [
+        "Abstract",
+        "Introduction dynamic rate and shift-conditioned gating",
+        "Official workshop acceptedpaper61"
+      ],
+      "method_overlap": "Prediction-error and embedding-drift signals control adaptation rate and reliance on adapted outputs, with synthetic shifted forecast benchmark.",
+      "limitation": "Forecasting can reveal past outcomes as future inputs; does not automatically satisfy strict label-free classification protocol.",
+      "code_url": "https://github.com/shivam-grover/DynaTTA"
+    },
+    {
+      "key": "Kumar2026RGTTA",
+      "title": "RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series",
+      "authors": [
+        "Indar Kumar",
+        "Akanksha Tiwari",
+        "Sai Krishna Jasti",
+        "Ankit Hemant Lade"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationstatus": "arXiv2603.27814v1,29March2026; no venue acceptance verified",
+      "url": "https://arxiv.org/abs/2603.27814",
+      "pdf_url": "https://arxiv.org/pdf/2603.27814v1",
+      "html_url": "https://arxiv.org/html/2603.27814v1",
+      "read_scope": "Abstract,introduction,method outline and limitations/ablation table of contents.",
+      "locations": [
+        "III-C continuous regime guidance",
+        "III-F checkpoint management",
+        "VII-H component contribution",
+        "IX Limitations"
+      ],
+      "method_overlap": "Uses similarity to stored regimes to scale learning rate, stop updates when loss plateaus and reuse checkpoints only when predicted loss benefit passes a gate.",
+      "limitation": "Temporal forecasting setup has observed outcomes; checkpoint bank/rate controller is not fully unlabeled image-classification method selection.",
+      "code_url": "https://github.com/IndarKarhana/RGTTA-Regime-Guided-Test-Time-Adaptation"
+    },
+    {
+      "key": "Gai2026AdaTentPlusPlus",
+      "title": "AdaTent++: reliability-guided hybrid test-time adaptation for traffic sign detection under distribution shift",
+      "authors": [
+        "Xiaomei Gai",
+        "Meichun Wang",
+        "Yantong Guo",
+        "Shiyu Wang",
+        "Ye Li",
+        "Rui Fu"
+      ],
+      "year": 2026,
+      "venue": "Frontiers in Signal Processing6",
+      "publicationstatus": "Published9September2026, DOI10.3389/frsip.2026.1842851",
+      "url": "https://www.frontiersin.org/journals/signal-processing/articles/10.3389/frsip.2026.1842851/full",
+      "pdf_url": null,
+      "read_scope": "Publisher full text selectively read: abstract, sections2.1–2.4, ablations, discussion, limitations and conclusion.",
+      "locations": [
+        "2.3 multiview reliability and dynamic routing",
+        "2.4 threepath mechanics",
+        "3.4 ablations",
+        "4 Discussion",
+        "5 Limitations",
+        "6 Conclusion item4"
+      ],
+      "method_overlap": "Entropy and multiview agreement route to BN-stat update, guarded BN-affine update or skip; EMA/hysteresis, dynamic1–2steps and BN rollback stabilize.",
+      "limitation": "§5 admits benchmark-condition IDs for views/filtering, one deterministic run and no longstream. §4 says not compute-matched despite conflicting conclusion wording. §6 requests budget-aware adaptive viewcount/step controllers. No guarantees verified.",
+      "code_url": null
+    },
+    {
+      "key": "Jhawar2026HDTTA",
+      "title": "HD-TTA: Hypothesis-Driven Test-Time Adaptation for Safer Brain Tumor Segmentation",
+      "authors": [
+        "Kartik Jhawar",
+        "Lipo Wang"
+      ],
+      "year": 2026,
+      "venue": "MICCAI2026 (official page found); inspected arXiv preprint",
+      "publicationstatus": "arXiv2602.19454v1,23February2026; officialMICCAI2026 paper3549 supports venue",
+      "url": "https://arxiv.org/abs/2602.19454",
+      "pdf_url": "https://arxiv.org/pdf/2602.19454v1",
+      "read_scope": "arXiv abstract and official MICCAI paper-page abstract/review summaries; full method not read.",
+      "locations": [
+        "Abstract",
+        "MICCAI2026 paper3549 review summaries"
+      ],
+      "method_overlap": "Gatekeeper skips confident masks; competing compaction/inflation hypotheses are scored by intrinsic representation consistency to select safer refinement.",
+      "limitation": "Clinical binary segmentation proof of concept; not evidence a general classification method selector is new. Code was promised on acceptance; release not verified.",
+      "code_url": null
+    },
+    {
+      "key": "Fan2026MoETTA",
+      "title": "MoETTA: Test-Time Adaptation Under Mixed Distribution Shifts with MoE-LayerNorm",
+      "authors": [
+        "Xiao Fan",
+        "Jingyan Jiang",
+        "Zhaoru Chen",
+        "Fanding Huang",
+        "Xiao Chen",
+        "Qinting Jiang",
+        "Bowen Zhang",
+        "Xing Tang",
+        "Zhi Wang"
+      ],
+      "year": 2026,
+      "venue": "AAAI2026 Main Technical Track",
+      "publicationstatus": "Acceptance reported by authorarXiv; firstpreprint14November2025; v1 inspected",
+      "url": "https://arxiv.org/abs/2511.13760",
+      "pdf_url": "https://arxiv.org/pdf/2511.13760v1",
+      "html_url": "https://arxiv.org/html/2511.13760v1",
+      "read_scope": "Abstract,introduction,routing/mechanism description and §5.3/table excerpts.",
+      "locations": [
+        "Mixture-of-Experts LayerNorm routing",
+        "5.3 Computation Efficiency",
+        "Potpourri/potpourri+ design"
+      ],
+      "method_overlap": "LayerNorm experts permit sample-specific gradient directions under mixed shifts; potpourri mixes natural/artistic/adversarial shifts, potpourri+ includes source examples.",
+      "limitation": "Mixed domains/source returns are covered as benchmarks; action-menu policy selection and image-level composed corruptions remain distinct, but no novelty inferred from this distinction.",
+      "code_url": "https://github.com/AnikiFan/MoETTA"
+    },
+    {
+      "key": "Doloriel2026SEGA",
+      "title": "Continual Test-Time Adaptation via Entropy Sensitivity-Guidance in Strict Online Setting",
+      "authors": [
+        "Chandler Timm C. Doloriel",
+        "Yunbei Zhang",
+        "Muhammad Salman Siddiqui",
+        "Tor Kristian Stevik",
+        "Fadi Al Machot",
+        "Kristian Hovde Liland",
+        "Habib Ullah"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationstatus": "arXiv2608.29920v1,30August2026,underreview per record",
+      "url": "https://arxiv.org/abs/2608.29920",
+      "pdf_url": "https://arxiv.org/pdf/2608.29920v1",
+      "read_scope": "arXiv abstract/metadata only; HTML unavailable and code link fetch failed.",
+      "locations": [
+        "Abstract"
+      ],
+      "method_overlap": "Structured erasure probes produce entropy-sensitivity trajectories for recovery/sample selection and reduce backward updates in batchsizeonecontinual streams.",
+      "limitation": "Evidence probes and sensitivity gating already proposed. Adaptive purchasing of probe types/counts is not established by the read abstract; fullmethod/code needed before negativeclaim.",
+      "code_url": null
+    },
+    {
+      "key": "Zhang2026MoASEPlusPlus",
+      "title": "MoASE++: Mixture of Activation Sparsity Experts with Domain-Adaptive On-policy Distillation for Continual Test Time Adaptation",
+      "authors": [
+        "Ronyu Zhang",
+        "Aosong Cheng",
+        "Gaole Dai",
+        "Yulin Luo",
+        "Jiaming Liu",
+        "Li Du",
+        "Huanrui Yang",
+        "Dan Wang",
+        "Leyuan Fang",
+        "Yuan Du",
+        "Shanghang Zhang"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationstatus": "arXiv2605.17743v1,18May2026; no venueverified",
+      "url": "https://arxiv.org/abs/2605.17743",
+      "pdf_url": "https://arxiv.org/pdf/2605.17743v1",
+      "read_scope": "arXivabstractandmetadataonly.",
+      "locations": [
+        "Abstract"
+      ],
+      "method_overlap": "Domain-aware router weights experts using texture cues; entropy/confidence condition augmentation policy and EMA distillation.",
+      "limitation": "Dynamic expertcomposition and signal-conditioned augmentation arecovered. Fullimplementation/evaluationnotread; do not infer costed evidence acquisitionabsent.",
+      "code_url": null
+    }
+  ]
+}
+

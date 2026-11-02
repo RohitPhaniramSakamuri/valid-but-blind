@@ -1,0 +1,2300 @@
+[
+  {
+    "file": "evidence/adjacent_monitors/ActivationStaleness2026.pdf",
+    "bytes": 662599,
+    "sha256": "bc534d930ada3e8d2b5f4031700e73040bf989a4ff3fa0b2ce18cb11ae51f826",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/ActivationStaleness2026.txt",
+    "bytes": 66006,
+    "sha256": "9119483a98c15404ba94c651a872a3b669575b9666a79de785a11bc3e8674718",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Amoukou2024SequentialHarmful.pdf",
+    "bytes": 1933634,
+    "sha256": "1a8863315fb454c6fa94213e77b834164f07df59007bdacf9e35c01be40abd4b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Amoukou2024SequentialHarmful.txt",
+    "bytes": 89501,
+    "sha256": "45f6c14f11c39dff8dfc61ac3479a761dc65bec9cb19b2f8bd2fbf6701b1a840",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Feng2024MonitoringClinical.pdf",
+    "bytes": 2299418,
+    "sha256": "f4b3cebe7fefe79090a3555907a5bdd8e4bce514525200af9c1df11f3a6e3b1b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Feng2024MonitoringClinical.txt",
+    "bytes": 151192,
+    "sha256": "a353004875efd7071cd6741a59f7d54bb29fd8f06384963f71163184e97ab976",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Ginsberg2023Detectron.pdf",
+    "bytes": 3604947,
+    "sha256": "4d94d48aa4e52497b63521f886734a86d25df9c14a5e577bb379051daa22eec0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Ginsberg2023Detectron.txt",
+    "bytes": 187889,
+    "sha256": "fceb98c145307cf184ca98c5a236296b3b0878513f83afede9c042523f12609b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Han2026Exchangeability.pdf",
+    "bytes": 997613,
+    "sha256": "27f9f2ae00dfa9e0d9561e1ec824920f897971b25bb0e1b70e242f498dcca623",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Han2026Exchangeability.txt",
+    "bytes": 325587,
+    "sha256": "4dcc1a112f0ef7c17fb367513a0a18145186538b773eecf7b5c14158f044be71",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Kasa2024EACP.pdf",
+    "bytes": 1543875,
+    "sha256": "c44f136d3df8c8c82daf0782ec3f6f50fbdc274c2651947ac071115e0c8f2dc9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Kasa2024EACP.txt",
+    "bytes": 136524,
+    "sha256": "837170c56f42ba3a5e45271c2c7b4a15f8f71c7293485fbb5eda75172d08635a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Kim2025ClinicalMonitoring.html",
+    "bytes": 235400,
+    "sha256": "5c8abff6122bb178157675422dae8594e22413a9575f2972b724ee66e3f45330",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Kivimaki2026CBPE.pdf",
+    "bytes": 933543,
+    "sha256": "f044cffbfb987783748a4570e2d11d40def97a161300f2a9185e49c93cc5e094",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Kivimaki2026CBPE.txt",
+    "bytes": 79806,
+    "sha256": "2e372ab286ea4a4286d3debadac7b1a06756484805b9925faf5d2fef5ab2cdf8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Lyu2025CUI.pdf",
+    "bytes": 682860,
+    "sha256": "b664c7f39b1fe6908241ebe7825b8a3b3bf1963716a6ba9bf4030ed649364fa8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Lyu2025CUI.txt",
+    "bytes": 69487,
+    "sha256": "3a7b2358bfd4f493099b76fdb56211c9b45076a86db793494d88b60cb88fdf90",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Messaoud2004SPC.pdf",
+    "bytes": 689957,
+    "sha256": "68dff9e7136e57170d384030b7e34a8d4255b413b5100e3665d89be7928dbedd",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Messaoud2004SPC.txt",
+    "bytes": 48421,
+    "sha256": "dbea3f9a44fcf4ecd0ae58210944c8957747da32c0fb47d2b34a423eb3b60fa2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/NannyML-performance-estimation.html",
+    "bytes": 151177,
+    "sha256": "6eef8d2e3ce1acec440e3a9860e65625d903cde80aa637aae0aa12889d680c25",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Nguyen2025D3M.pdf",
+    "bytes": 8105332,
+    "sha256": "e78412949ca3e3eaaef343b39c4d062ba2e47a406768099449f66f49a6049696",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Nguyen2025D3M.txt",
+    "bytes": 154961,
+    "sha256": "f87b1bf5fc7ede6b81c1bd952161bec3ae2ea450d7ef20891f376415aa891cf3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Prinster2025WATCH.pdf",
+    "bytes": 7303614,
+    "sha256": "35562184320932d93497305bc8d9ebbd1c170d353c5f742ba6bc75fc3fb2b489",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Prinster2025WATCH.txt",
+    "bytes": 226660,
+    "sha256": "aee8363c9c6cfe6fc86477f91d8c80d8df536bcb209e8e930f0377c5bd8b5b7b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/REFIT2026.pdf",
+    "bytes": 2057225,
+    "sha256": "652060778eb471fa13b06ee70e59c7a9442191cc7f919b0deaf83d40d90220aa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/REFIT2026.txt",
+    "bytes": 131835,
+    "sha256": "7c5c33f28ab002e39f4e24f4bb14472a44289aa4ec95133e2fdc8604cda8633c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Stocco2022AdaptiveDrivingMonitor.html",
+    "bytes": 336656,
+    "sha256": "dcec37fab52ae7b8f0aab36f55c03bf849dd24ebe3176abff823cdb2eaf1c3af",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Zhang2026PPRM.pdf",
+    "bytes": 2816773,
+    "sha256": "e35a336ef82c6c402846a9a1c9cd7ddf85315f3dc4f8d581cbb84aa332f2d912",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/adjacent_monitors/Zhang2026PPRM.txt",
+    "bytes": 219466,
+    "sha256": "ff649e89e3c2a69c102674afe4b2e83a75e45ddac59c8228a21ef82648496ddb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2509.04977-abs.html",
+    "bytes": 45440,
+    "sha256": "92c825f59d9a9d09acf829f6847935f4c33a7c8fcb372cdfe66a51a29c9f463c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2512.03109-abs.html",
+    "bytes": 44468,
+    "sha256": "310630da016ec344a363eafca2f632de8a69a7cbb8bbe935155ebf1f04f7eb2a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2512.03109-full.html",
+    "bytes": 437249,
+    "sha256": "f7ac3498d2d5c005d66a248e848dfa0f159f2f2a34a4a9b55dc0e48be2c9720e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2512.03109-full.txt",
+    "bytes": 93546,
+    "sha256": "8fb4f98763b95835f4f255e2881d14e4357895ed7371008ab2afdae41664a206",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2512.03109-pdf.pdf",
+    "bytes": 1992724,
+    "sha256": "b7a46e4cf781aec0c5730196b9f6a2ea1e42c3ec63f1e5260dff223dfafe3828",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2602.13848-abs.html",
+    "bytes": 42719,
+    "sha256": "511031f325828bcea7707d1457cae1a10e1c5d210ca2deaf9496d075725bda63",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2602.13848-cites.json",
+    "bytes": 2135,
+    "sha256": "6a94b355d73ea82d9ef5de8db069635b8fdb9ddd0e71ff70d9c858ea6cdd1e6e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2602.13848-full.html",
+    "bytes": 802330,
+    "sha256": "dc4e3556071b518108e51569e5ed033eef82ed3003c19023add580b19c7e7ffc",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2602.13848-full.txt",
+    "bytes": 124902,
+    "sha256": "be57190609503c2423dd948dfcb2c93c059fef5df5c261ada8272292fb6a06f3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2603.08455-abs.html",
+    "bytes": 42130,
+    "sha256": "4e0c150947ae016a3f84453ffa88b298f89f701e447be3a5878bf06be0ada053",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2603.08455-cites.json",
+    "bytes": 381,
+    "sha256": "0949cb77c6286497f27c70c3a247aa3abffe080cfea086cc4c1ea7efabc2ebff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2603.08455-full.html",
+    "bytes": 148518,
+    "sha256": "a00e2116d8a5621207bd91b2f8d4be14801e1921db5148a505d88e04370b64b8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2603.08455-full.txt",
+    "bytes": 38418,
+    "sha256": "e13f8f0569f6b6ddafcf31696b34d5fcded0b8f92688a9ff22fa19e3692853b6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2603.23205-abs.html",
+    "bytes": 41217,
+    "sha256": "f459b54b791298cdd291679096281a11afde2beae97bf3a2bc1c6d5dc8e766f2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.21783-abs.html",
+    "bytes": 44152,
+    "sha256": "3320b84659b1b830be1bac761d161a2a7b36a8d6470beb09861db3005ab7afff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.21783-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.21783-full.html",
+    "bytes": 1413330,
+    "sha256": "d88a5b4e44c5cc461bb4cabffb3bfe76dd596338538ee93440b6a35de3273e98",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.21783-full.txt",
+    "bytes": 97296,
+    "sha256": "64cd7b330acf60ee5ffc6eb733e560e524aa524db81fe39ab69f7fbe80bf7c57",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.29139-abs.html",
+    "bytes": 42689,
+    "sha256": "7e8aa187e9244bb3f74870873e0ebff457b9f92870a28bc987b803ab44838350",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.29139-cites.json",
+    "bytes": 820,
+    "sha256": "cc8d5cee86ad23b3e13c45460525f6b1883cd5c8e14bbba4367f8b8bf4dfa1cf",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2605.31239-abs.html",
+    "bytes": 42366,
+    "sha256": "6025d02890add666b41077f70c2ebcd381c21ba3f990115d3a7d22227c5e22e8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2606.01256-abs.html",
+    "bytes": 40535,
+    "sha256": "98fbe2b8110a618835c16e3fb20d1022c453745e8ab769c95bdcc29a3129d278",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2606.22351-abs.html",
+    "bytes": 41289,
+    "sha256": "10b5d2f170bbc803b8a26fd49b5dd72e0c91843567db4bdb75474a1d931a4132",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2607.02510-abs.html",
+    "bytes": 39384,
+    "sha256": "d452d69fd444e8331f2107eb13d23a9cd61be8a2791f1f3135f5d474de4168be",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2607.02510-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2607.02510-full.html",
+    "bytes": 238408,
+    "sha256": "81c020cdd4e5f364d405c044a4f122acd0170ede5d54c4a6a7a17622e4071134",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2607.02510-full.txt",
+    "bytes": 58043,
+    "sha256": "27d1f0e4b1a59f098770d5a2e3b1291b2c62bc89d52de914c7dab3f90811db2e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00374-abs.html",
+    "bytes": 43731,
+    "sha256": "33656b050e862a47b90fa18ffc517e52a352f08f3b043a8630d5c5f617fe0caa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00374-cites.json",
+    "bytes": 672,
+    "sha256": "a7752fb1cc0d345fb5099aa56c29e4364b799f0cf88a09e019c5efb0a68d9b45",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00374-full.html",
+    "bytes": 180633,
+    "sha256": "299245528d4ae38620aa2e4a62d41be53ccbd11b2fd7d3fcb4f59f8687d520f5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00374-full.txt",
+    "bytes": 45454,
+    "sha256": "23d68f92a73ab881cde7ff968350bb3f0cb1988a37ca83b072f6bc679de8780c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00536-abs.html",
+    "bytes": 41561,
+    "sha256": "7387664d929e9512a40274fd1dca828725149321c2169f9b9155148ca083a5c9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.00536-cites.json",
+    "bytes": 351,
+    "sha256": "209f4515947ea352f9441ab22cf19078a3ea6d8240fa33f4c456c68e8483d2ba",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.01679-abs.html",
+    "bytes": 46268,
+    "sha256": "aedd79a8838adc05c2399d020ffa5968fce27537d602fde6def52a3df385597e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.12136-abs.html",
+    "bytes": 42827,
+    "sha256": "e0b36cffe5d77602072d4e52dc51efaa5396497be6dd7483bb82d7ec621cab68",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.12136-full.html",
+    "bytes": 1536380,
+    "sha256": "1ef3e6bb71935c0b56ffb0c07fd9157a9d70be61dc68a6fbbebd553c9cb661ef",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.12136-full.txt",
+    "bytes": 302813,
+    "sha256": "8bffc15d6a4ce2b1ae03d59fea86d8ab99402bd6364b5a3666a126f2ffb886a3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.12136-pdf.pdf",
+    "bytes": 963496,
+    "sha256": "deb9b1dc856ae1996eb61632e54f2c86cb352e31356d2031afbf866d1ab4fe2a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.12136-pdf.txt",
+    "bytes": 263933,
+    "sha256": "affa054b41b7ec77c5c18d0aef78a5b70a14ad04ad006a0dabd5a9893131dbe5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.20700-abs.html",
+    "bytes": 43558,
+    "sha256": "78e442586939eca4450b6c6186e9905eace20524054088e4d494a68216f3a496",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.20700-full.html",
+    "bytes": 1151506,
+    "sha256": "ee5739d898c852aac3457d42b634f11e88c2fae407ad08e5ded43316601c171b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.20700-full.txt",
+    "bytes": 217588,
+    "sha256": "27075a9fe4205331c09d849d001b372793c5de6b86ebcc0f8db268da7cd6575a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.23254-abs.html",
+    "bytes": 44529,
+    "sha256": "a6c042c83654b4cf7e8f9027f9b7d1993eede8f8744cd1b71badc5063eff9097",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.23254-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.23254-full.html",
+    "bytes": 334811,
+    "sha256": "db9ae9d1967d6d25a14e252d99b9fc0732a1764a3115aa1e0c179947d42c9bbb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.23254-full.txt",
+    "bytes": 69826,
+    "sha256": "9315af8b4f1e695b131a3fb0be19cfe9f02777c56a7e341762e3edefd4d0310a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.32678-abs.html",
+    "bytes": 41570,
+    "sha256": "256ada1d4b9c62f26860896af67ce6e327923d5000e225ff6bb945d547f8ead9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.32678-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.32678-full.html",
+    "bytes": 836238,
+    "sha256": "1ce0605db54364273f153ae26d7878c4e82557df2447a32a4457f2cc43d8fac3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2609.32678-full.txt",
+    "bytes": 173641,
+    "sha256": "01f07522bf342b074c8c504665eac9decf0d3f830eb6b4dd95b1c4a786853763",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.08991-abs.html",
+    "bytes": 41329,
+    "sha256": "bdcc253400d66f3071460a86b14e7d79811791ce34535539b7cfc73d81c21479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.08991-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.08991-full.html",
+    "bytes": 570390,
+    "sha256": "cf79c093f0a57e2ce83387ffba77f2e812555c46f42b4695066d29646bf9486c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.08991-full.txt",
+    "bytes": 123786,
+    "sha256": "241b2d2e1cd240c4e736d57a58f420eac8eba7d7c0c7d401d66e7f403a38c8fb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.17343-cites.json",
+    "bytes": 345,
+    "sha256": "e2b167bdba2ff9798a4e201daf16a68186ac38f7092651db52b0888862b87b5b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.19892-abs.html",
+    "bytes": 42087,
+    "sha256": "a05d61a8e805144bbcabd60231a657d7b2d916a37c6e9c98d1913eaf5029d5f4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.32660-abs.html",
+    "bytes": 41973,
+    "sha256": "4bb48dbb392225820846c74ab773bdef16532a1a14260faf8e9395fdd5e641d0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/2610.32660-cites.json",
+    "bytes": 26,
+    "sha256": "b890c0f15f5c03ba84c2ef5ace10d4d63f07c6388916be8151f53ffbb7a0b479",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/anatomy-page14.png",
+    "bytes": 472431,
+    "sha256": "56face50c81363a0e97194daf860394cc47e6d4f2d7e8ace7637842791da368a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/arxiv_abs.html",
+    "bytes": 41374,
+    "sha256": "383e28fcc874eaebe26dc014a577cc9d2604314676466c25916f6cac1673d285",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/atarmla_fig2.png",
+    "bytes": 81922,
+    "sha256": "ef34cfcbec24c7c30d42ef8062f3567076f573d9f394a2ad153f26cc5dfd01a8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/crossref_published_again.json",
+    "bytes": 2278,
+    "sha256": "b5d73bd39b80e1cf2bf89348dbc9e4d129c0e0b410be54812558e3002cf3def6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/crossref_title.json",
+    "bytes": 1079808,
+    "sha256": "844b208a050cea996412108d227b7816afd5bd0939c0de33574eeec2aa694d2d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/crossref_versions.json",
+    "bytes": 527695,
+    "sha256": "a9d84ceb20490a95e2d964574547f8bf05c1b864584964ee35461ee36c5c03ca",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/dblp.html",
+    "bytes": 7483,
+    "sha256": "59c1f0bbc67115c9e06c3fa09b36547408ea502850cbfff07f8225e8926a869d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-crossref.json",
+    "bytes": 42117,
+    "sha256": "1cfa1c93b31899ce7b860d92972bad9ee76bc03f42d0234b6feba4630fdad144",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-doi.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-ieee-primary.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-ieee-stamp.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-openalex.json",
+    "bytes": 13191,
+    "sha256": "fbdc464c5067103eb9767b584f346ab921e3469a74d9e88d83ee7807f48beab8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-primary-pdf.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/fault-scholar.html",
+    "bytes": 158703,
+    "sha256": "76dfaf462434330e37db60bf88cdc0cb5735b9b3aaeeeb75cb886ed73b6d72a2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_bench_issues.json",
+    "bytes": 157625,
+    "sha256": "565dd6368bbce4912a76ee250c7f876db26c7154fc991af1f5ba42e186f60fdd",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_commits.json",
+    "bytes": 2547,
+    "sha256": "ec80077f940d854b954293f1bdca0ff81e854e3def4b73da597ff2ef8f7f4c1c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_forks.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_issues.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_readme.txt",
+    "bytes": 3266,
+    "sha256": "4de4c2d92b1cbd60bfa963ec23b9432e6261607902fbae9b77a65e148fc141e0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_repo.json",
+    "bytes": 5106,
+    "sha256": "bb683a5e5e51e5b721f69445645f65040de17c92fcaef20aa635fdd720476047",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/github_schirmer_issues.json",
+    "bytes": 42162,
+    "sha256": "d5155314f9b2caf05952ec9ed9f846d0e8ab9c907c2b977a949d373c3928a3f5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/hong_fig5.png",
+    "bytes": 751744,
+    "sha256": "eebdbc2cfd85368e279b11bc9bbca7258f54974b1cac05583d6cfd9dac7ea80c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/manifest.json",
+    "bytes": 25235,
+    "sha256": "ed1669fe8197bc5ab2a2aad6c05273a3cb59286818577d442d64a9838931f391",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/martingale-new-abs.html",
+    "bytes": 40816,
+    "sha256": "95e0f96a5827082997a37ef846faf32ef939bacf43e463c29fb7e441dec9e778",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/martingale-new-full.html",
+    "bytes": 1644065,
+    "sha256": "e74646cf5fc5e22017fdb949dd24c4e7d177c9b8574eefc098552744043de0a5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/martingale-new-full.txt",
+    "bytes": 225325,
+    "sha256": "a8cf42db0f5d55f2a15e524874dce5bcd854a5c06a863d66b5711fecc8b4466b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/mlsanity.html",
+    "bytes": 23185,
+    "sha256": "3df9966f469cbf9eb21196df4eba12869273402f28d3043905ed23f5e9f35864",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_arxiv.json",
+    "bytes": 52208,
+    "sha256": "292ba09970ab7d14b7656be58abd1f5651c51e4b99f37796b67c3cc9d3e3126a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_cites.json",
+    "bytes": 971,
+    "sha256": "3554de726b4b622f4edd63dc3c41d4e071526c79b45de212fc02a69474dc11c7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_doi.json",
+    "bytes": 13912,
+    "sha256": "e013122d83394c2827e5f07796132c49fef6d9a55b46c484c406875f56832863",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_exact.json",
+    "bytes": 18602,
+    "sha256": "27193fd338d27c8eee89b92081041489e5e2c5be9ad6a585ad2af22eae2e809b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_preprint_cites.json",
+    "bytes": 1006,
+    "sha256": "221cb58ffd7e380ff3d6b8cf984993dc246398c25c96796e9e07abbab3a871b2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_preprint_versions.json",
+    "bytes": 1080,
+    "sha256": "7ff906e5743d851644f7ec512a9d322df814063a8189831dd50d587f280762b6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openalex_title.json",
+    "bytes": 2098624,
+    "sha256": "bdfcb3fd805d8d7583a95b4ad59345cade8a65ab3c87a6b1cca7295757ff536e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openreview_neurips_page.html",
+    "bytes": 4787,
+    "sha256": "f0814ac774698a703986f1f64b92bf97165d43f43b6484cc314549af075751c7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/openreview_workshop_page.html",
+    "bytes": 4787,
+    "sha256": "b3bb5a4968f1cd2334a8de27e3c2f69cc0f3c1d575408442aa4eb358cc4a17e0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-direct-citers1.json",
+    "bytes": 1070,
+    "sha256": "41c67aba2367a0e6b7fd1e9b9af3b4b1c6b5e63ed5b03c2a41e0025a1093a389",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-direct-citers2.json",
+    "bytes": 2542,
+    "sha256": "3e6721ffcf99f45363a54ddd0902a5a9f3b1dbbf18305200e9381f1fdc93e747",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-direct-citers3.json",
+    "bytes": 620,
+    "sha256": "9935bc3cdd4a60da667cf8b02ae10069275c0eff4fa85ba49119f3331399351d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-direct-citers4.json",
+    "bytes": 790,
+    "sha256": "b4000db4c415f72c780b56a7f35731eab659d6c3684fab46a36e11889b96c001",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-manifest.json",
+    "bytes": 6500,
+    "sha256": "c74bc75f34cc1ac43a3e6be0e7d70a46dc05bf507f8ed8e107ca0edf454757f7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round10.json",
+    "bytes": 2485,
+    "sha256": "a39ecbcc6c91b952b21b7532515092b9d8ed037c90966a576e72e933ef5e34e2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round11.json",
+    "bytes": 1621,
+    "sha256": "7b3183cdf0aa1bb60a6fb936c14c970a85781f4e32c2cc6bf9e7d71f5420a04a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round12.json",
+    "bytes": 2057,
+    "sha256": "bbbcfe66b6c9c7820eb52f6b827bdf46be6c1a1829116e46c4850bfd602ac75d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round2.json",
+    "bytes": 2387,
+    "sha256": "e8eee57fccaf4f4d5010ed2673888d8c9507518e8fe8e9a2ab622ed1c3cd01d7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round3.json",
+    "bytes": 1654,
+    "sha256": "bae3da88ae55fcdffdd77536b7b75afe06e75771ef7cf781cee224ebeac5cb27",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round4.json",
+    "bytes": 3277,
+    "sha256": "74b523481e271a0bf001ebf28c3fab02d12b99b9ec99f808142fe72dac95767f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round5.json",
+    "bytes": 6947,
+    "sha256": "ec596eef328a8c98a63820c289b52173e6bb22f05997d373928b88f69e52bfae",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round6.json",
+    "bytes": 3511,
+    "sha256": "d7a3947e791aa6cb71cb1f384a600c1151f864012ca91e4342f4b37ae9630776",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round7.json",
+    "bytes": 2972,
+    "sha256": "1d37c999dca4d18bb02f176b33a3601f58c4175bc3fec8c5c703d4bc7073701c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round8.json",
+    "bytes": 2488,
+    "sha256": "b8cdaf09950f2a9128fbbc02b85a7ab738e60959b77dd1d0918786ca810efaec",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/retrieval-round9.json",
+    "bytes": 2477,
+    "sha256": "ec8f4fd0d1795060043b363e2a9ce3acdd885df07d5d18a778ec7e3ca1198f22",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/s2_arxiv.json",
+    "bytes": 389,
+    "sha256": "267cd4c50807501dff51c59b188dab4ef8908a5d487b2c5f8904fdf5a1b482a2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/s2_citations_retry.json",
+    "bytes": 4459,
+    "sha256": "24ce4f95b604492fec5d904dc7467dbe5e62028c8e675de627d8f111330a6689",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/s2_refs_round3.json",
+    "bytes": 30509,
+    "sha256": "0704a2e62d0cf46c7d4df36849241c343c5635293ae1c5b704c59c0333cafe68",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites10-records.json",
+    "bytes": 1608,
+    "sha256": "e37a6544ebf766964556a69c3334bd2b73e7dcd01d2f27fe4e5014f3391e9119",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites10.html",
+    "bytes": 174235,
+    "sha256": "aa04b8f131c2d8a381315e5e8c614b6bad15258ea6210df5e18d29ea972e3e25",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites10.txt",
+    "bytes": 3761,
+    "sha256": "71aefb5df9ef8fd4bd98809fbab86684303031cbc690079db80e3a5b02f742ff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites_retry-records.json",
+    "bytes": 2690,
+    "sha256": "05ef91ebd33bc4c6e30255d5a009987cf4af86d4d1553c945d36fdbc90f1f1f5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites_retry.html",
+    "bytes": 186148,
+    "sha256": "57f91fe2551594d3df617644e08c8264c0c57339fe7c3a1a9c98a818f1ba9606",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_cites_retry.txt",
+    "bytes": 5589,
+    "sha256": "cc6387720ebc7dcab9706e06e3e79b5355e944cc9faaf0decca29e9a69c192f6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_title.html",
+    "bytes": 156626,
+    "sha256": "eead7840fac4e1421e18dd8c4345679ea65e4aa4b79e7892f02e73196536ac81",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_title.txt",
+    "bytes": 3302,
+    "sha256": "5e6bbc134afdf187150a3f3d850486bf165a6f171b69f0b3e23bfcf4540a3485",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_versions_retry-records.json",
+    "bytes": 1471,
+    "sha256": "030f5402089ca7b92d7edb51a9d9388ffd99fbb75cdbfd2439402bc417528caa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_versions_retry.html",
+    "bytes": 149275,
+    "sha256": "5dcacb81eb0f62648ffde310833ec998efc4a93cecc9f4aaf904f5965c108cfb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/scholar_versions_retry.txt",
+    "bytes": 2861,
+    "sha256": "018536809638f44b8f9858c6910ef671fac0c7352d19a2d590e87a01fb334644",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-direct-citers.json",
+    "bytes": 40814,
+    "sha256": "a3c9212668bb82e7dff02cfece248330df7ed6f70f300a630f3baeaccc059111",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-direct-citers2.json",
+    "bytes": 26144,
+    "sha256": "b3cf019e66bad76f2fc35d60165a81bfca4ec51d9aa79f5fac408580ed8b35e9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-round1.json",
+    "bytes": 33442,
+    "sha256": "f305758822b2632fd284e259ab420e0e933398ca33712a5f691ce73558839293",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-round2.json",
+    "bytes": 32823,
+    "sha256": "3b2296e16a7f253f1f40739ade19f74c4637f1dfc867356f39ad831f9d15a8b3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-round3.json",
+    "bytes": 36415,
+    "sha256": "52b200cebd201803af8246b8051c6648aa14e25465c97576b3a5969f201be4bb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-round4.json",
+    "bytes": 35786,
+    "sha256": "3946a1b73518af292a0d59620adb4e1dd8a68e5862a10e978de8a92bbf78715a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/search-round5.json",
+    "bytes": 37412,
+    "sha256": "0817db44ee8be3251dc54a5b889640e625c3330f3a655d0b70fdd7d1a8dffdec",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/shaer-pmlr.html",
+    "bytes": 16464,
+    "sha256": "9ae3ce0eb12c22ea91b4c0f19e176887da8723f3e64d62247c6996e1fd8d8f28",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/citations/workshop_papers.html",
+    "bytes": 26585,
+    "sha256": "f0ff1a53253bddc073407e57fbc4d734ebf37f72b80083bc96d256dd0e073f8a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2023.html",
+    "bytes": 441529,
+    "sha256": "02b2bb49877076dfe9bba3fb98ef7a95ca9c3c60dc439e2e28500fe38cba32f9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2023.txt",
+    "bytes": 146960,
+    "sha256": "f9db0ab009871f7847d9896566b20328fa5a4460a1886fd0c7500e180c0c179e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2024.html",
+    "bytes": 489113,
+    "sha256": "daff289c0250e36f6ac2f75b7661d815640277b3041a13d47751a71738d22682",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2024.txt",
+    "bytes": 162611,
+    "sha256": "940ada3851ae0a670f342af4fd45a2cb7155d8656a4344263c2962a6a6029454",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2025.html",
+    "bytes": 665613,
+    "sha256": "e1c7c9ae71035ea2fe74cb227fcbb95bb3a59bbc1b8428752919a871d9bcd6e4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2025.txt",
+    "bytes": 184466,
+    "sha256": "dd203fbcce7218fc25a0ceddfe39c166d36166cf063b6ba1b6b946dc7acffd83",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2026.html",
+    "bytes": 585822,
+    "sha256": "8a38144cfae7e6f07ecc80c85d0e998464c9992f52649515f18e01526d46fd40",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/AISTATS2026.txt",
+    "bytes": 180376,
+    "sha256": "9f3047747cab8c7634495e9da75b4c95cd7e6e7d6fbf00b313e0808d1704e98c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2023.html",
+    "bytes": 6273840,
+    "sha256": "8284937abea6f8052da24f58802f619bb7b4261d80ee52305f31b428a2cfe4c5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2023.txt",
+    "bytes": 1466081,
+    "sha256": "f4cd0b224991a4b1c441fc24ee018b49284e56d76022ba5eee9823e4b6047774",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2024.html",
+    "bytes": 7471679,
+    "sha256": "720265923ad5cc65224d2ce1cd9cea868c6e4589ae51c05d1493f1f9d9aea03c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2024.txt",
+    "bytes": 1728118,
+    "sha256": "81221af4a7467d56b3215c43e0133f6e89b0400569257ac1e2d00534a4e9866d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2025.html",
+    "bytes": 8396274,
+    "sha256": "2f08dc191b870530993ba6a5a79e8c8ae812f158b6a30b21a96f3b190af96bfa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2025.txt",
+    "bytes": 1872976,
+    "sha256": "d61310811f8acab33efa4c6271ddc2b2ba24c325f899995ff2eb220394301c5f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2026.html",
+    "bytes": 12117951,
+    "sha256": "8af49e25ae802a5150596890723adbca037730365503682aa4cb1b3735ab6c74",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/CVPR2026.txt",
+    "bytes": 2725097,
+    "sha256": "7ccf4c7e1618be640e83aa1fa83f42402896660b2544dbe4c811c64755699a3e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-papers.html",
+    "bytes": 6901,
+    "sha256": "c651255517d6da8fbac1e6c23f5ed4bc2db0a54cc668159ab84fea845335b0aa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-papers.txt",
+    "bytes": 1487,
+    "sha256": "cb98f8b22259856bb08437e5c528cf6a29215b2a1afac90a346e947a0f4c7e22",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v01.html",
+    "bytes": 56256,
+    "sha256": "39555002d6b21a251bdc291ce01fcebd27bdfa72560b2156ca86a92a14c92d91",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v01.txt",
+    "bytes": 38146,
+    "sha256": "8930d23b7b9ad12e4daa6671cdbe4cff049b992199a7844a6743b4e20ffa9708",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v02.html",
+    "bytes": 70556,
+    "sha256": "56b1895f25a69d38d49097880fb202d8feac620ef9da02d2ff766b16eacd71ff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v02.txt",
+    "bytes": 48168,
+    "sha256": "e4ab4b5c72f00d1a317794789caf9c4d5a892e955cd6fe3c1484b9d2458535a2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v03.html",
+    "bytes": 86358,
+    "sha256": "ba7ed4ce6969aa1f3907e564353e218d7b9b5dbef0c8766eb125da02e614a5e4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR-v03.txt",
+    "bytes": 60415,
+    "sha256": "fd32fdfc23b4bd4ae703d7e09c4ca518ea716888b15f698ba133d6331a5a1686",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR.html",
+    "bytes": 11866,
+    "sha256": "c94b08ef3d7fbd28c432465ad6cc8742f09134591e70131ecec864f7b6e4fc1d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/DMLR.txt",
+    "bytes": 5122,
+    "sha256": "6d46d5ad24e27e2bd3acec79a3d6a9a12fe0eed16de524130a9aff2fd40bbac5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2024.html",
+    "bytes": 3600315,
+    "sha256": "bd1d0d3897a5f57f767b43c1bfdb874028adb14be06fde09ad299866663c1406",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2024.txt",
+    "bytes": 1429028,
+    "sha256": "3da1a7be5f63e47b2271f872b0bf0957c01e50a460fb5c618bf0474adcd80e99",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2026-accepted.html",
+    "bytes": 4794479,
+    "sha256": "bba53e64320dea897aa9bcc82c5aef7096a91a7ae0a69ca45d242418d8efa8f4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2026-accepted.txt",
+    "bytes": 1151796,
+    "sha256": "f03232c7680d370cd95e73507a090b0bf7cce9f3560dba248982fdd64e0a9b3e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2026.html",
+    "bytes": 3600315,
+    "sha256": "bd1d0d3897a5f57f767b43c1bfdb874028adb14be06fde09ad299866663c1406",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECCV2026.txt",
+    "bytes": 1429028,
+    "sha256": "3da1a7be5f63e47b2271f872b0bf0957c01e50a460fb5c618bf0474adcd80e99",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECVA.html",
+    "bytes": 3600315,
+    "sha256": "bd1d0d3897a5f57f767b43c1bfdb874028adb14be06fde09ad299866663c1406",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ECVA.txt",
+    "bytes": 1429028,
+    "sha256": "3da1a7be5f63e47b2271f872b0bf0957c01e50a460fb5c618bf0474adcd80e99",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Feng2024Performativity.pdf",
+    "bytes": 2299418,
+    "sha256": "f4b3cebe7fefe79090a3555907a5bdd8e4bce514525200af9c1df11f3a6e3b1b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Feng2024Performativity.txt",
+    "bytes": 151192,
+    "sha256": "a353004875efd7071cd6741a59f7d54bb29fd8f06384963f71163184e97ab976",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Garg2022ATC.pdf",
+    "bytes": 3002783,
+    "sha256": "7cb2f27e56afaa892400202062f0984ece7c74c8834bb64e0efe27596e76429f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Garg2022ATC.txt",
+    "bytes": 146418,
+    "sha256": "e07fa3cf711666c08ad70bfd9e6af4520eb9e630e5a1e9e35c8dc0ab53e98679",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Guo2017Calibration.html",
+    "bytes": 14452,
+    "sha256": "3b4d7ca0ab60cd88e263f0fe342e033947aed43c68988e91485f2a5318a30cf9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Guo2017Calibration.pdf",
+    "bytes": 828420,
+    "sha256": "df7c93f97204f8a3c2b10f6d5bf5265baac25f00c1ae3b473a3e1dbc102dacb2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Guo2017Calibration.txt",
+    "bytes": 65245,
+    "sha256": "aabefe7c7062c7df4d61c55e466c45a4f6233a93c537daf7c8139a1c43ad4865",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Hendrycks2017FailureBaseline.pdf",
+    "bytes": 211205,
+    "sha256": "7987ceacab204bf71831719a365c74e5c8bc6a5572acff4ad5d6e11f6d1ddb1d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Hendrycks2017FailureBaseline.txt",
+    "bytes": 48104,
+    "sha256": "22f82204490a11ee95ed7023a80fe9c076915817a2305e61be24d96894bf2b33",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Howard2021ConfidenceSequences.pdf",
+    "bytes": 1494142,
+    "sha256": "eb3efd547349adfbff25514ae0854c142cd29b96b398be38c9000d69a2f64ca8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Howard2021ConfidenceSequences.txt",
+    "bytes": 234250,
+    "sha256": "34313c8d4e05f771796b00166ea7fc2b3d78e20520adf15dcd85de8bd178d90e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICCV2023.html",
+    "bytes": 5711199,
+    "sha256": "ba112ee3d3bc0111322a32faa874aa9d9b74f7a074de99994cfb6a335f1c58ed",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICCV2023.txt",
+    "bytes": 1326276,
+    "sha256": "e7ab6a33ce33afa9baec05c5ebae45b2f7ad76e566d1d336fcdcd771fadeb20d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICCV2025.html",
+    "bytes": 7692642,
+    "sha256": "e684fe760c417a35c2f1e9a5acb3015a192fce10e566086e2d4bf7f78cbb97fe",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICCV2025.txt",
+    "bytes": 1749339,
+    "sha256": "6a31a20e88c67e2e148c05b12266e62d18f6b079b828fe3a78d7ded929a5dcd9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2023-api.json.error.txt",
+    "bytes": 25,
+    "sha256": "2fbdaaa36a31ec4853f2062504fc20ecfc24512cfe648271bc840f246a542911",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2023-list.html",
+    "bytes": 264699,
+    "sha256": "5c6e619081549931c0af633caef80fd65449649293be9ace57d7042be4cf49c6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2023-list.txt",
+    "bytes": 127625,
+    "sha256": "641d78659e963d519636ffbe13d7726d47487a9d450a90e64824dec9f879c6ff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2024-api.json.error.txt",
+    "bytes": 25,
+    "sha256": "2fbdaaa36a31ec4853f2062504fc20ecfc24512cfe648271bc840f246a542911",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2024-list.html",
+    "bytes": 365153,
+    "sha256": "11be07835db8d0321aa412ef820dfe2f91877b02696d1dfa48a980a0ca8b4274",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2024-list.txt",
+    "bytes": 183206,
+    "sha256": "74b0f40e9158a2c965931d35a4cc3e3daa87edf914e127b2e9df7de3547e3a71",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2025-api.json.error.txt",
+    "bytes": 25,
+    "sha256": "2fbdaaa36a31ec4853f2062504fc20ecfc24512cfe648271bc840f246a542911",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2025-list.html",
+    "bytes": 588406,
+    "sha256": "1e008b4ffb3d66c33aa1491721c9a9990d7787ace748f23b23fd4f5e1639a47e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2025-list.txt",
+    "bytes": 308282,
+    "sha256": "6d90efab6237b64b60c0b6fc065ed6c5a773fea620b0bcb9de516634df287a6d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2026-api.json.error.txt",
+    "bytes": 25,
+    "sha256": "2fbdaaa36a31ec4853f2062504fc20ecfc24512cfe648271bc840f246a542911",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2026-list.html",
+    "bytes": 845862,
+    "sha256": "a602b658be5b9e304c2d009076e6acc8cd89d787f56e5357ed1007138325a6ad",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICLR2026-list.txt",
+    "bytes": 447276,
+    "sha256": "0b2801fbab4ba494a30a90ea9db32604df81efa165ec78f4434abdc96bea179c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2023.html",
+    "bytes": 1670480,
+    "sha256": "fceaba96362eda584dccc6ca38ee5fa68e399efcbdc827f6f9db71af6667e2b0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2023.txt",
+    "bytes": 526596,
+    "sha256": "066e32c2fb9b68e0becc0552a3a32d7e1ee3e59a43be07d222eca371585f243f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2024.html",
+    "bytes": 2552499,
+    "sha256": "ab9400795dbdd1f63eb42499e69fddf9803ccdc2e055311c6bd8d7a49240beb6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2024.txt",
+    "bytes": 777220,
+    "sha256": "52f53e44705c93ee906f9e05ff08275b14eee77919a5ed3f52cd2842c024151e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2025.html",
+    "bytes": 3639879,
+    "sha256": "9e17ee7ed7eda2727ad46178644225738ee1d8e3e319441ad4d1c11e4986288d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2025.txt",
+    "bytes": 1030104,
+    "sha256": "ff43998b02d9d5c4527fca691d763f3c37388f3bbe5302e7049b388a9b36dfe2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2026.html",
+    "bytes": 7156776,
+    "sha256": "b6bb3f3207225197ffe44514c58959f1a103a36d6c2e19e42d96d6e649f45a2e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ICML2026.txt",
+    "bytes": 2069983,
+    "sha256": "1338ffa22001c48945b8e7b43a3044bafd571eca91177a7fa3d31151a64063c3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/IJCV2026-dblp.txt",
+    "bytes": 5450,
+    "sha256": "8e8235449aaf7f7fd61a88c2a382974c0097c8c645a0d9bb0b189b83bc7d9a03",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/IJCV2026-dblp.xml",
+    "bytes": 7469,
+    "sha256": "afd0bc9e8c6a54cbb0079a73efbebc4206cbf5f116efc3e78f7271f53fbac3ef",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v24.html",
+    "bytes": 168231,
+    "sha256": "6929eca1da11d8c5bf52d52b8fd8d4b1447e718bf340199e2d15785fe6a6cd69",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v24.txt",
+    "bytes": 80379,
+    "sha256": "b964d09a92f63a01617b19a9bfb5a7ae94cdca690825757218d7e57e278e898b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v25.html",
+    "bytes": 179154,
+    "sha256": "14e15d49191a433461163b0044cdeb959c1c3864243c31eb816fde041790eaff",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v25.txt",
+    "bytes": 86840,
+    "sha256": "b6ea9ccd6326a8dfe79e73d71b4e05579aa23246514d582ed7871479adb2b3e4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v26.html",
+    "bytes": 132276,
+    "sha256": "dcc2cba690b8ff009a321074d233a8554d1606637fcc9b8178f68030965ff467",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v26.txt",
+    "bytes": 63204,
+    "sha256": "ed226857e59d7e6faf95bdd4e96f9b1cbcd9be6694de78e6335ed0a4978c350a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v27.html",
+    "bytes": 87598,
+    "sha256": "8dfe64e74d9a39b40f705243f1031eb65ccb2649e2c98b3f66e19852dc580bc8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/JMLR-v27.txt",
+    "bytes": 41360,
+    "sha256": "08904084e3d5c2b890d5b11ffff1afbdb2f8db42e98ae8ca493d1c8194a12dca",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Kim2024TTALine.pdf",
+    "bytes": 3247803,
+    "sha256": "cc1648d088cbdb55dad1490da337ad034f44670121112647289c75396b169390",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Kim2024TTALine.txt",
+    "bytes": 301450,
+    "sha256": "a321b35b1b06c1c078266e5348d19a419e5160672838ed1bd9bae86aa1207872",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS-Downloads2025.html",
+    "bytes": 907535,
+    "sha256": "5085e111c1ab129d927e4121ce034b34d64c1a2fe65f044a7e38ca08cde46c9d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS-Downloads2025.txt",
+    "bytes": 484616,
+    "sha256": "6bbbe2de29a6b0eab66b403069df1a6c862abe6b39cee02295ac7165c3ab0bb8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS-Downloads2026.html",
+    "bytes": 1384472,
+    "sha256": "330bfee7a44ebe754ea0196705fbcacc076c6935876d944b8e57ee17462aa329",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS-Downloads2026.txt",
+    "bytes": 751407,
+    "sha256": "28e9934974789ddf5c1fdfeb95b359e4eeabef830e7108838676331cf8f6b22e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2023.html",
+    "bytes": 2445827,
+    "sha256": "52308a22f85d130a535514e158b885637452aa939cc0c15613c4544bc8dc217c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2023.txt",
+    "bytes": 660424,
+    "sha256": "7a9c0fdfefd14f7efc76b00a93a13a9a04d813e945f7325a5dd096afb0740a0d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2024.html",
+    "bytes": 3149240,
+    "sha256": "a7dfe7900f9978f212c0431cca994d5e92b2984ffc0546523cd71e2d453dfd8c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2024.txt",
+    "bytes": 874552,
+    "sha256": "13e46f750f5989e81d588d1bc49aa55c25596cf1e6b8eddc143824271b608420",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2025-main.html",
+    "bytes": 4104317,
+    "sha256": "ab3e067704acc301563a7286444b45ad95b59888f76959a6fda4aed55b2e5709",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2025-main.txt",
+    "bytes": 1162263,
+    "sha256": "7a2b3bd4bc4e69e3402cee5a9b01ce00a3e6765c02327be7d6331f4622e10161",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2025.html",
+    "bytes": 53928,
+    "sha256": "7e80dffbe076b8c3d840192e4460ed54c20c8f43e93a91fcad78a6faf16b4e6e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2025.txt",
+    "bytes": 15005,
+    "sha256": "160d264b1f42caeb2361a3f7cd708553de83783f2d2a429e2a021c1754018d27",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/NeurIPS2026.html.error.txt",
+    "bytes": 25,
+    "sha256": "0738e1d53e03cdde4e379859b024fb665340ccc62ac4ed215101772e5d81327b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Park2023LSA.pdf",
+    "bytes": 2235290,
+    "sha256": "c890a85a3864c42c13cbc15e386fb1602080c89770165871f2f6263117e6398e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Park2023LSA.txt",
+    "bytes": 124587,
+    "sha256": "e2f484b5e930de13f7177c615d1111a68407369ab49a38d457711db6e1f330a3",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Podkopaev2022RiskMonitoring.pdf",
+    "bytes": 4000113,
+    "sha256": "a8bc8f2b9d224338874fd95c1d9626726e73e9349b3d728e8b7796ce7390636a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Podkopaev2022RiskMonitoring.txt",
+    "bytes": 148187,
+    "sha256": "dbdb80b9f768903fcd3b13fa06e1fc7daabfdca15673e14143aa4104905925bb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Schirmer-Fig5.png",
+    "bytes": 496471,
+    "sha256": "174ef85978822165c74e84841218eebcc0b9971361db3bcd9232c4a0857d36a6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Schirmer2025Monitoring-neurips.pdf",
+    "bytes": 6157401,
+    "sha256": "13d5012ec24d6512e4b35d7ae35b7a43151ae5bba28c06f92d23d31e90c5a103",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/Schirmer2025Monitoring-neurips.txt",
+    "bytes": 121090,
+    "sha256": "7552bbe2db547cf393c2a5016e3c8ac118f50c167b89b56ba5f52925bc275894",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/TMLR-api.json.error.txt",
+    "bytes": 25,
+    "sha256": "2fbdaaa36a31ec4853f2062504fc20ecfc24512cfe648271bc840f246a542911",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/TMLR-group.html",
+    "bytes": 172777,
+    "sha256": "0ec96cd6765ed50e7accfae1ea79c57addcdc86d06b75c1298902092776c3785",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/TMLR-group.txt",
+    "bytes": 160999,
+    "sha256": "71029fcde89a03611cfbd249d84dac54f8e9b05d358ee2f20368db7a3fbc1343",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/TPAMI2026-dblp.txt",
+    "bytes": 5450,
+    "sha256": "b0c4f57f963b96ab513b9866062a7b7dbead44aafcac8695497431d9fbc8a0fb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/TPAMI2026-dblp.xml",
+    "bytes": 7469,
+    "sha256": "81537427b0eee2cbb54a73f9037d328039c3687522b97b96cec43fbc6cb9a987",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2023.html",
+    "bytes": 283056,
+    "sha256": "84f57edf9f61bf6c294a3ad4a2a695f4d987499ebd111d5e299a5b270276e407",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2023.txt",
+    "bytes": 78487,
+    "sha256": "0aaaad6fd4b7c7d6be7bcf7d64c6b19d305c36eb907e75b4a0d1ab7c70467d80",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2024.html",
+    "bytes": 223714,
+    "sha256": "3c875c7238132ae5a3413543a73f5840aa6d6b3d37e2e8e45b58ce301ce1bb32",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2024.txt",
+    "bytes": 62153,
+    "sha256": "3d44ca7ba75e79bc68cb4aee4ce6d0e61aa89a17dac9f16459a565a361623d41",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2025.html",
+    "bytes": 252140,
+    "sha256": "9613b1d5c338f88bedde24515ccde66da86401382aa4831b07cfeef03d8ac59b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2025.txt",
+    "bytes": 70882,
+    "sha256": "f98de7eeadfd97a1a280ab828ea321536ff7d245c60b241daa18cc42a14467c6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2026.html",
+    "bytes": 327692,
+    "sha256": "8efd97d90917c6dbba8af6b2b6665cbd51fc1500b75e2a5d778bcc86835089d8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/UAI2026.txt",
+    "bytes": 98089,
+    "sha256": "d6028b6a202437ff0d2940ce1d8c9afbef9eaba81c6d3025977235b51c494593",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/tent-issue23.json",
+    "bytes": 3173,
+    "sha256": "88950ed92ad42720d82817303441e5f7332c5d8a8cb5fe289d6c4312d642fe1c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/tent-issues.json",
+    "bytes": 68350,
+    "sha256": "43508b2b12035c51bd12216e9f04acd55660fee4b304528549e8d1ad95cb3ea5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ttab-discussions.html.error.txt",
+    "bytes": 25,
+    "sha256": "0738e1d53e03cdde4e379859b024fb665340ccc62ac4ed215101772e5d81327b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ttab-issues.json",
+    "bytes": 97141,
+    "sha256": "08c95d7a016286c53a4a5a08d66580a6eebc526e0325f03f5d4c90cb96f13e66",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root/ttab-readme.txt",
+    "bytes": 17386,
+    "sha256": "368dedde232d6c8852a9fcadf32e5a06aa8dc9d5b1a3f0c6e83abde81d04654b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-1.json",
+    "bytes": 33315,
+    "sha256": "7b49a27a9cd2fc325e4b0e9c1a6ecf1685699e5977d3fed809aeb09a9faa4070",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-10.json",
+    "bytes": 35096,
+    "sha256": "8b985097e752a7c13cb473909e03a0f7d5a039b9fcab785a6fcdd1869ca54310",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-11.json",
+    "bytes": 33533,
+    "sha256": "2dd05204497460b3a6bcba15f37c46f949a03e9d037a109356d6242db32dd434",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-12.json",
+    "bytes": 38670,
+    "sha256": "cfef7032cd772c585466da8d3e5bffbd720676470a85740d4af7297ca8455b43",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-13.json",
+    "bytes": 34552,
+    "sha256": "1c83e1919e98c75c69e607efd6dc68ecfef4214e52c1f3b441d8cb3d6237567b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-14.json",
+    "bytes": 37120,
+    "sha256": "aa2385aefc4afcdc4282ddd4cd06441d7ac2bd24710f2ffa2f3067bc4a98b6c1",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-15.json",
+    "bytes": 34814,
+    "sha256": "7f7c9f39db3713d8a3437e6e53acbbef1d21b524b836c52825fdb6150536a7ee",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-2.json",
+    "bytes": 33913,
+    "sha256": "7b911e5e4b7c69326e383f094954e8b726e884da36a7eaea4ebfca78a6c3107d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-3.json",
+    "bytes": 35114,
+    "sha256": "e295267041766ee87cf0964d46b6082358221c0609c2f008a241416ec02a3dcf",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-4.json",
+    "bytes": 35973,
+    "sha256": "a43996f2c69c45c0371994166c586bfec4498fe0d19b80238097ea50bf765c48",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-5.json",
+    "bytes": 36786,
+    "sha256": "127332f28226549688e90c6439c304ef27a5150d0f38de0e422d07fd590c73a9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-6.json",
+    "bytes": 32562,
+    "sha256": "857c790140af6be7795942ee414da4edd0bff5ee45cc1d3045c3b7218d849a9d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-7.json",
+    "bytes": 36919,
+    "sha256": "34280e83d1d0a61f296913cedef6d1af688322ae0ec0801dd758b9f6270c369e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-8.json",
+    "bytes": 33916,
+    "sha256": "f9e256e1b90a4e30543c5c3cad549c8e423588be3870cade89f6f8dab92c2d73",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/root-search-9.json",
+    "bytes": 38693,
+    "sha256": "5bf43328e6c6c1b4278b6dc4fadd9d05e7877d745f841a41ce50de5ff93f6bfc",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2404.16168.clean.txt",
+    "bytes": 68498,
+    "sha256": "e2e031a9b43c151b5b12079aede295cd50e649e5c5eaf865e6abf1d63e93d84a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2404.16168.pdf",
+    "bytes": 830449,
+    "sha256": "cfb5f96c86b2abdef303ed8139f767f8f38ea08949e4ca722da410d64cb7ba9e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2404.16168.txt",
+    "bytes": 82819,
+    "sha256": "34c91d7462a449f12d75e2b3581532036c7233a5e21ef33386a5a40fa144cb78",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2512.07390v1.clean.txt",
+    "bytes": 74133,
+    "sha256": "dcbb43c71c62451393af806f497c00b7d4384e39d5287b8fa72e52599594fdd1",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2512.07390v1.pdf",
+    "bytes": 2878164,
+    "sha256": "8c2b1b40bbe13718e80758cd4f25b85fe5454b2ba669e1aaad2d4fe6b3243083",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2512.07390v1.txt",
+    "bytes": 102942,
+    "sha256": "0e00e65a7fec4d3b61b845287eedf7f4079ed7daa640fd10c3adc892889d7ecd",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2608.05945.clean.txt",
+    "bytes": 45655,
+    "sha256": "430ca6bcb132d7b3f9752279ea3db545f00a814739d1318e7dd5dcf233e81798",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2608.05945.pdf",
+    "bytes": 513167,
+    "sha256": "a2a4d30d8a6e83ce45ad53a238123155806b0c8363ee8e522049a5271e3051d2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2608.05945.txt",
+    "bytes": 87498,
+    "sha256": "0693415009e1fd77d45237287c0d7974c0a4130b3f3b6b71480ac5067696c481",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.35500.clean.txt",
+    "bytes": 60883,
+    "sha256": "396e8c81c5bfd28dcfd27f01d8401c70aec7c2939b61282697632b0c0e1350eb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.35500.pdf",
+    "bytes": 3684796,
+    "sha256": "8eb5486625c47c178819210fa1e025e01dfec75c4e50d7ce7cfe464093177752",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.35500.txt",
+    "bytes": 79219,
+    "sha256": "fbd5b2f3dfb3172db6a37510a2160ae74d245c6a188a9ea96b48f6307fd29d6a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.37658.clean.txt",
+    "bytes": 282797,
+    "sha256": "05116bbd67b79aabddc072825230714fd7ce034161d87a1391cc322a7a6121f5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.37658.pdf",
+    "bytes": 1397371,
+    "sha256": "397c2e3b79931f0da292fefe4407395a7951d62b98ad9c46619babedf395b915",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/2610.37658.txt",
+    "bytes": 362373,
+    "sha256": "14ec1481b69a328159caacd8c64b8c9ea351d556d7d93be20a72277237c89204",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/AETTA-figure2-page3.png",
+    "bytes": 595877,
+    "sha256": "1b971587d9c1347798c98677080faa5f38fc2e27459210b6dafaf7a39045c86b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Ahmed2026Dashboard.clean.txt",
+    "bytes": 79965,
+    "sha256": "e7da69960cb7e65e3864c9b7a6098135ecb129e3b2a6924e5537dec80fa2927e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Ahmed2026Dashboard.html",
+    "bytes": 921459,
+    "sha256": "cce5c9fc877e472a3f1316b0b6aa9dc5e5fa4f737991b812c3de7e3ef2fb740a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Ahmed2026Dashboard.pdf",
+    "bytes": 2229902,
+    "sha256": "96aba117c6c4fdae8e4b47d1e0c6839b24b80499a9cf21d31e645b0abaffbd47",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Ahmed2026Dashboard.txt",
+    "bytes": 115186,
+    "sha256": "e6f8c799ca77de2530bee284f56839a03743fffe9ca79aa7a567c278dd48e669",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Amin2025OverCertainty-s2-trace.json",
+    "bytes": 460,
+    "sha256": "b266f5ddb190a204755a3b06343160dc91642faacf5da93f82b669d10aeaedc9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Bar2024ProtectedTTA-s2-trace.json",
+    "bytes": 34918,
+    "sha256": "3b30a534a241134471178b679d6eedc030fbfe5bd75d854ea185d351664f57a0",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Bar2024ProtectedTTA.clean.txt",
+    "bytes": 116113,
+    "sha256": "a8a79f59881eed24d79d97e2876182001d60682d954e3167a607dbc1bdb7db39",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Bar2024ProtectedTTA.pdf",
+    "bytes": 4499633,
+    "sha256": "77f857b1d642391fe678630aa12366ebecc827134206bc6a6f385b055fef3d08",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Bar2024ProtectedTTA.txt",
+    "bytes": 126090,
+    "sha256": "7fd44f4e014d6ecff2099b3916a690d7a2f767df0dbfc831769edcb4440499b8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/COME.clean.txt",
+    "bytes": 84175,
+    "sha256": "1c191bdc3c5821d891bef01ac088404b30579a1fb022db12e16658a2e3b09398",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/COME.pdf",
+    "bytes": 18840054,
+    "sha256": "c077965f1a007fdfbf1e2ae78f9abc5575c379db8882ff13a805820a312fea75",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/COME.txt",
+    "bytes": 101550,
+    "sha256": "7fe59e72580ba2c2b005002d6dd3f9b2713f25987aa20f8116d82d10b805102e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Cygert-figure6-page7.png",
+    "bytes": 498613,
+    "sha256": "a840871df9a6f598b3be4c86b9befdd4c30bd3e296e3f91178275301f7e5b840",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Cygert2026RealisticSelection.clean.txt",
+    "bytes": 52232,
+    "sha256": "71d904c17e83bc2d915fd82d396e1873291aa1fd2a3972a367eb7209f0c888b7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Cygert2026RealisticSelection.pdf",
+    "bytes": 1450905,
+    "sha256": "932eacd0919d445b443250fa430cf82bc9a75f1a953786c063828e8b0ef072b5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Cygert2026RealisticSelection.txt",
+    "bytes": 70529,
+    "sha256": "fadaef619f576ab7e7c8f9d5e25149764a5ffd71704ca47f4bf6e728a3bb8b66",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA-s2-trace.json",
+    "bytes": 460,
+    "sha256": "f3ff693108ac44dbc2faf3f608780898875cd76b5e992b3117aff24615d4afe9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA-supp.clean.txt",
+    "bytes": 85081,
+    "sha256": "6b9c6e49d2c80b5dbfd9c7ee7120297d0c87de8791534d2d0553515553d5352b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA-supp.pdf",
+    "bytes": 410297,
+    "sha256": "7045d7d8d5a646e09589534fee0ba7d1427cab6b2019789a684344a763d4874b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA-supp.txt",
+    "bytes": 121081,
+    "sha256": "c2ce7bc1591114ee390d15c522b419b3589d2a09b720f751ff8bd525f9a3c132",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA.clean.txt",
+    "bytes": 50609,
+    "sha256": "5d64dce6a1c98c61d4d83886d69588d5c6b7e509c6f5c2054e93144b40655181",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA.pdf",
+    "bytes": 1560549,
+    "sha256": "4020a0bfc207f79bbfa18a336636153a0a1af7b0a223166957c8dc4334ad2a67",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA.raw.clean.txt",
+    "bytes": 49129,
+    "sha256": "e50c8be18aa3871d5d492bab4bea0aaaf31369a1de2fc6912f6aae2f8d0681a9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA.raw.txt",
+    "bytes": 49666,
+    "sha256": "2d7312940b712ed964733f7fae7f07155b509d0dc7ce38545513b2ee8944169f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024AETTA.txt",
+    "bytes": 109658,
+    "sha256": "0d5200fe4468027c8b741a9a52c72d671772c88148861f749a18e0889cb81034",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024DeYO.clean.txt",
+    "bytes": 99618,
+    "sha256": "0606b5eb8cf8e07c1a93e3277c9fd4c8cb65e9b342a42c1f8a9c13c3d9f354d7",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024DeYO.pdf",
+    "bytes": 1697225,
+    "sha256": "9c45c4b98b711fc5b567b993d3649eba5ebb1e6d3aafd608307f6101445e266b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Lee2024DeYO.txt",
+    "bytes": 125353,
+    "sha256": "46fe5a3ea5138351a8b2db18848599723b6031d820fdc7a642dc027d2916e132",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Li2026OpenSetAccuracy.clean.txt",
+    "bytes": 56051,
+    "sha256": "68b55b9ee98543a242ea07c2240635ad239cefe5f218783e66369a73e2775b6c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Li2026OpenSetAccuracy.pdf",
+    "bytes": 1031527,
+    "sha256": "9655a5ed6f9db17e4c469a9170d52055321c3556346bd6f61737500b227020d5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Li2026OpenSetAccuracy.txt",
+    "bytes": 70108,
+    "sha256": "b01cc70415641b9bdcf6008e1f38489bf540547f7a7d08a5104b87049158f652",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Marsden2024ROID.clean.txt",
+    "bytes": 59025,
+    "sha256": "4aeb325b7f6e2978756b5a1939cfe5b716cefb14a6e78aab6c40f3d5a03631d5",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Marsden2024ROID.pdf",
+    "bytes": 675710,
+    "sha256": "21c17a48c70cf4c0f8a22aee4d680046f9ecfa74d6e4c6589cae493adc3a03a8",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Marsden2024ROID.txt",
+    "bytes": 93975,
+    "sha256": "61533d05b5c02b141ef8073db14751b1f782107d4ca5e56306114643ede09ba6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nam-figure2-page3.png",
+    "bytes": 700790,
+    "sha256": "6fee743ca11550e5d78b30d472a60f0245ce17af48c9f6f0142e7f09afa1d65f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nam2026SICL-published.clean.txt",
+    "bytes": 49461,
+    "sha256": "6c537696f498d76a0e2973388f39ef6a3882eb52c1b3dc05cf0b6fdeb4d5caf4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nam2026SICL-published.pdf",
+    "bytes": 2050324,
+    "sha256": "28a6a8c699abcc9327a4df540afef4cfa88fbd9e7244492d3252e54ec81419ea",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nam2026SICL-published.txt",
+    "bytes": 69775,
+    "sha256": "120c08cc2917e93b05294bd1a139ef5a57ab45d9e059d40be9c4e39056bd2fec",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nam2026SICL-s2-trace.json",
+    "bytes": 460,
+    "sha256": "22383f01c1006019807423888026b6b0147a7d556b422b3d209ac1a4df88284d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nielen2026DSBR.clean.txt",
+    "bytes": 80973,
+    "sha256": "d12fd4e34041f63b5e77e57fb77f5076df3a2242af021e9758e31cb0f4594cfc",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nielen2026DSBR.pdf",
+    "bytes": 4740704,
+    "sha256": "516e467dd329534d2f20d95c4856de675822fd908ee0bda53be7c7bf6b506ceb",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Nielen2026DSBR.txt",
+    "bytes": 95800,
+    "sha256": "1b15268d0d67c67e39f480f2b4e75df79ff3178c6594b9b0d5716e839adf96b4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Niu2023SAR.clean.txt",
+    "bytes": 107731,
+    "sha256": "67eb2bdc7f0e534e8a8b90f66404df5ef6fbf1800f764779c86078a13bc19815",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Niu2023SAR.pdf",
+    "bytes": 1713390,
+    "sha256": "08047cf6acb61163844d0fefb917f94ec97b30b5f72781f9e8b1a4e631dcd21e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Niu2023SAR.txt",
+    "bytes": 136855,
+    "sha256": "94d325b7abc03e0c645a4c1103847380b01ad7b28c946d8f5049630c4ff7feaa",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Press2024EntropyEnigma-s2-trace.json",
+    "bytes": 460,
+    "sha256": "3c1bc5ad2c0deb81fcde06ccb80bfdf8ec2dc9e7731428a4feae26e91ac81236",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Press2024EntropyEnigma.clean.txt",
+    "bytes": 73490,
+    "sha256": "dca4834b9b86cfab3350a392560bb3e1c8ef4f54b2db6e7fbe938adf7f57a950",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Press2024EntropyEnigma.pdf",
+    "bytes": 3583113,
+    "sha256": "f4534144c990ea22602aa6d2aa9aec5d2275b56405171878c0f8408850ed3837",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Press2024EntropyEnigma.txt",
+    "bytes": 103831,
+    "sha256": "3f541150df5a7a1f1672252844f4d08882c8326e184f30d098bd057eed3d2ef9",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Wang2021Tent-s2-trace.json",
+    "bytes": 460,
+    "sha256": "12db57ea09202c13d7d7a7ea0baab76c86e841056c02482a97a8b8d640461a11",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Weerasinghe2026LATTA.clean.txt",
+    "bytes": 46903,
+    "sha256": "15bd4512e0cd2592561999a31698f6a70c94b7db756aa77e5017edbc051939ce",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Weerasinghe2026LATTA.pdf",
+    "bytes": 647266,
+    "sha256": "8cdaf51126f96cc0116addb173aed42babcc1bcd2b3555beb687bd14b508ed2f",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Weerasinghe2026LATTA.txt",
+    "bytes": 77832,
+    "sha256": "2ed0469d66da189732310d0925a9d0c9b8ff8e313760f537c5dfe0e48dda13df",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Zhao2023Pitfalls-s2-trace.json",
+    "bytes": 460,
+    "sha256": "f1e1adc58798a6b39c6842ffd8837f4bf5e10ea08538ffdcd4245ed6eee1ddd2",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Zhao2023Pitfalls.clean.txt",
+    "bytes": 87233,
+    "sha256": "c9ed3f2160ea982652a0a8dbff792176f40413a62672f83607533e6732c42f15",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Zhao2023Pitfalls.pdf",
+    "bytes": 7932838,
+    "sha256": "d35753086a4faa9b817ba0bf41a0ca30e0cecbc2d8fc4456c6bbbabbe16a016e",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/Zhao2023Pitfalls.txt",
+    "bytes": 126894,
+    "sha256": "29274b87242ce2cce7559864a4f407c6d2cdedd9ddc6840b9aa1b307b2e5101c",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/come-cretta-metadata.json",
+    "bytes": 8144,
+    "sha256": "e80209380a70427d326f55d2790e1c6137e2d452d3c9d94f131c77e3f9963b77",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/frontiers-find.json",
+    "bytes": 31497,
+    "sha256": "5387a5d4a431e07dd41a1ea533b03f4ef8e1e320cb520b0557e807a45dc88c6d",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/late-candidates-metadata.json",
+    "bytes": 23594,
+    "sha256": "e01ba81976c25e944e82a977d297932e3d4b81cf4349e6294e2a0900e56d0fc1",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-01.json",
+    "bytes": 36558,
+    "sha256": "3ec0746e8d111856826095db9c49bba0afbb088daad17297286f8c6fe19b796b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-02.json",
+    "bytes": 34954,
+    "sha256": "2df197e814c760ee6126b0df31ae2c540f6d081851aebb1a0e6a7e384932120b",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-03.json",
+    "bytes": 35956,
+    "sha256": "fc369c31b66930d1f2bbaca7db1eedd716026bb1edeb1f06301c57e618a92f4a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-04.json",
+    "bytes": 26123,
+    "sha256": "e0e14f31cbece3f0b145465d513c20aa50f1027e855e258d7ada0dee0208a181",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-05.json",
+    "bytes": 31517,
+    "sha256": "6f4e4daaa1d7bd7a860c8396b818885862ad66b7594fbc1cba6edf93a142bca4",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-06.json",
+    "bytes": 30270,
+    "sha256": "a429cafbaec31e33b6f60dfa920c7b08f17b128979d124d5d27631e79bd91ad6",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-07.json",
+    "bytes": 37325,
+    "sha256": "62a4628ffebd1f37b36b62770ec345a4de1df0d9077759aad2a0df9412f09c73",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-08.json",
+    "bytes": 39750,
+    "sha256": "b1f73e0e2b4c8c9feb7002c19484ef2d46c2a5f5670b9dc722ef4abd17438e6a",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-09.json",
+    "bytes": 36263,
+    "sha256": "b6feb18be6cbd42ba7449a4eb5431dd39186a2360418c947dd5025f816a6cb67",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-10.json",
+    "bytes": 33635,
+    "sha256": "ddf5b7593789996ef5cc26b4b03a172b58eb91acb888e48237091071f2938bb1",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  },
+  {
+    "file": "evidence/tta_causes/search-11.json",
+    "bytes": 32495,
+    "sha256": "baac545430b6857e502a250a0b0d60e90663295e9aa7bd1490fe3656e81b1206",
+    "scope": "Retrieval is not full reading; consult screened-papers and source notes."
+  }
+]

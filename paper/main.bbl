@@ -1,0 +1,108 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{Ahmed2026Dashboard}
+Ahmed, W., Rahaman, M.A., Roy, P., Alam, P.: The dashboard says ``perfect'': a
+  systematic audit of label-free model monitoring and test-time adaptation
+  under temporal distribution shift in network intrusion detection. Frontiers
+  in Artificial Intelligence  \textbf{9},  1928858 (2026).
+  \doi{10.3389/frai.2026.1928858}
+
+\bibitem{Amin2025OverCertainty}
+Amin, F., Kim, J.E.: The over-certainty phenomenon in modern test-time
+  adaptation algorithms. Transactions on Machine Learning Research  (2025)
+
+\bibitem{Bar2024ProtectedTTA}
+Bar, Y., Shaer, S., Romano, Y.: Protected test-time adaptation via online
+  entropy matching: A betting approach. In: Advances in Neural Information
+  Processing Systems. vol.~37 (2024)
+
+\bibitem{Croce2021RobustBench}
+Croce, F., Andriushchenko, M., Sehwag, V., Debenedetti, E., Flammarion, N.,
+  Chiang, M., Mittal, P., Hein, M.: {RobustBench}: a standardized adversarial
+  robustness benchmark. In: NeurIPS Datasets and Benchmarks Track (2021)
+
+\bibitem{Cygert2026RealisticSelection}
+Cygert, S., S\'{o}jka, D., Trzci\'{n}ski, T., Twardowski, B.: Realistic
+  evaluation of test-time adaptation: Unsupervised model selection. In: VISAPP.
+  vol.~1, pp. 75--86 (2026). \doi{10.5220/0014320100004084}
+
+\bibitem{Garg2022ATC}
+Garg, S., Balakrishnan, S., Lipton, Z.C., Neyshabur, B., Sedghi, H.: Leveraging
+  unlabeled data to predict out-of-distribution performance. In: International
+  Conference on Learning Representations (2022)
+
+\bibitem{Han2026Exchangeability}
+Han, W., Qu, L., Li, Z., Liang, L.: The premise is the problem: Exchangeability
+  failure in self-monitored test-time adaptation. arXiv preprint
+  arXiv:2610.07038 (2026)
+
+\bibitem{Hendrycks2019Corruptions}
+Hendrycks, D., Dietterich, T.: Benchmarking neural network robustness to common
+  corruptions and perturbations. In: International Conference on Learning
+  Representations (2019)
+
+\bibitem{Hendrycks2020AugMix}
+Hendrycks, D., Mu, N., Cubuk, E.D., Zoph, B., Gilmer, J., Lakshminarayanan, B.:
+  {AugMix}: A simple data processing method to improve robustness and
+  uncertainty. In: International Conference on Learning Representations (2020)
+
+\bibitem{Howard2021ConfidenceSequences}
+Howard, S.R., Ramdas, A., McAuliffe, J., Sekhon, J.: Time-uniform,
+  nonparametric, nonasymptotic confidence sequences. The Annals of Statistics
+  (2021). \doi{10.1214/20-AOS1991}
+
+\bibitem{Iwasawa2021T3A}
+Iwasawa, Y., Matsuo, Y.: Test-time classifier adjustment module for
+  model-agnostic domain generalization. In: Advances in Neural Information
+  Processing Systems. vol.~34 (2021)
+
+\bibitem{Lee2024AETTA}
+Lee, T., Chottananurak, S., Gong, T., Lee, S.J.: {AETTA}: Label-free accuracy
+  estimation for test-time adaptation. In: IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition. pp. 28643--28652 (2024)
+
+\bibitem{Mahdiani2026ConformalTTA}
+Mahdiani, M.R.: Diagnosing and repairing the conformal coverage guarantee of
+  test-time-adapted image classifiers. SSRN preprint (2026).
+  \doi{10.2139/ssrn.7602585}
+
+\bibitem{Nam2026SICL}
+Nam, G., Kim, T., Jeong, J., Yang, E.: Towards reliable test-time adaptation:
+  Style invariance as a correctness likelihood. In: IEEE/CVF Winter Conference
+  on Applications of Computer Vision. pp. 3088--3097 (2026).
+  \doi{10.1109/WACV61042.2026.00302}
+
+\bibitem{Niu2023SAR}
+Niu, S., Wu, J., Zhang, Y., Wen, Z., Chen, Y., Zhao, P., Tan, M.: Towards
+  stable test-time adaptation in dynamic wild world. In: International
+  Conference on Learning Representations (2023)
+
+\bibitem{Podkopaev2022RiskMonitoring}
+Podkopaev, A., Ramdas, A.: Tracking the risk of a deployed model and detecting
+  harmful distribution shifts. In: International Conference on Learning
+  Representations (2022)
+
+\bibitem{Press2024EntropyEnigma}
+Press, O., Shwartz-Ziv, R., LeCun, Y., Bethge, M.: The entropy enigma: Success
+  and failure of entropy minimization. In: International Conference on Machine
+  Learning (2024)
+
+\bibitem{Schirmer2025Monitoring}
+Schirmer, M., Jazbec, M., Naesseth, C.A., Nalisnick, E.: Monitoring risks in
+  test-time adaptation. In: Advances in Neural Information Processing Systems.
+  vol.~38 (2025). \doi{10.52202/085713-2705}
+
+\bibitem{Schneider2020BNAdapt}
+Schneider, S., Rusak, E., Eck, L., Bringmann, O., Brendel, W., Bethge, M.:
+  Improving robustness against common corruptions by covariate shift
+  adaptation. In: Advances in Neural Information Processing Systems (2020)
+
+\bibitem{Wang2021Tent}
+Wang, D., Shelhamer, E., Liu, S., Olshausen, B., Darrell, T.: Tent: Fully
+  test-time adaptation by entropy minimization. In: International Conference on
+  Learning Representations (2021)
+
+\end{thebibliography}

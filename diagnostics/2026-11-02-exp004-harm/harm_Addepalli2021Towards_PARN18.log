@@ -1,0 +1,23 @@
+Addepalli2021Towards_PARN18 1 22 dirichlet/clean/0/0.01 err=0.473 twin=0.459 elapsed=8s
+Addepalli2021Towards_PARN18 2 22 dirichlet/clean/0/0.05 err=0.709 twin=0.459 elapsed=21s
+Addepalli2021Towards_PARN18 3 22 balanced_wr/clean/0/0.01 err=0.699 twin=0.406 elapsed=34s
+Addepalli2021Towards_PARN18 4 22 balanced_wr/clean/0/0.05 err=0.950 twin=0.406 elapsed=48s
+Addepalli2021Towards_PARN18 5 22 dirichlet/snow/1/0.01 err=0.415 twin=0.449 elapsed=61s
+Addepalli2021Towards_PARN18 6 22 dirichlet/snow/1/0.05 err=0.695 twin=0.449 elapsed=75s
+Addepalli2021Towards_PARN18 7 22 balanced_wr/snow/1/0.01 err=0.735 twin=0.412 elapsed=88s
+Addepalli2021Towards_PARN18 8 22 balanced_wr/snow/1/0.05 err=0.953 twin=0.412 elapsed=102s
+Addepalli2021Towards_PARN18 9 22 dirichlet/fog/1/0.01 err=0.447 twin=0.516 elapsed=115s
+Addepalli2021Towards_PARN18 10 22 dirichlet/fog/1/0.05 err=0.820 twin=0.516 elapsed=129s
+Addepalli2021Towards_PARN18 11 22 balanced_wr/fog/1/0.01 err=0.757 twin=0.421 elapsed=142s
+Addepalli2021Towards_PARN18 12 22 balanced_wr/fog/1/0.05 err=0.961 twin=0.421 elapsed=156s
+Addepalli2021Towards_PARN18 13 22 dirichlet/contrast/1/0.01 err=0.636 twin=0.622 elapsed=169s
+Addepalli2021Towards_PARN18 14 22 dirichlet/contrast/1/0.05 err=0.745 twin=0.622 elapsed=183s
+Addepalli2021Towards_PARN18 15 22 balanced_wr/contrast/1/0.01 err=0.731 twin=0.416 elapsed=196s
+Addepalli2021Towards_PARN18 16 22 balanced_wr/contrast/1/0.05 err=0.957 twin=0.416 elapsed=210s
+Addepalli2021Towards_PARN18 17 22 dirichlet/jpeg_compression/1/0.01 err=0.452 twin=0.597 elapsed=223s
+Addepalli2021Towards_PARN18 18 22 dirichlet/jpeg_compression/1/0.05 err=0.647 twin=0.597 elapsed=237s
+Addepalli2021Towards_PARN18 19 22 balanced_wr/jpeg_compression/1/0.01 err=0.742 twin=0.423 elapsed=250s
+Addepalli2021Towards_PARN18 20 22 balanced_wr/jpeg_compression/1/0.05 err=0.939 twin=0.423 elapsed=264s
+Addepalli2021Towards_PARN18 21 22 by_class/clean/0/0.001 err=0.836 twin=0.766 elapsed=278s
+Addepalli2021Towards_PARN18 22 22 by_class/clean/0/0.01 err=0.967 twin=0.766 elapsed=291s
+complete Addepalli2021Towards_PARN18 291s

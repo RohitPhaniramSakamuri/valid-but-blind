@@ -1,0 +1,214 @@
+85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7  data/cifar-100-python.tar.gz
+Using CPython 3.10.12 interpreter at: /usr/bin/python3.10
+Creating virtual environment at: .venv_cs
+Activate with: source .venv_cs/bin/activate
+Using Python 3.10.12 environment at: .venv_cs
+Resolved 26 packages in 141ms
+Downloading numpy (16.0MiB)
+Downloading pandas (12.2MiB)
+Downloading kiwisolver (1.6MiB)
+Downloading fonttools (5.0MiB)
+Downloading matplotlib (8.4MiB)
+Downloading pillow (6.6MiB)
+Downloading scipy (35.9MiB)
+ Downloaded kiwisolver
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded pandas
+ Downloaded scipy
+Prepared 14 packages in 379ms
+Installed 26 packages in 355ms
+ + confseq==0.0.11
+ + contourpy==1.3.2
+ + cycler==0.12.1
+ + dill==0.4.1
+ + exceptiongroup==1.3.1
+ + fonttools==4.65.0
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.9
+ + multiprocess==0.70.19
+ + numpy==2.2.6
+ + packaging==26.3
+ + pandas==2.3.3
+ + pillow==12.3.0
+ + pluggy==1.7.0
+ + pybind11==3.1.0
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.2.0
+ + python-dateutil==3.0.0
+ + pytz==2026.6
+ + scipy==1.15.3
+ + six==1.17.0
+ + tomli==2.5.0
+ + typing-extensions==4.16.0
+ + tzdata==2026.6
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/root/exp003/.venv_cs/lib/python3.10/site-packages/confseq/conjmix_bounded.py", line 7, in <module>
+    from confseq.misc import get_running_intersection
+  File "/root/exp003/.venv_cs/lib/python3.10/site-packages/confseq/misc.py", line 8, in <module>
+    l: NDArray[np.float_], u: NDArray[np.float_]
+  File "/root/exp003/.venv_cs/lib/python3.10/site-packages/numpy/__init__.py", line 400, in __getattr__
+    raise AttributeError(
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+Using Python 3.10.12 environment at: .venv_cs
+Resolved 1 package in 54ms
+Downloading numpy (17.4MiB)
+ Downloaded numpy
+Prepared 1 package in 223ms
+Uninstalled 1 package in 54ms
+Installed 1 package in 159ms
+ - numpy==2.2.6
+ + numpy==1.26.4
+confseq ok
+=== streams
+{'r0': 0.1990000158548355, 'q_hat0': 0.11999999731779099, 'false_alarm0': 0.17000000178813934, 'pfn0': 0.029000001028180122, 'n_calib': 1000, 'easy': [1, 15, 25, 29, 41, 53, 56, 57, 58, 60, 66, 68, 75, 87, 94, 18, 24, 34, 62, 90], 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090', 'batch': 100, 'epochs': 3}
+1 136 source/gaussian_noise/3/balanced/0 final_err=0.634 elapsed=4s
+2 136 tent/gaussian_noise/3/balanced/0 final_err=0.337 elapsed=26s
+3 136 source/gaussian_noise/3/dirichlet/0 final_err=0.470 elapsed=30s
+4 136 tent/gaussian_noise/3/dirichlet/0 final_err=0.504 elapsed=52s
+5 136 source/gaussian_noise/3/easy/0 final_err=0.568 elapsed=55s
+6 136 tent/gaussian_noise/3/easy/0 final_err=0.265 elapsed=77s
+7 136 source/gaussian_noise/3/by_class/0 final_err=0.634 elapsed=80s
+8 136 tent/gaussian_noise/3/by_class/0 final_err=0.797 elapsed=102s
+9 136 source/gaussian_noise/5/balanced/0 final_err=0.725 elapsed=106s
+10 136 tent/gaussian_noise/5/balanced/0 final_err=0.391 elapsed=127s
+11 136 source/gaussian_noise/5/dirichlet/0 final_err=0.848 elapsed=131s
+12 136 tent/gaussian_noise/5/dirichlet/0 final_err=0.473 elapsed=153s
+13 136 source/gaussian_noise/5/easy/0 final_err=0.692 elapsed=157s
+14 136 tent/gaussian_noise/5/easy/0 final_err=0.300 elapsed=178s
+15 136 source/gaussian_noise/5/by_class/0 final_err=0.725 elapsed=182s
+16 136 tent/gaussian_noise/5/by_class/0 final_err=0.815 elapsed=204s
+17 136 source/shot_noise/3/balanced/0 final_err=0.536 elapsed=207s
+18 136 tent/shot_noise/3/balanced/0 final_err=0.307 elapsed=229s
+19 136 source/shot_noise/3/dirichlet/0 final_err=0.537 elapsed=233s
+20 136 tent/shot_noise/3/dirichlet/0 final_err=0.362 elapsed=254s
+21 136 source/shot_noise/3/easy/0 final_err=0.463 elapsed=259s
+22 136 tent/shot_noise/3/easy/0 final_err=0.235 elapsed=280s
+23 136 source/shot_noise/3/by_class/0 final_err=0.536 elapsed=284s
+24 136 tent/shot_noise/3/by_class/0 final_err=0.785 elapsed=305s
+25 136 source/shot_noise/5/balanced/0 final_err=0.683 elapsed=309s
+26 136 tent/shot_noise/5/balanced/0 final_err=0.354 elapsed=331s
+27 136 source/shot_noise/5/dirichlet/0 final_err=0.688 elapsed=335s
+28 136 tent/shot_noise/5/dirichlet/0 final_err=0.355 elapsed=356s
+29 136 source/shot_noise/5/easy/0 final_err=0.638 elapsed=360s
+30 136 tent/shot_noise/5/easy/0 final_err=0.282 elapsed=381s
+31 136 source/shot_noise/5/by_class/0 final_err=0.683 elapsed=385s
+32 136 tent/shot_noise/5/by_class/0 final_err=0.806 elapsed=406s
+33 136 source/impulse_noise/3/balanced/0 final_err=0.273 elapsed=410s
+34 136 tent/impulse_noise/3/balanced/0 final_err=0.259 elapsed=432s
+35 136 source/impulse_noise/3/dirichlet/0 final_err=0.224 elapsed=436s
+36 136 tent/impulse_noise/3/dirichlet/0 final_err=0.345 elapsed=457s
+37 136 source/impulse_noise/3/easy/0 final_err=0.204 elapsed=462s
+38 136 tent/impulse_noise/3/easy/0 final_err=0.212 elapsed=483s
+39 136 source/impulse_noise/3/by_class/0 final_err=0.273 elapsed=487s
+40 136 tent/impulse_noise/3/by_class/0 final_err=0.771 elapsed=509s
+41 136 source/impulse_noise/5/balanced/0 final_err=0.397 elapsed=513s
+42 136 tent/impulse_noise/5/balanced/0 final_err=0.349 elapsed=534s
+43 136 source/impulse_noise/5/dirichlet/0 final_err=0.400 elapsed=538s
+44 136 tent/impulse_noise/5/dirichlet/0 final_err=0.590 elapsed=559s
+45 136 source/impulse_noise/5/easy/0 final_err=0.315 elapsed=563s
+46 136 tent/impulse_noise/5/easy/0 final_err=0.266 elapsed=585s
+47 136 source/impulse_noise/5/by_class/0 final_err=0.397 elapsed=589s
+48 136 tent/impulse_noise/5/by_class/0 final_err=0.811 elapsed=610s
+49 136 source/defocus_blur/3/balanced/0 final_err=0.236 elapsed=614s
+50 136 tent/defocus_blur/3/balanced/0 final_err=0.226 elapsed=635s
+51 136 source/defocus_blur/3/dirichlet/0 final_err=0.266 elapsed=640s
+52 136 tent/defocus_blur/3/dirichlet/0 final_err=0.398 elapsed=661s
+53 136 source/defocus_blur/3/easy/0 final_err=0.172 elapsed=665s
+54 136 tent/defocus_blur/3/easy/0 final_err=0.190 elapsed=686s
+55 136 source/defocus_blur/3/by_class/0 final_err=0.236 elapsed=690s
+56 136 tent/defocus_blur/3/by_class/0 final_err=0.745 elapsed=711s
+57 136 source/defocus_blur/5/balanced/0 final_err=0.297 elapsed=715s
+58 136 tent/defocus_blur/5/balanced/0 final_err=0.260 elapsed=737s
+59 136 source/defocus_blur/5/dirichlet/0 final_err=0.285 elapsed=741s
+60 136 tent/defocus_blur/5/dirichlet/0 final_err=0.254 elapsed=762s
+61 136 source/defocus_blur/5/easy/0 final_err=0.221 elapsed=766s
+62 136 tent/defocus_blur/5/easy/0 final_err=0.216 elapsed=787s
+63 136 source/defocus_blur/5/by_class/0 final_err=0.297 elapsed=791s
+64 136 tent/defocus_blur/5/by_class/0 final_err=0.767 elapsed=812s
+65 136 source/glass_blur/3/balanced/0 final_err=0.404 elapsed=816s
+66 136 tent/glass_blur/3/balanced/0 final_err=0.309 elapsed=838s
+67 136 source/glass_blur/3/dirichlet/0 final_err=0.432 elapsed=841s
+68 136 tent/glass_blur/3/dirichlet/0 final_err=0.423 elapsed=863s
+69 136 source/glass_blur/3/easy/0 final_err=0.373 elapsed=866s
+70 136 tent/glass_blur/3/easy/0 final_err=0.273 elapsed=888s
+71 136 source/glass_blur/3/by_class/0 final_err=0.404 elapsed=891s
+72 136 tent/glass_blur/3/by_class/0 final_err=0.794 elapsed=913s
+73 136 source/glass_blur/5/balanced/0 final_err=0.542 elapsed=917s
+74 136 tent/glass_blur/5/balanced/0 final_err=0.387 elapsed=938s
+75 136 source/glass_blur/5/dirichlet/0 final_err=0.580 elapsed=942s
+76 136 tent/glass_blur/5/dirichlet/0 final_err=0.429 elapsed=963s
+77 136 source/glass_blur/5/easy/0 final_err=0.521 elapsed=967s
+78 136 tent/glass_blur/5/easy/0 final_err=0.323 elapsed=989s
+79 136 source/glass_blur/5/by_class/0 final_err=0.542 elapsed=993s
+80 136 tent/glass_blur/5/by_class/0 final_err=0.819 elapsed=1014s
+81 136 source/motion_blur/3/balanced/0 final_err=0.279 elapsed=1018s
+82 136 tent/motion_blur/3/balanced/0 final_err=0.256 elapsed=1040s
+83 136 source/motion_blur/3/dirichlet/0 final_err=0.246 elapsed=1043s
+84 136 tent/motion_blur/3/dirichlet/0 final_err=0.302 elapsed=1065s
+85 136 source/motion_blur/3/easy/0 final_err=0.206 elapsed=1068s
+86 136 tent/motion_blur/3/easy/0 final_err=0.206 elapsed=1090s
+87 136 source/motion_blur/3/by_class/0 final_err=0.279 elapsed=1094s
+88 136 tent/motion_blur/3/by_class/0 final_err=0.761 elapsed=1115s
+89 136 source/motion_blur/5/balanced/0 final_err=0.314 elapsed=1119s
+90 136 tent/motion_blur/5/balanced/0 final_err=0.274 elapsed=1140s
+91 136 source/motion_blur/5/dirichlet/0 final_err=0.314 elapsed=1144s
+92 136 tent/motion_blur/5/dirichlet/0 final_err=0.345 elapsed=1165s
+93 136 source/motion_blur/5/easy/0 final_err=0.233 elapsed=1169s
+94 136 tent/motion_blur/5/easy/0 final_err=0.230 elapsed=1190s
+95 136 source/motion_blur/5/by_class/0 final_err=0.314 elapsed=1194s
+96 136 tent/motion_blur/5/by_class/0 final_err=0.773 elapsed=1215s
+97 136 source/zoom_blur/3/balanced/0 final_err=0.249 elapsed=1219s
+98 136 tent/zoom_blur/3/balanced/0 final_err=0.241 elapsed=1241s
+99 136 source/zoom_blur/3/dirichlet/0 final_err=0.204 elapsed=1244s
+100 136 tent/zoom_blur/3/dirichlet/0 final_err=0.347 elapsed=1266s
+101 136 source/zoom_blur/3/easy/0 final_err=0.187 elapsed=1270s
+102 136 tent/zoom_blur/3/easy/0 final_err=0.205 elapsed=1291s
+103 136 source/zoom_blur/3/by_class/0 final_err=0.249 elapsed=1295s
+104 136 tent/zoom_blur/3/by_class/0 final_err=0.755 elapsed=1316s
+105 136 source/zoom_blur/5/balanced/0 final_err=0.295 elapsed=1320s
+106 136 tent/zoom_blur/5/balanced/0 final_err=0.260 elapsed=1342s
+107 136 source/zoom_blur/5/dirichlet/0 final_err=0.287 elapsed=1346s
+108 136 tent/zoom_blur/5/dirichlet/0 final_err=0.368 elapsed=1367s
+109 136 source/zoom_blur/5/easy/0 final_err=0.212 elapsed=1371s
+110 136 tent/zoom_blur/5/easy/0 final_err=0.224 elapsed=1392s
+111 136 source/zoom_blur/5/by_class/0 final_err=0.295 elapsed=1396s
+112 136 tent/zoom_blur/5/by_class/0 final_err=0.761 elapsed=1417s
+113 136 source/clean/0/balanced/0 final_err=0.217 elapsed=1421s
+114 136 tent/clean/0/balanced/0 final_err=0.223 elapsed=1443s
+115 136 source/clean/0/dirichlet/0 final_err=0.237 elapsed=1447s
+116 136 tent/clean/0/dirichlet/0 final_err=0.402 elapsed=1468s
+117 136 source/clean/0/easy/0 final_err=0.158 elapsed=1472s
+118 136 tent/clean/0/easy/0 final_err=0.177 elapsed=1493s
+119 136 source/clean/0/by_class/0 final_err=0.217 elapsed=1498s
+120 136 tent/clean/0/by_class/0 final_err=0.742 elapsed=1519s
+121 136 source/clean/0/balanced/1 final_err=0.217 elapsed=1523s
+122 136 tent/clean/0/balanced/1 final_err=0.220 elapsed=1544s
+123 136 source/clean/0/dirichlet/1 final_err=0.123 elapsed=1548s
+124 136 tent/clean/0/dirichlet/1 final_err=0.468 elapsed=1570s
+125 136 source/clean/0/easy/1 final_err=0.165 elapsed=1574s
+126 136 tent/clean/0/easy/1 final_err=0.187 elapsed=1595s
+127 136 source/clean/0/by_class/1 final_err=0.217 elapsed=1600s
+128 136 tent/clean/0/by_class/1 final_err=0.742 elapsed=1621s
+129 136 source/clean/0/balanced/2 final_err=0.217 elapsed=1625s
+130 136 tent/clean/0/balanced/2 final_err=0.220 elapsed=1647s
+131 136 source/clean/0/dirichlet/2 final_err=0.228 elapsed=1650s
+132 136 tent/clean/0/dirichlet/2 final_err=0.379 elapsed=1672s
+133 136 source/clean/0/easy/2 final_err=0.163 elapsed=1676s
+134 136 tent/clean/0/easy/2 final_err=0.180 elapsed=1697s
+135 136 source/clean/0/by_class/2 final_err=0.217 elapsed=1701s
+136 136 tent/clean/0/by_class/2 final_err=0.742 elapsed=1723s
+complete 1723s
+Traceback (most recent call last):
+  File "/root/exp003/analyze_monitor.py", line 113, in <module>
+    main()
+  File "/root/exp003/analyze_monitor.py", line 50, in main
+    cs = np.asarray(conjmix_empbern_lower_cs(x=x, alpha=ALPHA_CS, v_opt=v_opt(x, int(T * 0.25))))
+  File "/root/exp003/.venv_cs/lib/python3.10/site-packages/confseq/conjmix_bounded.py", line 104, in conjmix_empbern_lower_cs
+    gamma_exponential_mixture_bound(
+RuntimeError: Failed to find an upper limit for the mixture bound

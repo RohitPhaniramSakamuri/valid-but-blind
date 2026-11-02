@@ -1,0 +1,80 @@
+[
+  {
+    "name": "landing",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6155,
+    "sha256": "77d958985534de6666fb6ac8978188b5e83dceda1873fd6132a97448e4ace256",
+    "file": "evidence/landing.html",
+    "is_pdf": false
+  },
+  {
+    "name": "delivery_query",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7602585",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7602585",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6158,
+    "sha256": "526ea1988cd08bbf6a522a6f814ce398218bea9d932e55a8353cc2bdf91be5d8",
+    "file": "evidence/delivery_query.html",
+    "is_pdf": false
+  },
+  {
+    "name": "delivery_download",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7602585&download=yes",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7602585&download=yes",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6233,
+    "sha256": "5e18aeb74d4d1f0478306e304f95d0c51d3b3372447283ac2c66d91dfcea0de0",
+    "file": "evidence/delivery_download.html",
+    "is_pdf": false
+  },
+  {
+    "name": "delivery_id",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/7602585.pdf?abstractid=7602585&mirid=1",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/Delivery.cfm/7602585.pdf?abstractid=7602585&mirid=1",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6254,
+    "sha256": "02fd3b5bcda9ac0ded6f0e94e3b08e453595ceb90318ccc56fe9065b32b79d3d",
+    "file": "evidence/delivery_id.html",
+    "is_pdf": false
+  },
+  {
+    "name": "abstract_short",
+    "url": "https://ssrn.com/abstract=7602585",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6155,
+    "sha256": "9bd5ec8970391632a24e6ce60283f2b9fd7a4e8253f7db3e7a497b3f77a64d61",
+    "file": "evidence/abstract_short.html",
+    "is_pdf": false
+  },
+  {
+    "name": "doi",
+    "url": "https://doi.org/10.2139/ssrn.7602585",
+    "date": "2026-11-02",
+    "method": "curl_cffi normal browser TLS; public unauthenticated route",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 6155,
+    "sha256": "c8283c2cf4f94cc33ad9e29b8518900c6dc548007b3b917ea1dfe5a8246d529a",
+    "file": "evidence/doi.html",
+    "is_pdf": false
+  }
+]

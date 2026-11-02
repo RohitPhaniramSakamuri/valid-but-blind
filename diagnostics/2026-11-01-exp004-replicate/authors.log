@@ -1,0 +1,56 @@
+modified files: 14
+imports ok after 0 additions
+--- authors uniform
+94
+Calibration E_hat:  torch.Size([1000]) tensor(0.1414, device='cuda:0') tensor(0.2044, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8429, device='cuda:0')
+95
+Calibration E_hat:  torch.Size([1000]) tensor(0.1414, device='cuda:0') tensor(0.2044, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8462, device='cuda:0')
+96
+Calibration E_hat:  torch.Size([1000]) tensor(0.1413, device='cuda:0') tensor(0.2045, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8503, device='cuda:0')
+97
+Calibration E_hat:  torch.Size([1000]) tensor(0.1412, device='cuda:0') tensor(0.2045, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8516, device='cuda:0')
+98
+Calibration E_hat:  torch.Size([1000]) tensor(0.1410, device='cuda:0') tensor(0.2042, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8505, device='cuda:0')
+99
+Calibration E_hat:  torch.Size([1000]) tensor(0.1408, device='cuda:0') tensor(0.2038, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8503, device='cuda:0')
+100
+Calibration E_hat:  torch.Size([1000]) tensor(0.1405, device='cuda:0') tensor(0.2034, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8535, device='cuda:0')
+exit 0
+--- authors by_class
+94
+Calibration E_hat:  torch.Size([1000]) tensor(0.1750, device='cuda:0') tensor(0.2215, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8767, device='cuda:0')
+95
+Calibration E_hat:  torch.Size([1000]) tensor(0.1743, device='cuda:0') tensor(0.2210, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8752, device='cuda:0')
+96
+Calibration E_hat:  torch.Size([1000]) tensor(0.1733, device='cuda:0') tensor(0.2201, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8686, device='cuda:0')
+97
+Calibration E_hat:  torch.Size([1000]) tensor(0.1726, device='cuda:0') tensor(0.2197, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8607, device='cuda:0')
+98
+Calibration E_hat:  torch.Size([1000]) tensor(0.1717, device='cuda:0') tensor(0.2189, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8546, device='cuda:0')
+99
+Calibration E_hat:  torch.Size([1000]) tensor(0.1705, device='cuda:0') tensor(0.2176, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8483, device='cuda:0')
+100
+Calibration E_hat:  torch.Size([1000]) tensor(0.1693, device='cuda:0') tensor(0.2162, device='cuda:0') tensor(0., device='cuda:0') tensor(0.8431, device='cuda:0')
+exit 0
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/calib.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_output_0.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_labels_0.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_qhat_0.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_probs_error_hat_mean_0.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_output_1.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_labels_1.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_qhat_1.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_probs_error_hat_mean_1.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_output_2.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_labels_2.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_qhat_2.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_probs_error_hat_mean_2.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_output_3.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_labels_3.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_qhat_3.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_probs_error_hat_mean_3.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_output_4.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_labels_4.pt
+/root/exp004/authors_out/saved/cifar100/tent_authors_uniform/gaussian_noise/5/1None_qhat_4.pt
+11M	/root/exp004/authors_out
+=== AUTHORS DONE

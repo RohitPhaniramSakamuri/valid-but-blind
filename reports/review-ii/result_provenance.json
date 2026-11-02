@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-10-23",
+  "main_results_source": "User-supplied actual five-seed results from another system, supplied in this conversation",
+  "main_results": [
+    [
+      "Frozen source model",
+      "76.4 \u00b1 1.0%",
+      "\u2014",
+      "\u2014"
+    ],
+    [
+      "Always update normalization",
+      "74.8 \u00b1 1.8%",
+      "\u22121.6 pp",
+      "31%"
+    ],
+    [
+      "Concentration-only gate",
+      "77.3 \u00b1 1.1%",
+      "+0.9 pp",
+      "15%"
+    ],
+    [
+      "Three-feature gate",
+      "77.9 \u00b1 0.9%",
+      "+1.5 pp",
+      "11%"
+    ]
+  ],
+  "harm_definition": "Percentage of all evaluation episodes where the policy applied normalization and accuracy was lower than SOURCE",
+  "sd_definition": "Variation across five seeds; not confidence intervals",
+  "external_run_details": "Raw predictions, individual seed results, dataset/backbone/split manifest and external gate code not supplied",
+  "development_source": "diagnostics/2026-10-23; recorded local digits development, reported separately",
+  "new_experiments_run_for_report": false,
+  "template": "Review2.pptx; original retained; masters, layouts and 4:3 dimensions reused"
+}

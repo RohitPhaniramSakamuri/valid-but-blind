@@ -1,0 +1,23 @@
+Hendrycks2020AugMix_WRN 1 22 dirichlet/clean/0/0.01 err=0.410 twin=0.443 elapsed=24s
+Hendrycks2020AugMix_WRN 2 22 dirichlet/clean/0/0.05 err=0.897 twin=0.443 elapsed=51s
+Hendrycks2020AugMix_WRN 3 22 balanced_wr/clean/0/0.01 err=0.363 twin=0.284 elapsed=79s
+Hendrycks2020AugMix_WRN 4 22 balanced_wr/clean/0/0.05 err=0.954 twin=0.284 elapsed=106s
+Hendrycks2020AugMix_WRN 5 22 dirichlet/snow/1/0.01 err=0.306 twin=0.379 elapsed=134s
+Hendrycks2020AugMix_WRN 6 22 dirichlet/snow/1/0.05 err=0.820 twin=0.379 elapsed=161s
+Hendrycks2020AugMix_WRN 7 22 balanced_wr/snow/1/0.01 err=0.388 twin=0.297 elapsed=189s
+Hendrycks2020AugMix_WRN 8 22 balanced_wr/snow/1/0.05 err=0.961 twin=0.297 elapsed=216s
+Hendrycks2020AugMix_WRN 9 22 dirichlet/fog/1/0.01 err=0.298 twin=0.377 elapsed=244s
+Hendrycks2020AugMix_WRN 10 22 dirichlet/fog/1/0.05 err=0.867 twin=0.377 elapsed=271s
+Hendrycks2020AugMix_WRN 11 22 balanced_wr/fog/1/0.01 err=0.358 twin=0.285 elapsed=297s
+Hendrycks2020AugMix_WRN 12 22 balanced_wr/fog/1/0.05 err=0.967 twin=0.285 elapsed=316s
+Hendrycks2020AugMix_WRN 13 22 dirichlet/contrast/1/0.01 err=0.452 twin=0.498 elapsed=335s
+Hendrycks2020AugMix_WRN 14 22 dirichlet/contrast/1/0.05 err=0.833 twin=0.498 elapsed=354s
+Hendrycks2020AugMix_WRN 15 22 balanced_wr/contrast/1/0.01 err=0.426 twin=0.284 elapsed=373s
+Hendrycks2020AugMix_WRN 16 22 balanced_wr/contrast/1/0.05 err=0.955 twin=0.284 elapsed=392s
+Hendrycks2020AugMix_WRN 17 22 dirichlet/jpeg_compression/1/0.01 err=0.447 twin=0.574 elapsed=411s
+Hendrycks2020AugMix_WRN 18 22 dirichlet/jpeg_compression/1/0.05 err=0.779 twin=0.574 elapsed=430s
+Hendrycks2020AugMix_WRN 19 22 balanced_wr/jpeg_compression/1/0.01 err=0.492 twin=0.361 elapsed=449s
+Hendrycks2020AugMix_WRN 20 22 balanced_wr/jpeg_compression/1/0.05 err=0.969 twin=0.361 elapsed=468s
+Hendrycks2020AugMix_WRN 21 22 by_class/clean/0/0.001 err=0.736 twin=0.727 elapsed=487s
+Hendrycks2020AugMix_WRN 22 22 by_class/clean/0/0.01 err=0.937 twin=0.727 elapsed=506s
+complete Hendrycks2020AugMix_WRN 506s

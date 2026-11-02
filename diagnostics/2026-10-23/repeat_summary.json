@@ -1,0 +1,363 @@
+{
+  "scope": "Exploratory source/split repeat checks on same bundled dataset; not independent datasets",
+  "repeats": [
+    {
+      "source_seed": 241024,
+      "directory": "repeat_241024",
+      "source": {
+        "dataset": "sklearn bundled digits, 1797 grayscale 8x8 images, labels0-9",
+        "dataset_sha256": "f6d9e39f37dc45d327f6db33428ee58970ccceabb2535a5c179de35886b70443",
+        "scaling": "divide pixels by16; no fitting of scaling on held-out data",
+        "seed": 241024,
+        "source_fit_n": 900,
+        "feature_width": 32,
+        "encoder": "MLPClassifier hidden32 ReLU, lbfgs alpha0.01 max_iter250",
+        "head": "source-standardized hidden features + LogisticRegression C1 max_iter500",
+        "python": "3.13.9",
+        "numpy": "2.2.6",
+        "scipy": "1.17.1",
+        "sklearn": "1.8.0",
+        "threads": 1,
+        "source_checks": {
+          "source_fit": {
+            "n": 900,
+            "accuracy": 1.0,
+            "nll": 0.019389787542662164
+          },
+          "meta_train": {
+            "n": 400,
+            "accuracy": 0.98,
+            "nll": 0.06982339652119932
+          },
+          "meta_cal": {
+            "n": 200,
+            "accuracy": 0.975,
+            "nll": 0.09263301486929468
+          }
+        },
+        "warnings": [
+          "lbfgs failed to converge after 250 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=250).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ],
+        "elapsed_seconds": 0.5434405179985333,
+        "adaptation": {
+          "normalization": "support-only hidden means/variances frozen for query",
+          "entropy_steps": 3,
+          "entropy_lr": 0.05,
+          "gamma_beta_only": true,
+          "head_encoder_frozen": true
+        },
+        "scope": "Alternate-data CPU mechanism demonstration; not native Tent/CIFAR-C reproduction"
+      },
+      "outcomes": {
+        "episodes": 640,
+        "by_split": {
+          "cal": 144,
+          "test": 208,
+          "train": 288
+        },
+        "heldout_test_episodes": 64,
+        "cheap_dimensions": 82,
+        "rich_dimensions": 110,
+        "elapsed_seconds": 2.8316537420032546,
+        "original_image_pools_disjoint": true,
+        "support_query_overlaps": 0,
+        "source_fit_pool_disjoint": true,
+        "input_code_sha256": "b085f46ce742e1963de649df779f8efc200a2f4858cc8a6074695dcf88b26991"
+      },
+      "elapsed_seconds": 7.256391062997864,
+      "analysis_status": "completed cost-audited parent analysis via uv",
+      "commands": [
+        "python train_core.py",
+        "python generate_outcomes.py"
+      ],
+      "code_sha256": {
+        "core_model.py": "a4b9584b1cd0794d17000aae12c7c75c8cb66e5f6441b0e6a593d3c60c4b61a5",
+        "train_core.py": "d5115454a7d00b85cae9978ad91716780613d7e1264f2f82b6c04784df038bbe",
+        "generate_outcomes.py": "b085f46ce742e1963de649df779f8efc200a2f4858cc8a6074695dcf88b26991"
+      },
+      "uv_commands": [
+        "uv run --no-project --no-python-downloads --python /usr/bin/python python generate_outcomes.py",
+        "uv run --no-project --no-python-downloads --python /usr/bin/python python analyze_diagnostic.py"
+      ],
+      "uv_elapsed_seconds": 7.467304440004227,
+      "analysis": {
+        "status": "completed",
+        "run_date": "2026-10-23",
+        "input": "outcomes.npz",
+        "episodes": {
+          "train": 288,
+          "cal": 144,
+          "primary_heldout_test": 64,
+          "all_test": 208
+        },
+        "train_families": [
+          "blur",
+          "brightness",
+          "clean",
+          "noise",
+          "translation"
+        ],
+        "test_families": [
+          "contrast",
+          "occlusion"
+        ],
+        "source_query_cost_scale_ms": 0.08416550190304406,
+        "cheap_selector_latency_ms": 0.3647265,
+        "rich_selector_latency_ms": 0.362748,
+        "source_error": 0.26318359375,
+        "development_fixed_error": 0.26318359375,
+        "hindsight_fixed_error": 0.26318359375,
+        "terminal_oracle_error": 0.1923828125,
+        "oracle_headroom_vs_development_fixed": 0.07080078125,
+        "cheap_selector_error": 0.26025390625,
+        "rich_selector_error": 0.25732421875,
+        "rich_evidence_error_improvement": 0.0029296875,
+        "rich_evidence_paired_episode_bootstrap_interval": [
+          -0.0009765625,
+          0.0087890625
+        ],
+        "bootstrap_caveat": "Conditional resampling of overlapping episodes; not independent dataset/population uncertainty.",
+        "folds": [
+          {
+            "train_groups": [
+              "train_pool_0"
+            ],
+            "heldout_groups": [
+              "train_pool_1"
+            ],
+            "train_episodes": 144,
+            "heldout_episodes": 144
+          },
+          {
+            "train_groups": [
+              "train_pool_1"
+            ],
+            "heldout_groups": [
+              "train_pool_0"
+            ],
+            "train_episodes": 144,
+            "heldout_episodes": 144
+          }
+        ],
+        "gates": [
+          {
+            "lambda": 0.0,
+            "gate_latency_ms": 0.3597325,
+            "calibration_rate": 0.25,
+            "oof_mean_gain": 0.0018446180555555555,
+            "oof_positive_fraction": 0.034722222222222224,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.002,
+            "gate_latency_ms": 0.2510805,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.014813050096565257,
+            "oof_positive_fraction": 0.03819444444444445,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.01,
+            "gate_latency_ms": 0.2101825,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.0807965916698319,
+            "oof_positive_fraction": 0.020833333333333332,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.03,
+            "gate_latency_ms": 0.253618,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.24840827472114946,
+            "oof_positive_fraction": 0.003472222222222222,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          }
+        ],
+        "analysis_seconds": 0.4485008716583252,
+        "claims": "Alternate-data mechanism diagnostic; no original benchmark replication or verified novelty."
+      },
+      "analysis_sha256": "746383ca1f55a50d06e2382acdfd4e30dbbe51fa29bad95b72171d677e9e0267",
+      "generation_rerun_note": "Initial generation used existing python; same fixed episode design rerun via uv. Final retained costs are from uv rerun; reruns are not additional independent episodes.",
+      "source_training_command": "python train_core.py (launched before uv steering; no installation)"
+    },
+    {
+      "source_seed": 241025,
+      "directory": "repeat_241025",
+      "source": {
+        "dataset": "sklearn bundled digits, 1797 grayscale 8x8 images, labels0-9",
+        "dataset_sha256": "f6d9e39f37dc45d327f6db33428ee58970ccceabb2535a5c179de35886b70443",
+        "scaling": "divide pixels by16; no fitting of scaling on held-out data",
+        "seed": 241025,
+        "source_fit_n": 900,
+        "feature_width": 32,
+        "encoder": "MLPClassifier hidden32 ReLU, lbfgs alpha0.01 max_iter250",
+        "head": "source-standardized hidden features + LogisticRegression C1 max_iter500",
+        "python": "3.13.9",
+        "numpy": "2.2.6",
+        "scipy": "1.17.1",
+        "sklearn": "1.8.0",
+        "threads": 1,
+        "source_checks": {
+          "source_fit": {
+            "n": 900,
+            "accuracy": 1.0,
+            "nll": 0.02437610021236385
+          },
+          "meta_train": {
+            "n": 400,
+            "accuracy": 0.9625,
+            "nll": 0.10774569817546521
+          },
+          "meta_cal": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.11222039283265219
+          }
+        },
+        "warnings": [
+          "lbfgs failed to converge after 250 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=250).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ],
+        "elapsed_seconds": 0.6219818949975888,
+        "adaptation": {
+          "normalization": "support-only hidden means/variances frozen for query",
+          "entropy_steps": 3,
+          "entropy_lr": 0.05,
+          "gamma_beta_only": true,
+          "head_encoder_frozen": true
+        },
+        "scope": "Alternate-data CPU mechanism demonstration; not native Tent/CIFAR-C reproduction"
+      },
+      "outcomes": {
+        "episodes": 640,
+        "by_split": {
+          "cal": 144,
+          "test": 208,
+          "train": 288
+        },
+        "heldout_test_episodes": 64,
+        "cheap_dimensions": 82,
+        "rich_dimensions": 110,
+        "elapsed_seconds": 3.3027683649997925,
+        "original_image_pools_disjoint": true,
+        "support_query_overlaps": 0,
+        "source_fit_pool_disjoint": true,
+        "input_code_sha256": "b085f46ce742e1963de649df779f8efc200a2f4858cc8a6074695dcf88b26991"
+      },
+      "elapsed_seconds": 7.65236947700032,
+      "analysis_status": "completed cost-audited parent analysis via uv",
+      "commands": [
+        "python train_core.py",
+        "python generate_outcomes.py"
+      ],
+      "code_sha256": {
+        "core_model.py": "a4b9584b1cd0794d17000aae12c7c75c8cb66e5f6441b0e6a593d3c60c4b61a5",
+        "train_core.py": "903c1c411e63c6f3b92b815e913bfd845d612bd16f12d05112065a902310e490",
+        "generate_outcomes.py": "b085f46ce742e1963de649df779f8efc200a2f4858cc8a6074695dcf88b26991"
+      },
+      "uv_commands": [
+        "uv run --no-project --no-python-downloads --python /usr/bin/python python generate_outcomes.py",
+        "uv run --no-project --no-python-downloads --python /usr/bin/python python analyze_diagnostic.py"
+      ],
+      "uv_elapsed_seconds": 8.74529532300221,
+      "analysis": {
+        "status": "completed",
+        "run_date": "2026-10-23",
+        "input": "outcomes.npz",
+        "episodes": {
+          "train": 288,
+          "cal": 144,
+          "primary_heldout_test": 64,
+          "all_test": 208
+        },
+        "train_families": [
+          "blur",
+          "brightness",
+          "clean",
+          "noise",
+          "translation"
+        ],
+        "test_families": [
+          "contrast",
+          "occlusion"
+        ],
+        "source_query_cost_scale_ms": 0.0865560032252688,
+        "cheap_selector_latency_ms": 0.311214,
+        "rich_selector_latency_ms": 0.33403099999999997,
+        "source_error": 0.259765625,
+        "development_fixed_error": 0.259765625,
+        "hindsight_fixed_error": 0.259765625,
+        "terminal_oracle_error": 0.1767578125,
+        "oracle_headroom_vs_development_fixed": 0.0830078125,
+        "cheap_selector_error": 0.25048828125,
+        "rich_selector_error": 0.21630859375,
+        "rich_evidence_error_improvement": 0.0341796875,
+        "rich_evidence_paired_episode_bootstrap_interval": [
+          0.00830078125,
+          0.06545410156249987
+        ],
+        "bootstrap_caveat": "Conditional resampling of overlapping episodes; not independent dataset/population uncertainty.",
+        "folds": [
+          {
+            "train_groups": [
+              "train_pool_0"
+            ],
+            "heldout_groups": [
+              "train_pool_1"
+            ],
+            "train_episodes": 144,
+            "heldout_episodes": 144
+          },
+          {
+            "train_groups": [
+              "train_pool_1"
+            ],
+            "heldout_groups": [
+              "train_pool_0"
+            ],
+            "train_episodes": 144,
+            "heldout_episodes": 144
+          }
+        ],
+        "gates": [
+          {
+            "lambda": 0.0,
+            "gate_latency_ms": 0.327638,
+            "calibration_rate": 0.75,
+            "oof_mean_gain": -0.0016276041666666667,
+            "oof_positive_fraction": 0.020833333333333332,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.002,
+            "gate_latency_ms": 0.3323925,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.02514883651980523,
+            "oof_positive_fraction": 0.013888888888888888,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.01,
+            "gate_latency_ms": 0.3259295,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.11502637800997507,
+            "oof_positive_fraction": 0.010416666666666666,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          },
+          {
+            "lambda": 0.03,
+            "gate_latency_ms": 0.32499,
+            "calibration_rate": 0.0,
+            "oof_mean_gain": -0.33816564981659686,
+            "oof_positive_fraction": 0.0,
+            "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+          }
+        ],
+        "analysis_seconds": 0.5220825672149658,
+        "claims": "Alternate-data mechanism diagnostic; no original benchmark replication or verified novelty."
+      },
+      "analysis_sha256": "746383ca1f55a50d06e2382acdfd4e30dbbe51fa29bad95b72171d677e9e0267",
+      "generation_rerun_note": "Initial generation used existing python; same fixed episode design rerun via uv. Final retained costs are from uv rerun; reruns are not additional independent episodes.",
+      "source_training_command": "python train_core.py (launched before uv steering; no installation)"
+    }
+  ]
+}

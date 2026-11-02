@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "run_date": "2026-10-23",
+  "input": "outcomes.npz",
+  "episodes": {
+    "train": 288,
+    "cal": 144,
+    "primary_heldout_test": 64,
+    "all_test": 208
+  },
+  "train_families": [
+    "blur",
+    "brightness",
+    "clean",
+    "noise",
+    "translation"
+  ],
+  "test_families": [
+    "contrast",
+    "occlusion"
+  ],
+  "source_query_cost_scale_ms": 0.0865560032252688,
+  "cheap_selector_latency_ms": 0.311214,
+  "rich_selector_latency_ms": 0.33403099999999997,
+  "source_error": 0.259765625,
+  "development_fixed_error": 0.259765625,
+  "hindsight_fixed_error": 0.259765625,
+  "terminal_oracle_error": 0.1767578125,
+  "oracle_headroom_vs_development_fixed": 0.0830078125,
+  "cheap_selector_error": 0.25048828125,
+  "rich_selector_error": 0.21630859375,
+  "rich_evidence_error_improvement": 0.0341796875,
+  "rich_evidence_paired_episode_bootstrap_interval": [
+    0.00830078125,
+    0.06545410156249987
+  ],
+  "bootstrap_caveat": "Conditional resampling of overlapping episodes; not independent dataset/population uncertainty.",
+  "folds": [
+    {
+      "train_groups": [
+        "train_pool_0"
+      ],
+      "heldout_groups": [
+        "train_pool_1"
+      ],
+      "train_episodes": 144,
+      "heldout_episodes": 144
+    },
+    {
+      "train_groups": [
+        "train_pool_1"
+      ],
+      "heldout_groups": [
+        "train_pool_0"
+      ],
+      "train_episodes": 144,
+      "heldout_episodes": 144
+    }
+  ],
+  "gates": [
+    {
+      "lambda": 0.0,
+      "gate_latency_ms": 0.327638,
+      "calibration_rate": 0.75,
+      "oof_mean_gain": -0.0016276041666666667,
+      "oof_positive_fraction": 0.020833333333333332,
+      "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+    },
+    {
+      "lambda": 0.002,
+      "gate_latency_ms": 0.3323925,
+      "calibration_rate": 0.0,
+      "oof_mean_gain": -0.02514883651980523,
+      "oof_positive_fraction": 0.013888888888888888,
+      "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+    },
+    {
+      "lambda": 0.01,
+      "gate_latency_ms": 0.3259295,
+      "calibration_rate": 0.0,
+      "oof_mean_gain": -0.11502637800997507,
+      "oof_positive_fraction": 0.010416666666666666,
+      "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+    },
+    {
+      "lambda": 0.03,
+      "gate_latency_ms": 0.32499,
+      "calibration_rate": 0.0,
+      "oof_mean_gain": -0.33816564981659686,
+      "oof_positive_fraction": 0.0,
+      "calibration_gain_target_vs_refit_warning": "Fold predictors differ from final refit; test untouched"
+    }
+  ],
+  "analysis_seconds": 0.5220825672149658,
+  "claims": "Alternate-data mechanism diagnostic; no original benchmark replication or verified novelty."
+}

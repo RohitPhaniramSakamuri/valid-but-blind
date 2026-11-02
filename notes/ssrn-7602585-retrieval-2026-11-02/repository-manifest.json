@@ -1,0 +1,56 @@
+[
+  {
+    "date": "2026-11-02",
+    "name": "orcid",
+    "url": "https://pub.orcid.org/v3.0/0000-0001-9252-8475/record",
+    "status": 200,
+    "final_url": "https://pub.orcid.org/v3.0/0000-0001-9252-8475/record",
+    "content_type": "application/json;charset=UTF-8",
+    "file": "evidence/orcid.json",
+    "is_pdf": false,
+    "bytes": 46944,
+    "sha256": "6ca2aa873b9cb76ef86a79de928f594219f3caaefe410708165e5240c6d4c003"
+  },
+  {
+    "date": "2026-11-02",
+    "name": "openaire",
+    "url": "https://api.openaire.eu/search/publications?doi=10.2139%2Fssrn.7602585&format=json",
+    "status": 200,
+    "final_url": "https://api.openaire.eu/search/publications?doi=10.2139%2Fssrn.7602585&format=json",
+    "content_type": "application/json;charset=UTF-8",
+    "file": "evidence/openaire.json",
+    "is_pdf": false,
+    "bytes": 348,
+    "sha256": "5e3ca896a8c1e3b46c4cd22eac85c578e252cabfa573958f17152620ff43abd9"
+  },
+  {
+    "date": "2026-11-02",
+    "name": "zenodo",
+    "url": "https://zenodo.org/api/records?q=%227602585%22&size=10",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "date": "2026-11-02",
+    "name": "scholar",
+    "url": "https://scholar.google.com/scholar?q=%22Diagnosing+and+repairing+the+conformal+coverage+guarantee%22",
+    "status": 200,
+    "final_url": "https://scholar.google.com/scholar?q=%22Diagnosing+and+repairing+the+conformal+coverage+guarantee%22",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "evidence/scholar.html",
+    "is_pdf": false,
+    "bytes": 157585,
+    "sha256": "6de5b40e8d634fccf39e36782150f661f833897fa834c4a592cf29898fcfc072"
+  },
+  {
+    "date": "2026-11-02",
+    "name": "ssrn_text",
+    "url": "http://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "date": "2026-11-02",
+    "name": "ssrn_cache",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602585&download=yes",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "regression_alpha": 10.0,
+  "seed": 314159,
+  "lambda_error_per_source_cost_unit": [
+    0.0,
+    0.002,
+    0.01,
+    0.03
+  ],
+  "calibration_probe_rates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "gate_fit": "GroupKFold predictions from disjoint original-ID pools; separate cal thresholds",
+  "uncertainty": "Conditional descriptive episode bootstrap; not population-independent CIs"
+}

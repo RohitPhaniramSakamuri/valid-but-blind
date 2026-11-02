@@ -1,0 +1,286 @@
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Using CPython 3.10.12 interpreter at: /usr/bin/python3.10
+Creating virtual environment at: .venv_cs
+Activate with: source .venv_cs/bin/activate
+Using Python 3.10.12 environment at: .venv_cs
+Resolved 26 packages in 446ms
+Downloading pygments (1.2MiB)
+Downloading pillow (6.6MiB)
+Downloading matplotlib (8.4MiB)
+Downloading scipy (35.9MiB)
+Downloading numpy (17.4MiB)
+Downloading pandas (12.2MiB)
+Downloading kiwisolver (1.6MiB)
+Downloading fonttools (5.0MiB)
+ Downloaded pygments
+ Downloaded kiwisolver
+ Downloaded pillow
+ Downloaded fonttools
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded pandas
+ Downloaded scipy
+Prepared 25 packages in 641ms
+Installed 26 packages in 588ms
+ + confseq==0.0.11
+ + contourpy==1.3.2
+ + cycler==0.12.1
+ + dill==0.4.1
+ + exceptiongroup==1.3.1
+ + fonttools==4.65.0
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.9
+ + multiprocess==0.70.19
+ + numpy==1.26.4
+ + packaging==26.3
+ + pandas==2.3.3
+ + pillow==12.3.0
+ + pluggy==1.7.0
+ + pybind11==3.1.0
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.2.0
+ + python-dateutil==3.0.0
+ + pytz==2026.6
+ + scipy==1.15.3
+ + six==1.17.0
+ + tomli==2.5.0
+ + typing-extensions==4.16.0
+ + tzdata==2026.6
+confseq ok
+30ee6543a1bfd049fa33834b7c1ada301e7064b7fbe8fc38340eb8b62ced4b33  data/CIFAR-100-C.tar
+85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7  data/cifar-100-python.tar.gz
+=== second model streams
+{'model': 'Modas2021PRIMEResNet18', 'r0': 0.22500000894069672, 'q_hat0': 0.7319999933242798, 'false_alarm0': 0.17100000381469727, 'n_calib': 1000, 'torch': '2.4.1+cu124', 'gpu': 'NVIDIA GeForce RTX 4090'}
+1 146 source/snow/3/balanced_wr/0/0 err=0.318 elapsed=1s
+2 146 tent/snow/3/balanced_wr/0/0 err=0.351 elapsed=7s
+3 146 source/snow/3/by_class/0/0 err=0.322 elapsed=8s
+4 146 tent/snow/3/by_class/0/0 err=0.901 elapsed=13s
+5 146 source/snow/3/dirichlet/0.1/0 err=0.337 elapsed=14s
+6 146 tent/snow/3/dirichlet/0.1/0 err=0.479 elapsed=19s
+7 146 source/snow/3/dirichlet/0.1/1 err=0.414 elapsed=20s
+8 146 tent/snow/3/dirichlet/0.1/1 err=0.584 elapsed=25s
+9 146 source/snow/5/balanced_wr/0/0 err=0.370 elapsed=25s
+10 146 tent/snow/5/balanced_wr/0/0 err=0.379 elapsed=31s
+11 146 source/snow/5/by_class/0/0 err=0.368 elapsed=31s
+12 146 tent/snow/5/by_class/0/0 err=0.903 elapsed=37s
+13 146 source/snow/5/dirichlet/0.1/0 err=0.299 elapsed=37s
+14 146 tent/snow/5/dirichlet/0.1/0 err=0.475 elapsed=43s
+15 146 source/snow/5/dirichlet/0.1/1 err=0.360 elapsed=43s
+16 146 tent/snow/5/dirichlet/0.1/1 err=0.535 elapsed=49s
+17 146 source/frost/3/balanced_wr/0/0 err=0.323 elapsed=49s
+18 146 tent/frost/3/balanced_wr/0/0 err=0.350 elapsed=55s
+19 146 source/frost/3/by_class/0/0 err=0.322 elapsed=55s
+20 146 tent/frost/3/by_class/0/0 err=0.912 elapsed=61s
+21 146 source/frost/3/dirichlet/0.1/0 err=0.312 elapsed=61s
+22 146 tent/frost/3/dirichlet/0.1/0 err=0.487 elapsed=67s
+23 146 source/frost/3/dirichlet/0.1/1 err=0.299 elapsed=67s
+24 146 tent/frost/3/dirichlet/0.1/1 err=0.511 elapsed=73s
+25 146 source/frost/5/balanced_wr/0/0 err=0.361 elapsed=73s
+26 146 tent/frost/5/balanced_wr/0/0 err=0.361 elapsed=79s
+27 146 source/frost/5/by_class/0/0 err=0.361 elapsed=79s
+28 146 tent/frost/5/by_class/0/0 err=0.914 elapsed=85s
+29 146 source/frost/5/dirichlet/0.1/0 err=0.393 elapsed=85s
+30 146 tent/frost/5/dirichlet/0.1/0 err=0.438 elapsed=91s
+31 146 source/frost/5/dirichlet/0.1/1 err=0.406 elapsed=91s
+32 146 tent/frost/5/dirichlet/0.1/1 err=0.459 elapsed=97s
+33 146 source/fog/3/balanced_wr/0/0 err=0.289 elapsed=97s
+34 146 tent/fog/3/balanced_wr/0/0 err=0.315 elapsed=103s
+35 146 source/fog/3/by_class/0/0 err=0.293 elapsed=104s
+36 146 tent/fog/3/by_class/0/0 err=0.901 elapsed=109s
+37 146 source/fog/3/dirichlet/0.1/0 err=0.299 elapsed=110s
+38 146 tent/fog/3/dirichlet/0.1/0 err=0.459 elapsed=115s
+39 146 source/fog/3/dirichlet/0.1/1 err=0.287 elapsed=116s
+40 146 tent/fog/3/dirichlet/0.1/1 err=0.386 elapsed=121s
+41 146 source/fog/5/balanced_wr/0/0 err=0.495 elapsed=122s
+42 146 tent/fog/5/balanced_wr/0/0 err=0.383 elapsed=127s
+43 146 source/fog/5/by_class/0/0 err=0.503 elapsed=128s
+44 146 tent/fog/5/by_class/0/0 err=0.907 elapsed=133s
+45 146 source/fog/5/dirichlet/0.1/0 err=0.513 elapsed=134s
+46 146 tent/fog/5/dirichlet/0.1/0 err=0.325 elapsed=139s
+47 146 source/fog/5/dirichlet/0.1/1 err=0.481 elapsed=140s
+48 146 tent/fog/5/dirichlet/0.1/1 err=0.422 elapsed=145s
+49 146 source/brightness/3/balanced_wr/0/0 err=0.237 elapsed=146s
+50 146 tent/brightness/3/balanced_wr/0/0 err=0.284 elapsed=151s
+51 146 source/brightness/3/by_class/0/0 err=0.240 elapsed=152s
+52 146 tent/brightness/3/by_class/0/0 err=0.891 elapsed=157s
+53 146 source/brightness/3/dirichlet/0.1/0 err=0.205 elapsed=158s
+54 146 tent/brightness/3/dirichlet/0.1/0 err=0.346 elapsed=163s
+55 146 source/brightness/3/dirichlet/0.1/1 err=0.175 elapsed=164s
+56 146 tent/brightness/3/dirichlet/0.1/1 err=0.370 elapsed=170s
+57 146 source/brightness/5/balanced_wr/0/0 err=0.292 elapsed=170s
+58 146 tent/brightness/5/balanced_wr/0/0 err=0.314 elapsed=176s
+59 146 source/brightness/5/by_class/0/0 err=0.292 elapsed=176s
+60 146 tent/brightness/5/by_class/0/0 err=0.904 elapsed=182s
+61 146 source/brightness/5/dirichlet/0.1/0 err=0.235 elapsed=182s
+62 146 tent/brightness/5/dirichlet/0.1/0 err=0.390 elapsed=188s
+63 146 source/brightness/5/dirichlet/0.1/1 err=0.209 elapsed=188s
+64 146 tent/brightness/5/dirichlet/0.1/1 err=0.300 elapsed=194s
+65 146 source/contrast/3/balanced_wr/0/0 err=0.263 elapsed=194s
+66 146 tent/contrast/3/balanced_wr/0/0 err=0.319 elapsed=200s
+67 146 source/contrast/3/by_class/0/0 err=0.263 elapsed=200s
+68 146 tent/contrast/3/by_class/0/0 err=0.917 elapsed=206s
+69 146 source/contrast/3/dirichlet/0.1/0 err=0.275 elapsed=206s
+70 146 tent/contrast/3/dirichlet/0.1/0 err=0.558 elapsed=212s
+71 146 source/contrast/3/dirichlet/0.1/1 err=0.282 elapsed=212s
+72 146 tent/contrast/3/dirichlet/0.1/1 err=0.471 elapsed=218s
+73 146 source/contrast/5/balanced_wr/0/0 err=0.391 elapsed=218s
+74 146 tent/contrast/5/balanced_wr/0/0 err=0.437 elapsed=224s
+75 146 source/contrast/5/by_class/0/0 err=0.391 elapsed=224s
+76 146 tent/contrast/5/by_class/0/0 err=0.927 elapsed=230s
+77 146 source/contrast/5/dirichlet/0.1/0 err=0.394 elapsed=230s
+78 146 tent/contrast/5/dirichlet/0.1/0 err=0.511 elapsed=236s
+79 146 source/contrast/5/dirichlet/0.1/1 err=0.319 elapsed=236s
+80 146 tent/contrast/5/dirichlet/0.1/1 err=0.348 elapsed=242s
+81 146 source/elastic_transform/3/balanced_wr/0/0 err=0.285 elapsed=242s
+82 146 tent/elastic_transform/3/balanced_wr/0/0 err=0.331 elapsed=248s
+83 146 source/elastic_transform/3/by_class/0/0 err=0.286 elapsed=248s
+84 146 tent/elastic_transform/3/by_class/0/0 err=0.898 elapsed=254s
+85 146 source/elastic_transform/3/dirichlet/0.1/0 err=0.320 elapsed=254s
+86 146 tent/elastic_transform/3/dirichlet/0.1/0 err=0.437 elapsed=260s
+87 146 source/elastic_transform/3/dirichlet/0.1/1 err=0.272 elapsed=260s
+88 146 tent/elastic_transform/3/dirichlet/0.1/1 err=0.331 elapsed=266s
+89 146 source/elastic_transform/5/balanced_wr/0/0 err=0.373 elapsed=266s
+90 146 tent/elastic_transform/5/balanced_wr/0/0 err=0.405 elapsed=272s
+91 146 source/elastic_transform/5/by_class/0/0 err=0.375 elapsed=272s
+92 146 tent/elastic_transform/5/by_class/0/0 err=0.917 elapsed=278s
+93 146 source/elastic_transform/5/dirichlet/0.1/0 err=0.355 elapsed=278s
+94 146 tent/elastic_transform/5/dirichlet/0.1/0 err=0.550 elapsed=284s
+95 146 source/elastic_transform/5/dirichlet/0.1/1 err=0.379 elapsed=285s
+96 146 tent/elastic_transform/5/dirichlet/0.1/1 err=0.427 elapsed=290s
+97 146 source/pixelate/3/balanced_wr/0/0 err=0.291 elapsed=291s
+98 146 tent/pixelate/3/balanced_wr/0/0 err=0.321 elapsed=296s
+99 146 source/pixelate/3/by_class/0/0 err=0.290 elapsed=297s
+100 146 tent/pixelate/3/by_class/0/0 err=0.903 elapsed=302s
+101 146 source/pixelate/3/dirichlet/0.1/0 err=0.333 elapsed=303s
+102 146 tent/pixelate/3/dirichlet/0.1/0 err=0.409 elapsed=308s
+103 146 source/pixelate/3/dirichlet/0.1/1 err=0.287 elapsed=309s
+104 146 tent/pixelate/3/dirichlet/0.1/1 err=0.389 elapsed=314s
+105 146 source/pixelate/5/balanced_wr/0/0 err=0.484 elapsed=315s
+106 146 tent/pixelate/5/balanced_wr/0/0 err=0.360 elapsed=320s
+107 146 source/pixelate/5/by_class/0/0 err=0.485 elapsed=321s
+108 146 tent/pixelate/5/by_class/0/0 err=0.907 elapsed=326s
+109 146 source/pixelate/5/dirichlet/0.1/0 err=0.632 elapsed=327s
+110 146 tent/pixelate/5/dirichlet/0.1/0 err=0.567 elapsed=332s
+111 146 source/pixelate/5/dirichlet/0.1/1 err=0.423 elapsed=333s
+112 146 tent/pixelate/5/dirichlet/0.1/1 err=0.320 elapsed=338s
+113 146 source/jpeg_compression/3/balanced_wr/0/0 err=0.333 elapsed=339s
+114 146 tent/jpeg_compression/3/balanced_wr/0/0 err=0.375 elapsed=344s
+115 146 source/jpeg_compression/3/by_class/0/0 err=0.340 elapsed=345s
+116 146 tent/jpeg_compression/3/by_class/0/0 err=0.899 elapsed=350s
+117 146 source/jpeg_compression/3/dirichlet/0.1/0 err=0.283 elapsed=351s
+118 146 tent/jpeg_compression/3/dirichlet/0.1/0 err=0.353 elapsed=356s
+119 146 source/jpeg_compression/3/dirichlet/0.1/1 err=0.422 elapsed=357s
+120 146 tent/jpeg_compression/3/dirichlet/0.1/1 err=0.505 elapsed=362s
+121 146 source/jpeg_compression/5/balanced_wr/0/0 err=0.369 elapsed=363s
+122 146 tent/jpeg_compression/5/balanced_wr/0/0 err=0.396 elapsed=368s
+123 146 source/jpeg_compression/5/by_class/0/0 err=0.380 elapsed=368s
+124 146 tent/jpeg_compression/5/by_class/0/0 err=0.910 elapsed=374s
+125 146 source/jpeg_compression/5/dirichlet/0.1/0 err=0.383 elapsed=374s
+126 146 tent/jpeg_compression/5/dirichlet/0.1/0 err=0.530 elapsed=380s
+127 146 source/jpeg_compression/5/dirichlet/0.1/1 err=0.356 elapsed=380s
+128 146 tent/jpeg_compression/5/dirichlet/0.1/1 err=0.499 elapsed=386s
+129 146 source/clean/0/balanced_wr/0/0 err=0.214 elapsed=386s
+130 146 tent/clean/0/balanced_wr/0/0 err=0.279 elapsed=392s
+131 146 source/clean/0/by_class/0/0 err=0.223 elapsed=393s
+132 146 tent/clean/0/by_class/0/0 err=0.892 elapsed=398s
+133 146 source/clean/0/dirichlet/0.1/0 err=0.272 elapsed=399s
+134 146 tent/clean/0/dirichlet/0.1/0 err=0.528 elapsed=404s
+135 146 source/clean/0/balanced_wr/0/1 err=0.221 elapsed=405s
+136 146 tent/clean/0/balanced_wr/0/1 err=0.286 elapsed=410s
+137 146 source/clean/0/by_class/0/1 err=0.223 elapsed=410s
+138 146 tent/clean/0/by_class/0/1 err=0.892 elapsed=416s
+139 146 source/clean/0/dirichlet/0.1/1 err=0.225 elapsed=416s
+140 146 tent/clean/0/dirichlet/0.1/1 err=0.444 elapsed=422s
+141 146 source/clean/0/balanced_wr/0/2 err=0.213 elapsed=422s
+142 146 tent/clean/0/balanced_wr/0/2 err=0.281 elapsed=428s
+143 146 source/clean/0/by_class/0/2 err=0.223 elapsed=428s
+144 146 tent/clean/0/by_class/0/2 err=0.892 elapsed=434s
+145 146 source/clean/0/dirichlet/0.1/2 err=0.199 elapsed=434s
+146 146 tent/clean/0/dirichlet/0.1/2 err=0.401 elapsed=440s
+complete 440s
+{
+"primary": {
+"n": 32,
+"err": 0.443,
+"conf": 0.587,
+"pos": 0.549,
+"pfn": 0.126,
+"asm": 0.109,
+"collapsed": 0,
+"strict": 24,
+"missed": 13,
+"missed_sqrt": 19,
+"others_alarmed": 2,
+"others": 8,
+"final_bound": 0.328
+},
+"control": {
+"n": 16,
+"err": 0.907,
+"conf": 0.454,
+"pos": 0.946,
+"pfn": 0.036,
+"asm": 0.0,
+"collapsed": 16,
+"strict": 0,
+"missed": 0,
+"missed_sqrt": 0,
+"others_alarmed": 0,
+"others": 0,
+"final_bound": 0.73
+},
+"balanced_wr": {
+"n": 16,
+"err": 0.355,
+"conf": 0.525,
+"pos": 0.445,
+"pfn": 0.085,
+"asm": 0.018,
+"collapsed": 0,
+"strict": 5,
+"missed": 4,
+"missed_sqrt": 5,
+"others_alarmed": 0,
+"others": 11,
+"final_bound": 0.234
+},
+"checks": {
+"enough_violations": true,
+"missed_share": 0.5416666666666666,
+"missed_lower95": 0.32820807569517796,
+"control_missed_share": null,
+"assumption_mean": 0.109,
+"replacement_gap": 0.088,
+"confirmed": false
+},
+"aucs": {
+"source_disagreement": 0.875,
+"top_share": 0.71,
+"positive_rate": 0.784,
+"uncertainty": 0.426
+}
+}
+=== SECOND DONE
+=== authors code check
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: ../.venv_repo
+Activate with: source ../.venv_repo/bin/activate
+/root/exp004/.venv_repo/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/root/exp004/.venv_repo/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/root/exp004/tta-monitor/monitor.py", line 14, in <module>
+    from lib.methods import vmfwe
+  File "/root/exp004/tta-monitor/lib/methods/vmfwe.py", line 13, in <module>
+    from lib.models.ResNet import ResNetModel
+  File "/root/exp004/tta-monitor/lib/models/ResNet.py", line 8, in <module>
+    from torchvision.models.resnet import load_state_dict_from_url
+ImportError: cannot import name 'load_state_dict_from_url' from 'torchvision.models.resnet' (/root/exp004/.venv_repo/lib/python3.11/site-packages/torchvision/models/resnet.py)
+authors exit: 1
+0
+=== ALL DONE

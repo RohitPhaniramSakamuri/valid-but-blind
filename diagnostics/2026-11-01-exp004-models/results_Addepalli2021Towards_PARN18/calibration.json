@@ -1,0 +1,9 @@
+{
+ "model": "Addepalli2021Towards_PARN18",
+ "r0": 0.367000013589859,
+ "q_hat0": 0.8460000157356262,
+ "false_alarm0": 0.1720000058412552,
+ "n_calib": 1000,
+ "torch": "2.4.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 4090"
+}

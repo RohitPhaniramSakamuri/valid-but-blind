@@ -1,0 +1,20 @@
+{
+  "cheap": {
+    "sklearn_pipeline_predict_ms": 0.29295499999999997,
+    "compiled_numpy_predict_ms": 0.0046795,
+    "maximum_prediction_difference": 6.661338147750939e-16,
+    "action_choices_equal": true,
+    "mean_allin_compiled_route_ms": 0.4597615780195863,
+    "query_error": 0.2265625
+  },
+  "rich": {
+    "sklearn_pipeline_predict_ms": 0.2045985,
+    "compiled_numpy_predict_ms": 0.002577,
+    "maximum_prediction_difference": 9.992007221626409e-16,
+    "action_choices_equal": true,
+    "mean_allin_compiled_route_ms": 1.2411699369429507,
+    "query_error": 0.21337890625
+  },
+  "direct_source_query_ms": 0.06887492168061726,
+  "scope": "Post-hoc implementation sensitivity; same trained linear functions and predictions, no hyperparameter/final-label fitting. Acquisition gates were not refit in this sensitivity."
+}

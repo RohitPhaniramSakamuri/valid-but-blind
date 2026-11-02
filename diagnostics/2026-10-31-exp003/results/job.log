@@ -1,0 +1,228 @@
+downloading uv 0.13.6 x86_64-unknown-linux-gnu
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Using CPython 3.11.10 interpreter at: /usr/bin/python3
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+torch 2.4.1+cu124 numpy 1.26.3 cuda True NVIDIA GeForce RTX 4090
+downloading CIFAR-100-C
+30ee6543a1bfd049fa33834b7c1ada301e7064b7fbe8fc38340eb8b62ced4b33  data/CIFAR-100-C.tar
+=== code-path check on random images
+tuned {'alpha': 0.3, 'lr': 0.0001, 'any_safe_lr': True} 3s
+gaussian_noise/5/none/none elapsed=0s
+gaussian_noise/5/same/update elapsed=1s
+gaussian_noise/5/same/random elapsed=1s
+gaussian_noise/5/different/update elapsed=2s
+gaussian_noise/5/different/random elapsed=3s
+complete fold1_dev_seed1_smoke 3s
+=== fold 1, development pool, seed 1
+tuned {'alpha': 1.0, 'lr': 0.0001, 'any_safe_lr': True} 145s
+gaussian_noise/3/none/none elapsed=1s
+gaussian_noise/3/same/update elapsed=10s
+gaussian_noise/3/same/random elapsed=16s
+gaussian_noise/3/different/update elapsed=24s
+gaussian_noise/3/different/random elapsed=30s
+gaussian_noise/5/none/none elapsed=31s
+gaussian_noise/5/same/update elapsed=40s
+gaussian_noise/5/same/random elapsed=46s
+gaussian_noise/5/different/update elapsed=54s
+gaussian_noise/5/different/random elapsed=60s
+shot_noise/3/none/none elapsed=61s
+shot_noise/3/same/update elapsed=70s
+shot_noise/3/same/random elapsed=76s
+shot_noise/3/different/update elapsed=84s
+shot_noise/3/different/random elapsed=90s
+shot_noise/5/none/none elapsed=91s
+shot_noise/5/same/update elapsed=100s
+shot_noise/5/same/random elapsed=106s
+shot_noise/5/different/update elapsed=114s
+shot_noise/5/different/random elapsed=120s
+impulse_noise/3/none/none elapsed=121s
+impulse_noise/3/same/update elapsed=129s
+impulse_noise/3/same/random elapsed=134s
+impulse_noise/3/different/update elapsed=143s
+impulse_noise/3/different/random elapsed=149s
+impulse_noise/5/none/none elapsed=150s
+impulse_noise/5/same/update elapsed=159s
+impulse_noise/5/same/random elapsed=165s
+impulse_noise/5/different/update elapsed=173s
+impulse_noise/5/different/random elapsed=179s
+defocus_blur/3/none/none elapsed=181s
+defocus_blur/3/same/update elapsed=188s
+defocus_blur/3/same/random elapsed=194s
+defocus_blur/3/different/update elapsed=202s
+defocus_blur/3/different/random elapsed=208s
+defocus_blur/5/none/none elapsed=210s
+defocus_blur/5/same/update elapsed=217s
+defocus_blur/5/same/random elapsed=223s
+defocus_blur/5/different/update elapsed=232s
+defocus_blur/5/different/random elapsed=238s
+glass_blur/3/none/none elapsed=239s
+glass_blur/3/same/update elapsed=247s
+glass_blur/3/same/random elapsed=253s
+glass_blur/3/different/update elapsed=261s
+glass_blur/3/different/random elapsed=267s
+glass_blur/5/none/none elapsed=269s
+glass_blur/5/same/update elapsed=277s
+glass_blur/5/same/random elapsed=283s
+glass_blur/5/different/update elapsed=291s
+glass_blur/5/different/random elapsed=297s
+motion_blur/3/none/none elapsed=299s
+motion_blur/3/same/update elapsed=307s
+motion_blur/3/same/random elapsed=313s
+motion_blur/3/different/update elapsed=321s
+motion_blur/3/different/random elapsed=327s
+motion_blur/5/none/none elapsed=328s
+motion_blur/5/same/update elapsed=337s
+motion_blur/5/same/random elapsed=342s
+motion_blur/5/different/update elapsed=350s
+motion_blur/5/different/random elapsed=356s
+zoom_blur/3/none/none elapsed=357s
+zoom_blur/3/same/update elapsed=366s
+zoom_blur/3/same/random elapsed=371s
+zoom_blur/3/different/update elapsed=379s
+zoom_blur/3/different/random elapsed=385s
+zoom_blur/5/none/none elapsed=387s
+zoom_blur/5/same/update elapsed=395s
+zoom_blur/5/same/random elapsed=401s
+zoom_blur/5/different/update elapsed=409s
+zoom_blur/5/different/random elapsed=415s
+complete fold1_dev_seed1 415s
+{
+ "gate": {
+  "rule": "cross-fit headroom >= 1.0 pp at k>=32 on noncollapsed states",
+  "result": {
+   "n": 764,
+   "best_fixed": "NORMALIZE",
+   "action_err_pct": {
+    "KEEP": 40.03,
+    "NORMALIZE": 34.76,
+    "UPDATE": 40.02,
+    "RESET": 42.33
+   },
+   "headroom_pp": 0.45,
+   "ci95_pp": [
+    -0.44,
+    1.67
+   ],
+   "naive_headroom_pp": 2.2
+  },
+  "passed": false
+ },
+ "noncollapsed": {
+  "0": 1.0,
+  "8": 0.6446428571428572,
+  "32": 0.6589285714285714,
+  "128": 0.7053571428571429
+ }
+}
+{
+ "S": {
+  "low_exposure": {
+   "0": 0.6584821428571429,
+   "8": 0.6989397321428572,
+   "32": 0.6040736607142857,
+   "128": 0.6236049107142858
+  },
+  "all_exposure_matched": {
+   "0": 0.6473214285714286,
+   "8": 0.6849888392857143,
+   "32": 0.5845424107142857,
+   "128": 0.6012834821428572
+  },
+  "all_exposure_matched_plus_k": {
+   "0": 0.7589285714285714,
+   "8": 0.6849888392857143,
+   "32": 0.5845424107142857,
+   "128": 0.5789620535714286
+  }
+ },
+ "L-opt": {
+  "low_exposure": {
+   "0": 0.5691964285714285,
+   "8": 1.0226004464285714,
+   "32": 1.0030691964285716,
+   "128": 1.005859375
+  },
+  "all_exposure_matched": {
+   "0": 0.6361607142857143,
+   "8": 1.357421875,
+   "32": 1.396484375,
+   "128": 1.3267299107142856
+  },
+  "all_exposure_matched_plus_k": {
+   "0": 0.5691964285714285,
+   "8": 1.279296875,
+   "32": 1.396484375,
+   "128": 1.5359933035714284
+  }
+ },
+ "L-other": {
+  "low_exposure": {
+   "0": 0.12276785714285714,
+   "8": 1.2569754464285714,
+   "32": 1.2290736607142856,
+   "128": 0.8719308035714286
+  },
+  "all_exposure_matched": {
+   "0": 0.17857142857142858,
+   "8": 1.2904575892857142,
+   "32": 1.1593191964285714,
+   "128": 0.654296875
+  },
+  "all_exposure_matched_plus_k": {
+   "0": 0.13392857142857142,
+   "8": 1.0505022321428572,
+   "32": 1.279296875,
+   "128": 0.8244977678571429
+  }
+ },
+ "X": {
+  "low_exposure": {
+   "0": 0.9821428571428571,
+   "8": 1.0281808035714286,
+   "32": 0.9333147321428571,
+   "128": 0.9333147321428571
+  },
+  "all_exposure_matched": {
+   "0": 0.9821428571428571,
+   "8": 1.0281808035714286,
+   "32": 0.9333147321428571,
+   "128": 0.9333147321428571
+  },
+  "all_exposure_matched_plus_k": {
+   "0": 0.9821428571428571,
+   "8": 1.0281808035714286,
+   "32": 0.9333147321428571,
+   "128": 0.9333147321428571
+  }
+ },
+ "All": {
+  "low_exposure": {
+   "0": 0.625,
+   "8": 0.6040736607142857,
+   "32": 0.49246651785714285,
+   "128": 0.5929129464285714
+  },
+  "all_exposure_matched": {
+   "0": 0.6919642857142857,
+   "8": 0.654296875,
+   "32": 0.5510602678571429,
+   "128": 0.5650111607142857
+  },
+  "all_exposure_matched_plus_k": {
+   "0": 0.78125,
+   "8": 0.6626674107142857,
+   "32": 0.5482700892857142,
+   "128": 0.5398995535714286
+  }
+ }
+}
+=== JOB DONE

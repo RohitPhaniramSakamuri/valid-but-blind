@@ -1,0 +1,512 @@
+[
+  {
+    "key": "Danilowski2026MORPHEUS",
+    "title": "MORPHEUS: Meta Test-Time Adaptation via Neural Collapse Geometry",
+    "authors": [
+      "Michal Danilowski",
+      "Alexander Murphy",
+      "Young D. Kwon",
+      "Abhirup Ghosh"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026 Test-Time Updates Workshop",
+    "url": "https://theyoungkwon.github.io/papers/articles/danilowski_morpheus_iclr-ttu26.pdf",
+    "pdf_url": "https://theyoungkwon.github.io/papers/articles/danilowski_morpheus_iclr-ttu26.pdf",
+    "read_scope": "Fresh author-hosted PDF selective reading; method, experimental setup and appendix feature definitions.",
+    "locations": [
+      "PDF header",
+      "Section 2",
+      "Section 3",
+      "Appendix B"
+    ],
+    "method_overlap": "Source entropy and pseudo-label neural-collapse geometry feed random-forest predictions of whole-method post-adaptation accuracy before executing the chosen method.",
+    "limitation": "Auxiliary labeled outcomes train predictors. Inspected setting starts from source model/domain data; does not establish autonomous state-history generalization.",
+    "code_url": null,
+    "publication_status": "Workshop paper, not main-track ICLR; author research page corroborates",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "local_pdf": "sources/pdfs/Danilowski2026MORPHEUS.pdf",
+    "pdf_sha256": "c9aaf6308fe8973e49d66315c2352b5561ae42679b92e4271bb0f75d56d5fc22",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Jhawar2026Identifiability",
+    "title": "When is Test-Time Adaptation Identifiable From Unlabeled Evidence?",
+    "authors": [
+      "Kartik Jhawar",
+      "Lipo Wang"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2609.11235",
+    "pdf_url": "https://arxiv.org/pdf/2609.11235v1",
+    "read_scope": "Fresh arXiv HTML selective reading: setup, theory, complete experimental design, limitations and experimental appendix.",
+    "locations": [
+      "Sections 2–5",
+      "Section 7",
+      "Appendix B"
+    ],
+    "method_overlap": "Same unlabeled evidence can conceal action reversals; stream structure, prior mechanism and batch size affect selection. SOURCE is an explicit action.",
+    "limitation": "Section 4.1 starts every action from the same frozen source per world. No arbitrary-deployment or universal evidence guarantee; live policy-induced state study not inspected.",
+    "code_url": null,
+    "publication_status": "preprint v1, submitted 10 September 2026",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "local_pdf": "sources/pdfs/Jhawar2026Identifiability.pdf",
+    "pdf_sha256": "5e916b909334a04175089cef8617d9426a8ecbea6bf7f3e48624483eec190203",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Su2026SLRF",
+    "title": "Shift-level regulated continual test-time adaptation framework",
+    "authors": [
+      "Rui Su",
+      "Hang Xu",
+      "Wendong Zheng",
+      "Husheng Guo",
+      "Wenjian Wang"
+    ],
+    "year": 2026,
+    "venue": "Data Mining and Knowledge Discovery 40, article 63",
+    "url": "https://link.springer.com/article/10.1007/s10618-026-01222-x",
+    "read_scope": "Fresh Springer publisher metadata and abstract only; subscription full text unavailable.",
+    "locations": [
+      "Abstract",
+      "Publication metadata"
+    ],
+    "method_overlap": "Adaptive detector classifies aligned/weak/strong shift; strategy decision module routes accordingly.",
+    "limitation": "Full method, exact state dependencies and tests remain inaccessible. Cannot exclude exact controller overlap from abstract alone.",
+    "code_url": null,
+    "pdf_url": null,
+    "publication_status": "Published 2 July 2026; DOI 10.1007/s10618-026-01222-x",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "doi": "10.1007/s10618-026-01222-x",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Gai2026AdaTentPlusPlus",
+    "title": "AdaTent++: reliability-guided hybrid test-time adaptation for traffic sign detection under distribution shift",
+    "authors": [
+      "Xiaomei Gai",
+      "Meichun Wang",
+      "Yantong Guo",
+      "Shiyu Wang",
+      "Ye Li",
+      "Rui Fu"
+    ],
+    "year": 2026,
+    "venue": "Frontiers in Signal Processing6",
+    "url": "https://www.frontiersin.org/journals/signal-processing/articles/10.3389/frsip.2026.1842851/full",
+    "pdf_url": null,
+    "read_scope": "Fresh open publisher full text, selective method and limitation reading.",
+    "locations": [
+      "Sections 2.1–2.4",
+      "Sections 4–6"
+    ],
+    "method_overlap": "Entropy/cross-view reliability routes traffic-sign frames to BN statistics, guarded BN-affine updates, or skip/rollback.",
+    "limitation": "Declared condition-aware configuration, balanced subset, deterministic run and no long-stream evaluation limit transfer claims; budget comparison qualified in discussion.",
+    "code_url": null,
+    "publication_status": "Published9September2026, DOI10.3389/frsip.2026.1842851",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "doi": "10.3389/frsip.2026.1842851",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Park2025HybridTTA",
+    "title": "Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection",
+    "authors": [
+      "Hyewon Park",
+      "Hyejin Park",
+      "Jueun Ko",
+      "Dongbo Min"
+    ],
+    "year": 2025,
+    "venue": "ICCV 2025",
+    "url": "https://arxiv.org/html/2409.08566v2",
+    "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Park_Hybrid-TTA_Continual_Test-time_Adaptation_via_Dynamic_Domain_Shift_Detection_ICCV_2025_paper.pdf",
+    "html_url": "https://arxiv.org/html/2409.08566v2",
+    "read_scope": "Fresh arXiv v2 HTML selective reading; primary arXiv metadata and official CVF search result checked.",
+    "locations": [
+      "Sections 4.1.1–4.1.2",
+      "Section 4.2",
+      "Section 5.4"
+    ],
+    "method_overlap": "Evolving student/EMA-teacher discrepancy and dynamic threshold switch full versus adapter tuning.",
+    "limitation": "Already uses current/historical model state. No inspected same-current-data/different-history action-ranking experiment or learned per-action utility target.",
+    "code_url": null,
+    "publication_status": "Conference paper; arXiv first September 2024, inspected v2 August 2025",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Lim2026ASR",
+    "title": "When and Where to Reset Matters for Long-Term Test-Time Adaptation",
+    "authors": [
+      "Taejun Lim",
+      "Joong-Won Hwang",
+      "Kibok Lee"
+    ],
+    "year": 2026,
+    "venue": "ICLR",
+    "url": "https://arxiv.org/abs/2603.03796",
+    "pdf_url": "https://arxiv.org/pdf/2603.03796v1",
+    "read_scope": "Fresh arXiv HTML selective method and appendix reading.",
+    "locations": [
+      "Sections 3.3–3.5",
+      "Appendices A.1–A.5"
+    ],
+    "method_overlap": "Collapse-aware selective reset, knowledge recovery and source/current disagreement regulate adaptation.",
+    "limitation": "Source/live disagreement and state-dependent recovery are already prior art. Remaining decision gap must be narrower than these ingredients.",
+    "code_url": "https://github.com/YonseiML/asr",
+    "publication_status": "conference paper; arXiv v1 submitted 4 March 2026",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Sahoo2025GALA",
+    "title": "A Layer Selection Approach to Test Time Adaptation",
+    "authors": [
+      "Sabyasachi Sahoo",
+      "Mostafa ElAraby",
+      "Jonas Ngnawe",
+      "Yann Pequignot",
+      "Frederic Precioso",
+      "Christian Gagne"
+    ],
+    "year": 2025,
+    "venue": "AAAI 2025",
+    "url": "https://arxiv.org/abs/2404.03784",
+    "pdf_url": "https://arxiv.org/pdf/2404.03784v2",
+    "html_url": "https://arxiv.org/html/2404.03784v2",
+    "read_scope": "Fresh arXiv HTML selective method and experiment reading.",
+    "locations": [
+      "Sections 2.2–2.3",
+      "Section 3",
+      "Appendix A.5"
+    ],
+    "method_overlap": "Proposed-gradient alignment with accumulated displacement chooses layers or skips; periodic anchor resets allow trajectory changes.",
+    "limitation": "State/history-based parameter selection already exists; not an audited whole-policy value learner. Uses hyperparameter sweeps in inspected benchmark setup.",
+    "code_url": null,
+    "publication_status": "Accepted per arXiv record; firstpreprint April2024, v2 Feb2025 inspected",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Vianna2025ChannelSelective",
+    "title": "Channel-Selective Normalization for Label-Shift Robust Test-Time Adaptation",
+    "authors": [
+      "Pedro Vianna",
+      "Muawiz Sajjad Chaudhary",
+      "Paria Mehrbod",
+      "An Tang",
+      "Guy Cloutier",
+      "Guy Wolf",
+      "Michael Eickenberg",
+      "Eugene Belilovsky"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of The 3rd Conference on Lifelong Learning Agents, PMLR 274:514–533",
+    "publication_status": "Published proceedings record uses year 2025; record event/version dates separately if expanded",
+    "url": "https://proceedings.mlr.press/v274/vianna25a.html",
+    "pdf_url": "https://raw.githubusercontent.com/mlresearch/v274/main/assets/vianna25a/vianna25a.pdf",
+    "read_scope": "Fresh PMLR publication metadata and abstract checked; PDF browser returned unsupported octet-stream.",
+    "locations": [
+      "PMLR abstract",
+      "Citation metadata"
+    ],
+    "method_overlap": "Selective channel normalization addresses simultaneous covariate and label shifts based on depth and class sensitivity.",
+    "limitation": "Exact matching protocol/evaluation overlap requires full-method reading; cannot treat label-prior ambiguity or selective normalization as novel.",
+    "code_url": null,
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "key": "Lu2026AgenticTTT",
+    "title": "Agentic-TTT: Training test-time policy for test-time training",
+    "authors": [
+      "Jiahao Lu",
+      "Mohan Kankanhalli"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2610.12002",
+    "read_scope": "Fresh arXiv metadata and HTML selective method and limitations reading.",
+    "locations": [
+      "Section 2.1",
+      "Section 2.2.2",
+      "Appendix D.2",
+      "Appendix E"
+    ],
+    "method_overlap": "Learned policy selects TTT methods, skip/generate and adapter reuse using persistent state; same-state counterfactual rollouts train utility/cost decisions.",
+    "limitation": "Gold-history training states differ from autonomous deployment; Appendix E explicitly leaves cross-query credit assignment to future work. Frozen backbone; adapters can be warm-started.",
+    "publication_status": "arXiv v1, 8 October 2026; no venue verified.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "html_url": "https://arxiv.org/html/2610.12002v1"
+  },
+  {
+    "key": "Majumdar2026HelpHarm",
+    "title": "When Test-Time Adaptation Helps, Harms, or Becomes Inactive: A Condition-Level Study on CIFAR-10-C",
+    "authors": [
+      "Sreeja Guha Majumdar",
+      "Aratrika Saha"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2608.22233",
+    "read_scope": "Fresh arXiv abstract and metadata only.",
+    "locations": [
+      "Abstract"
+    ],
+    "method_overlap": "Condition-level SOURCE/BN-Adapt/Tent/scoped EATA comparison studies harms hidden by mean accuracy.",
+    "limitation": "Single corruption benchmark and scoped EATA reimplementation; no full-method audit. Help/harm reporting alone cannot establish novelty.",
+    "publication_status": "arXiv v1, 23 August 2026; no venue verified.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json"
+  },
+  {
+    "key": "Tan2025EATAC",
+    "title": "Uncertainty-Calibrated Test-Time Model Adaptation without Forgetting",
+    "authors": [
+      "Mingkui Tan",
+      "Guohao Chen",
+      "Jiaxiang Wu",
+      "Yifan Zhang",
+      "Yaofo Chen",
+      "Peilin Zhao",
+      "Shuaicheng Niu"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "url": "https://arxiv.org/abs/2403.11491",
+    "read_scope": "Fresh arXiv abstract, author-hosted paper introduction and author publication metadata; selective reading.",
+    "locations": [
+      "Abstract",
+      "Introduction",
+      "Author publication page"
+    ],
+    "method_overlap": "EATA-C separates reducible model and data uncertainty via full/subnetwork disagreement and min-max entropy calibration.",
+    "limitation": "A calibration/uncertainty baseline, not whole-method selection. Subnetwork probes and source/ID Fisher preparation must be costed and disclosed.",
+    "publication_status": "2024 preprint; TPAMI 2025 author-confirmed journal version.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "doi": "10.1109/TPAMI.2025.3560696",
+    "pdf_url": "https://www.chenyaofo.com/papers/tan-uncertainty-calibrated-test-time-model-adaptation-without-forgetting.pdf"
+  },
+  {
+    "key": "Wakayama2026DecisionTTT",
+    "title": "A Decision-Theoretic View of Test-Time Training: When, How Far, and Which Directions to Adapt",
+    "authors": [
+      "Tomoya Wakayama"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:124279–124317",
+    "url": "https://proceedings.mlr.press/v306/wakayama26a.html",
+    "read_scope": "Fresh PMLR abstract/citation metadata and linked arXiv version history.",
+    "locations": [
+      "PMLR abstract",
+      "PMLR citation metadata"
+    ],
+    "method_overlap": "Decision-theoretic kernel/linear-Gaussian analysis covers evidence-based step selection and update-subspace scoring.",
+    "limitation": "Theoretical results require stated surrogate assumptions; no full proof or applicability audit. Not a visual continual-controller implementation.",
+    "publication_status": "ICML 2026 primary PMLR publication verified; arXiv v2 revised 19 October 2026.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "arxiv_url": "https://arxiv.org/abs/2606.15569"
+  },
+  {
+    "key": "Zhou2026Learnability",
+    "title": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+    "authors": [
+      "Zhi Zhou",
+      "Ming Yang",
+      "Shi-Yu Tian",
+      "Kun-Yang Yu",
+      "Lan-Zhe Guo",
+      "Yu-Feng Li"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "url": "https://arxiv.org/abs/2605.28057",
+    "read_scope": "Fresh arXiv metadata/abstract, author project assumptions and official ICML download index title.",
+    "locations": [
+      "Abstract",
+      "Author project Framework/Motivation",
+      "Official ICML 2026 download index"
+    ],
+    "method_overlap": "Recovery complexity connects nonstationary drift, temporal dependence and proxy/task gradient alignment.",
+    "limitation": "Requires alignment and nonstationarity assumptions; does not make unlabeled task risk observable. Full proofs not audited.",
+    "publication_status": "ICML 2026 title confirmed in official download listing; arXiv v2, 9 June 2026.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "project_url": "https://zhouz.dev/TTA-Learnability/"
+  },
+  {
+    "key": "Zhao2026FACTOR",
+    "title": "FACTOR: Counterfactual Training-Free Test-Time Adaptation for Open-Vocabulary Object Detection",
+    "authors": [
+      "Kaixiang Zhao",
+      "Mao Ye",
+      "Lihua Zhou",
+      "Hu Wang",
+      "Luping Ji",
+      "Song Tang",
+      "Xiatian Zhu"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2605.03294",
+    "read_scope": "Fresh arXiv abstract/metadata only.",
+    "locations": [
+      "Abstract"
+    ],
+    "method_overlap": "Attribute perturbations probe region sensitivity and suppress attribute-dependent detections without gradient updates.",
+    "limitation": "Counterfactual input probing is already prior art; distinct from comparing update policies from a cloned live model state. Experiments not audited.",
+    "publication_status": "arXiv v1, 5 May 2026; no venue verified.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json"
+  },
+  {
+    "key": "Park2024LAW",
+    "title": "Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation",
+    "authors": [
+      "Junyoung Park",
+      "Jin Kim",
+      "Hyeongjun Kwon",
+      "Ilhoon Yoon",
+      "Kwanghoon Sohn"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+    "url": "https://github.com/junia3/LayerwiseTTA",
+    "read_scope": "Fresh author repository README and citation; official CVF page inaccessible.",
+    "locations": [
+      "Author README experimental settings",
+      "Author README citation"
+    ],
+    "method_overlap": "Layer-wise adaptation is evaluated under episodic, continual and gradual regimes.",
+    "limitation": "Exact Fisher/weighting internals not newly audited; author repository is primary code evidence, not independent reproduction.",
+    "publication_status": "WACV 2024 author repository citation; pages 1414–1423 reported there.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "code_url": "https://github.com/junia3/LayerwiseTTA"
+  },
+  {
+    "key": "Zhao2023DELTA",
+    "title": "DELTA: Degradation-free Fully Test-time Adaptation",
+    "authors": [
+      "Bowen Zhao",
+      "Chen Chen",
+      "Shu-Tao Xia"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2301.13018",
+    "read_scope": "Fresh arXiv abstract and indexed official OpenReview PDF header; direct OpenReview browser challenge blocked full reading.",
+    "locations": [
+      "Abstract",
+      "Official indexed PDF title/header"
+    ],
+    "method_overlap": "Batch renormalization improves stream statistics; dynamic class reweighting addresses dominant-class optimization bias.",
+    "limitation": "Normalization/class-prior confounding is established; theoretical degradation-free wording is not a universal safety guarantee. Full method not audited.",
+    "publication_status": "ICLR 2023 official indexed PDF header verified.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "openreview_url": "https://openreview.net/forum?id=eGm22rqG93"
+  },
+  {
+    "key": "Su2024TRIBE",
+    "title": "Towards Real-World Test-Time Adaptation: Tri-net Self-Training with Balanced Normalization",
+    "authors": [
+      "Yongyi Su",
+      "Xun Xu",
+      "Kui Jia"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence, 38(13):15126–15135",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29435",
+    "read_scope": "Fresh official AAAI abstract/citation and author repository README.",
+    "locations": [
+      "Official abstract",
+      "Official citation",
+      "Author README"
+    ],
+    "method_overlap": "Balanced BatchNorm and anchored tri-net self-training address local/global imbalance and continual shifts.",
+    "limitation": "Known class-mixture-aware adaptation baseline; tri-net storage and runtime need measurement. No new execution or full experiment audit.",
+    "publication_status": "AAAI 2024; published 24 March 2024.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "doi": "10.1609/aaai.v38i13.29435",
+    "code_url": "https://github.com/Gorilla-Lab-SCUT/TRIBE",
+    "arxiv_url": "https://arxiv.org/abs/2309.14949"
+  },
+  {
+    "key": "Park2023LSA",
+    "title": "Label Shift Adapter for Test-Time Adaptation under Covariate and Label Shifts",
+    "authors": [
+      "Sunghyun Park",
+      "Seunghan Yang",
+      "Jaegul Choo",
+      "Sungrack Yun"
+    ],
+    "year": 2023,
+    "venue": "ICCV 2023",
+    "url": "https://arxiv.org/abs/2308.08810",
+    "read_scope": "Fresh arXiv metadata/abstract; official CVF page inaccessible.",
+    "locations": [
+      "Abstract",
+      "arXiv comments"
+    ],
+    "method_overlap": "Estimated target class proportions condition a parameter-producing adapter for joint covariate/label shifts.",
+    "limitation": "Prior-estimation error can matter; exact assumptions/preparation and empirical robustness need full-method audit. Generic shift-conditioned parameter production is covered.",
+    "publication_status": "Accepted ICCV 2023 author comment; official CVF paper indexed in search.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json"
+  },
+  {
+    "key": "Jang2025DART",
+    "title": "Label Distribution Shift-Aware Prediction Refinement for Test-Time Adaptation",
+    "authors": [
+      "Minguk Jang",
+      "Hye Won Chung"
+    ],
+    "year": 2025,
+    "venue": "Transactions on Machine Learning Research",
+    "url": "https://arxiv.org/abs/2411.15204",
+    "read_scope": "Fresh arXiv metadata/abstract and indexed primary OpenReview PDF section 3; direct PDF challenge blocked.",
+    "locations": [
+      "Abstract",
+      "Section 3 indexed official PDF"
+    ],
+    "method_overlap": "A source-data-trained module uses batch prediction distribution/variance to correct class-wise confusion under label shift.",
+    "limitation": "Requires intermediate labeled-source preparation and transfer of learned confusion structure; full experiments not audited.",
+    "publication_status": "TMLR February 2025 shown in indexed official PDF header; arXiv v2, 5 February 2025.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json",
+    "openreview_url": "https://openreview.net/forum?id=c7AAHdEYz5"
+  },
+  {
+    "key": "Liu2026TiME",
+    "title": "TiME: Test-Time Mixture-of-Experts Routing via Asymmetric CO-Optimal Transport for Continual Test-Time Adaptation",
+    "authors": [
+      "Tianlun Liu",
+      "Zhiliang Tian",
+      "Zhen Huang",
+      "Tianle Liu",
+      "Xingzhi Zhou",
+      "Feng Liu",
+      "Dongsheng Li"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:78597–78632",
+    "url": "https://proceedings.mlr.press/v306/liu26ec.html",
+    "read_scope": "Fresh PMLR abstract and citation metadata only.",
+    "locations": [
+      "Abstract",
+      "Citation metadata"
+    ],
+    "method_overlap": "LLM continual adaptation routes unseen-domain samples to experts using asymmetric co-optimal transport and semantic alignment.",
+    "limitation": "Expert allocation differs from whole-method selection, but domain-aware composition is prior art. Detailed preparation, tests and costs not audited.",
+    "publication_status": "ICML 2026 primary PMLR proceedings verified.",
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/researcher-sources.json"
+  }
+]

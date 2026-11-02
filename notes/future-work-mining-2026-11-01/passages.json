@@ -1,0 +1,534 @@
+[
+ {
+  "key": "Du2024UniTTA",
+  "arxiv": "2407.20080",
+  "year": 2024,
+  "title": "UniTTA: Unified Benchmark and Versatile Framework Towards Realistic Test-Time Adaptation",
+  "n": 1,
+  "hits": [
+   "However, this scenario is rare in practice and is therefore not considered in our benchmark."
+  ]
+ },
+ {
+  "key": "Kim2024TTALine",
+  "arxiv": "2310.04941",
+  "year": 2024,
+  "title": "Test-Time Adaptation Induces Stronger Accuracy and Agreement-on-the-Line",
+  "n": 3,
+  "hits": [
+   "Although we do not provide a complete theoretical justification, we identify a key pattern in how TTA modifies models that provides a strong clue as to why these methods substantially strengthen ACL and AGL.",
+   "Since non-BN-TTAs are often adopted in numerous practical circumstances, e.g., single batch, it remains an important open question how to develop alternate TTA strategies that achieves strong ACL and AGL trends in such settings, thus improving the reliability of models. 7 Conclusion and Limitations In this paper, we provide a key observation that recent TTAs lead to stronger AGL across a wide range of distribution sh",
+   "We believe that overcoming dependency on ID data and exploring a fully test-time approach for observing AGL remains a promising direction for future research."
+  ]
+ },
+ {
+  "key": "Lee2024BECoTTA",
+  "arxiv": "2402.08712",
+  "year": 2024,
+  "title": "BECoTTA: Input-dependent Online Blending of Experts for Continual Test-time Adaptation",
+  "n": 4,
+  "hits": [
+   "Furthermore, existing CTTA scenarios assume a disjoint change of test domains, where the model encounters a static domain per time step, but do not consider a gradual shift of domains, which is more common in the real world (e.g., seamless weather change like cloudy \u2192 rainy or afternoon \u2192 night).",
+   "Similarly, Meta DMoE (Zhong et al., 2022) adopts the MoE architecture as a teacher model and distills their knowledge to unlabeled target domains, but does not consider continuous adaptation.",
+   "To mitigate this limitation, we define D proxy domains (e.g., brightness, darkness, blur, etc.) and augment the source dataset to proxy domains, similar to EcoTTA (Song et al., 2023).",
+   "Note that we do not access any source dataset after deployment, maintaining the source-free manner in the test time as other prior works."
+  ]
+ },
+ {
+  "key": "Lee2024DeYO",
+  "arxiv": "2403.07366",
+  "year": 2024,
+  "title": "Entropy is not Enough for Test-Time Adaptation: From the Perspective of Disentangled Factors",
+  "n": 7,
+  "hits": [
+   "By integrating the PLPD score that enforces the consideration of CPR factors while suppressing TRAP factors, we alleviate the limitations tied to the exclusive reliance on entropy.",
+   "It represents that entropy-based sample selection does not consider the influence of CPR factors on predictions because it relies on a single prediction.",
+   "Further details and analyses of the results are provided in Appendix H. 5 C ONCLUSION In contrast to the common consensus, we have theoretically shown that even when utilizing extremely low-entropy samples in adaptation, performance can be degraded if we do not consider the influence of the disentangled factors.",
+   "PMLR, 2021. 3 14 Published as a conference paper at ICLR 2024 A PPENDIX C ONTENTS A Proof of Proposition 1 16 B Pseudo Code of DeYO 17 C Efficiency 18 D Related work 18 D.1 Test-time adaptation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 D.2 Disentangled factors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 D.3 Self-training . . . . . . . . . . .",
+   "While fully TTA exhibits distinct advantages compared to TTT, there are limitations in terms of computational cost and stability.",
+   "We do not use entropy filtering and set Ent0 = ln C for ColoredMNIST.",
+   "These limitations suggest moving beyond the current approach, which relies solely on the last layer (softmax)."
+  ]
+ },
+ {
+  "key": "Su2024TRIBE",
+  "arxiv": "2309.14949",
+  "year": 2024,
+  "title": "Towards Real-World Test-Time Adaptation: Tri-Net Self-Training with Balanced Normalization",
+  "n": 1,
+  "hits": [
+   "Limitations: TRIBE replaces regular Batchnorm layer with a customized Balanced Batchnorm layer, thus introducing additional storage overhead."
+  ]
+ },
+ {
+  "key": "Jang2025DART",
+  "arxiv": "2411.15204",
+  "year": 2025,
+  "title": "Label Distribution Shift-Aware Prediction Refinement for Test-Time Adaptation",
+  "n": 7,
+  "hits": [
+   "To address these limitations, some recent methods have been designed to lessen the dependency of test-time adaptation strategies on batch-level statistics and to tackle class distribution shifts with additional adjustments.",
+   "To address this limitation, we introduce a new metric, prediction deviation (from uniformity) 1 dB = |B| (x,\u00b7)\u2208B D(u, softmax(f\u03b8\u0304 (x))), which measures the average confidence of predictions for each batch.",
+   "As shown in Table 1, methods like TENT and SAR suffer significant performance degradation due to label distribution shifts because they do not consider the presence or intensity of test-time label distribution shifts.",
+   "To increase the scalability of DART in these situations, exploring approaches that leverage an auxiliary dataset instead of the original training data may be a promising direction for future work. 6.2 Conclusion We proposed DART, a method to mitigate test-time class distribution shifts by accounting for class-wise confusion patterns.",
+   "As label distribution shifts are common in real-world scenarios, we expect future studies to build on our approach to enhance real-world scalability by making models robust to test-time shifts in both input and label distributions.",
+   "Otherwise, we do not modify the prediction.",
+   "Such a classifier bias has not been a problem for LLN, where we do not modify the BN statistics of the classifier at the test time."
+  ]
+ },
+ {
+  "key": "Liang2025TTASurvey",
+  "arxiv": "2303.15361",
+  "year": 2025,
+  "title": "A Comprehensive Survey on Test-Time Adaptation under Distribution Shifts",
+  "n": 7,
+  "hits": [
+   "Furthermore, we analyze relevant applications of TTA and discuss open challenges and promising areas for future research.",
+   "We analyze various applications related to the TTA paradigm in Sec. 6, and provide an outlook of recent 2 Such a single-sample adaptation corresponds to a batch size of 1, a.k.a., test-time instance adaptation. emerging trends and open problems in Sec. 7 to shed light on future research directions.",
+   "The BN statistics (i.e., the mean \u00b5s = E[XS ] and variance \u03c3s2 = V[XS ]) are typically approximated using Typically, methods that rectify BN statistics may suffer from limitations when the batch size B is small, particularly when B = 1.",
+   "We suggest that continual TTA methods follow the same protocol as vanilla OTTA methods. 7 Emerging Trends and Open Problems 7.1 Emerging Trends Diverse downstream fields.",
+   "Additionally, several recent studies [388, 390] have explored leveraging large-scale generative models, such as Stable Diffusion [391], for developing TTA methods. 21 7.2 Open Problems Theoretical analysis.",
+   "While most existing works focus on developing effective TTA methods to obtain better empirical performance, the theoretical analysis of when and why TTA works remains an open problem.",
+   "Additionally, we provide a review of applications related to test-time adaptation, as well as an outlook of emerging research trends and open problems."
+  ]
+ },
+ {
+  "key": "Liu2025TACT",
+  "arxiv": "2510.11133",
+  "year": 2025,
+  "title": "Test-Time Adaptation by Causal Trimming",
+  "n": 4,
+  "hits": [
+   "Given the above limitations, we propose to actively reduce non-causal features.",
+   "All the above methods, except for DeYO, do not consider the effect of non-causal features on model prediction.",
+   "Table 2: Results of ablation study. trim z trim q average q\u0302 Birdcalls No TTA 22.74 62.31 55.38 41.83 62.97 \u2713 \u2713 \u2713 \u2713 25.91\u00b11.67 27.36\u00b10.23 31.14\u00b11.69 69.43\u00b10.01 64.74\u00b10.05 70.17\u00b10.05 67.84\u00b10.37 62.41\u00b10.08 71.80\u00b10.35 43.21\u00b10.03 42.24\u00b10.00 43.59\u00b10.02 63.24\u00b10.10 63.03\u00b10.01 63.33\u00b10.10 \u2713 \u2713 7 Camelyon17 CivilComments ImageNet-R ImageNet-V2 Conclusion and Future Work We present TACT, a test-time adaptation method that reduce",
+   "Future work should explore identifying non-causal features when such knowledge is unavailable, and better methods to find non-causal features beyond PCA\u2019s orthogonality constraint. 10 Acknowledgement We thank Dr Fusheng Liu for the helpful discussions."
+  ]
+ },
+ {
+  "key": "Park2025HybridTTA",
+  "arxiv": "2409.08566",
+  "year": 2025,
+  "title": "Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection",
+  "n": 2,
+  "hits": [
+   "However, both of them have their own drawbacks: DG, which aims to generalize well to unseen domains, exhibits inherent limitations in adapting to continually changing target environments, as it cannot utilize information from target datasets.",
+   "To overcome this limitation, we introduce Dynamic Loss Thresholding, where the loss threshold evolves over time in addition to model adaptation."
+  ]
+ },
+ {
+  "key": "Sahoo2025GALA",
+  "arxiv": "2404.03784",
+  "year": 2025,
+  "title": "A Layer Selection Approach to Test Time Adaptation",
+  "n": 0,
+  "hits": []
+ },
+ {
+  "key": "Schirmer2025Monitoring",
+  "arxiv": "2507.08721",
+  "year": 2025,
+  "title": "Monitoring Risks in Test-Time Adaptation",
+  "n": 5,
+  "hits": [
+   "We do not make any assumptions about the nature of the distribution shift.",
+   "Secondly, for 0-1 loss this score approximates the conditional risk, up to calibration error: C C X X R0-1 (p; x) = P (y = c|x) \u00b7 1[y\u0302(x) \u0338= c] \u2248 p(x)c \u00b7 1[y\u0302(x) \u0338= c] = 1 \u2212 max p(x)c . c=1 c=1 c Although the conditional risk approximation improves when p is well-calibrated, we do not need to assume the model\u2019s uncertainty is well-calibrated under model adaptation [48] nor under distribution shift [28], as some previ",
+   "Since our focus is on adapted models, we leave the development of alternative calibration methods effective for static models to future work. 5.3 Detecting TTA Collapse Unlike static models, the risk of a TTA model can increase not only due to distribution shift but also because the model deteriorates during adaptation.",
+   "Limitations and Future Work While we have shown that our unsupervised alarm has detection delays not too much larger compared to its supervised counterpart [30] (see Fig. 2), the observed delays might still be too big for applications where detecting late is (significantly) more costly compared to raising false alarms.",
+   "While we found empirically that this assumption holds in nearly all evaluated cases (Fig. 3), developing unsupervised diagnostics to flag potential violations of the assumption remains an important direction for future work."
+  ]
+ },
+ {
+  "key": "Tan2025EATAC",
+  "arxiv": "2403.11491",
+  "year": 2025,
+  "title": "Uncertainty-Calibrated Test-Time Model Adaptation without Forgetting",
+  "n": 6,
+  "hits": [
+   "Although recent test-time adaptation methods are effective at handling test shifts, in real-world applications, they still suffer from the following limitations.",
+   "Not Considered Maintained Maintained Not Considered Not Considered Not Considered Not Considered Not Considered Not Considered Not Considered % % xt xt % % L(xt ) L(xt ) % % ! !",
+   "Maintained Maintained Not Considered Calibrated and minimizes the predictive uncertainty for test samples, without distinguishing between model-induced and data-induced uncertainties.",
+   "Our work also alleviates the dependency on self-supervision heads and seeks to address the key limitations of prior works (i.e., efficiency hurdle, catastrophic forgetting, and overconfidence) to make TTA more practical in real-world applications.",
+   "For the convenience of presentation, we leave the details of calculating \u03c9(\u03b8i ) in the next subsection.",
+   "However, a persistent limitation of entropy minimization is its tendency to yield overly certain predictions, where the model is forced to make onehot confident predictions even for ambiguous input data with irreducible data uncertainty."
+  ]
+ },
+ {
+  "key": "Ye2025DATTA",
+  "arxiv": "2408.08056",
+  "year": 2025,
+  "title": "DATTA: Domain Diversity Aware Test-Time Adaptation for Dynamic Domain Shift Data Streams",
+  "n": 0,
+  "hits": []
+ },
+ {
+  "key": "Doloriel2026SEGA",
+  "arxiv": "2608.29920",
+  "year": 2026,
+  "title": "Continual Test-Time Adaptation via Entropy Sensitivity-Guidance in Strict Online Setting",
+  "n": 2,
+  "hits": [
+   "The sensitivity timeline in Fig. 2(a) shows this correlation qualitatively, though we do not claim a formal causal link.",
+   "A limitation is that reset-to-source discards cross-domain adaptations, and exploring partial rollback or weight interpolation could extend SEGA to settings where knowledge accumulation across domains is essential."
+  ]
+ },
+ {
+  "key": "Fan2026MoETTA",
+  "arxiv": "2511.13760",
+  "year": 2026,
+  "title": "MoETTA: Test-Time Adaptation Under Mixed Distribution Shifts with MoE-LayerNorm",
+  "n": 6,
+  "hits": [
+   "A key limitation in existing approaches is their reliance on a unified adaptation path, which fails to account for the fact that optimal gradient directions can vary significantly across different domains.",
+   "The average cosine similarity in the lower triangle is 0.69, suggesting substantial variation across domains and highlighting the limitation of using a single adaptation direction under mixed distribution shifts. 1 Introduction Deep learning has achieved remarkable success.",
+   "To understand this performance gap, we investigate the underlying causes of this limitation.",
+   "This phenomenon reveals a fundamental limitation of current methods in mixed distribution shifts scenarios: by enforcing a shared adaptation direction, they fail to accommodate domain-specific gradient signals, which can be inconsistent or even conflicting.",
+   "Our main contributions are summarized as follows: \u2022 We identify a key limitation of existing TTA methods under mixed distribution shifts and address it with MoETTA, an entropy-based method that leverages expert routing to model diverse adaptation directions. \u2022 We propose two novel evaluation settings, i.e., potpourri and potpourri+, which better simulate realistic deployment conditions involving mixed distribution sh",
+   "To overcome the limitations of conventional TTA, we propose MoETTA, a lightweight framework that reparameterizes LayerNorm into a mixture of decoupled expert branches."
+  ]
+ },
+ {
+  "key": "Han2026Exchangeability",
+  "arxiv": "2610.07038",
+  "year": 2026,
+  "title": "The Premise Is the Problem: Exchangeability Failure in Self-Monitored Test-Time Adaptation",
+  "n": 4,
+  "hits": [
+   "We did not use generative AI to gen- References erate synthetic data, form hypotheses, design the methodology, implement code, or clean data; translation and qualitative anal- Salim I.",
+   "The one-step derivative with respect to the effective forgetting factor, before the diagonal approximation, is D E fb 2 fb \u22a4 e \u2207\u03bbe \u2113full = G , H (\u2212P / \u03bb )(H ) . r r\u22121 r r r r The implementation instead passes only p = diag(Pr\u22121 ) and uses the diagonal hypergradient approximation D E e2 )(H fb )\u22a4 , e \u03bb \u2113r = Gr , Hrfb diag(\u2212p/\u03bb \u2207 r r fb fb e r,j (Hr,:,j \u2207log Qj \u2113r = Q )\u22a4 Gr Hr,:,j , \u2207log Rh \u2113r = Rr,h (Gr )hh . (7) Thus",
+   "Six limitations bound the interpretation.",
+   "It is a fixed-time e-value under the corresponding nulls, but we do not establish anytime validity because the paths are adapted to different filtrations."
+  ]
+ },
+ {
+  "key": "Huang2026TTABC",
+  "arxiv": "2606.14299",
+  "year": 2026,
+  "title": "What Drives Test-Time Adaptation for CLIP? A Controlled Empirical Study from an Update Perspective",
+  "n": 4,
+  "hits": [
+   "The goal of this work is to provide a comprehensive understanding of the current landscape of TTA4CLIP methods while identifying critical open problems for future research.",
+   "F.3 further shows that the widely adopted AugMix [21] augmentation is not always superior to simpler random crops, leading to an underexplored, data-centric evidence design as a potential future direction.",
+   "In this view, future works should consider designing more reliable, correctness-aligned proxies to extract useful signals from test-time evidence. 0.8 0.7 0.6 0.5 0.4 0.7 0.6 0.5 0.4 0.3 0.3 0.5 4 0.8 1.0 1.5 0.5 0.6 0.7 0.8 0.9 Evidence Utilization Beyond Heavy Optimization Table 2: Memory Efficiency Comparison.",
+   "This highlights an open direction for future research: explicitly modeling and leveraging shifted label priors [47, 23] as evidence. 6 Conclusion In this paper, we conduct a systematic controlled empirical study of TTA4CLIP by introducing TTABC, an open-source TTA benchmark that integrates over 20 representative methods across a diverse range of distribution shift scenarios."
+  ]
+ },
+ {
+  "key": "Huzaifa2026WISEATTA",
+  "arxiv": "2609.37687",
+  "year": 2026,
+  "title": "WISE-ATTA: When to Ask for Labels in Budgeted Active Test-Time Adaptation",
+  "n": 1,
+  "hits": [
+   "Below, we take a broader perspective on this and discuss assumptions, limitations, and future work."
+  ]
+ },
+ {
+  "key": "Jain2026MeasureLess",
+  "arxiv": "2610.03454",
+  "year": 2026,
+  "title": "Measure Less, Know More: Self-Supervised Test-Time Feature Acquisition",
+  "n": 14,
+  "hits": [
+   "These considerations leave substantial room for future work on richer cost models, uncertainty-aware acquisition, and prospective validation in real-world acquisition workflows.",
+   "Guidelines: \u2022 The answer [N/A] means that the abstract and introduction do not include the claims made in the paper. \u2022 The abstract and/or introduction should clearly state the claims made, including the contributions made in the paper and important assumptions and limitations.",
+   "Limitations Question: Does the paper discuss the limitations of the work performed by the authors?",
+   "Answer: [Yes] 43 Justification: The paper contains an impact and limitations statement in the appendix which discusses the limitations of the work.",
+   "Guidelines: \u2022 The answer [N/A] means that the paper has no limitation while the answer [No] means that the paper has limitations, but those are not discussed in the paper. \u2022 The authors are encouraged to create a separate \u201cLimitations\u201d section in their paper. \u2022 The paper should point out any strong assumptions and how robust the results are to violations of these assumptions (e.g., independence assumptions, noiseless",
+   "Or a speech-to-text system might not be used reliably to provide closed captions for online lectures because it fails to handle technical jargon. \u2022 The authors should discuss the computational efficiency of the proposed algorithms and how they scale with dataset size. \u2022 If applicable, the authors should discuss possible limitations of their approach to address problems of privacy and fairness. \u2022 While the authors mig",
+   "Reviewers will be specifically instructed to not penalize honesty concerning limitations. 3.",
+   "Answer: [Yes] Justification: The paper contains an impact and limitations statement which discusses the impact of the work.",
+   "Guidelines: \u2022 The answer [N/A] means that there is no societal impact of the work performed. \u2022 If the authors answer [N/A] or [No], they should explain why their work has no societal impact or why the paper does not address societal impact. \u2022 Examples of negative societal impacts include potential malicious or unintended uses (e.g., disinformation, generating fake profiles, surveillance), fairness considerations (e.g",
+   "This includes details about training, license, limitations, etc. \u2022 The paper should discuss whether and how consent was obtained from people whose asset is used. \u2022 At submission time, remember to anonymize your assets (if applicable)."
+  ]
+ },
+ {
+  "key": "Jhawar2026HDTTA",
+  "arxiv": "2602.19454",
+  "year": 2026,
+  "title": "HD-TTA: Hypothesis-Driven Test-Time Adaptation for Safer Brain Tumor Segmentation",
+  "n": 0,
+  "hits": []
+ },
+ {
+  "key": "Jhawar2026Identifiability",
+  "arxiv": "2609.11235",
+  "year": 2026,
+  "title": "When is Test-Time Adaptation Identifiable From Unlabeled Evidence?",
+  "n": 2,
+  "hits": [
+   "We do not claim that identifying an optimal action without identifying all risks is a new statistical principle; partial-identification and decision theory already study optimal decisions under incomplete knowledge (Kasy, 2016; Pu & Zhang, 2021; Han, 2024; Christensen et al., 2026).",
+   "We do not claim to be the first to select a TTA method before adaptation."
+  ]
+ },
+ {
+  "key": "Jiang2026CAS",
+  "arxiv": "2609.08367",
+  "year": 2026,
+  "title": "To Adapt or Not to Adapt? Selective Adaptation for Vision-Language Models",
+  "n": 1,
+  "hits": [
+   "Our contributions are summarized as follows: \u2022 We introduce selective adaptation, an underexplored direction to improve TTA efficiency by detecting whether a test sample can benefit from adaptation. \u2022 We provide Cross-Augmentation Similarity (CAS), a simple baseline based on prediction similarity across test-time augmented views. \u2022 Extensive experiments validate that CAS maintains and even improves TTA performance, p"
+  ]
+ },
+ {
+  "key": "Kumar2026RGTTA",
+  "arxiv": "2603.27814",
+  "year": 2026,
+  "title": "RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series",
+  "n": 7,
+  "hits": [
+   "This is a protocol-level mismatch, not an implementation error (see Limitations \u00a7IX, item 7).",
+   "RG-TTA makes no parametric assumption: \u201cregime\u201d is defined operationally by a 5-dimensional distributional feature vector, and matching uses non-parametric statistical tests. d) Time series forecasting architectures.: Recent neural forecasters\u2014Informer [16], Autoformer [17], iTransformer [18], PatchTST [19], DLinear [20]\u2014advance accuracy but do not address the when-to-adapt question.",
+   "The deliberate simplicity of this feature vector is a design choice, not a limitation: it is cheap to compute (adding 3 RG-TTA: Regime-Guided Test-Time Adaptation Pipeline sim New Batch Bt Loss-Gated Ckpt Load 0.75? ckpt < 0.7 curr Compute Similarity Smooth LR Modulation Adapt Head (early stop) KS + Wasserstein + Feature + Variance = base(1 + (1 sim)) Frozen backbone max 25, patience 3 Extract Features r Save to Memo",
+   "If the stored checkpoint was a shared limitation across all gradient-based TTA policies, not optimal for a regime at distributional distance proportional to specific to RG-TTA. (1 \u2212 s), the initialisation error satisfies: 2 \u2225\u03d5ckpt \u2212 \u03d5\u2217t \u22252 \u2264 (1 \u2212 s)2 \u00b7 Dmax , (12) IV.",
+   "This is not a limitation of regime-guidance per se, but familiar batches converge in 5\u20138 steps, while distribution shocks of the frozen-backbone paradigm shared by all gradient-based use the full 25. policies.",
+   "Exploring partial unfreezing or adapter modules [34] for attention layers is a promising direction.",
+   "Exploring adapter modules [34] is a promising direction. 9) Retrain comparison limited to 3 architectures."
+  ]
+ },
+ {
+  "key": "Lim2026ASR",
+  "arxiv": "2603.03796",
+  "year": 2026,
+  "title": "When and Where to Reset Matters for Long-Term Test-Time Adaptation",
+  "n": 7,
+  "hits": [
+   "It addresses the limitations of conventional reset methods that either reset too frequently or too infrequently and fully discard the knowledge acquired during adaptation.",
+   "To this end, we address the limitations of existing reset approaches, such as suboptimal reset timing and catastrophic loss of knowledge, through the following three main components: (1) Adaptive and Selective Reset (ASR; illustrated in Fig. 2), (2) importance-aware knowledge recovery, and (3) on-the-fly adaptation adjustment. 3.2 M OTIVATION We observed that RDumb\u2019s periodic reset (Press et al., 2023) is only suitab",
+   "Although we can measure the concentration of predicted classes, it remains unclear when it is high enough to suggest that the model is on the verge of collapse.",
+   "Moreover, we prove that the proposed regularizer effectively recovers essential knowledge by providing both theoretical and empirical evidence in Appendix A.6. 3.5 O N - THE -F LY A DAPTATION A DJUSTMENT While we assume domain-evolving settings, we do not explicitly model how domain evolution unfolds when designing our method.",
+   "Furthermore, CCC reveals the limitations of continual TTA methods and the effectiveness of our method under long-term collapse-prone settings in Table 4.",
+   "To discuss the limitations of full-parameter reset, we first quantify RDumb\u2019s performance degradation after reset under the same setup as in Fig. 1.",
+   "We directly address these fundamental limitations by proposing a scheme that dynamically adjusts both the timing and scope of reset."
+  ]
+ },
+ {
+  "key": "Lu2026AgenticTTT",
+  "arxiv": "2610.12002",
+  "year": 2026,
+  "title": "Agentic-TTT: Training test-time policy for test-time training",
+  "n": 6,
+  "hits": [
+   "Agentic-TTT: Training Test-time Policy for Test-time Training AGENTIC -TTT: T RAINING TEST- TIME POLICY FOR TEST- TIME TRAINING Jiahao Lu Mohan Kankanhalli NUS AI Institute National University of Singapore jiahao.lu@u.nus.edu dcsmsk@nus.edu.sg arXiv:2610.12002v1 [cs.LG] 8 Oct 2026 A BSTRACT Test-time training (TTT) adapts an LLM\u2019s parameters using signals derived from test inputs, and can make striking improvements i",
+   "To our knowledge, this model-level agency over TTT remains unexplored in open-ended LLM deployment.",
+   "Section E discusses the limitations of this work and outlines future research directions.",
+   "E L IMITATIONS AND D ISCUSSIONS In this section, we discuss the limitations of this work and highlight opportunities for future research.",
+   "We leave training on autonomous streams with explicit cross-query credit assignment to future work.",
+   "Detecting poisoned skills and assessing robustness under adversarial adaptation remain important directions for future work. 26 "
+  ]
+ },
+ {
+  "key": "Majumdar2026HelpHarm",
+  "arxiv": "2608.22233",
+  "year": 2026,
+  "title": "When Test-Time Adaptation Helps, Harms, or Becomes Inactive: A Condition-Level Study on CIFAR-10-C",
+  "n": 4,
+  "hits": [
+   "In this work, we do not propose a new adaptation method.",
+   "None of these observations point to a specific alternative algorithm, and we do not propose one.",
+   "Whether some estimate of per-batch or per-sample reliability could be used to modulate the strength of the entropy-minimization update, and whether doing so would meaningfully change the failure conditions identified here without eroding the worst-case gains, is a natural question raised by these data but not one we answer here. 7 Limitations \u2022 All results are on a single benchmark (CIFAR-10-C) and a single source mo",
+   "We do not report CIFAR-100-C or ImageNet-C results, and generalization of the specific failure conditions to other architectures or datasets is untested. \u2022 The batch-size and long-stream protocols were run on a representative subset of six corruptions rather than the full set ICVGIP2026, December 21\u201325, 2026, Kolkata, India of 15, chosen for computational cost."
+  ]
+ },
+ {
+  "key": "Rehan2026FORGE",
+  "arxiv": "2609.01683",
+  "year": 2026,
+  "title": "FORGE: Forward-Only Test-Time Adaptation for Integer-Only Vision Models on Microcontrollers",
+  "n": 5,
+  "hits": [
+   "PEA (Ma et al., 2026) is forward-only and architecture-agnostic but does not address quantization.",
+   "We therefore claim the gate is safe under the conditions we evaluate, not unconditionally, and useful mainly as a conservative safeguard; a self-supervised signal that tracks accuracy in the many-class overconfident regime, and an on-device latency/energy characterization of the window, are future work. 11 Published in Transactions on Machine Learning Research (08/2026) 4.7 On-device deployment We export the folded i",
+   "The activation buffers are held by inference regardless of adaptation; Forge adds only the running-stat SRAM and the target Flash, and no activation-sized scratch (in-place). component mutable running mean+var (SRAM) immutable targets (\u03b2, |\u03b3|) (Flash) recalibration scratch activation buffers (peak, inference) data type all 21 sites (784 ch) top-3 (112 ch) fp32 fp32 \u2014 fp32 6.1 KB 6.1 KB none (in place) 192 KB 0.9 KB 0",
+   "A signal that tracks accuracy in that regime, and an on-device latency/energy characterization of the calibration window, are future work.",
+   "Extending the same post-fold restoration idea to other normalization layers is natural future work. 6 Conclusion Deploying a vision model on a microcontroller, which folds BN and quantizes to integers, silently removes its ability to adapt to the distribution shift it will face in the field."
+  ]
+ },
+ {
+  "key": "Sabour2026DriftTTA",
+  "arxiv": "2610.24220",
+  "year": 2026,
+  "title": "Hidden Trajectories Don't Lie: Correcting Corruption Drift for Test-Time Adaptation",
+  "n": 0,
+  "hits": []
+ },
+ {
+  "key": "Shamsi2026MultiHypothesis",
+  "arxiv": "2607.00259",
+  "year": 2026,
+  "title": "Multi-Hypothesis Test-Time Adaptation to Mitigate Underspecification",
+  "n": 4,
+  "hits": [
+   "Summary of Contributions: \u2013 We reinterpret entropy-based test-time adaptation as an implicit posterior inference problem under underspecification, highlighting the limitations of single-point MAP adaptation. \u2013 We propose a particle-based diversification framework that approximates posterior exploration over adaptation parameters through multi-level diversification (output, parameter, optimizer, and input levels). \u2013 W",
+   "To address this limitation, we adopt a population-based formulation of test-time adaptation.",
+   "To address this limitation, we proposed a population-based diversification framework that maintains multiple interacting adaptation particles.",
+   "We hope this perspective motivates future work toward principled population-based adaptation strategies that improve robustness under underspecification."
+  ]
+ },
+ {
+  "key": "Zhang2026MoASEPlusPlus",
+  "arxiv": "2605.17743",
+  "year": 2026,
+  "title": "MoASE++: Mixture of Activation Sparsity Experts with Domain-Adaptive On-policy Distillation for Continual Test Time Adaptation",
+  "n": 1,
+  "hits": [
+   "As future work, we envision an edge\u2013cloud co-inference scheme that keeps lightweight inference on the edge while scheduling heavier full-expert updates in the cloud to amortize peak costs and reduce end-to-end latency. 7.4 Ablation study Influence of where to conduct SDD."
+  ]
+ },
+ {
+  "key": "Zhang2026PhysicalDiagnosis",
+  "arxiv": "2609.22299",
+  "year": 2026,
+  "title": "When Does Test-Time Physical Diagnosis Pay? A Frozen Policy Buys Evidence It Never Reads",
+  "n": 3,
+  "hits": [
+   "Grey marks a condition that was not tested or not evaluated, and records the absence of a result, not negative evidence.",
+   "An outcome-reading oracle run on public Ant pair rows also destroyed far more decisions than it corrected (Appendix G). 6 6 Limitations All six conditions were screened in simulation, enabling cheap falsification but limiting generality.",
+   "No public task passed qualification under a protocol in which the system acts once, and the one development stage that passed chooses after executing every candidate (Appendix E), so public occurrence remains open."
+  ]
+ },
+ {
+  "key": "Zhao2026FACTOR",
+  "arxiv": "2605.03294",
+  "year": 2026,
+  "title": "FACTOR: Counterfactual Training-Free Test-Time Adaptation for Open-Vocabulary Object Detection",
+  "n": 2,
+  "hits": [
+   "Related Work Open-Vocabulary Object Detection (OVOD) breaks the limitation of closed-set detection by enabling zero-shot generalization to novel categories, powered by visionlanguage pre-training that aligns visual and textual semantics.",
+   "Future work may extend FACTOR by integrating temporal memory for historical knowledge accumulation and introducing structured causal models to handle more complex environmental confounders in open-world deployment."
+  ]
+ },
+ {
+  "key": "Zhou2026Learnability",
+  "arxiv": "2605.28057",
+  "year": 2026,
+  "title": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+  "n": 6,
+  "hits": [
+   "Despite its empirical success, the learnability of TTA under non-stationary streams remains unexplored.",
+   "These limitations highlight a fundamental gap between existing theoretical results and the requirements of TTA under unlabeled non-stationary test streams.",
+   "Another line of methods studies TTA in the open world, such Future work and Limitations.",
+   "While Section 5 validates our main predictions, a comprehensive empirical study and large-scale benchmarks are left for future work. 6.",
+   "Our results clarify when test-time adaptation is feasible and quantify the intrinsic limitations imposed by distribution shifts, temporal dependence, and imperfect proxy supervision.",
+   "As the contributions are primarily theoretical and do not introduce new algorithms or systems, we do not anticipate direct negative societal impacts."
+  ]
+ },
+ {
+  "key": "Zhang2026HarnessLearning",
+  "arxiv": "2609.35738",
+  "year": 2026,
+  "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
+  "n": 4,
+  "hits": [
+   "Future work could explore stronger teachers or direct RL from models with prior knowledge of harness design, train tool-using proposers to inspect and test designs, and jointly optimize proposer and solver following concurrent work (Ornith, 2026b;a).",
+   "The study\u2019s different training configurations and reward terms are specified in Table 15 and Eq. (10). 35 F Limitations and Future Work Teacher capability and proposer initialization.",
+   "Whether an initialization with more knowledge of harness design improves exploration and transfer remains an open question.",
+   "Future work could train the proposer inside a tool-using harness, allowing it to inspect code, run targeted tests, compare candidate designs, and revise them using the resulting observations."
+  ]
+ },
+ {
+  "key": "Singh2026ReliabilityGated",
+  "arxiv": "2605.14063",
+  "year": 2026,
+  "title": "Reliability-Gated Source Anchoring for Continual Test-Time Adaptation",
+  "n": 4,
+  "hits": [
+   "Designing a correctness-aware reliability signal is a direction for future work (\u00a75).",
+   "A critical limitation along this line is the implicit assumption that the static source remains a reliable anchor, which fails when severe corruption catastrophically confuses the source.",
+   "A full mechanistic account of the architecture-specific failure and a reset controller that is reliable for every split rather than the mean are left to future work (\u00a75). 4.4 Controlled Source Degradation The main benchmark results establish that RM EM S AFE improves over prior methods on standard continual-corruption streams, but they do not directly measure how the method responds to varying source quality, the axi",
+   "Standard CTTA benchmarks produce high-entropy collapse rather than low-entropy miscalibration, so this regime is not exercised by the main benchmark but is a real failure mode in principle; the entropy-based gate is sound under the typical-shift assumption that catastrophic failure manifests as predictive uncertainty, and a correctness-aware signal preserving the graceful-decay guarantee is a direction for future wor"
+  ]
+ },
+ {
+  "key": "Press2024EntropyEnigma",
+  "arxiv": "2405.05012",
+  "year": 2024,
+  "title": "The Entropy Enigma: Success and Failure of Entropy Minimization",
+  "n": 1,
+  "hits": [
+   "Therefore, we do not expect EM, which works by clustering its inputs, to significantly change an already well-clustered set of embeddings."
+  ]
+ },
+ {
+  "key": "Kim2026OATTA",
+  "arxiv": "2601.21012",
+  "year": 2026,
+  "title": "Order-Aware Test-Time Adaptation: Leveraging Temporal Dynamics for Robust Streaming Inference",
+  "n": 1,
+  "hits": [
+   "Comparing the S2 (sticky) and S3 (permuted) streams reveals a limitation of countbased estimation."
+  ]
+ },
+ {
+  "key": "Amoukou2024SequentialHarmful",
+  "arxiv": "2412.12910",
+  "year": 2024,
+  "title": "Sequential Harmful Shift Detection Without Labels",
+  "n": 3,
+  "hits": [
+   "These methods have inherent limitations, as the sample size is prespecified.",
+   "While we do not claim that this assumption always holds exactly, we find that it is only violated to a small extent in realistic settings (see Appendix A for more discussion and experimental analysis).",
+   "In future work, we plan to apply interpretability techniques to the quantile detector to understand where and how the data are shifting in the input space, and to use this information to improve the primary model itself. 9 Disclaimer This paper was prepared for informational purposes by the Artificial Intelligence Research group of JPMorgan Chase & Co and its affiliates (\u201cJ.P."
+  ]
+ },
+ {
+  "key": "Nguyen2025D3M",
+  "arxiv": "2506.05047",
+  "year": 2025,
+  "title": "Reliably Detecting Model Failures in Deployment Without Labels",
+  "n": 7,
+  "hits": [
+   "But knowing when to retrain, without access to labels, is an open challenge since some, but not all shifts degrade model performance.",
+   "High-variance reported TPR and limitations.",
+   "While we expect distribution shift to occur, whether it represents performance deterioration or benign drift remains unknown a priori, mirroring real-world deployment uncertainty.",
+   "Whilst these methods detect shifts, they are constrained by their requirement of training data post-deployment and do not consider the extent to which shifts affect model performance.",
+   "Our theoretical analysis addresses this gap. 5 Conclusion and Limitations Two core limitations to D3M are of note when considering deployment in a real-world setting.",
+   "Future work may explore how performance and stability vary as a function of the quality of representation in the base model.",
+   "Future work could leverage stronger analytical tools in statistical learning such as PAC-Bayes to derive tighter bounds when labels are noisy, more closely matching real-life deployment scenarios on mislabeled, or even adversarially poisoned labels."
+  ]
+ },
+ {
+  "key": "Solozobov2026Governance",
+  "arxiv": "2604.17836",
+  "year": 2026,
+  "title": "Label-Free Detection of Governance Evidence Degradation in Risk Decision Systems",
+  "n": 8,
+  "hits": [
+   "The structural nature of this limitation deserves emphasis.",
+   "Greco et al. state this limitation precisely: without actual labels, the only drift that can be detected unsupervised is change in \ud835\udc43 (\ud835\udc4b) (Greco et al., 2024).",
+   "These methods represent significant advances but share a common limitation: they are positioned as statistical detection tools, not governance instruments.",
+   "Muhammad et al. propose audit-as-code for continuous AI assurance but do not address label-free statistical monitoring (Muhammad et al., 2026).",
+   "Note that adding noise to features while freezing labels technically alters the conditional P(Y|X) for perturbed instances; this is a standard simplification in drift detection evaluation (used by Casimiro et al. and others) where the primary effect is the intended covariate shift in \ud835\udc43 (\ud835\udc4b), and the incidental P(Y|X) change is a known limitation of the injection protocol.",
+   "This tests the theoretical limitation of label-free monitoring: \ud835\udc43 (\ud835\udc4b) is identical to baseline, so unsupervised monitors should produce no signal.",
+   "Limitations and Future Work This study has several limitations.",
+   "Future work should address three directions."
+  ]
+ },
+ {
+  "key": "Balachandran2026Discern",
+  "arxiv": "2609.17560",
+  "year": 2026,
+  "title": "Pay Only for Disagreement: Certified No-Regression Verdicts for Model Updates with Matching Label-Complexity Bounds",
+  "n": 6,
+  "hits": [
+   "A soft generalization to score-reading losses that are Lipschitz in the model output, which reaches calibration and smooth reward objectives, is developed in Section 5.6; open-ended judged generation remains outside the theory and we do not claim it.",
+   "Theorem 9 (Lower bound for pairing-blind auditors) In the setting of Theorem 8, call a procedure pairing-blind if it does not evaluate the model pair on unlabeled points.",
+   "We provide the emitter and a reference validation script in the accompanying code release. 8 Limitations and Scope Losses through internals.",
+   "For losses Lipschitz in the model output, the soft support identity of Proposition 14 recovers the zero-label certificate and the audited tier with \u03c1 replaced by the soft-disagreement moments; matching the lower bound there, and handling open-ended judged generation where the output is discrete text, remain open.",
+   "The windowed variant restores per-regime verdicts at a logarithmic price, and choosing windows adaptively is future work.",
+   "This is Theorem 2 together with the width analysis in Appendix D of Waudby-Smith and 2 Ramdas (2024), and we do not reprove it."
+  ]
+ },
+ {
+  "key": "Zhang2026PPRM",
+  "arxiv": "2602.02229",
+  "year": 2026,
+  "title": "Prediction-Powered Risk Monitoring of Deployed Models for Detecting Harmful Distribution Shifts",
+  "n": 2,
+  "hits": [
+   "As anticipated, unlike (Schirmer et al., 2025), we do not make any assumptions on the quality of the model fp (\u00b7).",
+   "Future work may consider methods that integrate PPRM with unsupervised techniques such as test-time adaptation."
+  ]
+ }
+]

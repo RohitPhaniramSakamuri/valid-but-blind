@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "DMLR-v01.html",
+    "url": "https://data.mlr.press/volumes/01.html",
+    "source": "DMLR-v01",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "DMLR-v02.html",
+    "url": "https://data.mlr.press/volumes/02.html",
+    "source": "DMLR-v02",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "DMLR-v03.html",
+    "url": "https://data.mlr.press/volumes/03.html",
+    "source": "DMLR-v03",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "tent-issues.json",
+    "url": "https://api.github.com/repos/DequanWang/tent/issues?state=all&per_page=100",
+    "source": "tent-issues",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "ttab-issues.json",
+    "url": "https://api.github.com/repos/LINs-lab/ttab/issues?state=all&per_page=100",
+    "source": "ttab-issues",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "ttab-readme.txt",
+    "url": "https://raw.githubusercontent.com/LINs-lab/ttab/main/README.md",
+    "source": "ttab-readme",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "tent-issue23.json",
+    "url": "https://api.github.com/repos/DequanWang/tent/issues/23",
+    "source": "tent-issue23",
+    "query": "Official archive or repository issues/discussions; no execution."
+  },
+  {
+    "filename": "ttab-discussions.html",
+    "url": "https://github.com/LINs-lab/ttab/discussions",
+    "source": "ttab-discussions",
+    "query": "Official archive or repository issues/discussions; no execution."
+  }
+]

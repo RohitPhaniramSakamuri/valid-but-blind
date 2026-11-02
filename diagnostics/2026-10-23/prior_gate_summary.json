@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "scope": "Post-hoc exploratory, cal-only threshold fitting; existing final evaluation reused",
+  "config": {
+    "status": "post-hoc exploratory baseline",
+    "selection_feature": "cheap index 6 = max predicted-class frequency",
+    "rule": "BN if concentration <= threshold, otherwise SOURCE",
+    "thresholds": [
+      0.15,
+      0.2,
+      0.25,
+      0.35,
+      0.5,
+      0.65,
+      0.8
+    ],
+    "lambdas": [
+      0.0,
+      0.002,
+      0.01,
+      0.03
+    ],
+    "fit_labels": "calibration only",
+    "gate_latency_ms": 0.00249,
+    "source_cost_scale_ms": 0.0621090002823621,
+    "source_direct_fallback": true,
+    "design_timing": "Added after viewing original test action-by-prior breakdown; no fresh confirmatory claim"
+  },
+  "elapsed_seconds": 0.287168009999732,
+  "outcomes_sha256": "1a9d088ba63b4f6fd6b703fe4e2c9277f556456426335320c0aa65d2e320e07e",
+  "script_sha256": "a0bb8d917566eff5732a1a5a64770fc5cb6640236fc9ee4d96212fd561f602ed"
+}

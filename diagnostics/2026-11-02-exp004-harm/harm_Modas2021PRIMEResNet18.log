@@ -1,0 +1,23 @@
+Modas2021PRIMEResNet18 1 22 dirichlet/clean/0/0.01 err=0.706 twin=0.406 elapsed=10s
+Modas2021PRIMEResNet18 2 22 dirichlet/clean/0/0.05 err=0.915 twin=0.406 elapsed=24s
+Modas2021PRIMEResNet18 3 22 balanced_wr/clean/0/0.01 err=0.926 twin=0.268 elapsed=37s
+Modas2021PRIMEResNet18 4 22 balanced_wr/clean/0/0.05 err=0.979 twin=0.268 elapsed=51s
+Modas2021PRIMEResNet18 5 22 dirichlet/snow/1/0.01 err=0.553 twin=0.356 elapsed=64s
+Modas2021PRIMEResNet18 6 22 dirichlet/snow/1/0.05 err=0.940 twin=0.356 elapsed=78s
+Modas2021PRIMEResNet18 7 22 balanced_wr/snow/1/0.01 err=0.930 twin=0.279 elapsed=91s
+Modas2021PRIMEResNet18 8 22 balanced_wr/snow/1/0.05 err=0.977 twin=0.279 elapsed=105s
+Modas2021PRIMEResNet18 9 22 dirichlet/fog/1/0.01 err=0.621 twin=0.376 elapsed=118s
+Modas2021PRIMEResNet18 10 22 dirichlet/fog/1/0.05 err=0.962 twin=0.376 elapsed=132s
+Modas2021PRIMEResNet18 11 22 balanced_wr/fog/1/0.01 err=0.915 twin=0.268 elapsed=145s
+Modas2021PRIMEResNet18 12 22 balanced_wr/fog/1/0.05 err=0.985 twin=0.268 elapsed=159s
+Modas2021PRIMEResNet18 13 22 dirichlet/contrast/1/0.01 err=0.803 twin=0.500 elapsed=172s
+Modas2021PRIMEResNet18 14 22 dirichlet/contrast/1/0.05 err=0.922 twin=0.500 elapsed=186s
+Modas2021PRIMEResNet18 15 22 balanced_wr/contrast/1/0.01 err=0.912 twin=0.264 elapsed=199s
+Modas2021PRIMEResNet18 16 22 balanced_wr/contrast/1/0.05 err=0.982 twin=0.264 elapsed=213s
+Modas2021PRIMEResNet18 17 22 dirichlet/jpeg_compression/1/0.01 err=0.802 twin=0.566 elapsed=226s
+Modas2021PRIMEResNet18 18 22 dirichlet/jpeg_compression/1/0.05 err=0.987 twin=0.566 elapsed=240s
+Modas2021PRIMEResNet18 19 22 balanced_wr/jpeg_compression/1/0.01 err=0.930 twin=0.317 elapsed=253s
+Modas2021PRIMEResNet18 20 22 balanced_wr/jpeg_compression/1/0.05 err=0.984 twin=0.317 elapsed=267s
+Modas2021PRIMEResNet18 21 22 by_class/clean/0/0.001 err=0.892 twin=0.713 elapsed=281s
+Modas2021PRIMEResNet18 22 22 by_class/clean/0/0.01 err=0.978 twin=0.713 elapsed=294s
+complete Modas2021PRIMEResNet18 294s

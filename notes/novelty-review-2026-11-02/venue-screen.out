@@ -1,0 +1,206 @@
+Index titles extracted: 113297 matching rows: 2793
+NeurIPS-Downloads2025 200 5957 187
+NeurIPS-Downloads2026 200 9276 359
+AISTATS2023 200 496 19
+AISTATS2024 200 547 21
+AISTATS2025 200 583 26
+AISTATS2026 200 588 22
+UAI2023 200 243 11
+UAI2024 200 201 12
+UAI2025 200 229 13
+UAI2026 200 330 30
+ICCV2023 200 2156 52
+ICCV2025 200 2701 55
+ECCV2024 200 10726 104
+ECCV2026 200 10726 104
+ICLR2023-api blocked/error 0 0
+ICLR2024-api blocked/error 0 0
+ICLR2025-api blocked/error 0 0
+ICLR2026-api blocked/error 0 0
+TMLR-api blocked/error 0 0
+IJCV2026-dblp 202 0 0
+TPAMI2026-dblp 202 0 0
+Guo2017Calibration 200 0 0
+Guo2017Calibration 200 0 0
+Hendrycks2017FailureBaseline 200 0 0
+Podkopaev2022RiskMonitoring 200 0 0
+Howard2021ConfidenceSequences 200 0 0
+Feng2024Performativity 200 0 0
+DMLR-papers 200 0 0
+ECCV2026-accepted 200 2841 95
+ICLR2023-list 200 1616 38
+ICLR2024-list 200 2324 42
+ICLR2025-list 200 3879 92
+ICLR2026-list 200 5510 205
+NeurIPS2025-main 200 5823 185
+TMLR-group 200 0 0
+DMLR-v01 200 22 0
+DMLR-v02 200 28 0
+DMLR-v03 200 35 1
+tent-issues 200 0 0
+ttab-issues 200 0 0
+ttab-readme 200 0 0
+tent-issue23 200 0 0
+ttab-discussions blocked/error 0 0
+Garg2022ATC 200 0 0
+Park2023LSA 200 0 0
+Kim2024TTALine 200 0 0
+Schirmer2025Monitoring-neurips 200 0 0
+NeurIPS2023 200 3540 80
+NeurIPS2024 200 4493 89
+NeurIPS2025 200 64 0
+NeurIPS2026 blocked/error 0 0
+CVPR2023 200 2352 48
+CVPR2024 200 2716 64
+CVPR2025 200 2871 71
+CVPR2026 200 4041 121
+ICML2023 200 1828 51
+ICML2024 200 2610 73
+ICML2025 200 3330 112
+ICML2026 200 6552 265
+JMLR-v24 200 401 13
+JMLR-v25 200 422 11
+JMLR-v26 200 309 12
+JMLR-v27 200 205 6
+ECVA 200 10726 104
+DMLR 200 0 0
+
+Close-candidate title screen:
+NeurIPS-Downloads2025 Combining Cost Constrained Runtime Monitors for AI Safety https://neurips.cc/virtual/2025/poster/116645
+NeurIPS-Downloads2025 CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring https://neurips.cc/virtual/2025/poster/116053
+NeurIPS-Downloads2025 From Judgment to Interference: Early Stopping LLM Harmful Outputs via Streaming Content Monitoring https://neurips.cc/virtual/2025/poster/116186
+NeurIPS-Downloads2025 Instance-Dependent Regret Bounds for Nonstochastic Linear Partial Monitoring https://neurips.cc/virtual/2025/poster/116082
+NeurIPS-Downloads2025 Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations https://neurips.cc/virtual/2025/poster/115865
+NeurIPS-Downloads2025 MoniTor: Exploiting Large Language Models with Instruction for Online Video Anomaly Detection https://neurips.cc/virtual/2025/poster/119803
+NeurIPS-Downloads2025 Monitoring Risks in Test-Time Adaptation https://neurips.cc/virtual/2025/poster/117800
+NeurIPS-Downloads2025 Open-Insect: Benchmarking Open-Set Recognition of Novel Species in Biodiversity Monitoring https://neurips.cc/virtual/2025/poster/121829
+NeurIPS-Downloads2025 PhysDrive: A Multimodal Remote Physiological Measurement Dataset for In-vehicle Driver Monitoring https://neurips.cc/virtual/2025/poster/121608
+NeurIPS-Downloads2025 Rethinking Fine-Tuning when Scaling Test-Time Compute: Limiting Confidence Improves Mathematical Reasoning https://neurips.cc/virtual/2025/poster/116423
+NeurIPS-Downloads2025 Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health https://neurips.cc/virtual/2025/poster/121927
+NeurIPS-Downloads2025 TreeFinder: A US-Scale Benchmark Dataset for Individual Tree Mortality Monitoring Using High-Resolution Aerial Imagery https://neurips.cc/virtual/2025/poster/121794
+NeurIPS-Downloads2026 Agent-ToM: Learning to Monitor Autonomous LLM Agents via Theory-of-Mind Reasoning https://neurips.cc/virtual/2026/poster/152173
+NeurIPS-Downloads2026 Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs https://neurips.cc/virtual/2026/poster/139423
+NeurIPS-Downloads2026 CASPIAN: Online Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel Causal Monitoring https://neurips.cc/virtual/2026/poster/150932
+NeurIPS-Downloads2026 Chain-of-Thought Oversight Should Not Treat Faithfulness as Monitorability https://neurips.cc/virtual/2026/poster/140099
+NeurIPS-Downloads2026 Corrupted Plans, Clean Traces: What Planning-Execution Decoupling Reveals About CoT Monitoring https://neurips.cc/virtual/2026/poster/152688
+NeurIPS-Downloads2026 CoT-Guard: Small Models for Strong Monitoring https://neurips.cc/virtual/2026/poster/149885
+NeurIPS-Downloads2026 Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL https://neurips.cc/virtual/2026/poster/153178
+NeurIPS-Downloads2026 Dynamic Context Modeling for Longitudinal Mental Health Monitoring under Distribution Shift https://neurips.cc/virtual/2026/poster/151758
+NeurIPS-Downloads2026 ExtrapAir: Air Quality Inference at Unmonitored Locations via Weather-Bridged Spatial Attention https://neurips.cc/virtual/2026/poster/154246
+NeurIPS-Downloads2026 From Representation to Intervention: Using Emotion Vectors to Monitor and Guide Language Models https://neurips.cc/virtual/2026/poster/150006
+NeurIPS-Downloads2026 GlucoFM: A Dual-Stream Foundation Model for Continuous Glucose Monitoring https://neurips.cc/virtual/2026/poster/152461
+NeurIPS-Downloads2026 Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring https://neurips.cc/virtual/2026/poster/150396
+NeurIPS-Downloads2026 How Useful Is Cross-Domain Generalization for Training LLM Monitors? https://neurips.cc/virtual/2026/poster/152528
+NeurIPS-Downloads2026 Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models https://neurips.cc/virtual/2026/poster/151272
+NeurIPS-Downloads2026 LLM-enabled Applications Require Systematic Threat Monitoring https://neurips.cc/virtual/2026/poster/140064
+NeurIPS-Downloads2026 MAST: Label-Efficient, Robust, and Generalizable Sound Detection for Biodiversity Monitoring via Masked Audio Pretraining and Self-Training https://neurips.cc/virtual/2026/poster/148863
+NeurIPS-Downloads2026 Mitigating Overthinking in Large Reasoning Language Models via Reasoning Path Deviation Monitoring https://neurips.cc/virtual/2026/poster/155452
+NeurIPS-Downloads2026 Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics https://neurips.cc/virtual/2026/poster/154550
+NeurIPS-Downloads2026 Monitoring Violations of Differential Privacy over Time https://neurips.cc/virtual/2026/poster/148395
+NeurIPS-Downloads2026 Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors https://neurips.cc/virtual/2026/poster/148241
+NeurIPS-Downloads2026 Performance Estimation Problems: Computer-Aided and AI-Assisted Analysis and Design of First-Order Optimization Methods https://neurips.cc/virtual/2026/tutorial/137749
+NeurIPS-Downloads2026 Persona Vectors: Monitoring and Controlling Character Traits in Language Models https://neurips.cc/virtual/2026/poster/152713
+NeurIPS-Downloads2026 Runtime Monitoring of Perception-Based Autonomous Systems via Embedding Temporal Logic https://neurips.cc/virtual/2026/poster/153720
+NeurIPS-Downloads2026 Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment https://neurips.cc/virtual/2026/poster/155256
+NeurIPS-Downloads2026 Test-Time Graph Recalibration: Enhancing Robust Zero-Shot Inference for Graph Foundation Models https://neurips.cc/virtual/2026/poster/155782
+NeurIPS-Downloads2026 The Best-Laid SCHEMEs: Coordinated Sabotage and Monitoring in Multi-Agent Systems https://neurips.cc/virtual/2026/poster/155561
+NeurIPS-Downloads2026 Tight PAC-Bayes Generalisation Guarantees for Large Language Model Safety Monitoring https://neurips.cc/virtual/2026/poster/150040
+NeurIPS-Downloads2026 Training Deliberative Monitors for Black-Box Scheming Detection https://neurips.cc/virtual/2026/poster/155047
+NeurIPS-Downloads2026 Training on Documents About Monitoring Leads to CoT Obfuscation https://neurips.cc/virtual/2026/poster/152223
+NeurIPS-Downloads2026 Watermarking Should Be Treated as a Monitoring Primitive https://neurips.cc/virtual/2026/poster/140006
+NeurIPS-Downloads2026 When to Trust a PFN: Detecting Harmful Shift in Tabular Foundation Models https://neurips.cc/virtual/2026/poster/150327
+AISTATS2024 Monitoring machine learning-based risk prediction algorithms in the presence of performativity https://proceedings.mlr.press/v238/feng24b.html
+AISTATS2025 Incremental Uncertainty-aware Performance Monitoring with Active Labeling Intervention https://proceedings.mlr.press/v258/koebler25a.html
+UAI2024 Can we Defend Against the Unknown? An Empirical Study About Threshold Selection for Neural Network Monitoring https://proceedings.mlr.press/v244/dang24a.html
+UAI2024 Neural Active Learning Meets the Partial Monitoring Framework https://proceedings.mlr.press/v244/heuillet24a.html
+UAI2025 On Continuous Monitoring of Risk Violations under Unknown Shift https://proceedings.mlr.press/v286/timans25a.html
+ICCV2023 Unsupervised Accuracy Estimation of Deep Visual Models using Domain-Adaptive Adversarial Perturbation without Source Samples https://openaccess.thecvf.com/content/ICCV2023/html/Lee_Unsupervised_Accuracy_Estimation_of_Deep_Visual_Models_using_Domain-Adaptive_Adversarial_ICCV_2023_paper.html
+ECCV2024 MONTAGE: Monitoring Training for Attribution of Generative Diffusion Models https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9513_ECCV_2024_paper.php
+ECCV2024 Get Your Embedding Space in Order: Domain-Adaptive Regression for Forest Monitoring https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9856_ECCV_2024_paper.php
+ECCV2024 Monitored Distillation for Positive Congruent Depth Completion https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4288_ECCV_2022_paper.php
+ECCV2024 Remote Respiration Monitoring of Moving Person Using Radio Signals https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4828_ECCV_2022_paper.php
+ECCV2024 Liquid Pouring Monitoring via Rich Sensory Inputs https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Tz-Ying_Wu_Liquid_Pouring_Monitoring_ECCV_2018_paper.php
+ECCV2026 MONTAGE: Monitoring Training for Attribution of Generative Diffusion Models https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9513_ECCV_2024_paper.php
+ECCV2026 Get Your Embedding Space in Order: Domain-Adaptive Regression for Forest Monitoring https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9856_ECCV_2024_paper.php
+ECCV2026 Monitored Distillation for Positive Congruent Depth Completion https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4288_ECCV_2022_paper.php
+ECCV2026 Remote Respiration Monitoring of Moving Person Using Radio Signals https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4828_ECCV_2022_paper.php
+ECCV2026 Liquid Pouring Monitoring via Rich Sensory Inputs https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Tz-Ying_Wu_Liquid_Pouring_Monitoring_ECCV_2018_paper.php
+ECCV2026-accepted AracNet: Revealing Debiasing Signals across Layers with Shallow Monitors https://eccv.ecva.net/virtual/2026/poster/4940
+ECCV2026-accepted Is Monitoring Enough? Strategic Agent Selection For Stealthy Attack in Multi-Agent Discussions https://eccv.ecva.net/virtual/2026/poster/4950
+ECCV2026-accepted Test-time Counterfactual Calibration for Hallucination-Resistant Temporal Grounding https://eccv.ecva.net/virtual/2026/poster/3576
+ICLR2024-list GlucoBench: Curated List of Continuous Glucose Monitoring Datasets with Prediction Benchmarks https://iclr.cc/virtual/2024/poster/18296
+ICLR2024-list Test-time Adaptation against Multi-modal Reliability Bias https://iclr.cc/virtual/2024/poster/18574
+ICLR2025-list B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners https://iclr.cc/virtual/2025/poster/29776
+ICLR2025-list CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale https://iclr.cc/virtual/2025/poster/29009
+ICLR2025-list Monitoring Latent World States in Language Models with Propositional Probes https://iclr.cc/virtual/2025/poster/31228
+ICLR2026-list Adaptive Attacks on Trusted Monitors Subvert AI Control Protocols https://iclr.cc/virtual/2026/poster/10006727
+ICLR2026-list Adaptive Conformal Anomaly Detection with Time Series Foundation Models for Signal Monitoring. https://iclr.cc/virtual/2026/poster/10011253
+ICLR2026-list Beyond Linear Probes: Dynamic Safety Monitoring for Language Models https://iclr.cc/virtual/2026/poster/10011053
+ICLR2026-list Beyond Noisy-TVs: Noise-Robust Exploration Via Learning Progress Monitoring https://iclr.cc/virtual/2026/poster/10006684
+ICLR2026-list Catch, Adapt, and Operate: Monitoring ML Models Under Drift https://iclr.cc/virtual/2026/workshop/10000806
+ICLR2026-list Delta-XAI: A Unified Framework for Explaining Prediction Changes in Online Time Series Monitoring https://iclr.cc/virtual/2026/poster/10008821
+ICLR2026-list Eigen-Agent: Adaptive Multi-Agent Scientific Reasoning with Monitor-Based RAG https://iclr.cc/virtual/2026/poster/10008628
+ICLR2026-list Entropy-Monitored Kernelized Token Distillation for Audio-Visual Compression https://iclr.cc/virtual/2026/poster/10007450
+ICLR2026-list GAVEL: Towards Rule-Based Safety through Activation Monitoring https://iclr.cc/virtual/2026/poster/10008373
+ICLR2026-list Grokking in LLM Pretraining? Monitor Memorization-to-Generalization without Test https://iclr.cc/virtual/2026/poster/10008581
+ICLR2026-list Monitoring Decomposition Attacks with Lightweight Sequential Monitors https://iclr.cc/virtual/2026/poster/10010390
+ICLR2026-list Reliable Weak-to-Strong Monitoring of LLM Agents https://iclr.cc/virtual/2026/poster/10009049
+ICLR2026-list Watch the Weights: Unsupervised monitoring and control of fine-tuned LLMs https://iclr.cc/virtual/2026/poster/10009043
+NeurIPS2025-main MoniTor: Exploiting Large Language Models with Instruction for Online Video Anomaly Detection https://proceedings.neurips.cc/paper_files/paper/2025/hash/333e67fc4728f147d31608db3ca78e09-Abstract-Conference.html
+NeurIPS2025-main PhysDrive: A Multimodal Remote Physiological Measurement Dataset for In-vehicle Driver Monitoring https://proceedings.neurips.cc/paper_files/paper/2025/hash/3446e07569081f0f8a144e68bfa7afdf-Abstract-Datasets_and_Benchmarks_Track.html
+NeurIPS2025-main CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring https://proceedings.neurips.cc/paper_files/paper/2025/hash/468a018d4eb4ef57a2a5715d16658b24-Abstract-Conference.html
+NeurIPS2025-main From Judgment to Interference: Early Stopping LLM Harmful Outputs via Streaming Content Monitoring https://proceedings.neurips.cc/paper_files/paper/2025/hash/4e3157021c5f833bb2204081f1dda573-Abstract-Conference.html
+NeurIPS2025-main Open-Insect: Benchmarking Open-Set Recognition of Novel Species in Biodiversity Monitoring https://proceedings.neurips.cc/paper_files/paper/2025/hash/5048dada2e09b756fc139fa810cece30-Abstract-Datasets_and_Benchmarks_Track.html
+NeurIPS2025-main Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations https://proceedings.neurips.cc/paper_files/paper/2025/hash/56a225639da77e8f7c0409f6d5ba996b-Abstract-Conference.html
+NeurIPS2025-main Instance-Dependent Regret Bounds for Nonstochastic Linear Partial Monitoring https://proceedings.neurips.cc/paper_files/paper/2025/hash/6903ee523cc9b09267cce5f6ba7e209e-Abstract-Conference.html
+NeurIPS2025-main Monitoring Risks in Test-Time Adaptation https://proceedings.neurips.cc/paper_files/paper/2025/hash/746960ad49ddb47248970a0e1404230c-Abstract-Conference.html
+NeurIPS2025-main Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health https://proceedings.neurips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html
+NeurIPS2025-main Rethinking Fine-Tuning when Scaling Test-Time Compute: Limiting Confidence Improves Mathematical Reasoning https://proceedings.neurips.cc/paper_files/paper/2025/hash/e8f4eae0a41cab67fdead3aa6b77f083-Abstract-Conference.html
+NeurIPS2025-main Combining Cost Constrained Runtime Monitors for AI Safety https://proceedings.neurips.cc/paper_files/paper/2025/hash/ed56a654ddb681841fdb2184463c253e-Abstract-Conference.html
+NeurIPS2025-main TreeFinder: A US-Scale Benchmark Dataset for Individual Tree Mortality Monitoring Using High-Resolution Aerial Imagery https://proceedings.neurips.cc/paper_files/paper/2025/hash/f22625283cf5812f45933610314259be-Abstract-Datasets_and_Benchmarks_Track.html
+DMLR-v03 PowerBench: A Benchmark Suite for Monitoring and Security in Distribution Systems https://data.mlr.press/volumes/03.html
+NeurIPS2023 Monitor-Guided Decoding of Code LMs with Static Analysis of Repository Context https://proceedings.neurips.cc/paper_files/paper/2023/hash/662b1774ba8845fc1fa3d1fc0177ceeb-Abstract-Conference.html
+NeurIPS2023 VTaC: A Benchmark Dataset of Ventricular Tachycardia Alarms from ICU Monitors https://proceedings.neurips.cc/paper_files/paper/2023/hash/7a53bf4e02022aad32a4019d41b3b476-Abstract-Datasets_and_Benchmarks.html
+NeurIPS2023 GEO-Bench: Toward Foundation Models for Earth Monitoring https://proceedings.neurips.cc/paper_files/paper/2023/hash/a0644215d9cff6646fa334dfa5d29c5a-Abstract-Datasets_and_Benchmarks.html
+NeurIPS2024 MaNo: Exploiting Matrix Norm for Unsupervised Accuracy Estimation Under Distribution Shifts https://proceedings.neurips.cc/paper_files/paper/2024/hash/49abf767d606b72f74ea6009176fafeb-Abstract-Conference.html
+NeurIPS2024 MmCows: A Multimodal Dataset for Dairy Cattle Monitoring https://proceedings.neurips.cc/paper_files/paper/2024/hash/6d8f3f71b22f9d2e9320d7bdb73acea7-Abstract-Datasets_and_Benchmarks_Track.html
+NeurIPS2024 TPC: Test-time Procrustes Calibration for Diffusion-based Human Image Animation https://proceedings.neurips.cc/paper_files/paper/2024/hash/d6fdc3002dda4c3cad3d595ac6fa5352-Abstract-Conference.html
+NeurIPS2024 Sequential Harmful Shift Detection Without Labels https://proceedings.neurips.cc/paper_files/paper/2024/hash/e9721921b799b6ea98d37f9e77f1a7fe-Abstract-Conference.html
+CVPR2024 eTraM: Event-based Traffic Monitoring Dataset https://openaccess.thecvf.com/content/CVPR2024/html/Verma_eTraM_Event-based_Traffic_Monitoring_Dataset_CVPR_2024_paper.html
+CVPR2024 AETTA: Label-Free Accuracy Estimation for Test-Time Adaptation https://openaccess.thecvf.com/content/CVPR2024/html/Lee_AETTA_Label-Free_Accuracy_Estimation_for_Test-Time_Adaptation_CVPR_2024_paper.html
+CVPR2024 TTA-EVF: Test-Time Adaptation for Event-based Video Frame Interpolation via Reliable Pixel and Sample Estimation https://openaccess.thecvf.com/content/CVPR2024/html/Cho_TTA-EVF_Test-Time_Adaptation_for_Event-based_Video_Frame_Interpolation_via_Reliable_CVPR_2024_paper.html
+CVPR2025 Open-Canopy: Towards Very High Resolution Forest Monitoring https://openaccess.thecvf.com/content/CVPR2025/html/Fogel_Open-Canopy_Towards_Very_High_Resolution_Forest_Monitoring_CVPR_2025_paper.html
+CVPR2025 RipVIS: Rip Currents Video Instance Segmentation Benchmark for Beach Monitoring and Safety https://openaccess.thecvf.com/content/CVPR2025/html/Dumitriu_RipVIS_Rip_Currents_Video_Instance_Segmentation_Benchmark_for_Beach_Monitoring_CVPR_2025_paper.html
+CVPR2025 MammAlps: A Multi-view Video Behavior Monitoring Dataset of Wild Mammals in the Swiss Alps https://openaccess.thecvf.com/content/CVPR2025/html/Gabeff_MammAlps_A_Multi-view_Video_Behavior_Monitoring_Dataset_of_Wild_Mammals_CVPR_2025_paper.html
+CVPR2025 Deep Change Monitoring: A Hyperbolic Representative Learning Framework and a Dataset for Long-term Fine-grained Tree Change Detection https://openaccess.thecvf.com/content/CVPR2025/html/Li_Deep_Change_Monitoring_A_Hyperbolic_Representative_Learning_Framework_and_a_CVPR_2025_paper.html
+CVPR2025 Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_Code-as-Monitor_Constraint-aware_Visual_Programming_for_Reactive_and_Proactive_Robotic_Failure_CVPR_2025_paper.html
+CVPR2026 Multi-modal Test-time Adaptation via Adaptive Probabilistic Gaussian Calibration https://openaccess.thecvf.com/content/CVPR2026/html/Xu_Multi-modal_Test-time_Adaptation_via_Adaptive_Probabilistic_Gaussian_Calibration_CVPR_2026_paper.html
+CVPR2026 SATTC: Structure-Aware Label-Free Test-Time Calibration for Cross-Subject EEG-to-Image Retrieval https://openaccess.thecvf.com/content/CVPR2026/html/Huang_SATTC_Structure-Aware_Label-Free_Test-Time_Calibration_for_Cross-Subject_EEG-to-Image_Retrieval_CVPR_2026_paper.html
+CVPR2026 Bridging Domain Expertise and Generalization for Performance Estimation https://openaccess.thecvf.com/content/CVPR2026/html/Li_Bridging_Domain_Expertise_and_Generalization_for_Performance_Estimation_CVPR_2026_paper.html
+CVPR2026 CHIRP dataset: towards long-term, individual-level, behavioral monitoring of bird populations in the wild https://openaccess.thecvf.com/content/CVPR2026/html/Chan_CHIRP_dataset_towards_long-term_individual-level_behavioral_monitoring_of_bird_populations_CVPR_2026_paper.html
+CVPR2026 Dual-level Adaptation for Multi-Object Tracking: Building Test-Time Calibration from Experience and Intuition https://openaccess.thecvf.com/content/CVPR2026/html/Guo_Dual-level_Adaptation_for_Multi-Object_Tracking_Building_Test-Time_Calibration_from_Experience_CVPR_2026_paper.html
+ICML2023 Confidence and Dispersity Speak: Characterizing Prediction Matrix for Unsupervised Accuracy Estimation https://proceedings.mlr.press/v202/deng23e.html
+ICML2024 Randomized Confidence Bounds for Stochastic Partial Monitoring https://proceedings.mlr.press/v235/heuillet24a.html
+ICML2024 IW-GAE: Importance weighted group accuracy estimation for improved calibration and model selection in unsupervised domain adaptation https://proceedings.mlr.press/v235/joo24a.html
+ICML2024 Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews https://proceedings.mlr.press/v235/liang24b.html
+ICML2024 Exploration by Optimization with Hybrid Regularizers: Logarithmic Regret with Adversarial Robustness in Partial Monitoring https://proceedings.mlr.press/v235/tsuchiya24a.html
+ICML2025 QUTE: Quantifying Uncertainty in TinyML models with Early-exit-assisted ensembles for model-monitoring https://proceedings.mlr.press/v267/ghanathe25a.html
+ICML2025 Model-Based Exploration in Monitored Markov Decision Processes https://proceedings.mlr.press/v267/kazemipour25a.html
+ICML2025 WATCH: Adaptive Monitoring for AI Deployments via Weighted-Conformal Martingales https://proceedings.mlr.press/v267/prinster25a.html
+ICML2026 How does information access affect LLM monitors’ ability to detect sabotage? https://proceedings.mlr.press/v306/arike26a.html
+ICML2026 Beyond External Monitors: Enhancing Transparency of Large Language Models for Easier Monitoring https://proceedings.mlr.press/v306/chen26dr.html
+ICML2026 Monitoring Monitorability https://proceedings.mlr.press/v306/guan26h.html
+ICML2026 Real-Time Monitoring and Calibration of Chain-of-Thought Sycophancy in Large Reasoning Models https://proceedings.mlr.press/v306/hu26bb.html
+ICML2026 ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation https://proceedings.mlr.press/v306/huang26bw.html
+ICML2026 Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery https://proceedings.mlr.press/v306/li26fm.html
+ICML2026 NaviCache: Test-Time Self-Calibration Caching for Video Generation https://proceedings.mlr.press/v306/lv26m.html
+ICML2026 Constitutional Black-Box Monitoring for Scheming in LLM Agents https://proceedings.mlr.press/v306/storf26a.html
+ICML2026 Monitorability as a Free Gift: How RLVR Spontaneously Aligns Reasoning https://proceedings.mlr.press/v306/xiong26b.html
+ICML2026 Prediction-Powered Risk Monitoring of Deployed Models for Detecting Harmful Distribution Shifts https://proceedings.mlr.press/v306/zhang26g.html
+JMLR-v24 A PDE approach for regret bounds under partial monitoring https://www.jmlr.org/papers/v24/22-1001.html
+JMLR-v24 Linear Partial Monitoring for Sequential Decision Making: Algorithms, Regret Bounds and Applications https://www.jmlr.org/papers/v24/22-1248.html
+ECVA MONTAGE: Monitoring Training for Attribution of Generative Diffusion Models https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9513_ECCV_2024_paper.php
+ECVA Get Your Embedding Space in Order: Domain-Adaptive Regression for Forest Monitoring https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9856_ECCV_2024_paper.php
+ECVA Monitored Distillation for Positive Congruent Depth Completion https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4288_ECCV_2022_paper.php
+ECVA Remote Respiration Monitoring of Moving Person Using Radio Signals https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4828_ECCV_2022_paper.php
+ECVA Liquid Pouring Monitoring via Rich Sensory Inputs https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Tz-Ying_Wu_Liquid_Pouring_Monitoring_ECCV_2018_paper.php

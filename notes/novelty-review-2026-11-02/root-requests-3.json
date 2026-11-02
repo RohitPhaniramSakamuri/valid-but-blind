@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "Guo2017Calibration.pdf",
+    "url": "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+    "source": "Guo2017Calibration",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "Guo2017Calibration.html",
+    "url": "https://proceedings.mlr.press/v70/guo17a.html",
+    "source": "Guo2017Calibration",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "Hendrycks2017FailureBaseline.pdf",
+    "url": "https://arxiv.org/pdf/1610.02136",
+    "source": "Hendrycks2017FailureBaseline",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "Podkopaev2022RiskMonitoring.pdf",
+    "url": "https://arxiv.org/pdf/2110.06177",
+    "source": "Podkopaev2022RiskMonitoring",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "Howard2021ConfidenceSequences.pdf",
+    "url": "https://arxiv.org/pdf/1810.08240",
+    "source": "Howard2021ConfidenceSequences",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "Feng2024Performativity.pdf",
+    "url": "https://proceedings.mlr.press/v238/feng24b/feng24b.pdf",
+    "source": "Feng2024Performativity",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "DMLR-papers.html",
+    "url": "https://data.mlr.press/papers.html",
+    "source": "DMLR-papers",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "ECCV2026-accepted.html",
+    "url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "source": "ECCV2026-accepted",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "ICLR2023-list.html",
+    "url": "https://iclr.cc/Downloads/2023",
+    "source": "ICLR2023-list",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "ICLR2024-list.html",
+    "url": "https://iclr.cc/Downloads/2024",
+    "source": "ICLR2024-list",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "ICLR2025-list.html",
+    "url": "https://iclr.cc/Downloads/2025",
+    "source": "ICLR2025-list",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "ICLR2026-list.html",
+    "url": "https://iclr.cc/Downloads/2026",
+    "source": "ICLR2026-list",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "NeurIPS2025-main.html",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference",
+    "source": "NeurIPS2025-main",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  },
+  {
+    "filename": "TMLR-group.html",
+    "url": "https://openreview.net/group?id=TMLR",
+    "source": "TMLR-group",
+    "query": "primary full text or public paper-list fallback; reading scope reported separately"
+  }
+]

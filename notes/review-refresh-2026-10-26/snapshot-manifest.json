@@ -1,0 +1,93 @@
+[
+  {
+    "key": "Lu2026AgenticTTT",
+    "url": "https://arxiv.org/html/2610.12002v1",
+    "retrieved_at_utc": "2026-10-26T14:10:38.960176+00:00",
+    "final_url": "https://arxiv.org/html/2610.12002v1",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Lu2026AgenticTTT.html",
+    "bytes": 495750,
+    "sha256": "41bcbd25c5869eadaeadaca70ab1e516b5432c3ecb18918cf343c1764ce46bbe"
+  },
+  {
+    "key": "Jhawar2026Identifiability",
+    "url": "https://arxiv.org/html/2609.11235v1",
+    "retrieved_at_utc": "2026-10-26T14:10:38.961657+00:00",
+    "final_url": "https://arxiv.org/html/2609.11235v1",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Jhawar2026Identifiability.html",
+    "bytes": 315311,
+    "sha256": "5d50949d3e654ed038db53764ea0b2a08723717757915f3c9eec73e61b2a5196"
+  },
+  {
+    "key": "Park2025HybridTTA",
+    "url": "https://arxiv.org/html/2409.08566v2",
+    "retrieved_at_utc": "2026-10-26T14:10:38.962262+00:00",
+    "final_url": "https://arxiv.org/html/2409.08566v2",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Park2025HybridTTA.html",
+    "bytes": 462888,
+    "sha256": "4acf5d720281e4ecc0727f05499a112432a199fe2aa4a2dcda6992bdfcd9dbf1"
+  },
+  {
+    "key": "Lim2026ASR",
+    "url": "https://arxiv.org/html/2603.03796v1",
+    "retrieved_at_utc": "2026-10-26T14:10:38.962858+00:00",
+    "final_url": "https://arxiv.org/html/2603.03796v1",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Lim2026ASR.html",
+    "bytes": 965024,
+    "sha256": "28ccb7a49f5100509513e4251b6309f9516b3d01f427cda0c4cfd9e771d10b8c"
+  },
+  {
+    "key": "Huang2026TTABC",
+    "url": "https://arxiv.org/html/2606.14299v3",
+    "retrieved_at_utc": "2026-10-26T14:10:38.963869+00:00",
+    "final_url": "https://arxiv.org/html/2606.14299v3",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Huang2026TTABC.html",
+    "bytes": 586348,
+    "sha256": "34b211436430baa4274ad5ae7c67c35e6ccf080293f1376083e056fec47ca8a2"
+  },
+  {
+    "key": "Yeo2023RNAProject",
+    "url": "https://rapid-network-adaptation.epfl.ch/",
+    "retrieved_at_utc": "2026-10-26T14:10:38.964983+00:00",
+    "final_url": "https://rapid-network-adaptation.epfl.ch/",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/Yeo2023RNAProject.html",
+    "bytes": 64517,
+    "sha256": "a0a9c881890fb38d0e0e133de6f4f53a89977740358dbfb5cff5fc8c5d9ebee0"
+  },
+  {
+    "key": "WILDSSubmissionRules",
+    "url": "https://wilds.stanford.edu/submit/",
+    "retrieved_at_utc": "2026-10-26T14:10:38.969595+00:00",
+    "final_url": "https://wilds.stanford.edu/submit/",
+    "content_type": "text/html",
+    "status": "saved",
+    "file": "primary-snapshots/WILDSSubmissionRules.html",
+    "bytes": 18626,
+    "sha256": "941133086e6d54a22f1f6f7a4257f76ef112b226c1fd0d769aa374175c396396"
+  },
+  {
+    "key": "Vianna2025ChannelSelective",
+    "file": "verifier-evidence/Vianna2025ChannelSelective.pdf",
+    "status": "previously_saved_by_verifier",
+    "bytes": 1109622,
+    "sha256": "62cc8cc25502aba8a2adf4af87b5eeb4168d4ff2adfa755792783e5f11a4e3a7"
+  },
+  {
+    "key": "Vianna2025ChannelSelective",
+    "file": "verifier-evidence/Vianna2025ChannelSelective.txt",
+    "status": "previously_saved_by_verifier",
+    "bytes": 93783,
+    "sha256": "c0b42fad5338d0013a1bd309880c1e66573bac5ad2926c2fbf8f1163cbc33f30"
+  }
+]

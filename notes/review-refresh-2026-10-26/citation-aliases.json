@@ -1,0 +1,5 @@
+{
+  "Schneider2020CovariateAdaptation": "Schneider2020BNAdapt",
+  "Zhou2026RecoveryComplexity": "Zhou2026Learnability",
+  "Park2023LabelShiftAdapter": "Park2023LSA"
+}

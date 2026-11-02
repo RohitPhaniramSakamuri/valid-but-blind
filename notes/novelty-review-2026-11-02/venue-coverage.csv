@@ -1,0 +1,66 @@
+source,url,status,titles,candidates,limitation
+NeurIPS-Downloads2025,https://neurips.cc/Downloads/2025,200,5957,187,Mechanical title filter only; not a full-text search or complete citation review.
+NeurIPS-Downloads2026,https://neurips.cc/Downloads/2026,200,9276,359,Mechanical title filter only; not a full-text search or complete citation review.
+AISTATS2023,https://proceedings.mlr.press/v206/,200,496,19,Mechanical title filter only; not a full-text search or complete citation review.
+AISTATS2024,https://proceedings.mlr.press/v238/,200,547,21,Mechanical title filter only; not a full-text search or complete citation review.
+AISTATS2025,https://proceedings.mlr.press/v258/,200,583,26,Mechanical title filter only; not a full-text search or complete citation review.
+AISTATS2026,https://proceedings.mlr.press/v300/,200,588,22,Mechanical title filter only; not a full-text search or complete citation review.
+UAI2023,https://proceedings.mlr.press/v216/,200,243,11,Mechanical title filter only; not a full-text search or complete citation review.
+UAI2024,https://proceedings.mlr.press/v244/,200,201,12,Mechanical title filter only; not a full-text search or complete citation review.
+UAI2025,https://proceedings.mlr.press/v286/,200,229,13,Mechanical title filter only; not a full-text search or complete citation review.
+UAI2026,https://proceedings.mlr.press/v337/,200,330,30,Mechanical title filter only; not a full-text search or complete citation review.
+ICCV2023,https://openaccess.thecvf.com/ICCV2023?day=all,200,2156,52,Mechanical title filter only; not a full-text search or complete citation review.
+ICCV2025,https://openaccess.thecvf.com/ICCV2025?day=all,200,2701,55,Mechanical title filter only; not a full-text search or complete citation review.
+ECCV2024,https://www.ecva.net/papers.php?year=2024,200,10726,104,Mechanical title filter only; not a full-text search or complete citation review.
+ECCV2026,https://www.ecva.net/papers.php?year=2026,200,10726,104,Mechanical title filter only; not a full-text search or complete citation review.
+ICLR2023-api,https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2023%2FConference&limit=1000&offset=0,blocked/error,0,0,HTTP Error 403: Forbidden
+ICLR2024-api,https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=1000&offset=0,blocked/error,0,0,HTTP Error 403: Forbidden
+ICLR2025-api,https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2025%2FConference&limit=1000&offset=0,blocked/error,0,0,HTTP Error 403: Forbidden
+ICLR2026-api,https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2026%2FConference&limit=1000&offset=0,blocked/error,0,0,HTTP Error 403: Forbidden
+TMLR-api,https://api2.openreview.net/notes?content.venueid=TMLR&limit=1000&offset=0,blocked/error,0,0,HTTP Error 403: Forbidden
+IJCV2026-dblp,https://dblp.org/db/journals/ijcv/ijcv134.xml,202,0,0,Non-HTML/API record; inspect separately.
+TPAMI2026-dblp,https://dblp.org/db/journals/pami/pami48.xml,202,0,0,Non-HTML/API record; inspect separately.
+Guo2017Calibration,https://proceedings.mlr.press/v70/guo17a/guo17a.pdf,200,0,0,Non-HTML/API record; inspect separately.
+Guo2017Calibration,https://proceedings.mlr.press/v70/guo17a.html,200,0,0,Mechanical title filter only; not a full-text search or complete citation review.
+Hendrycks2017FailureBaseline,https://arxiv.org/pdf/1610.02136,200,0,0,Non-HTML/API record; inspect separately.
+Podkopaev2022RiskMonitoring,https://arxiv.org/pdf/2110.06177,200,0,0,Non-HTML/API record; inspect separately.
+Howard2021ConfidenceSequences,https://arxiv.org/pdf/1810.08240,200,0,0,Non-HTML/API record; inspect separately.
+Feng2024Performativity,https://proceedings.mlr.press/v238/feng24b/feng24b.pdf,200,0,0,Non-HTML/API record; inspect separately.
+DMLR-papers,https://data.mlr.press/papers.html,200,0,0,Mechanical title filter only; not a full-text search or complete citation review.
+ECCV2026-accepted,https://eccv.ecva.net/Conferences/2026/AcceptedPapers,200,2841,95,Mechanical title filter only; not a full-text search or complete citation review.
+ICLR2023-list,https://iclr.cc/Downloads/2023,200,1616,38,Mechanical title filter only; not a full-text search or complete citation review.
+ICLR2024-list,https://iclr.cc/Downloads/2024,200,2324,42,Mechanical title filter only; not a full-text search or complete citation review.
+ICLR2025-list,https://iclr.cc/Downloads/2025,200,3879,92,Mechanical title filter only; not a full-text search or complete citation review.
+ICLR2026-list,https://iclr.cc/Downloads/2026,200,5510,205,Mechanical title filter only; not a full-text search or complete citation review.
+NeurIPS2025-main,https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference,200,5823,185,Mechanical title filter only; not a full-text search or complete citation review.
+TMLR-group,https://openreview.net/group?id=TMLR,200,0,0,Mechanical title filter only; not a full-text search or complete citation review.
+DMLR-v01,https://data.mlr.press/volumes/01.html,200,22,0,Mechanical title filter only; not a full-text search or complete citation review.
+DMLR-v02,https://data.mlr.press/volumes/02.html,200,28,0,Mechanical title filter only; not a full-text search or complete citation review.
+DMLR-v03,https://data.mlr.press/volumes/03.html,200,35,1,Mechanical title filter only; not a full-text search or complete citation review.
+tent-issues,https://api.github.com/repos/DequanWang/tent/issues?state=all&per_page=100,200,0,0,Non-HTML/API record; inspect separately.
+ttab-issues,https://api.github.com/repos/LINs-lab/ttab/issues?state=all&per_page=100,200,0,0,Non-HTML/API record; inspect separately.
+ttab-readme,https://raw.githubusercontent.com/LINs-lab/ttab/main/README.md,200,0,0,Non-HTML/API record; inspect separately.
+tent-issue23,https://api.github.com/repos/DequanWang/tent/issues/23,200,0,0,Non-HTML/API record; inspect separately.
+ttab-discussions,https://github.com/LINs-lab/ttab/discussions,blocked/error,0,0,HTTP Error 404: Not Found
+Garg2022ATC,https://arxiv.org/pdf/2201.04234,200,0,0,Non-HTML/API record; inspect separately.
+Park2023LSA,https://arxiv.org/pdf/2308.08810,200,0,0,Non-HTML/API record; inspect separately.
+Kim2024TTALine,https://arxiv.org/pdf/2310.04941,200,0,0,Non-HTML/API record; inspect separately.
+Schirmer2025Monitoring-neurips,https://proceedings.neurips.cc/paper_files/paper/2025/file/746960ad49ddb47248970a0e1404230c-Paper-Conference.pdf,200,0,0,Non-HTML/API record; inspect separately.
+NeurIPS2023,https://proceedings.neurips.cc/paper_files/paper/2023,200,3540,80,Mechanical title filter only; not a full-text search or complete citation review.
+NeurIPS2024,https://proceedings.neurips.cc/paper_files/paper/2024,200,4493,89,Mechanical title filter only; not a full-text search or complete citation review.
+NeurIPS2025,https://proceedings.neurips.cc/paper_files/paper/2025,200,64,0,Mechanical title filter only; uninformative titles can be missed. Initial NeurIPS2025 URL is creative-AI track only.
+NeurIPS2026,https://proceedings.neurips.cc/paper_files/paper/2026,blocked/error,0,0,HTTP Error 404: Not Found
+CVPR2023,https://openaccess.thecvf.com/CVPR2023?day=all,200,2352,48,Mechanical title filter only; not a full-text search or complete citation review.
+CVPR2024,https://openaccess.thecvf.com/CVPR2024?day=all,200,2716,64,Mechanical title filter only; not a full-text search or complete citation review.
+CVPR2025,https://openaccess.thecvf.com/CVPR2025?day=all,200,2871,71,Mechanical title filter only; not a full-text search or complete citation review.
+CVPR2026,https://openaccess.thecvf.com/CVPR2026?day=all,200,4041,121,Mechanical title filter only; not a full-text search or complete citation review.
+ICML2023,https://proceedings.mlr.press/v202/,200,1828,51,Mechanical title filter only; not a full-text search or complete citation review.
+ICML2024,https://proceedings.mlr.press/v235/,200,2610,73,Mechanical title filter only; not a full-text search or complete citation review.
+ICML2025,https://proceedings.mlr.press/v267/,200,3330,112,Mechanical title filter only; not a full-text search or complete citation review.
+ICML2026,https://proceedings.mlr.press/v306/,200,6552,265,Mechanical title filter only; not a full-text search or complete citation review.
+JMLR-v24,https://www.jmlr.org/papers/v24/,200,401,13,Mechanical title filter only; not a full-text search or complete citation review.
+JMLR-v25,https://www.jmlr.org/papers/v25/,200,422,11,Mechanical title filter only; not a full-text search or complete citation review.
+JMLR-v26,https://www.jmlr.org/papers/v26/,200,309,12,Mechanical title filter only; not a full-text search or complete citation review.
+JMLR-v27,https://www.jmlr.org/papers/v27/,200,205,6,Mechanical title filter only; not a full-text search or complete citation review.
+ECVA,https://www.ecva.net/papers.php,200,10726,104,Mechanical title filter only; not a full-text search or complete citation review.
+DMLR,https://data.mlr.press/,200,0,0,Mechanical title filter only; not a full-text search or complete citation review.

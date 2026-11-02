@@ -1,0 +1,128 @@
+[
+  {
+    "filename": "NeurIPS-Downloads2025.html",
+    "url": "https://neurips.cc/Downloads/2025",
+    "source": "NeurIPS-Downloads2025",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "NeurIPS-Downloads2026.html",
+    "url": "https://neurips.cc/Downloads/2026",
+    "source": "NeurIPS-Downloads2026",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "AISTATS2023.html",
+    "url": "https://proceedings.mlr.press/v206/",
+    "source": "AISTATS2023",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "AISTATS2024.html",
+    "url": "https://proceedings.mlr.press/v238/",
+    "source": "AISTATS2024",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "AISTATS2025.html",
+    "url": "https://proceedings.mlr.press/v258/",
+    "source": "AISTATS2025",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "AISTATS2026.html",
+    "url": "https://proceedings.mlr.press/v300/",
+    "source": "AISTATS2026",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "UAI2023.html",
+    "url": "https://proceedings.mlr.press/v216/",
+    "source": "UAI2023",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "UAI2024.html",
+    "url": "https://proceedings.mlr.press/v244/",
+    "source": "UAI2024",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "UAI2025.html",
+    "url": "https://proceedings.mlr.press/v286/",
+    "source": "UAI2025",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "UAI2026.html",
+    "url": "https://proceedings.mlr.press/v337/",
+    "source": "UAI2026",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICCV2023.html",
+    "url": "https://openaccess.thecvf.com/ICCV2023?day=all",
+    "source": "ICCV2023",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICCV2025.html",
+    "url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+    "source": "ICCV2025",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ECCV2024.html",
+    "url": "https://www.ecva.net/papers.php?year=2024",
+    "source": "ECCV2024",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ECCV2026.html",
+    "url": "https://www.ecva.net/papers.php?year=2026",
+    "source": "ECCV2026",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICLR2023-api.json",
+    "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2023%2FConference&limit=1000&offset=0",
+    "source": "ICLR2023-api",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICLR2024-api.json",
+    "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=1000&offset=0",
+    "source": "ICLR2024-api",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICLR2025-api.json",
+    "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2025%2FConference&limit=1000&offset=0",
+    "source": "ICLR2025-api",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "ICLR2026-api.json",
+    "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2026%2FConference&limit=1000&offset=0",
+    "source": "ICLR2026-api",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "TMLR-api.json",
+    "url": "https://api2.openreview.net/notes?content.venueid=TMLR&limit=1000&offset=0",
+    "source": "TMLR-api",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "IJCV2026-dblp.xml",
+    "url": "https://dblp.org/db/journals/ijcv/ijcv134.xml",
+    "source": "IJCV2026-dblp",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  },
+  {
+    "filename": "TPAMI2026-dblp.xml",
+    "url": "https://dblp.org/db/journals/pami/pami48.xml",
+    "source": "TPAMI2026-dblp",
+    "query": "public accepted-paper/proceedings title list; title keyword screening only; verify pagination"
+  }
+]

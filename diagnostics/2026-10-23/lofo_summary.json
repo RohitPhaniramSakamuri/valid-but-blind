@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "scope": "Exploratory reanalysis of original outcomes; no new independent data or source model",
+  "model": "StandardScaler + Ridge(alpha=10), same regression family and tuning budget for cheap and rich",
+  "heldout_families": [
+    "noise",
+    "brightness",
+    "blur",
+    "translation"
+  ],
+  "each_family_excluded_from_train_and_cal": true,
+  "calibration_use": "None: alpha=10 and raw predicted-error argmin fixed before this analysis; calibration family removed but unused",
+  "split_access": "Only training-partition labels fit the predictors; final-test labels score already selected actions",
+  "selection": "argmin of un-clipped predicted error; identical to primary error-only comparison",
+  "cost": "Saved per-episode evidence/action execution costs plus measured median single-episode predictor-inference cost over 80 timed repetitions after 10 warmups; source direct has no evidence-routing overhead",
+  "uncertainty": "Finite query samples and shared image pools; rows are descriptive paired outcomes, not independent trial counts",
+  "mean_across_families": {
+    "train_episodes": 224.0,
+    "allowed_cal_episodes_unused": 112.0,
+    "test_episodes": 32.0,
+    "source_error": 0.216552734375,
+    "oracle_error": 0.196044921875,
+    "cheap_error": 0.220703125,
+    "rich_error": 0.21728515625,
+    "oracle_headroom_pp": 2.05078125,
+    "cheap_gain_vs_source_pp": -0.4150390625,
+    "rich_gain_vs_source_pp": -0.0732421875,
+    "rich_gain_vs_cheap_pp": 0.341796875,
+    "source_cost_ms": 0.07723471077270005,
+    "cheap_total_cost_ms": 0.7346962563588022,
+    "rich_total_cost_ms": 1.6086409136164548,
+    "cheap_selector_ms": 0.24025437414820772,
+    "rich_selector_ms": 0.26696824988903245,
+    "cheap_source_fraction": 0.7734375,
+    "rich_source_fraction": 0.78125
+  },
+  "elapsed_seconds": 0.28629168800398475,
+  "outcomes_sha256": "1a9d088ba63b4f6fd6b703fe4e2c9277f556456426335320c0aa65d2e320e07e",
+  "script_sha256": "9f0f249af01146f684a77e3a3c4d94dc9e4122933e7a6b545c9cb277843c6ac9"
+}
