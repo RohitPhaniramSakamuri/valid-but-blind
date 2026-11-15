@@ -1,0 +1,292 @@
+{
+ "factorial/source": {
+  "by_corruption": {
+   "snow": [
+    1,
+    3
+   ],
+   "frost": [
+    4,
+    13
+   ],
+   "fog": [
+    1,
+    15
+   ],
+   "contrast": [
+    0,
+    11
+   ],
+   "elastic_transform": [
+    3,
+    11
+   ],
+   "pixelate": [
+    1,
+    7
+   ],
+   "jpeg_compression": [
+    5,
+    10
+   ],
+   "brightness": [
+    3,
+    3
+   ]
+  },
+  "by_severity": {
+   "5": [
+    14,
+    55
+   ],
+   "3": [
+    4,
+    18
+   ]
+  },
+  "by_family": {
+   "weather": [
+    9,
+    34
+   ],
+   "digital": [
+    9,
+    39
+   ]
+  }
+ },
+ "factorial/bn": {
+  "by_corruption": {
+   "snow": [
+    7,
+    22
+   ],
+   "frost": [
+    6,
+    24
+   ],
+   "fog": [
+    3,
+    24
+   ],
+   "brightness": [
+    2,
+    8
+   ],
+   "contrast": [
+    7,
+    23
+   ],
+   "elastic_transform": [
+    2,
+    15
+   ],
+   "pixelate": [
+    3,
+    19
+   ],
+   "jpeg_compression": [
+    7,
+    19
+   ]
+  },
+  "by_severity": {
+   "3": [
+    24,
+    71
+   ],
+   "5": [
+    13,
+    83
+   ]
+  },
+  "by_family": {
+   "weather": [
+    18,
+    78
+   ],
+   "digital": [
+    19,
+    76
+   ]
+  }
+ },
+ "factorial/tent": {
+  "by_corruption": {
+   "snow": [
+    6,
+    9
+   ],
+   "frost": [
+    19,
+    20
+   ],
+   "fog": [
+    13,
+    17
+   ],
+   "brightness": [
+    3,
+    3
+   ],
+   "contrast": [
+    10,
+    15
+   ],
+   "elastic_transform": [
+    14,
+    15
+   ],
+   "pixelate": [
+    13,
+    14
+   ],
+   "jpeg_compression": [
+    16,
+    16
+   ]
+  },
+  "by_severity": {
+   "3": [
+    34,
+    39
+   ],
+   "5": [
+    60,
+    70
+   ]
+  },
+  "by_family": {
+   "weather": [
+    41,
+    49
+   ],
+   "digital": [
+    53,
+    60
+   ]
+  }
+ },
+ "factorial/tent_fixed": {
+  "by_corruption": {
+   "snow": [
+    9,
+    9
+   ],
+   "frost": [
+    20,
+    20
+   ],
+   "fog": [
+    17,
+    17
+   ],
+   "brightness": [
+    3,
+    3
+   ],
+   "contrast": [
+    15,
+    15
+   ],
+   "elastic_transform": [
+    15,
+    15
+   ],
+   "pixelate": [
+    14,
+    14
+   ],
+   "jpeg_compression": [
+    16,
+    16
+   ]
+  },
+  "by_severity": {
+   "3": [
+    39,
+    39
+   ],
+   "5": [
+    70,
+    70
+   ]
+  },
+  "by_family": {
+   "weather": [
+    49,
+    49
+   ],
+   "digital": [
+    60,
+    60
+   ]
+  }
+ },
+ "held/twin": {
+  "by_corruption": {
+   "snow": [
+    1,
+    9
+   ],
+   "frost": [
+    7,
+    20
+   ],
+   "fog": [
+    1,
+    17
+   ],
+   "brightness": [
+    0,
+    3
+   ],
+   "contrast": [
+    7,
+    15
+   ],
+   "elastic_transform": [
+    4,
+    15
+   ],
+   "pixelate": [
+    6,
+    14
+   ],
+   "jpeg_compression": [
+    4,
+    16
+   ],
+   "clean": [
+    0,
+    6
+   ]
+  },
+  "by_severity": {
+   "3": [
+    11,
+    39
+   ],
+   "5": [
+    19,
+    70
+   ],
+   "0": [
+    0,
+    6
+   ]
+  }
+ },
+ "dev/twin": {
+  "by_family": {
+   "noise": [
+    4,
+    24
+   ],
+   "blur": [
+    8,
+    24
+   ]
+  }
+ }
+}

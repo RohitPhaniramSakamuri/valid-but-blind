@@ -1,0 +1,92 @@
+{
+ "paired_vs_source": {
+  "draws": 30,
+  "tent_only_missed": 23,
+  "other_only_missed": 0,
+  "both_missed": 7,
+  "err_diff": 0.024,
+  "flagged_diff": -0.28,
+  "conf_diff": 0.06
+ },
+ "paired_vs_bn": {
+  "draws": 33,
+  "tent_only_missed": 21,
+  "other_only_missed": 0,
+  "both_missed": 12,
+  "err_diff": 0.012,
+  "flagged_diff": -0.226,
+  "conf_diff": 0.066
+ },
+ "paired_twin_vs_released_on_tent": {
+  "draws": 33,
+  "twin_only_missed": 0,
+  "released_only_missed": 16,
+  "both_missed": 17
+ },
+ "strict_excess": {
+  "source": 0.393,
+  "bn": 0.466,
+  "tent1e-3": 0.466,
+  "sar": 0.467
+ },
+ "high_error_excluded": {
+  "source": {
+   "n": 10,
+   "released": 3,
+   "twin": 10,
+   "prototype": 2
+  },
+  "bn": {
+   "n": 14,
+   "released": 12,
+   "twin": 11,
+   "prototype": 13
+  },
+  "tent1e-3": {
+   "n": 16,
+   "released": 0,
+   "twin": 12,
+   "prototype": 0
+  },
+  "sar": {
+   "n": 14,
+   "released": 11,
+   "twin": 11,
+   "prototype": 11
+  }
+ },
+ "intervals": {
+  "false_alarm_0_of_28": [
+   0.0,
+   0.123
+  ],
+  "twin_missed_17_of_33": [
+   0.335,
+   0.692
+  ],
+  "released_missed_33_of_33": [
+   0.894,
+   1.0
+  ],
+  "source_missed_12_of_44": [
+   0.15,
+   0.428
+  ]
+ },
+ "median_first": {
+  "source/released": 21.5,
+  "tent1e-3/twin": 84.5,
+  "tent1e-3/released": null
+ },
+ "tent_strict_twin_below_alarm": 0,
+ "tent_strict_by_twin_excess": {
+  "twin_strict": [
+   16,
+   33
+  ],
+  "twin_band": [
+   0,
+   0
+  ]
+ }
+}

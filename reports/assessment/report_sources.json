@@ -1,0 +1,543 @@
+[
+  {
+    "number": 1,
+    "key": "Wang2021Tent",
+    "title": "Tent: Fully Test-Time Adaptation by Entropy Minimization",
+    "authors": [
+      "Dequan Wang",
+      "Evan Shelhamer",
+      "Shaoteng Liu",
+      "Bruno Olshausen",
+      "Trevor Darrell"
+    ],
+    "year": 2021,
+    "venue": "ICLR",
+    "url": "https://arxiv.org/abs/2006.10726",
+    "pdf_url": "https://openreview.net/pdf/4de0af9691a5dcc52de7de756676fded33d037ef.pdf",
+    "read_scope": "abstract, conference PDF first page and method overview",
+    "locations": [
+      "Abstract",
+      "Introduction"
+    ],
+    "method_overlap": "Updates normalization statistics and affine transformations with entropy minimization on unlabeled test batches.",
+    "limitation": "A low-entropy objective is not direct evidence of correctness; no whole-policy selector in the inspected passages.",
+    "code_url": "https://github.com/DequanWang/tent",
+    "publication_status": "conference paper; preprint first posted 2020",
+    "source_ledger": "notes/shift-aware-tta-review-verifier-sources.json"
+  },
+  {
+    "number": 2,
+    "key": "Schirmer2025Monitoring",
+    "title": "Monitoring Risks in Test-Time Adaptation",
+    "authors": [
+      "Mona Schirmer",
+      "Metod Jazbec",
+      "Christian Andersson Naesseth",
+      "Eric Nalisnick"
+    ],
+    "year": 2025,
+    "venue": "NeurIPS2025, Advances in Neural Information Processing Systems38",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/746960ad49ddb47248970a0e1404230c-Abstract-Conference.html",
+    "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/746960ad49ddb47248970a0e1404230c-Paper-Conference.pdf",
+    "read_scope": "Official NeurIPS PDF §§2–6, AppendicesA.1–A.5/B.1–B.4 and experimental configuration; Fig5 rendered/visually inspected. Cross-read arxivv2. Selective, not all proofs/checklist.",
+    "locations": [
+      "§§3.2–3.4",
+      "§§5.1–5.4",
+      "Figure5",
+      "AppendicesA.1–A.5,B.1–B.4"
+    ],
+    "method_overlap": "Already documents uncertainty-proxy alarm failure for T3A/STAD and prototype-distance repair; no exact C1 comparison established.",
+    "limitation": "Assumption verification needs target labels. A lower risk bound crossing detects excess risk; staying below threshold does not certify safety. Paper explicitly leaves unlabeled assumption diagnostics open.",
+    "publication_status": "NeurIPS 2025 main conference verified; earlier workshop versions must not be confused with full version",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "reading_history": [
+      {
+        "date": "2026-10-23",
+        "read_scope": "Sections 2–3, experiments, conclusion/limitations, selected appendices",
+        "locations": [
+          "Section 3.2, Assumption 1",
+          "Section 3.4",
+          "Section 6, Limitations and Future Work",
+          "Appendix A.4"
+        ],
+        "source_ledger": "notes/shift-aware-tta-review-verifier-sources.json",
+        "limitation": "Proxy-informativeness assumption needs labeled data to verify; unsupervised diagnostics for its violation and reducing monitoring delay/cost remain open."
+      },
+      {
+        "date": "2026-10-26",
+        "read_scope": "Official NeurIPS metadata; arXiv v2 Assumption1, Proposition1, §§5.2-5.4, §6 and AppendixA.5. Partial reading.",
+        "locations": [
+          "Assumption 1",
+          "Proposition 1",
+          "Section 5.4",
+          "Section 6",
+          "Appendix A.5"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/verifier-sources.json",
+        "limitation": "Assumption verification needs target labels. A lower risk bound crossing detects excess risk; staying below threshold does not certify safety. Paper explicitly leaves unlabeled assumption diagnostics open."
+      },
+      {
+        "date": "2026-10-31",
+        "read_scope": "arXiv v2 §§3.3–3.4, 5.2–5.3, 6, A.4–A.5. Released code not yet inspected.",
+        "locations": [
+          "Assumption 1",
+          "Sections 3.3–3.4",
+          "Section 5",
+          "Section 6",
+          "Appendix A.4–A.5"
+        ],
+        "source_ledger": "outputs/candidate-b-dossier-2026-10-31.md"
+      },
+      {
+        "date": "2026-11-02",
+        "read_scope": "Official NeurIPS PDF §§2–6, AppendicesA.1–A.5/B.1–B.4 and experimental configuration; Fig5 rendered/visually inspected. Cross-read arxivv2. Selective, not all proofs/checklist.",
+        "locations": [
+          "§§3.2–3.4",
+          "§§5.1–5.4",
+          "Figure5",
+          "AppendicesA.1–A.5,B.1–B.4"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ],
+    "doi": "10.52202/085713-2705",
+    "html_url": "https://arxiv.org/html/2507.08721v2",
+    "code_url": "https://github.com/monasch/tta-monitor",
+    "accessed": "2026-11-02",
+    "freshly_verified": "2026-11-02"
+  },
+  {
+    "number": 3,
+    "key": "Schneider2020BNAdapt",
+    "title": "Improving robustness against common corruptions by covariate shift adaptation",
+    "authors": [
+      "Steffen Schneider",
+      "Evgenia Rusak",
+      "Luisa Eck",
+      "Oliver Bringmann",
+      "Wieland Brendel",
+      "Matthias Bethge"
+    ],
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "entry_type": "inproceedings",
+    "url": "https://papers.nips.cc/paper_files/paper/2020/hash/85690f81aadc1749175c187784afc9ee-Abstract.html",
+    "read_scope": "Primary abstract, metadata, author project page; selective PDF header inspection",
+    "locations": [
+      "Abstract",
+      "Project explanation"
+    ],
+    "method_overlap": "Strong simple BN-statistics adaptation across models; essential cheap baseline and robust-source comparison.",
+    "limitation": "Multiple target examples and contamination/class-mixture assumptions matter; improvements do not prove arbitrary covariate-shift correction.",
+    "publication_status": "Official NeurIPS2020 verified",
+    "reading_history": [
+      {
+        "date": "2026-10-26",
+        "read_scope": "Official abstract, PDF introduction and normalization formulation; selective reading.",
+        "locations": [
+          "Abstract",
+          "Section 2",
+          "Section 4 discussion of mixed shifts"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/lead-sources.json",
+        "limitation": "Moment correction assumes useful shared target statistics; mixed conditions and class-mixture effects constrain it. Small batches require estimation/shrinkage choices."
+      },
+      {
+        "date": "2026-10-26",
+        "read_scope": "Primary abstract, metadata, author project page; selective PDF header inspection",
+        "locations": [
+          "Abstract",
+          "Project explanation"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+        "limitation": "Multiple target examples and contamination/class-mixture assumptions matter; improvements do not prove arbitrary covariate-shift correction."
+      }
+    ],
+    "freshly_verified": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "verified_on": "2026-10-26",
+    "preprint_url": "https://arxiv.org/abs/2006.16971",
+    "code_url": "https://github.com/bethgelab/robustness"
+  },
+  {
+    "number": 4,
+    "key": "Lee2024AETTA",
+    "title": "AETTA: Label-Free Accuracy Estimation for Test-Time Adaptation",
+    "authors": [
+      "Taeckyung Lee",
+      "Sorn Chottananurak",
+      "Taesik Gong",
+      "Sung-Ju Lee"
+    ],
+    "year": 2024,
+    "venue": "CVPR, pp.28643–28652",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Lee_AETTA_Label-Free_Accuracy_Estimation_for_Test-Time_Adaptation_CVPR_2024_paper.html",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_AETTA_Label-Free_Accuracy_Estimation_for_Test-Time_Adaptation_CVPR_2024_paper.pdf",
+    "read_scope": "Main §§3–5/Figures2–4,6/Tables1–3; supplementA/C/D.1/D.4/F; Fig2 visually inspected by TTA subreview.",
+    "locations": [
+      "§3.2/Figure2",
+      "§3.3",
+      "Tables1–2",
+      "SupplementC,D.1,D.4"
+    ],
+    "method_overlap": "Confidence/accuracy decoupling and corrected disagreement/recovery are prior art; no same sequential missed-risk comparison.",
+    "limitation": "Already covers label-free recovery decisions, but dropout observations and estimator assumptions incur cost; does not establish pre-action benefit for every candidate.",
+    "code_url": "https://github.com/taeckyung/AETTA",
+    "publication_status": "conference paper",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "reading_history": [
+      {
+        "date": "2026-10-31",
+        "read_scope": "CVF PDF §3.2 and results discussion on calibration violation under adaptation failure.",
+        "locations": [
+          "Section 3.2",
+          "Results"
+        ],
+        "source_ledger": "outputs/novelty-dossier-2026-10-31.md"
+      },
+      {
+        "date": "2026-11-02",
+        "read_scope": "Main §§3–5/Figures2–4,6/Tables1–3; supplementA/C/D.1/D.4/F; Fig2 visually inspected by TTA subreview.",
+        "locations": [
+          "§3.2/Figure2",
+          "§3.3",
+          "Tables1–2",
+          "SupplementC,D.1,D.4"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ],
+    "freshly_verified": "2026-11-02",
+    "accessed": "2026-11-02"
+  },
+  {
+    "number": 5,
+    "key": "Niu2023SAR",
+    "title": "Towards Stable Test-Time Adaptation in Dynamic Wild World",
+    "authors": [
+      "Shuaicheng Niu",
+      "Jiaxiang Wu",
+      "Yifan Zhang",
+      "Zhiquan Wen",
+      "Yaofo Chen",
+      "Peilin Zhao",
+      "Mingkui Tan"
+    ],
+    "year": 2023,
+    "venue": "ICLR",
+    "url": "https://arxiv.org/abs/2302.12400",
+    "pdf_url": "https://openreview.net/pdf?id=g2YraF75Tj",
+    "read_scope": "§§3.1–3.2,4,5/Figure2/Table5 selectively inspected.",
+    "locations": [
+      "§3.1",
+      "Figure2",
+      "Table5"
+    ],
+    "method_overlap": "Separates statistics problems and entropy collapse, gives heuristic reset; no sequential power guarantee.",
+    "limitation": "Those deployment challenges are established, not a new gap; specific new policies must beat robust existing updates.",
+    "publication_status": "conference paper",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "accessed": "2026-11-02",
+    "freshly_verified": "2026-11-02",
+    "reading_history": [
+      {
+        "date": "2026-11-02",
+        "read_scope": "§§3.1–3.2,4,5/Figure2/Table5 selectively inspected.",
+        "locations": [
+          "§3.1",
+          "Figure2",
+          "Table5"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "key": "Cygert2026RealisticSelection",
+    "title": "Realistic Evaluation of Test-Time Adaptation: Unsupervised Model Selection",
+    "authors": [
+      "Sebastian Cygert",
+      "Damian Sójka",
+      "Tomasz Trzciński",
+      "Bartłomiej Twardowski"
+    ],
+    "year": 2026,
+    "venue": "VISAPP, volume 1, pp.75–86",
+    "url": "https://doi.org/10.5220/0014320100004084",
+    "pdf_url": "https://www.scitepress.org/Papers/2026/143201/143201.pdf",
+    "preprint_url": "https://arxiv.org/abs/2407.14231",
+    "read_scope": "Published2026 PDF §§3.1,4,5.1–5.3/Figures6–8; Figure6 visually inspected. Older preprint distinguished.",
+    "locations": [
+      "§5.2/Figure6 p81",
+      "Figures7–8 p82"
+    ],
+    "method_overlap": "Corrupted CIFAR100 Dirichlet-class-correlation proxy selection already studied; no Schirmer alarm comparison.",
+    "limitation": "Most evidence is obtained after executing candidates; comparisons to pre-action routing must charge the different information/computation budget.",
+    "code_url": "https://github.com/cygerts/unsupervisedtta",
+    "publication_status": "conference paper; linked 2024 preprint titled Realistic Evaluation of Test-Time Adaptation Algorithms: Unsupervised Hyperparameter Selection",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "doi": "10.5220/0014320100004084",
+    "local_pdf": "sources/pdfs/Cygert2026Selection.pdf",
+    "pdf_sha256": "932eacd0919d445b443250fa430cf82bc9a75f1a953786c063828e8b0ef072b5",
+    "reading_history": [
+      {
+        "date": "2026-10-31",
+        "read_scope": "Saved text: selection-over-time figure discussion and §6.",
+        "locations": [
+          "Selection figure text",
+          "Section 6"
+        ],
+        "source_ledger": "outputs/novelty-dossier-2026-10-31.md"
+      },
+      {
+        "date": "2026-11-02",
+        "read_scope": "Published2026 PDF §§3.1,4,5.1–5.3/Figures6–8; Figure6 visually inspected. Older preprint distinguished.",
+        "locations": [
+          "§5.2/Figure6 p81",
+          "Figures7–8 p82"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ],
+    "freshly_verified": "2026-11-02",
+    "accessed": "2026-11-02"
+  },
+  {
+    "number": 7,
+    "key": "Hendrycks2019Corruptions",
+    "title": "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations",
+    "authors": [
+      "Dan Hendrycks",
+      "Thomas Dietterich"
+    ],
+    "year": 2019,
+    "venue": "ICLR 2019",
+    "publication_status": "Conference paper",
+    "url": "https://arxiv.org/abs/1903.12261",
+    "read_scope": "Abstract and official dataset repository README",
+    "locations": [
+      "Abstract; repository ImageNet-C and CIFAR download/evaluation notes"
+    ],
+    "method_overlap": "Standard corruption benchmarks and deterministic stored evaluation data.",
+    "limitation": "Generated corruption tests do not establish performance on naturally occurring deployment shifts.",
+    "code_url": "https://github.com/hendrycks/robustness",
+    "source_ledger": "notes/shift-aware-tta-review-lead-sources.json"
+  },
+  {
+    "number": 8,
+    "key": "Croce2021RobustBench",
+    "title": "RobustBench: a standardized adversarial robustness benchmark",
+    "authors": [
+      "Francesco Croce",
+      "Maksym Andriushchenko",
+      "Vikash Sehwag",
+      "Edoardo Debenedetti",
+      "Nicolas Flammarion",
+      "Mung Chiang",
+      "Prateek Mittal",
+      "Matthias Hein"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021 Datasets and Benchmarks track",
+    "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/a3c65c2974270fd093ee8a9bf8ae7d0b-Abstract-round2.html",
+    "read_scope": "Official abstract and current author-maintained repository/site; not all leaderboard methods audited",
+    "locations": [
+      "Abstract",
+      "Repository common-corruption section",
+      "Site May2022 news"
+    ],
+    "method_overlap": "Standardized models and corruption metrics/checkpoints; ImageNet-3DCC extension.",
+    "limitation": "Primarily robustness benchmark; a fixed checkpoint score does not uniquely specify a streaming TTA protocol.",
+    "publication_status": "Official proceedings verified",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "code_url": "https://github.com/RobustBench/robustbench",
+    "reading_history": [
+      {
+        "date": "2026-10-26",
+        "read_scope": "Official abstract and current author-maintained repository/site; not all leaderboard methods audited",
+        "locations": [
+          "Abstract",
+          "Repository common-corruption section",
+          "Site May2022 news"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+        "limitation": "Primarily robustness benchmark; a fixed checkpoint score does not uniquely specify a streaming TTA protocol."
+      }
+    ],
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "number": 9,
+    "key": "Hendrycks2020AugMix",
+    "title": "AugMix: A Simple Data Processing Method to Improve Robustness and Uncertainty",
+    "authors": [
+      "Dan Hendrycks",
+      "Norman Mu",
+      "Ekin D. Cubuk",
+      "Barret Zoph",
+      "Justin Gilmer",
+      "Balaji Lakshminarayanan"
+    ],
+    "year": 2020,
+    "venue": "ICLR 2020",
+    "url": "https://iclr.cc/virtual_2020/poster_S1gmrxHFvB.html",
+    "read_scope": "Official conference abstract/author metadata, arXiv and author repository method/checkpoint description",
+    "locations": [
+      "Abstract",
+      "Repository Introduction and Pretrained weights"
+    ],
+    "method_overlap": "Robust source-training control using mixed augmentations and consistency; available ResNet50 checkpoint.",
+    "limitation": "Source training intervention, not test-time policy selection; compare same preparation and checkpoint quality.",
+    "publication_status": "Official ICLR2020 verified; preprint2019",
+    "verified_on": "2026-10-26",
+    "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+    "preprint_url": "https://arxiv.org/abs/1912.02781",
+    "code_url": "https://github.com/google-research/augmix",
+    "reading_history": [
+      {
+        "date": "2026-10-26",
+        "read_scope": "Official conference abstract/author metadata, arXiv and author repository method/checkpoint description",
+        "locations": [
+          "Abstract",
+          "Repository Introduction and Pretrained weights"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/benchmarks-sources.json",
+        "limitation": "Source training intervention, not test-time policy selection; compare same preparation and checkpoint quality."
+      }
+    ],
+    "freshly_verified": "2026-10-26"
+  },
+  {
+    "number": 10,
+    "key": "Amin2025OverCertainty",
+    "title": "The Over-Certainty Phenomenon in Modern Test-Time Adaptation Algorithms",
+    "authors": [
+      "Fin Amin",
+      "Jung-Eun Kim"
+    ],
+    "year": 2025,
+    "venue": "Transactions on Machine Learning Research",
+    "entry_type": "article",
+    "url": "https://arxiv.org/abs/2404.16168",
+    "read_scope": "2026-11-02 selective full text: v4 §§3–6, Figs1–3, Tables1–3/7–11, AppendixA.1–A.5 selected; not all proofs/references read",
+    "locations": [
+      "§3",
+      "§3.1",
+      "§4",
+      "§6.3",
+      "Tables1–3/7–11"
+    ],
+    "publication_status": "TMLR07/2025 printed in arXiv2404.16168v4 header; first preprint title used UDA in2024",
+    "local_pdf": "evidence/tta_causes/2404.16168.pdf",
+    "method_overlap": "See claim-specific extraction in dated review.",
+    "limitation": "Selective reading; no experiments or independent proof verification.",
+    "review_origin": "notes/novelty-review-2026-11-02/agents/tta_causes/metadata.json",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "accessed": "2026-11-02",
+    "freshly_verified": "2026-11-02",
+    "reading_history": [
+      {
+        "date": "2026-11-02",
+        "read_scope": "2026-11-02 selective full text: v4 §§3–6, Figs1–3, Tables1–3/7–11, AppendixA.1–A.5 selected; not all proofs/references read",
+        "locations": [
+          "§3",
+          "§3.1",
+          "§4",
+          "§6.3",
+          "Tables1–3/7–11"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "key": "Han2026Exchangeability",
+    "title": "The Premise Is the Problem: Exchangeability Failure in Self-Monitored Test-Time Adaptation",
+    "authors": [
+      "Weijia Han",
+      "Lisha Qu",
+      "Zhenda Li",
+      "Liying Liang"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint 2610.07038",
+    "url": "https://arxiv.org/abs/2610.07038",
+    "html_url": "https://arxiv.org/html/2610.07038v1",
+    "read_scope": "§3,§6 and AppendixL pp45–49/Tables48–51 read in detail; other main/appendix sections selective only.",
+    "locations": [
+      "AppendixL pp45–49",
+      "Tables48–51"
+    ],
+    "method_overlap": "Adapted forecasting residuals self-mask sustained shifts; frozen residual sentinel restores empirical sensitivity. Requires revealed outcomes, not label-free classifier monitoring.",
+    "limitation": "Multi-step time-series forecasting with revealed forecast outcomes; not strictly unlabeled visual classification or a verified universal monitor impossibility theorem.",
+    "publication_status": "arXiv v1 submitted4October2026; no independently verified venue",
+    "accessed": "2026-11-02",
+    "reading_history": [
+      {
+        "date": "2026-10-26",
+        "read_scope": "arXiv metadata/abstract, introduction and selected discussion of feedback, dependence and evaluation limits; partial reading of a49-page paper.",
+        "locations": [
+          "Abstract",
+          "Introduction",
+          "Selected evaluation/limitations discussion"
+        ],
+        "source_ledger": "notes/review-refresh-2026-10-26/verifier-sources.json",
+        "limitation": "Multi-step time-series forecasting with revealed forecast outcomes; not strictly unlabeled visual classification or a verified universal monitor impossibility theorem."
+      },
+      {
+        "date": "2026-11-02",
+        "read_scope": "§3,§6 and AppendixL pp45–49/Tables48–51 read in detail; other main/appendix sections selective only.",
+        "locations": [
+          "AppendixL pp45–49",
+          "Tables48–51"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ],
+    "freshly_verified": "2026-11-02",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+  },
+  {
+    "number": 12,
+    "key": "Howard2021ConfidenceSequences",
+    "title": "Time-uniform, nonparametric, nonasymptotic confidence sequences",
+    "authors": [
+      "Steven R. Howard",
+      "Aaditya Ramdas",
+      "Jon McAuliffe",
+      "Jasjeet Sekhon"
+    ],
+    "year": 2021,
+    "entry_type": "article",
+    "venue": "The Annals of Statistics 49(2):1055–1080",
+    "journal": "The Annals of Statistics",
+    "doi": "10.1214/20-AOS1991",
+    "url": "https://arxiv.org/abs/1810.08240",
+    "read_scope": "Introduction and definition Eq1 read; theorem/appendix structure mapped only. No proof verification.",
+    "locations": [
+      "Introduction",
+      "Eq1"
+    ],
+    "method_overlap": "Confidence-sequence coverage definition; mathematical foundation only, not direct C1 evidence.",
+    "publication_status": "2021 journal metadata verified; saved arxivv9 is a2022 revision of2018 preprint.",
+    "limitation": "Selective reading; no experiments or independent proof verification.",
+    "review_origin": "notes/novelty-review-2026-11-02/evidence/root/",
+    "source_ledger": "notes/novelty-review-2026-11-02/review.md",
+    "accessed": "2026-11-02",
+    "freshly_verified": "2026-11-02",
+    "reading_history": [
+      {
+        "date": "2026-11-02",
+        "read_scope": "Introduction and definition Eq1 read; theorem/appendix structure mapped only. No proof verification.",
+        "locations": [
+          "Introduction",
+          "Eq1"
+        ],
+        "source_ledger": "notes/novelty-review-2026-11-02/review.md"
+      }
+    ]
+  }
+]

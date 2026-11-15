@@ -1,5 +1,35 @@
 # Project research log
 
+## Repository synchronization and rights notice
+
+- Prepared the current experiment 005–010 source, saved aggregate/per-stream summaries, manuscript, figures, demo and submission documents for publication. Added the source catalog needed by document builders and allowed project-authored report PDFs while excluding datasets, checkpoints, caches, private cloud records and new machine/agent logs.
+- Added an all-rights-reserved notice requiring Rohit Phaniram Sakamuri's prior express written permission for reuse of his original material, with explicit exceptions for applicable law, GitHub platform rights and third-party licenses. Preserved upstream architecture and document-style notices, and included the notices in the submission and Overleaf archives. Frozen research source files and result values were not modified.
+- Corrected the README's stale pending-test summary to the completed PARTIAL result and added a source/evidence/reproduction index. Redacted temporary signed-download credential values from two literature-search ledgers; their scientific entries and source paths were retained. Private copies of the original ledgers were preserved locally outside the repository.
+- Checked publication contents and credentials without rerunning scientific experiments or installing dependencies.
+
+## Review presentation package
+
+- Completed the supplied Review I, II and III templates for Rohit Phaniram Sakamuri, 23BDS0051: 8, 13 and 16 slides respectively. Saved editable decks, PDF copies, speaker notes, native charts/diagrams, a Word/PDF companion and an A3 poster in [reports/reviews](reports/reviews/README.md).
+- Preserved the initial proposal as a proposal and presented the project’s progression into risk monitoring. The final deck retains the fresh confirmation’s PARTIAL verdict, exact false-alarm limit, denominator qualifications, offline-label requirements and negative findings.
+- Omitted dates from the deliverables and removed inherited date placeholders and Office/PDF date metadata. Original templates and scientific artifacts remain unchanged. Document generation and rendering used existing libraries through uv; no new scientific experiments, implementation tests, literature search or paid compute.
+
+## 2 November 2026 — DermaMNIST stress test
+
+- Frozen test on DermaMNIST-224: blind spot replicates (33/33 vs 12/44), entropy adds, twin 17/33 with false alarms not estimable, SAR not shown, harm inconclusive. Added to the paper. Codex reviews are in `notes/medimg-novelty-2026-11-02/`.
+
+## 2 November 2026 — twin denominator correction and corruption breakdown
+
+- The twin's frozen pool (30/115) included six clean streams the released monitor never ran. Paper, decks and records now use the matching 30/109 (86% to 28%). Verdict unchanged.
+- Added by-corruption breakdown: `explore_by_corruption.py`, `explore_by_corruption.json`, `explore_by_corruption_replication.json`.
+- Started a Codex literature review on image-based monitoring in medical imaging: `notes/medimg-novelty-2026-11-02/`.
+
+## 2 November 2026 — assessment report
+
+- Prepared the user's requested [Word assessment report](reports/assessment/ML_Assessment_Rohit_23BDS0051.docx), with [PDF copy](reports/assessment/ML_Assessment_Rohit_23BDS0051.pdf), for Rohit Phaniram Sakamuri, 23BDS0051. Used the supplied Word example as a layout reference and included all eleven requested sections.
+- Eight A4 pages, about 2,640 words, five tables and twelve references, with black text/borders and white backgrounds. Saved editable content, builder and source snapshots in `reports/assessment/`.
+- Checked scientific claims against the current manuscript and Experiment 004; preserved different comparison denominators, the uncertified twin, the SAR negative result and the unmet combined harm-test rule. Reviewed rendered layout and removed an inherited coloured title border.
+- Used installed Python packages through uv and LibreOffice for document preparation. No new experiments, implementation tests, dependency installation, literature search or paid compute. Existing manuscript, results and demo edits preserved.
+
 ## 2 November 2026 — live laptop demo
 
 - Added [`demo/`](demo/README.md): a live CPU demo with per-image caught, missed and false-flag views. Three paper streams were compared with recorded GPU runs in `check_results.json`; alarm decisions matched, with twin alarm batches within 4.
@@ -148,3 +178,26 @@ Next step: preserve the negative acquisition result. A simpler low-dimensional s
 - Preserved the original concentration rule as post-hoc exploratory evidence; it neither validates the proposed three-feature gate nor proves efficiency or conference readiness. No new diagnostic was run.
 
 Next step: freeze the protocol and verify evaluation overlap before fresh confirmation. Use uv for Python work.
+
+## 2026-11-03
+- exp005: rich/learned detector test on BloodMNIST and DermaMNIST. Primary verdict NOT SHOWN (learned detector selected on dev lost to the twin). Secondary: twin with dev-calibrated margin missed 9/165, false alarms 15/185. Paper not updated, as asked.
+- exp006 frozen confirmation (PathMNIST, OrganAMNIST, CIFAR-100-C x6; 2,592 streams): NOT CONFIRMED. Twin missed 13%, false alarms 2.4%; published monitor 49%/2.1%; same-margin monitor 26%/5.4%; required gaps not met (0.13 vs 0.15; 0.04 vs 0.15 over exp004 bound).
+- exp007 diagnosis (exploratory): conditions 3/4 of exp006 were mis-specified (absolute gaps, unmatched FA). At matched FA the twin cuts misses 66-72% vs the released signal and the exp004 bound; within-group AUROC 0.992 (best). The weak part is transfer of the dev-calibrated alarm level (realised FA 2.4% on exp006 vs 5.9-7.6% on exp005 from the same 5% rule). laya assessed: not applicable beyond the conditional-calibration idea.
+- Paper updated (3 Nov, 13:15 IST): new title; abstract; contribution 7; new section "Alarm Levels Calibrated on Shifted Development Streams" (exp005/006 results, frozen verdicts with the criteria flaw stated, matched-FA table, level-transfer diagnosis); medical section points to 4 MedMNIST sets; Limits and Conclusion updated; bib: Vovk2005ALRW, Guillory2021DoC, Ke2017LightGBM. All new numbers verified by script against report JSONs; 19 pages, 0 LaTeX errors.
+- exp008 launched on SageMaker (13:27 IST): frozen relative/matched-FA protocol, fresh OCT/OrganC/Pneumonia + CIFAR new seeds, 13 signals x 3 calibrations incl. isolation forests at stream/batch/image level, dominance and conformal test martingale. Self-analysing; reports copied to s3://vbb-exp008-286879406788-use1/results/<job>/.
+- exp008 partial (CIFAR only, descriptive): twin+pattern 14.9% missed / 3.2% FA vs published 44.8% / 4.3%; matched-5% best = monotone LightGBM 3.6%; isolation forests did not help. Medical half failed (fetch() clobbered class count; bare wait hung the job; ~$45 wasted); bugs fixed, rerun pending user decision.
+
+## 2026-11-04
+- exp008 medical rerun (jobs m: OrganC + Pneumonia; p: OCT) completed and self-terminated; merged with CIFAR, 3,948 streams (351 strict, 637 safe held-out).
+- exp008 frozen verdict: NOT CONFIRMED. C1 met (matched-5% misses 11.1% vs released 25.9%, −57%); C2 met (2.5% FA pooled); C3 failed (31.9% missed vs published 59.5%: −46% relative met, 20% ceiling not met). Cause: dev-calibrated level too high on medical sets (0 FA on each; Pneumonia 38/38 missed).
+- Exploratory: monotone LightGBM|Z 14.5% missed / 1.9% FA (best matched-5%, 6.3%), chosen after the CIFAR partial, so it is a candidate for a fresh frozen test only. Paper not yet updated with exp008.
+- All exp008 AWS resources deleted (see AWS_RESOURCES.md).
+
+## 2026-11-14
+- exp009 (exploratory): isolated the uneven transfer of the dev-calibrated alarm level on saved exp005/006/008 streams; see experiments/009. Chose a family-validated alarm (FV) on already-seen streams.
+- exp010 frozen (protocol, criteria, file hashes in experiments/010) after a read-only pre-run review by the Codex session; two SageMaker jobs launched, results pending. AWS bucket and role vbb-exp010-* are ACTIVE (AWS_RESOURCES.md).
+- Paper source partly reframed (coupling subsection, hypotheses table, third study, level-failure isolation with new figure, FV design). UNFINISHED: abstract, introduction, exp010 results section, discussion and conclusion still describe the old framing; PDF and zip not rebuilt.
+- 08:25 IST: the `predictions-cup` AWS key was rejected (InvalidAccessKeyId), so exp010 status/results/teardown could not be reached; no other credentials were tried. Paper reframing finished with exp010 marked pending: new title and abstract, four-step introduction, hypotheses table (E1–E10), exploratory time-resolved separation (AUROC 0.98 to 0.42–0.46 for Tent, 0.99 for the twin), frozen exp010 protocol in Sect. 9.2, updated discussion, limits and conclusion. 24 pages, 0 LaTeX errors; new numbers checked against diag3.json, harness_rows.json and the analyze10 dry-run reports. README updated.
+- AWS credits exhausted (user report). exp010 moved to a free GPU notebook: `diagnostics/2026-11-14-exp010-confirm/kaggle/` (self-contained notebook with the frozen code, four resumable parts) and `analyze_local.sh`. Still no exp010 result.
+- exp010 ran on RunPod (3 pods, 2 x RTX 4090 each, $9.76; all pods deleted). 4,630 streams complete. Frozen analysis, run once: **PARTIAL** (C1, C2, C3 met; C4 failed on its false-alarm band: 30/399 = 7.52% against 7.5%). FV missed 22/272 (8.1%) against 171/272 for the published monitor and 40/272 for the earlier rule. Coupling: SHOWN for Tent and pseudo-labels, NOT SHOWN for information maximisation; decay SHOWN for all three. One calibration.json repaired (extra brace from a concurrent write; original kept).
+- Paper updated with the exp010 outcome: abstract, introduction step 4, Table 1 row E10, Sect. 9.2 results with Table 10 and Fig. 4 (decay), discussion, limits, conclusion. 26 pages, 0 LaTeX errors; numbers taken from results/report10.json and rows10.json.

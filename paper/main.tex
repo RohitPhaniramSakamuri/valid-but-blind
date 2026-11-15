@@ -3,13 +3,14 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{microtype}
 \usepackage{hyperref}
 \hypersetup{hidelinks,pdftitle={Valid but Blind}}
 
 \begin{document}
 
-\title{Valid but Blind: Tent's Entropy Step Reduces the Sensitivity of a Label-Free Risk Monitor, and an Entropy-Free Twin Recovers Much of It}
+\title{Valid but Blind: Test-Time Adaptation Can Erode the Signal Its Risk Monitor Reads. A Tent Case Study and a Family-Validated Alarm}
 \titlerunning{Valid but Blind}
 \author{Rohit Phaniram Sakamuri}
 \authorrunning{R. P. Sakamuri}
@@ -18,24 +19,23 @@
 \maketitle
 
 \begin{abstract}
-Sequential risk monitors promise a label-free alarm when a test-time adapted classifier degrades. We measure whether adaptation itself reduces that alarm's sensitivity. On CIFAR-100-C streams with Dirichlet(0.1) class skew, six published checkpoints and rules frozen before each run, a released monitor missed 147 of 166 clear risk violations under Tent, against 44 of 110 for the same frozen checkpoints. The authors' own code reproduced the pattern (40/40 against 10/28). On new draws and corruption families, the gap held with a fixed threshold (109/109 against 18/73). Tent's entropy step added misses beyond batch-normalization updates (94/109 against 37/154), while those updates alone did not produce the gap. Exploratory analysis shows that error stays similar (0.53 and 0.51) while the share of errors flagged falls from 86\% to 57\%, with flag precision near 70\%. False alarms were rare and not lower under Tent. A frozen extension to SAR at default settings did not show the gap, but SAR used few samples on four models. As a mitigation, a no-gradient twin of the checkpoint, tuned on separate corruptions, reduced missed violations on held-out corruptions to 30/115 (released: 94/109), with 5/121 false alarms. Its certified form missed every violation, the working form is a detector, not a bound, and on adaptation-caused failures it passed* detection (51/61, released: 23/61), mostly on extreme collapse (*false alarms were uninformative on six safe streams). The monitor's guarantee is not contradicted. Results cover one dataset and skew construction.
+A label-free risk monitor reads a model's confidence, and many test-time adaptation methods optimize that same confidence. We ask what this coupling does to the monitor, with Tent as the case studied in most detail. \emph{The gap.} On CIFAR-100-C streams with Dirichlet(0.1) class skew, six published checkpoints and rules frozen before each run, a released sequential monitor missed 147 of 166 clear risk violations under Tent, against 44 of 110 for the same frozen checkpoints; the authors' own code reproduced it (40/40 against 10/28), and so did a frozen test on DermaMNIST (33/33 against 12/44). \emph{The cause.} We tested nine explanations. Threshold recalibration, normalization updates alone, average confidence and milder violations were rejected or not shown; Tent's entropy step was supported (94/109 against 37/154 for normalization alone), with errors moving below the threshold while flags stay as precise. On later streams the adapted model's confidence separated failing from safe streams with AUROC 0.98 in the first 20 batches and 0.42--0.46 in the last 20, while a no-gradient twin stayed at 0.99. The gap was not shown for SAR. \emph{The remedy.} Reading the twin and setting alarm levels on labeled, synthetically shifted development streams cut misses from 49\% to 13\% on 2,592 new streams, but two frozen confirmations were not confirmed: the level transferred unevenly. We isolate why (a constant level on a score that adaptation keeps moving, and no single signal with power everywhere) and propose choosing the signal per deployment by leave-one-shift-family-out validation. In a frozen test on unused data (TissueMNIST, OrganSMNIST and CIFAR-10-C; 4,630 streams) this rule missed 8\% of clear failures at 7.5\% false alarms, against 63\% for the released monitor and 15\% for the earlier level rule. Its ranking, safety and power criteria held; the verdict was \emph{partial}, because realized false alarms exceeded the 7.5\% band we had set around a 5\% target. In the same test the blind spot was shown for Tent and for hard pseudo-labels, and not for information maximization. The monitor's guarantee is not contradicted. These are benchmark results, not clinical ones.
 \keywords{Test-time adaptation \and Risk monitoring \and Sequential testing \and Label shift \and Entropy minimization.}
 \end{abstract}
 
 \section{Introduction}
 A model deployed under distribution shift can update itself on unlabeled test data. This is test-time adaptation (TTA)~\cite{Wang2021Tent}. Because target labels are absent, operators need another way to learn when adaptation has gone wrong. Schirmer et al.~\cite{Schirmer2025Monitoring} proposed such a tool: a sequential test that compares a lower bound on running risk with a tolerated level, using an uncertainty proxy in place of labels.
 
-Here is the difficulty this paper measures. Tent reduces prediction entropy, and the monitor's proxy is also computed from the model's predicted probabilities. Suppose a model becomes more certain and is no more accurate. The proxy may then flag fewer predictions even though just as many are wrong. A monitor that only sees flags receives less evidence of harm, and the alarm may never fire.
+Here is the difficulty. Tent reduces prediction entropy, and the monitor's proxy is computed from the same predicted probabilities. Suppose a model becomes more certain and is no more accurate. The proxy may then flag fewer predictions even though just as many are wrong. A monitor that only sees flags receives less evidence of harm, and the alarm may never fire. The same could happen with any adaptation objective that rewards confident predictions, so we treat Tent as one instance of a coupling between an adaptation objective and a monitor (Sect.~\ref{sec:coupling}).
 
-That the confidence of adapted models can separate from their accuracy is established~\cite{Lee2024AETTA,Amin2025OverCertainty,Nam2026SICL}, and Schirmer et al.\ themselves report the uncertainty proxy failing for last-layer methods under severe corruption~\cite[§5.4]{Schirmer2025Monitoring}. Our contribution is therefore narrow and empirical:
+That the confidence of adapted models can separate from their accuracy is established~\cite{Lee2024AETTA,Amin2025OverCertainty,Nam2026SICL}, self-masking of a monitored signal has been described for other adapters~\cite{Han2026Exchangeability}, and Schirmer et al.\ themselves report the uncertainty proxy failing for last-layer methods under severe corruption~\cite[§5.4]{Schirmer2025Monitoring}. What we add is a worked case, in four steps:
 \begin{enumerate}
-\item A replication, with rules frozen in a project record before each run, of a large gap in missed violations between Tent and the frozen checkpoint under strong non-collapsing class skew, reproduced in the monitor authors' own code.
-\item A controlled factorial test that separates threshold recalibration, normalization updates and the entropy step.
-\item An exploratory decomposition of errors into flagged and unflagged parts, with adjusted estimates, which indicates that most of Tent's misses come from a shortfall in the flagged rate rather than from confidence-sequence width alone.
-\item A frozen extension to SAR~\cite{Niu2023SAR}, which minimizes entropy on filtered samples, in which the gap was not shown.
-\item A mitigation, the entropy-free twin alarm, selected on development corruptions and scored once on held-out ones.
+\item \emph{Show the gap.} A replication, with rules frozen before each run, of a large gap in missed violations between Tent and the frozen checkpoint under strong class skew, reproduced in the monitor authors' own code and on a dermatoscopic benchmark.
+\item \emph{Explain it.} Nine candidate explanations, each with a test (Table~\ref{tab:hyp}): a factorial that separates threshold recalibration, normalization updates and the entropy step; a decomposition of errors into flagged and unflagged parts; an extension to SAR~\cite{Niu2023SAR}, where the gap was not shown; and a time-resolved read-out of how well each model's confidence separates failing from safe streams.
+\item \emph{Repair it.} Two mitigations built from the surviving explanations: an entropy-free twin as the signal, and alarm levels set on labeled, synthetically shifted development streams with the adaptation running. Their frozen confirmations are reported with their verdicts, which were \emph{not confirmed}.
+\item \emph{Find why the repair was unreliable, and fix that.} An analysis of why the alarm level transferred unevenly, a family-validated rule that follows from it, and a frozen protocol that tests the rule and the coupling claim on unused datasets and two further objectives. Its verdict was \emph{partial}: power was confirmed, the false-alarm band was not, and the blind spot extended to pseudo-labels but not to information maximization (Sect.~\ref{sec:fvtest}).
 \end{enumerate}
-We do not claim a new theoretical failure, a violation of the monitor's guarantee, or a general solution.
+We do not claim a new theoretical failure, a violation of the monitor's guarantee, the discovery of coupling, or a general solution.
 
 \section{Background}
 \subsection{The monitor}
@@ -48,10 +48,16 @@ q = r - \mathrm{FN} + \mathrm{FP}, \qquad r-(q-\mathrm{FP}_0)=\mathrm{FN}-\mathr
 \end{equation}
 The lower bound on risk is valid when the right-hand side is non-negative. This is an algebraic reading of the monitor, not a new result. A large FN makes that condition easier to satisfy, and it also lowers $q$, so the bound can remain below the alarm level at a high true risk. For example, with $r=0.50$, $\mathrm{FN}=0.35$, $\mathrm{FP}=0.05$ and $\mathrm{FP}_0=0.17$, we get $q=0.20$ and a bound of $0.03$. It is correct, and it reveals nothing. Higher confidence alone is not sufficient, since recalibration can absorb a pure rescaling of scores. What matters is whether errors move below the threshold relative to the flagged rate.
 
+\subsection{Coupling between an adaptation objective and a monitor}
+\label{sec:coupling}
+We call an adaptation method and a monitor \emph{coupled} when the adaptation objective is computed from the same model outputs that the monitor reads. Tent minimizes the entropy of the predicted probabilities, and the monitor thresholds one minus their maximum. These are different functions of one vector, and lowering the first usually raises the second. Hard pseudo-labeling and information maximization~\cite{Liang2020SHOT} are coupled to the same monitor in the same sense. A model that only replaces batch-normalization statistics has no objective and is not coupled.
+
+Coupling does not imply blindness. A threshold recalibrated on clean data after every step absorbs any change that affects clean and shifted inputs alike. Blindness needs more: the objective must move errors on the shifted stream below the threshold further than it moves them on the clean calibration set. Whether that happens is an empirical question, and it has been raised before as self-masking in other settings~\cite{Han2026Exchangeability}. We use coupling as an organizing hypothesis, with Tent as the instance studied in most detail, and we do not claim to have discovered it. The paper has four steps: measure the gap for one coupled pair (Sect.~\ref{sec:gap}), state competing explanations and test each (Sect.~\ref{sec:cause}), build a remedy from the explanations that survive (Sects.~\ref{sec:twin} and~\ref{sec:shifted}), and test the remedy and the wider coupling claim on data not used before, with rules frozen in advance (Sect.~\ref{sec:fv}).
+
 \section{Related Work}
 \textbf{Monitor failures.} Schirmer et al.\ report that the bound becomes too loose for the last-layer methods T3A~\cite{Iwasawa2021T3A} and STAD and attribute this to prototype normalization. They also report successful earlier detection under class-ordered Yearbook streams~\cite[A.5]{Schirmer2025Monitoring}. Neither reports a Tent-versus-frozen comparison of missed violations under persistent many-class skew.
 
-\textbf{Confidence and accuracy under adaptation.} AETTA shows Tent's confidence rising as accuracy falls and proposes a label-free accuracy estimator~\cite{Lee2024AETTA}. Over-certainty is analyzed directly in~\cite{Amin2025OverCertainty}, and SICL offers a correctness likelihood~\cite{Nam2026SICL}. The Entropy Enigma estimates accuracy from prediction flips~\cite{Press2024EntropyEnigma}. None of these, in the passages we read, measures sequential alarm power.
+\textbf{Confidence and accuracy under adaptation.} AETTA shows Tent's confidence rising as accuracy falls and proposes a label-free accuracy estimator~\cite{Lee2024AETTA}. Over-certainty is analyzed directly in~\cite{Amin2025OverCertainty}, and SICL offers a correctness likelihood~\cite{Nam2026SICL}. The Entropy Enigma estimates accuracy from prediction flips~\cite{Press2024EntropyEnigma}. None of these, in the passages we read, measures sequential alarm power. Amoukou et al.\ monitor harmful shift without labels through a trained error estimator for a fixed model~\cite{Amoukou2024SequentialHarmful}; they do not study a model that adapts.
 
 \textbf{Skew and proxy failure.} Cygert et al.\ show proxy-based model selection degrading under corrupted CIFAR-100 with Dirichlet class correlation~\cite{Cygert2026RealisticSelection}. Their outcome is selection quality, not missed alarms. Stable methods such as SAR target wild streams~\cite{Niu2023SAR}.
 
@@ -82,11 +88,37 @@ The lower bound on risk is valid when the right-hand side is non-negative. This 
 
 \section{Results}
 \subsection{Replication and the authors' pipeline}
+\label{sec:gap}
 Tent's missed share was higher than the frozen model's in all six checkpoints: 147 of 166 (89\%) against 44 of 110 (40\%). A bootstrap over models gave a gap interval of 0.32 to 0.62, which is coarse with six models. On the 97 draws where both arms violated, Tent alone was missed on 49 and source alone on 2; those draws share models and corruptions and are not independent. Tent was also missed more within each excess-error band: 103/111 against 40/67 at 0.15--0.25, 38/49 against 4/17 at 0.25--0.35, and 6/6 against 0/26 above 0.35, where Tent has few streams. The result holds without AugMix ResNeXt (115/134 against 35/88), and with a square-root form of the source term from the paper (154/166 against 68/110). A separate prediction, that models with higher average confidence would be missed more, was \emph{not} supported across models (Spearman 0.00 on new models), so average confidence does not explain the differences between models.
 
 In the authors' code, Tent was missed on 40 of 40 strict violations and the frozen model on 10 of 28 (per model 19/19 and 21/21 against 6/14 and 4/14), so the frozen rule returned \emph{reproduced}. Alarms matched our implementation on 99.1\% of 112 streams, with a median absolute error difference of 0.0003.
 
 \subsection{Isolating the cause}
+\label{sec:cause}
+Several explanations could produce the gap. Table~\ref{tab:hyp} lists those we tested, with the outcome of each; E1--E8 are reported in this section and E9--E10 in Sect.~\ref{sec:fvtest}. Frozen means the rule was written before the run; exploratory means the analysis was written after the verdicts and enters no rule.
+
+\begin{table}[t]
+\caption{Candidate explanations for the gap and the outcome of each test. Counts are missed strict violations. F: rule frozen before the run. E: exploratory.}
+\label{tab:hyp}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{4.2cm}c@{}}
+\toprule
+ & Explanation & Test & Outcome & \\
+\midrule
+E1 & Recalibration lets the threshold follow the model & Fixed source threshold & Rejected: 109/109 against 18/73 & F\\
+E2 & Test-batch normalization alone & BN against source & Not shown: 37/154 against 18/73 & F\\
+E3 & The entropy gradient step & Tent against BN & Supported: 94/109 against 37/154, six of six models & F\\
+E4 & Models with higher average confidence & Rank correlation over models & Rejected: Spearman 0.00 & F\\
+E5 & Tent's violations are milder & Error bands, adjusted regression & Rejected: adjusted difference 0.46--0.60 & E\\
+E6 & Only a conservative alarm level & Level reset with hindsight & Partly: AUROC 0.79 against 0.995 & E\\
+E7 & Errors move below the threshold & Error capture, flag precision & Supported: capture 0.86 to 0.57, precision 0.70 to 0.68 & E\\
+E8 & Any entropy-based method & SAR at default settings & Not shown: 47/159 against 18/73 & F\\
+E9 & Confidence loses its meaning as adaptation proceeds & Separation by 20-batch window & Supported: AUROC 0.98 to 0.42--0.46; twin 0.99 & E\\
+E10 & Other objectives that reward confidence & Pseudo-labels, information maximization & Shown for pseudo-labels (132/215 against 108/246 for the twin); not shown for information maximization & F\\
+\bottomrule
+\end{tabular}
+\end{table}
+
 Table~\ref{tab:factorial} gives the frozen verdicts, and Table~\ref{tab:models} and Fig.~\ref{fig:models} give per-model detail. Fixing the threshold did not remove the gap, so recalibration is not required for it; if anything, recalibration recovers a small part of the sensitivity (109/109 to 94/109 missed). The entropy step added misses beyond BN updates in all six models. BN alone did not produce a gap across models, but this does not show that BN is harmless: BN misses were concentrated in the three Addepalli checkpoints (36/67) and nearly absent in the others (1/87). At the lower learning rate of $10^{-4}$, the gap against source was smaller, at 81/140 against 18/73 and higher in five of six models.
 
 \begin{table}[t]
@@ -215,6 +247,7 @@ Replication & Source & 0.977 & 27/51 & 5/51\\
 \end{table}
 
 \section{An Entropy-Free Twin Alarm}
+\label{sec:twin}
 \subsection{Design}
 The results above suggest that the entropy step distorts the sensor while error changes much less. We therefore keep Tent running and stop reading its own confidence. A \emph{twin} of the same checkpoint uses test-batch normalization and takes no gradient steps. Let $F$ mean the twin flags a sample and $A$ mean the two models predict the same class. If the models agree, Tent is wrong exactly when the twin is wrong, so
 \begin{equation}
@@ -226,9 +259,9 @@ where $\mathrm{FP}_{\mathrm{twin}}$ and $\mathrm{FN}_{\mathrm{twin}}$ are the tw
 Rules were frozen before any twin stream ran. Noise and blur streams, skewed and balanced, were used to select the candidate with the fewest misses and at most 5\% false alarms. Weather and digital streams, on the same draws as the released monitor, then gave one verdict: the fix works if misses are lower in at least five of six models, the pooled missed share falls by at least 0.40, and false alarms on held-out safe streams, including balanced and clean ones, are at most 10\%. Runs used an H100; same-draw Tent error differed from the RTX 4090 runs by a median of 0.0007.
 
 \subsection{Results}
-Selection chose $w=1,c=1$: flag if the twin is uncertain or the models disagree. The frozen verdict was \emph{fix works}: 30/115 missed against 94/109, lower in all six models, a fall of 0.60 (model bootstrap 0.33 to 0.82), with 5/121 false alarms (Table~\ref{tab:twin}). On draws where both versions faced a strict violation, the twin alone missed 1 and the released monitor alone missed 65 of 109. On the same safe skewed streams, false alarms were 3/46 against 2/46. The median first alarm among alarming streams was batch 34, against 69. On the three Addepalli models, AUROC rose from 0.788 to 0.94, and misses at a hindsight 5\% false-alarm level fell from 20/43 to 11/46.
+Selection chose $w=1,c=1$: flag if the twin is uncertain or the models disagree. The frozen verdict was \emph{fix works}. The frozen analysis pooled 30/115 missed, but six of those violations were on clean streams that the released monitor did not run, and the twin caught all six. On the matching corrupted streams, shown here, it was 30/109 against 94/109, lower in all six models, a fall of 0.59 (model bootstrap 0.30 to 0.81), with 5/121 false alarms (Table~\ref{tab:twin}). The verdict is the same either way. On draws where both versions faced a strict violation, the twin alone missed 1 and the released monitor alone missed 65 of 109. On the same safe skewed streams, false alarms were 3/46 against 2/46. The median first alarm among alarming streams was batch 33, against 69. On the three Addepalli models, AUROC rose from 0.788 to 0.94, and misses at a hindsight 5\% false-alarm level fell from 20/43 to 11/43.
 
-The limits are substantial. The certified forms missed all 115 violations, so the inequality is valid but not useful here. The selected form is a detector, not a bound: its stream-average estimate exceeded Tent's error on 86\% of AugMix ResNeXt streams and 0--26\% on the others. When Tent was safe while the twin was strictly violating, it false-alarmed on 4/13. The Addepalli models remain weak at 29/46 missed, against 1/69 on the other three. In these streams, no Tent violation occurred with the twin below the alarm level, so nearly all failures were shared by the two models.
+The limits are substantial. The certified forms missed all 109 violations, so the inequality is valid but not useful here. The selected form is a detector, not a bound: its stream-average estimate exceeded Tent's error on 86\% of AugMix ResNeXt streams and 0--26\% on the others. When Tent was safe while the twin was strictly violating, it false-alarmed on 4/13. The Addepalli models remain weak at 29/43 missed, against 1/66 on the other three. In these streams, no Tent violation occurred with the twin below the alarm level, so nearly all failures were shared by the two models.
 
 \begin{table}[t]
 \caption{Held-out missed violations per checkpoint. The twin rule was selected on development corruptions. Certified form: $w=0$.}
@@ -239,14 +272,14 @@ The limits are substantial. The certified forms missed all 115 violations, so th
 \toprule
 Checkpoint & Released & Twin alarm ($w=1,c=1$) & Certified\\
 \midrule
-\texttt{Hendrycks2020AugMix\_ResNeXt} & 20/20 & 0/21 & 21/21\\
-\texttt{Hendrycks2020AugMix\_WRN} & 22/22 & 1/23 & 23/23\\
-\texttt{Modas2021PRIMEResNet18} & 13/24 & 0/25 & 25/25\\
-\texttt{Addepalli2021Towards\_PARN18} & 12/12 & 10/13 & 13/13\\
-\texttt{Addepalli2021Towards\_WRN34} & 15/15 & 12/16 & 16/16\\
-\texttt{Addepalli2022Efficient\_WRN\_34\_10} & 12/16 & 7/17 & 17/17\\
+\texttt{Hendrycks2020AugMix\_ResNeXt} & 20/20 & 0/20 & 20/20\\
+\texttt{Hendrycks2020AugMix\_WRN} & 22/22 & 1/22 & 22/22\\
+\texttt{Modas2021PRIMEResNet18} & 13/24 & 0/24 & 24/24\\
+\texttt{Addepalli2021Towards\_PARN18} & 12/12 & 10/12 & 12/12\\
+\texttt{Addepalli2021Towards\_WRN34} & 15/15 & 12/15 & 15/15\\
+\texttt{Addepalli2022Efficient\_WRN\_34\_10} & 12/16 & 7/16 & 16/16\\
 \midrule
-Pooled & 94/109 & 30/115 & 115/115\\
+Pooled & 94/109 & 30/109 & 109/109\\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -256,15 +289,169 @@ Because those streams contained no failure unique to Tent, we froze a second tes
 
 The twin alarm passed the detection criterion\footnote{The frozen rule combined detection with the false-alarm limit, and its combined outcome was \emph{not shown}, because 1 of 6 safe streams alarmed. This does not make the test a failure of the alarm: the limit had no minimum number of safe streams, a design flaw of ours, and the exact 95\% interval for 1/6 is 0.4\% to 64\%, which neither supports nor rules out a 10\% rate.}: it fired on 51 of 61 target streams (84\%; exact 95\% interval 72\% to 92\%), against 23 of 61 for the released monitor. On the same six safe streams, it alarmed on 1 and the released monitor on 3. We read this test as uninformative on false alarms, not as evidence of a high rate. At the usual learning rate, with far more safe streams, the held-out false-alarm rate was 5/121, with an interval of 1.4\% to 9.4\%, though under different conditions. The detection result is also narrow: 56 of the 61 targets collapsed, and on the 5 that did not, the twin caught 3 and the released monitor 2. The advantage comes from the highest learning rate (34/34 against 3/34). At $10^{-2}$, the released monitor did better (20/27 against 17/27). All 53 balanced targets and 8 Dirichlet targets are included in these counts. On by-class clean streams, the twin's own error also rose 0.40--0.52 above $r_0$, so these are not adaptation-only failures, and both monitors alarmed on all 12. These results should be taken with caution: the twin alarm clearly sees extreme adaptation-caused collapse, while its detection of subtler harm from adaptation and its false-alarm rate in this regime remain open.
 
+\section{Medical-Imaging Stress Test}
+\subsection{Design}
+Medical imaging combines the conditions studied here: acquisition changes, unequal class frequencies, and labels that arrive late. Adapted medical models are known to lose calibration or collapse~\cite{Li2026ECFR,Nielen2026DSBR}, label-free metric estimators struggle under prevalence shift~\cite{Fluhmann2025LabelFree}, and image-quality features already support failure monitoring for a fixed segmenter~\cite{Pham2026TCSR}. In a targeted search we did not find a medical comparison of missed sequential alarms between an entropy-adapted model and its frozen checkpoint, though several close sources could not be read in full.
+
+We used DermaMNIST-224~\cite{Yang2023MedMNIST}, derived from HAM10000~\cite{Tschandl2018HAM}, which has seven classes. One ImageNet-pretrained ResNet-18 was trained on 5,507 images, with 1,000 reserved for calibration and 500 for checkpoint selection; validation accuracy was 0.835. Rules were frozen before any stream ran. Held-out streams use the official 2,005 test images under Gaussian blur, JPEG, contrast reduction and pixelation at two severities, plus clean images, with natural, Dirichlet(1.0) and Dirichlet(0.1) priors and three draws: 81 streams per arm, each 120 batches of 48. The twin rule was fixed from the CIFAR test and not retuned. Thresholds were recalibrated every 5 batches for speed. Arms and monitors include BN, SAR and a port of the prototype-distance proxy~\cite{Schirmer2025Monitoring}. Our rules required at least 20 clear failures per arm, and at least 40 safe streams to judge false alarms.
+
+\subsection{Results}
+Table~\ref{tab:derma} gives the frozen verdicts. The blind spot replicated: the released monitor missed all 33 of Tent's clear failures, against 12 of 44 for the frozen model, a gap of 0.73 (bootstrap over corruption and severity, 0.44 to 1.00). The entropy step again added misses beyond BN (33/33 against 12/35). The monitor authors' prototype proxy also missed 33/33. The twin reduced misses to 17/33 and was the only monitor here to raise any alarm on Tent's clear failures. On the same streams, the twin alone missed none and the released monitor alone missed 16.
+
+Three results limit this. First, only 28 streams were safe for Tent, below the frozen minimum of 40, so the false-alarm verdict is \emph{not estimable}. No monitor false-alarmed on them (0/28), which is compatible with a rate up to 12\%. Second, the twin remains weak: 17/33 still missed, its alarms come late (median batch 84), and it missed more than the released monitor on BN (20/35 against 12/35). Third, adaptation-caused harm could not be tested, with only one stream where Tent failed and the twin did not, and SAR again did not show the gap (14/35 against 12/44).
+
+As an exploratory comparison, on draws where both arms clearly failed, Tent's error was close to the frozen model's (a mean difference of 0.02) while its flagged rate was 0.28 lower. Tent's share of errors flagged was 0.29, against 0.67 for the frozen model. Streams above the 0.85 last-quarter error limit are excluded from clear failures, and the same pattern appeared there: the released monitor alarmed on 0 of 16 for Tent, against 12 of 14 for BN, while the twin alarmed on 12 of 16. Sect.~\ref{sec:shifted} extends the medical evidence to BloodMNIST, PathMNIST and OrganAMNIST with alarm levels set on shifted development streams; with that level, the twin missed 0 of 37 Tent failures on a retrained DermaMNIST model at learning rate $5\times10^{-3}$, where the released monitor missed 37.
+
+\begin{table}[t]
+\caption{Frozen verdicts on held-out DermaMNIST-224 streams. Missed means clear failures with no alarm. $r_0=0.176$.}
+\label{tab:derma}
+\centering\footnotesize\setlength{\tabcolsep}{5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccl@{}}
+\toprule
+Question & Compared arm & Reference & Verdict\\
+\midrule
+Blind spot & Tent 33/33 & Frozen 12/44 & Replicates\\
+Entropy step & Tent 33/33 & BN 12/35 & Entropy adds\\
+Twin on Tent & Twin 17/33 & Released 33/33 & False alarms not estimable (28 safe streams)\\
+Twin against prototype, on Tent & Twin 17/33 & Prototype 33/33 & Beats prototype\\
+SAR & SAR 14/35 & Frozen 12/44 & Not shown\\
+Adaptation-caused harm & 1 target stream & & Inconclusive\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\section{Alarm Levels Calibrated on Shifted Development Streams}
+\label{sec:shifted}
+\subsection{Design}
+Both twin forms above, like the released monitor, set their alarm level from clean calibration images. Clean data do not show how a score behaves on shifted streams, so we replaced that step. For a detector with running score $s_t$, read every 5 batches from batch 11, we build labeled \emph{development streams} from the deployed model's own validation images under synthetic shifts. The alarm level is the $\lceil (n+1)(1-\alpha)\rceil$-th smallest of the per-stream maxima of $s_t$ over the $n$ safe development streams, with $\alpha=0.05$; an alarm fires when $s_t$ exceeds it. If safe development and deployment streams are exchangeable, this split-conformal construction~\cite{Vovk2005ALRW} bounds the false-alarm probability by $\alpha+1/(n+1)$. That premise is the weak point, and we test it. The twin's score is the running share of samples flagged by the twin or on which the two models disagree, minus the twin's clean error. Every comparator received the same level rule: the released proxy's flagged share, the prototype proxy, ATC~\cite{Garg2022ATC} on Tent's confidence, DoC~\cite{Guillory2021DoC}, and a dropout-disagreement signal that simplifies AETTA~\cite{Lee2024AETTA}. Learned detectors predicted the stream's running excess error from about 40 label-free signals per batch from Tent, the twin and the frozen source: ridge regression, LightGBM~\cite{Ke2017LightGBM}, a ridge-plus-LightGBM stack, LightGBM on a 12-component PCA of the signals and penultimate-feature means, a GRU over batches, a per-image LightGBM averaged per batch, and an average of the last two. Learned detectors were fitted and their levels set out-of-fold by development corruption. The first study set one level per dataset from both learning rates and used the empirical 95th percentile, a slightly less conservative variant; the second set one level per dataset, checkpoint and adaptation method with the conformal rank above.
+
+\textbf{Data.} All streams have 120 batches of 48 under natural, Dirichlet(1) and Dirichlet(0.1) priors. Medical models are ImageNet-pretrained ResNet-18s trained on each MedMNIST-224 training set~\cite{Yang2023MedMNIST}. Development streams use validation images under Gaussian noise, speckle, brightness, gamma and saturation (shot noise for grayscale data). Held-out streams use test images under Gaussian blur, JPEG, contrast reduction and pixelation at three severities, plus clean images. The first study used BloodMNIST (8 classes, new to this work; source error 0.020) and a retrained DermaMNIST model (0.172), with Tent at $10^{-3}$ and $5\times10^{-3}$ (852 streams). The second used PathMNIST (9 classes; 0.013) and OrganAMNIST (11 grayscale CT classes; 0.010), plus the six CIFAR-100-C checkpoints with new draws, Hendrycks' four extra corruptions as development shifts and the 15 standard ones at severities 1, 3 and 5 as held-out shifts, on disjoint image IDs (2,592 streams). Tent at $10^{-3}$ is primary; the medical sets also ran Tent at $5\times10^{-3}$ and SAR.
+
+\textbf{Frozen rules.} The first study chose one learned detector on development streams and called it better if, on held-out BloodMNIST, it missed at most 20\% with at most 10\% false alarms and missed at least 0.10 fewer than the twin. The second study called the twin confirmed if, pooled over its three datasets, it missed at most 20\% with at most 10\% false alarms, every dataset stayed within 30\% and 15\%, and it missed at least 0.15 fewer than both the released proxy under the same level rule and the earlier twin bound.
+
+\subsection{Results}
+In the first study the learned detector chosen on development streams, a per-image plus stream LightGBM, missed 1 of 117 development failures out-of-fold but 13 of 45 on held-out BloodMNIST, against 4 of 45 for the twin, so the verdict was \emph{not shown}. Learned detectors fitted the development corruptions and transferred worse than the twin (Table~\ref{tab:shifted}). Over the first study's four settings, the twin with the new level missed 9/165 against 125/165 for the released monitor, at 15/185 false alarms against 2/185.
+
+In the second study the twin missed 40/306 at 14/578 false alarms, against 149/306 and 12/578 for the released monitor: 3/67 against 42/67 on PathMNIST, 12/40 against 14/40 on OrganAMNIST and 25/199 against 93/199 on CIFAR-100-C. The frozen verdict was \emph{not confirmed}. The absolute criteria held, but the twin missed 0.13 fewer than the released proxy under the same rule (26\%) and 0.04 fewer than the earlier twin bound (17\%, at 6.6\% false alarms), short of the required 0.15. These criteria were badly set: they asked for absolute gaps that become unattainable at low baselines, and they compared misses at unequal false-alarm rates. Against the released monitor as published, the twin missed 73\% fewer failures at a similar false-alarm rate.
+
+At matched false-alarm rates, with each group's threshold set with hindsight on its held-out safe streams, the twin missed 7.5\% at about 6\% false alarms, against 22.9\% for the released proxy (67\% fewer), and 4.9\% at about 7\%, against 17.3\% for the earlier twin bound at 6.6\% (72\% fewer). It had the highest within-group AUROC of the per-stream maximum score (0.992; released proxy 0.961). The advantage over other signals is small, however: ATC on Tent's own confidence missed 5.6\% at the same rate (AUROC 0.987), DoC 11.8\% and dropout disagreement 10.5\%. Most of the recovery therefore comes from setting the level on shifted streams, and the twin adds better ranking and fewer false alarms rather than a unique signal. In the secondary arms, the twin missed 27/80 against 70/80 for the released monitor on PathMNIST at Tent $5\times10^{-3}$ and 9/39 against 22/39 on OrganAMNIST; under SAR both were similar (9/94 against 8/94, and 4/52 against 0/52 with 7/52 false alarms for the released monitor), consistent with the CIFAR SAR result.
+
+\begin{table}[t]
+\caption{Held-out results with alarm levels set on shifted development streams. First study: BloodMNIST and DermaMNIST, Tent $10^{-3}$ and $5\times10^{-3}$. Second study: PathMNIST, OrganAMNIST and CIFAR-100-C (six checkpoints), Tent $10^{-3}$. Matched: missed share at about 6\% false alarms with per-group thresholds set with hindsight, and within-group AUROC (second study).}
+\label{tab:shifted}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{First study} & \multicolumn{2}{c}{Second study} & \multicolumn{2}{c}{Matched}\\
+Detector & Missed & False alarms & Missed & False alarms & Missed & AUROC\\
+\midrule
+Released monitor, as published & 125/165 & 2/185 & 149/306 & 12/578 & -- & --\\
+Earlier twin bound (clean correction) & 72/165 & 21/185 & 53/306 & 38/578 & -- & --\\
+Released proxy, shifted level & 58/165 & 9/185 & 81/306 & 31/578 & 22.9\% & 0.961\\
+Prototype proxy, shifted level & 35/165 & 18/185 & 86/306 & 20/578 & 21.6\% & 0.972\\
+ATC, shifted level & 51/165 & 11/185 & 45/306 & 21/578 & 5.6\% & 0.987\\
+DoC, shifted level & 49/165 & 10/185 & 34/306 & 31/578 & 11.8\% & 0.981\\
+Dropout disagreement, shifted level & 53/165 & 11/185 & 37/306 & 32/578 & 10.5\% & 0.987\\
+LightGBM & 27/165 & 14/185 & 62/306 & 15/578 & -- & --\\
+Selected learned detector & 42/165 & 4/185 & -- & -- & -- & --\\
+Twin, shifted level & \textbf{9/165} & 15/185 & 40/306 & 14/578 & 7.5\% & \textbf{0.992}\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{A third study, and where the level failed}
+A third study froze relative criteria at matched false-alarm rates and broadened the development shifts to eight families and four class priors. It used OCTMNIST, OrganCMNIST, PneumoniaMNIST and new CIFAR-100-C draws (3,948 streams; 351 clear failures and 637 safe streams on held-out shifts). Its primary detector was the twin averaged with an estimate built from the agreement pattern of Tent, the twin and the source. The verdict was \emph{not confirmed}. Ranking held: at a matched 5\% false-alarm rate the primary missed 11.1\% against 25.9\% for the released proxy. False alarms held at 2.5\%. Deployed power failed: it missed 31.9\%, which is 46\% fewer than the published monitor (59.5\%) but above the 20\% ceiling, and it missed all 38 failures on PneumoniaMNIST. The twin alone, with the same level rule, missed 76/351 at 29/637 false alarms.
+
+So the weak part was the level, not the ranking. The same rule gave 2.4\% false alarms in the second study, 8.1\% in the first, and no false alarm on any medical set of the third, where it also missed 35--100\% of failures.
+
+\subsection{Isolating the level failure (exploratory)}
+\label{sec:level}
+We re-read the saved per-image outputs of all three studies (7,392 streams; no model was run) to test explanations for the uneven transfer. Every held-out stream had been scored before, so this analysis is exploratory. It covers the 19 settings (dataset and checkpoint, Tent at $10^{-3}$) with at least 19 safe development streams.
+
+\textbf{L1: false alarms on a new shift family are not forecast by the others.} We left out one development family at a time, set the level on the rest and scored the left-out family. Pooled over families the false-alarm rate was 2--7\% per setting, close to the target. Single families ranged from 0\% to 52\% (salt-and-pepper noise on one CIFAR checkpoint, 11/21), and across settings the leave-one-family-out rate did not predict the held-out rate (Spearman $-0.20$). Streams within a family are not independent, so the conformal bound with $n$ counted in streams does not carry over to a new family. With five to nine families we cannot say more than that.
+
+\textbf{L2: the misses are visible before deployment.} The leave-one-family-out missed share did predict the held-out missed share (Spearman 0.73 over the 19 settings). For PneumoniaMNIST it was 27/87 on development streams and 29/38 on held-out ones.
+
+\textbf{L3: a few benign streams set the level.} On the top 5\% of safe development streams by twin score, the twin's error exceeded Tent's by 9.6 points, against 4 points over all safe streams. Tent is right there and the twin is not, so the twin flags them. On OrganAMNIST this put the level at 0.416, while the 95th percentile of held-out safe streams was 0.21 and the 10th percentile of held-out failures was 0.30.
+
+\textbf{L4: a second signal cancels that nuisance.} Rejected. The confidence drop of the adapted model (DoC) and the twin score were strongly correlated on safe development streams (mean Spearman 0.81), and the same streams topped both.
+
+\textbf{L5: a constant level does not fit a score that adaptation keeps moving.} Supported for DoC. Under Tent, DoC fell over the stream on safe and failing streams alike, and its maximum was reached in the first quarter of the read-outs on every stream of the six settings we inspected. A constant level therefore tests only the earliest read-outs (Fig.~\ref{fig:level}). On OrganCMNIST the failing streams separate from the safe ones later in the stream, below the constant level. Standardizing the score at each read-out by the safe development streams at that time, and thresholding the maximum of the standardized score, cut DoC's misses there from 18/53 to 0/53, and from 11/40 to 2/40 on OrganAMNIST. On CIFAR-100-C the right panel shows the opposite drift: late in the stream the failing streams are \emph{more} confident than the safe ones. The twin's score has no such drift, and the time-resolved level did not help it.
+
+\textbf{L6: no single signal has power everywhere.} Supported. The twin with a constant level was best on BloodMNIST and DermaMNIST (2/86 missed) and weak on the Organ sets and PneumoniaMNIST. DoC with a time-resolved level was the reverse: 7/38 missed on PneumoniaMNIST, but 7/41 missed with 7/37 false alarms on DermaMNIST.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/level_time.pdf}
+\caption{Why a constant level fails for a score that adaptation moves (third study, Tent at $10^{-3}$). The band is the 5--95\% range of safe development streams and the solid blue line its upper edge. Left: failing streams stay above the safe range but fall below the constant level after about 30 batches. Right: failing streams sink below the safe range. Exploratory.}
+\label{fig:level}
+\end{figure}
+
+\section{A Family-Validated Alarm}
+\label{sec:fv}
+\subsection{Design}
+L2, L5 and L6 suggest a rule that needs no new signal. For each deployed model and adaptation method, using its labeled development streams only:
+\begin{enumerate}
+\item \emph{Candidates.} The twin score with a constant level (a channel the objective cannot move); DoC of the adapted model with a time-resolved level (the coupled channel, read with the adaptation in the loop); and the mean of the time-standardized twin, ATC and dropout scores, a fusion defined before the third study ran.
+\item \emph{Family-wise validation.} Each development family is left out in turn, levels are set on the others, and the left-out family is scored. The candidate with the smallest sum of missed share and false-alarm share is deployed, with its level reset on all safe development streams.
+\item \emph{Audit.} The chosen candidate's leave-one-family-out missed share is reported before deployment, and a setting is marked weak above 0.25.
+\end{enumerate}
+Levels use the split-conformal rank at $\alpha=0.05$. The standardization and the choice reuse the development streams, so we claim no coverage guarantee and test realized false alarms instead. We call this the family-validated (FV) alarm. On the three earlier studies, whose held-out streams the design had seen, FV missed 2/86, 16/307 and 22/351 at 6/102, 36/578 and 31/637 false alarms. Those numbers are how the rule was chosen; they are not a test of it.
+
+\subsection{A frozen test, and the coupling claim beyond Tent}
+\label{sec:fvtest}
+\textbf{What the earlier streams already show (exploratory).} The saved streams of the second and third studies let us read each model's confidence in six windows of 20 batches. In each setting we computed the AUROC of the window's mean confidence for separating that model's own failing streams from its own safe ones. For Tent at $10^{-3}$ the mean AUROC fell from 0.98 in the first window to 0.46 in the last in the second study, and from 0.98 to 0.42 in the third: by the end of the stream, failing streams were slightly \emph{more} confident than safe ones. For the twin it stayed at 0.99--1.00 and for the frozen source at 0.97--0.98. Under SAR on the two medical sets of the second study it did not fall (1.00 throughout), which fits the SAR result of Sect.~\ref{sec:cause}. In the same streams the released monitor missed more of Tent's failures than of the twin's (209/351 against 159/478, and 149/307 against 107/435; cluster-bootstrap intervals for the difference 0.13 to 0.39 and 0.13 to 0.33). Against the frozen source the difference was not clear in this stream design (0.15 and 0.16, intervals $-0.01$ to 0.30 in both): the source fails on other streams, under severe corruption and not under class skew, so that contrast mixes two things. These read-outs were written after the streams had been scored.
+
+\textbf{Protocol.} A further study was frozen on 14 November 2026, before any of its streams ran, and reviewed before the freeze by a second agent, which found no leak of held-out labels into choices or levels. It uses data this project had not touched: TissueMNIST and OrganSMNIST, and CIFAR-10-C with four RobustBench CIFAR-10 checkpoints. Development and held-out shifts are split as in the third study. Three objectives update the normalization parameters with Adam at $10^{-3}$: entropy (Tent, primary), hard pseudo-label cross-entropy, and information maximization~\cite{Liang2020SHOT}.
+
+The FV alarm is \emph{confirmed} if, for Tent on held-out streams pooled over the three datasets, all of these hold: (C1) at a matched 5\% false-alarm rate it misses at least 40\% fewer clear failures than the released proxy with a development-set level; (C2) realized false alarms are at most 10\% pooled and 15\% per dataset; (C3) it misses at most 20\% and at least 40\% fewer than the published monitor, the ceiling the third study's detector failed, and no more than the published monitor in any dataset; (C4) it misses at least 30\% fewer than the twin with a constant level, or at most 5\% outright, with realized false alarms of at most 7.5\%. A setting that cannot be calibrated counts as never alarming.
+
+The blind spot is \emph{shown} for an objective if the released monitor's missed share on that model's failures exceeds its missed share on the twin's failures, with a 95\% cluster-bootstrap interval above zero and the same direction in most settings. The fall in AUROC above is a second, frozen prediction: it should exceed the twin's by at least 0.10. Information maximization also rewards diverse predictions, which works against class skew, so a negative result there would be ambiguous; a negative result for pseudo-labels would limit the claim to entropy.
+
+\textbf{Results: the alarm.} All 4,630 planned streams ran, and the frozen analysis was run once. For Tent the held-out pool had 272 clear failures and 399 safe streams. Table~\ref{tab:fv} gives the outcome. FV missed 22/272 (8.1\%) at 30/399 false alarms (7.5\%); the released monitor as published missed 171/272 (62.9\%) at 4/399, and the earlier rule, the twin with a constant level, 40/272 (14.7\%) at 31/399. C1 held: at a matched false-alarm rate (5.6\% achieved) FV missed 2.4\% against 15.0\% for the released proxy; OrganSMNIST had only seven held-out safe streams and was left out of that comparison by the frozen minimum. C2 held (8.0\% false alarms on CIFAR-10-C, none on TissueMNIST). C3 held, including the 20\% ceiling that the third study's detector failed. C4 did not: FV missed 45\% fewer failures than the earlier rule and no dataset was worse, but its false alarms, 30/399 or 7.52\%, exceeded the 7.5\% band; 29 would have passed. The frozen verdict is therefore \emph{partial}.
+
+Three points qualify this. The level still does not reach its target: realized false alarms were 7.5\% against a nominal 5\%, almost all on CIFAR-10-C (29 of the 30) and mostly under a Dirichlet class prior (26 of the 30), so we do not claim that the level now transfers. FV's gain over the earlier rule came from one dataset: it chose the twin in five of six settings, where the two rules coincide, and the fusion on OrganSMNIST, where it missed 10 failures and the twin missed 28. And TissueMNIST stayed hard, with 11/55 missed, although the published monitor missed all 55. No setting was marked weak by the audit. With the other objectives FV missed 13/215 (pseudo-labels) and 5/303 (information maximization), where the published monitor missed 132/215 and 131/303.
+
+\begin{table}[t]
+\caption{Frozen test of the family-validated alarm on unused data (Tent at $10^{-3}$, held-out streams). Missed: clear failures with no alarm. Matched: missed share at a hindsight 5\% false-alarm level per setting.}
+\label{tab:fv}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Detector & CIFAR-10-C & OrganSMNIST & TissueMNIST & Pooled missed & False alarms & Matched\\
+\midrule
+Released monitor, as published & 76/151 & 40/66 & 55/55 & 171/272 & 4/399 & --\\
+Released proxy, development level & 18/151 & 17/66 & 25/55 & 60/272 & 13/399 & 15.0\%\\
+Twin, constant level (earlier rule) & 1/151 & 28/66 & 11/55 & 40/272 & 31/399 & 2.4\%\\
+DoC, time-resolved level & 4/151 & 4/66 & 28/55 & 36/272 & 27/399 & 15.0\%\\
+Fusion & 2/151 & 10/66 & 27/55 & 39/272 & 25/399 & 11.2\%\\
+Monotone LightGBM & 1/151 & 14/66 & 20/55 & 35/272 & 23/399 & 2.9\%\\
+Family-validated alarm (FV) & 1/151 & 10/66 & 11/55 & \textbf{22/272} & 30/399 & 2.4\%\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\textbf{Results: coupling beyond Tent.} The blind spot was \emph{shown} for Tent: the released monitor missed 171/272 of its failures against 133/358 of the twin's (difference 0.26, interval 0.17 to 0.34, higher in five of six settings). It was also shown for hard pseudo-labels: 132/215 against 108/246 (0.17, 0.10 to 0.26, three of four settings). It was \emph{not shown} for information maximization: 131/303 against 108/246 ($-0.01$, $-0.07$ to 0.05). Against the frozen source the differences were 0.13 (0.02 to 0.25), 0.06 ($-0.07$ to 0.21) and $-0.12$ ($-0.24$ to $-0.01$). The second prediction held for all three objectives (Fig.~\ref{fig:decay}): the AUROC of the adapted model's confidence fell from 0.98 to 0.59 under Tent, to 0.72 under pseudo-labels and to 0.79 under information maximization, while the twin stayed at 1.00 and the source at 0.93. So the blind spot is not particular to entropy: an objective that rewards confidence in a different way produced it too. Information maximization eroded the confidence signal less and did not cost alarms; as noted before the run, its diversity term makes that negative result hard to read.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\linewidth]{figures/decay.pdf}
+\caption{How well each model's confidence separates its own failing streams from its own safe ones, by 20-batch window (frozen test, mean over settings). The three adapted models lose separation as adaptation proceeds; the twin and the frozen source do not.}
+\label{fig:decay}
+\end{figure}
+
 \section{Discussion}
-\textbf{Interpretation.} A confidence-based sequential monitor can be statistically valid and still be far less sensitive on the adapted model than on its frozen counterpart. Taken together, the results point to Tent's entropy step moving errors below the threshold more than recalibration on clean data can correct. The clean calibration set does not show the corrupted stream's behavior, which is one plausible reason, but we did not test it. We have identified which arm adds the misses, not which change inside the network causes them.
+\textbf{Interpretation.} A confidence-based sequential monitor can be statistically valid and still be far less sensitive on the adapted model than on its frozen counterpart. Taken together, the results point to Tent's entropy step moving errors below the threshold more than recalibration on clean data can correct. The time-resolved read-out makes this concrete: Tent's confidence separated failing from safe streams at the start of a stream and not at the end, while the twin's did throughout. Setting the alarm level on shifted development streams, with the adaptation running, recovered most of the lost detection for several signals (Sect.~\ref{sec:shifted}), which supports the view that clean calibration data do not show how a score behaves on shifted streams. That level then transferred unevenly, for reasons we could locate (Sect.~\ref{sec:level}). On unused data the same erosion appeared for hard pseudo-labels, and more weakly for information maximization, where it cost no alarms. We have identified which arm adds the misses, not which change inside the network causes them.
 
 \textbf{Practical implication.} A silent monitor should not be read as a safety signal for a Tent-adapted model under corruption and class skew, and our SAR result does not show that silence is safe under other methods. Validity and detection power should be evaluated separately, and adapted and frozen models should be compared directly when a monitor is evaluated.
 
-\textbf{Limits.} We studied one dataset and one skew construction with replacement sampling. The gap was shown for Tent and not shown for SAR at default settings, so the results must not be generalized to all entropy-based methods, and other methods remain untested. The SAR, twin and adaptation-harm runs used an H100, while the comparison arms used an RTX 4090. The six checkpoints were also those in which the pattern was first noticed, and held-out image IDs had been used in earlier confirmation work. Each arm is conditioned on its own violations, so the comparison populations differ; paired draws and excess-error bands reduce this concern but do not eliminate it. Some streams used a predictable-mixture confidence sequence as a numerical fallback (31 of 768 factorial streams). Authors' pipeline results needed a disclosed loader patch, run-time stream replacement and torch 1.11, and streams that ran out of GPU memory were rerun with fewer processes, with no results replaced. Dirichlet(0.1) is a stress case, and we do not know how common it is in deployment. False-alarm counts are small, and the separation analysis covers three of six models. The twin alarm was not compared with other alternatives, such as the prototype-distance proxy in~\cite{Schirmer2025Monitoring} or independent estimators~\cite{Lee2024AETTA,Garg2022ATC}, and frozen-reference checks already exist in other settings~\cite{Han2026Exchangeability}, so we do not claim it is new in concept. Its test on failures caused by adaptation used deliberately extreme learning rates and had few safe and few non-collapsed streams, so its pass on detection should be read with caution.
+\textbf{Limits.} We studied CIFAR-100-C, CIFAR-10-C and MedMNIST benchmarks, with synthetic corruptions and class resampling, so the medical tests are controlled stress tests: they say nothing about real scanners, disease prevalence or clinical use. The shifted-level results rest on exchangeability between synthetic development shifts and deployment shifts, which held only roughly (2.4--8.1\% false alarms against a 5\% target); both frozen confirmations were not confirmed, and the matched false-alarm comparison that favors the twin sets thresholds with hindsight, so it measures ranking, not a usable alarm. The family-validated alarm was designed on held-out streams that had already been scored, so its figures on those streams are not evidence. Its frozen test returned \emph{partial}: its false alarms were 7.5\% against a 5\% target, its gain over the twin alone came from one of three datasets, and OrganSMNIST had too few safe streams to judge false alarms there. Its levels carry no coverage guarantee, and with five to nine development families we cannot bound false alarms on a new family. The coupling test covered three objectives on batch-normalization parameters, two of them on four of the six settings. The time-resolved separation and the level analysis are exploratory. The twin needs batch normalization, so transformer models would need a different reference. DermaMNIST has no lesion identifiers, so patient-level separation cannot be confirmed; about 1\% of test images closely matched a training image. One trained model was used there, and our corruptions are a port rather than MedMNIST-C. The gap was shown for Tent and not shown for SAR at default settings, so the results must not be generalized to all entropy-based methods, and other methods remain untested. The SAR, twin and adaptation-harm runs used an H100, while the comparison arms used an RTX 4090. The six checkpoints were also those in which the pattern was first noticed, and held-out image IDs had been used in earlier confirmation work. Each arm is conditioned on its own violations, so the comparison populations differ; paired draws and excess-error bands reduce this concern but do not eliminate it. Some streams used a predictable-mixture confidence sequence as a numerical fallback (31 of 768 factorial streams). Authors' pipeline results needed a disclosed loader patch, run-time stream replacement and torch 1.11, and streams that ran out of GPU memory were rerun with fewer processes, with no results replaced. Dirichlet(0.1) is a stress case, and we do not know how common it is in deployment. False-alarm counts are small, and the separation analysis covers three of six models. The twin was compared with the prototype proxy, ATC, DoC, a simplified dropout-disagreement signal and learned detectors only in Sect.~\ref{sec:shifted}; the published AETTA estimator~\cite{Lee2024AETTA} was not run. Frozen-reference checks already exist in other settings~\cite{Han2026Exchangeability}, and estimators calibrated on synthetic shifts exist for fixed models~\cite{Garg2022ATC,Guillory2021DoC}, so we do not claim either idea is new in concept. Its test on failures caused by adaptation used deliberately extreme learning rates and had few safe and few non-collapsed streams, so its pass on detection should be read with caution.
 
 \section{Conclusion}
-Under strong class skew and corruption on CIFAR-100-C, a released label-free risk monitor missed Tent's clear risk violations far more often than those of the frozen model, in our implementation and in the authors' own code. The gap does not depend on threshold recalibration, and Tent's entropy step adds to it beyond normalization updates. The gap was not shown for SAR at its default settings, where flagged rates and confidence stayed close to normalization alone. An entropy-free twin alarm, tuned on separate corruptions, recovered much of the lost sensitivity at low false-alarm rates on failures shared with the twin, without a certified bound; it also detected most extreme adaptation-caused collapses, though subtler harm and false alarms in that regime remain open. These results extend a known family of proxy failures with a controlled measurement and a practical mitigation. Future work should repeat the adaptation-harm test with a minimum number of safe and non-collapsed streams set in advance, so that false alarms and subtler harm can be measured properly. The other next tests are other datasets and adaptation methods, separating SAR's filtering and optimizer effects, and alternatives compared at matched false-alarm rates.
+Under strong class skew and corruption on CIFAR-100-C, a released label-free risk monitor missed Tent's clear risk violations far more often than those of the frozen model, in our implementation and in the authors' own code. The gap does not depend on threshold recalibration, and Tent's entropy step adds to it beyond normalization updates. The gap was not shown for SAR at its default settings, where flagged rates and confidence stayed close to normalization alone. An entropy-free twin alarm, tuned on separate corruptions, recovered much of the lost sensitivity at low false-alarm rates on failures shared with the twin, without a certified bound; it also detected most extreme adaptation-caused collapses, though subtler harm and false alarms in that regime remain open. These results extend a known family of proxy failures with a controlled measurement and a practical mitigation. Future work should repeat the adaptation-harm test with a minimum number of safe and non-collapsed streams set in advance, so that false alarms and subtler harm can be measured properly. The same blind spot appeared in a frozen test on a public dermatoscopic benchmark, where the twin recovered part of the lost alarms. Setting alarm levels on labeled, synthetically shifted development streams recovered most of the remaining detection across four medical datasets and new CIFAR-100-C streams: the twin missed 13\% of held-out failures at 2.4\% false alarms, against 49\% for the released monitor. Simple confidence signals with the same level came close, and two frozen confirmations were not confirmed, the second because the level did not transfer to three new medical datasets. We traced this to a constant level applied to a score that adaptation keeps moving, and to the absence of one signal with power on every dataset, and proposed choosing the signal for each deployment by leave-one-shift-family-out validation on development streams. A frozen test on three unused datasets returned \emph{partial}. The rule missed 8\% of clear failures where the released monitor missed 63\% and the earlier rule 15\%, and it met the power criteria that the earlier detector had failed; its false alarms, at 7.5\%, exceeded the band we had set around the 5\% target, so the level's calibration remains open. The same test showed the blind spot for hard pseudo-labels as well as for Tent, and not for information maximization, while all three objectives eroded the confidence signal over the stream. The next tests are a level whose false alarms hold on new shift families, natural scanner and prevalence shifts, models without batch normalization, and separating SAR's filtering and optimizer effects.
 
 \bibliographystyle{splncs04}
 \bibliography{references}

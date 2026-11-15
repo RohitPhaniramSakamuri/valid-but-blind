@@ -1,0 +1,93 @@
+{
+  "student": "Rohit Phaniram Sakamuri",
+  "registration": "23BDS0051",
+  "templates": [
+    "Review1.pptx",
+    "Review2.pptx",
+    "Review3.pptx"
+  ],
+  "slide_counts": {
+    "Review I": 8,
+    "Review II": 13,
+    "Review III": 16
+  },
+  "scientific_sources": [
+    "paper/main.tex",
+    "experiments/004-monitor-blind-spots.md",
+    "experiments/006-twin-confirmation.md",
+    "experiments/007-alarm-diagnosis.md",
+    "experiments/008-shifted-level-confirmation.md",
+    "experiments/009-level-transfer-diagnosis.md",
+    "experiments/010-family-validated-alarm-confirmation.md",
+    "sources/catalog.json"
+  ],
+  "scope": "Document generation from existing records only. No experiments, implementation tests or new literature search.",
+  "final_verdict": "PARTIAL",
+  "final_primary_counts": {
+    "strict": 272,
+    "safe": 399,
+    "fv_missed": 22,
+    "fv_false_alarms": 30,
+    "published_missed": 171,
+    "published_false_alarms": 4,
+    "constant_twin_missed": 40,
+    "constant_twin_false_alarms": 31
+  },
+  "original_templates_preserved": true,
+  "output_sha256": {
+    "Review_I_Rohit_23BDS0051.pptx": "f6eaf9c39cb531bda6e0863d54520a61fa31c4199a9781708d38787ad1896f3e",
+    "Review_II_Rohit_23BDS0051.pptx": "41bc3fa9f48a501a993d8ec46df11ef01fe162b85cf3c06e79bec7c9e074879e",
+    "Review_III_Rohit_23BDS0051.pptx": "eb19116806589779e9b028510ff3917ada624eb0cfd1ca18864cac32b5caa481",
+    "Review_III_A3_Poster_Rohit_23BDS0051.pptx": "9391e6dfd34f05c427861118df6ba0faae580d9cba491739eb2d58f3c3605562",
+    "Review_III_Report_Rohit_23BDS0051.docx": "61ec93455eb72a5120839c17d9fa05c35e04ba74bfeec879f84257fd02b7c50c",
+    "Review_I_Rohit_23BDS0051.pdf": "14d5210eb76508f80e89a6d8916f5b1cdd49f8f17b1e944d648f8bf829c08062",
+    "Review_II_Rohit_23BDS0051.pdf": "5d2cd48b234baaacf3e3c8118b52ae6bca728dff834c7b931717590b53f00e42",
+    "Review_III_Rohit_23BDS0051.pdf": "6a5dd26ca4f1a068d28d293bff319b3dcad9b7c4ac0d3fd691ec51ae2ef8fff2",
+    "Review_III_A3_Poster_Rohit_23BDS0051.pdf": "8ff4dfc23e4c9eb03d8bea473acec6b577fb5a5c828ce0359272786e0d2f100a",
+    "Review_III_Report_Rohit_23BDS0051.pdf": "1023d6be585abbe2d1865e6664a64431724e5d091cee475f046c507dbf60dd8b"
+  },
+  "document_checks": [
+    {
+      "file": "Review_I_Rohit_23BDS0051.pptx",
+      "pdf_pages": 8,
+      "identity": "present",
+      "calendar_text": "absent",
+      "date_placeholders": "absent",
+      "office_and_pdf_date_metadata": "absent"
+    },
+    {
+      "file": "Review_II_Rohit_23BDS0051.pptx",
+      "pdf_pages": 13,
+      "identity": "present",
+      "calendar_text": "absent",
+      "date_placeholders": "absent",
+      "office_and_pdf_date_metadata": "absent"
+    },
+    {
+      "file": "Review_III_Rohit_23BDS0051.pptx",
+      "pdf_pages": 16,
+      "identity": "present",
+      "calendar_text": "absent",
+      "date_placeholders": "absent",
+      "office_and_pdf_date_metadata": "absent"
+    },
+    {
+      "file": "Review_III_A3_Poster_Rohit_23BDS0051.pptx",
+      "pdf_pages": 1,
+      "identity": "present",
+      "calendar_text": "absent",
+      "date_placeholders": "absent",
+      "office_and_pdf_date_metadata": "absent"
+    },
+    {
+      "file": "Review_III_Report_Rohit_23BDS0051.docx",
+      "pdf_pages": 3,
+      "identity": "present",
+      "calendar_text": "absent",
+      "date_placeholders": "absent",
+      "office_and_pdf_date_metadata": "absent"
+    }
+  ],
+  "saved_primary_report_sha256": "4f3d5f706f995c850901ddd998d39c95030fafddedb507dd885a6c58c0772446",
+  "rights_notice_sha256": "79d7f0ac54c9e841ef5031bfca8c41ec61ee782e2777b5be824cf84c7ca38e83"
+}

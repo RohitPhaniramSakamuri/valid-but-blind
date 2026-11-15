@@ -1,0 +1,58 @@
+{
+ "source/gaussian_noise": [
+  7,
+  22
+ ],
+ "tent/gaussian_noise": [
+  23,
+  28
+ ],
+ "source/shot_noise": [
+  4,
+  18
+ ],
+ "tent/shot_noise": [
+  19,
+  21
+ ],
+ "tent/impulse_noise": [
+  28,
+  31
+ ],
+ "source/impulse_noise": [
+  6,
+  27
+ ],
+ "tent/defocus_blur": [
+  9,
+  11
+ ],
+ "source/glass_blur": [
+  9,
+  19
+ ],
+ "tent/glass_blur": [
+  26,
+  31
+ ],
+ "tent/motion_blur": [
+  18,
+  19
+ ],
+ "tent/zoom_blur": [
+  24,
+  25
+ ],
+ "source/zoom_blur": [
+  8,
+  10
+ ],
+ "source/defocus_blur": [
+  4,
+  7
+ ],
+ "source/motion_blur": [
+  6,
+  7
+ ]
+}

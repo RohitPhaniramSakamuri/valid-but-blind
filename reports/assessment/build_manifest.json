@@ -1,0 +1,35 @@
+{
+  "document": "ML_Assessment_Rohit_23BDS0051.docx",
+  "pdf": "ML_Assessment_Rohit_23BDS0051.pdf",
+  "pages": 8,
+  "words_including_tables_and_references": 2641,
+  "tables": 5,
+  "references": 12,
+  "format": "A4; Arial; black text and borders; white backgrounds",
+  "source_manuscript": "../../paper/main.tex",
+  "source_experiment": "../../experiments/004-monitor-blind-spots.md",
+  "scientific_experiments_run": false,
+  "dependencies_installed": false,
+  "outputs": {
+    "ML_Assessment_Rohit_23BDS0051.docx": {
+      "bytes": 42870,
+      "sha256": "c999bfeaf2936d5d2cc84249f2f032c86fea5be4a1f2f34510ba009fddefc7a8"
+    },
+    "ML_Assessment_Rohit_23BDS0051.pdf": {
+      "bytes": 116306,
+      "sha256": "d1c8bbd886f4909dd05ae857d09869bcedca7700233feef3313c1abf35ec2fd6"
+    },
+    "report_content.json": {
+      "bytes": 19268,
+      "sha256": "0a87a2739c7359c54737fe3856092054d64c96b85d4a640fb93a707582768833"
+    },
+    "report_sources.json": {
+      "bytes": 23106,
+      "sha256": "e08b42a537d4e4385471a7bef1100c7db63f3ed070adf86efbc70f2ee02eee96"
+    },
+    "build_report.py": {
+      "bytes": 9858,
+      "sha256": "d159bbe3ebebfbb5e91626519c64d58411012879eeaf8d8271f80e6fd0da1acb"
+    }
+  }
+}

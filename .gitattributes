@@ -1,0 +1,8 @@
+# Keep generated document/media diffs binary, including ASCII-only PDFs.
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary

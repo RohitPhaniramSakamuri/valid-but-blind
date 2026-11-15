@@ -14,6 +14,11 @@ Ahmed, W., Rahaman, M.A., Roy, P., Alam, P.: The dashboard says ``perfect'': a
 Amin, F., Kim, J.E.: The over-certainty phenomenon in modern test-time
   adaptation algorithms. Transactions on Machine Learning Research  (2025)
 
+\bibitem{Amoukou2024SequentialHarmful}
+Amoukou, S.I., Bewley, T., Mishra, S., Lecue, F., Magazzeni, D., Veloso, M.:
+  Sequential harmful shift detection without labels. In: Advances in Neural
+  Information Processing Systems. vol.~37 (2024). \doi{10.52202/079017-4107}
+
 \bibitem{Bar2024ProtectedTTA}
 Bar, Y., Shaer, S., Romano, Y.: Protected test-time adaptation via online
   entropy matching: A betting approach. In: Advances in Neural Information
@@ -29,10 +34,20 @@ Cygert, S., S\'{o}jka, D., Trzci\'{n}ski, T., Twardowski, B.: Realistic
   evaluation of test-time adaptation: Unsupervised model selection. In: VISAPP.
   vol.~1, pp. 75--86 (2026). \doi{10.5220/0014320100004084}
 
+\bibitem{Fluhmann2025LabelFree}
+Fl\"{u}hmann, T., Bissoto, A., Hoang, T.D., Koch, L.M.: Label-free estimation
+  of clinically relevant performance metrics under distribution shifts. arXiv
+  preprint arXiv:2507.22776 (2025)
+
 \bibitem{Garg2022ATC}
 Garg, S., Balakrishnan, S., Lipton, Z.C., Neyshabur, B., Sedghi, H.: Leveraging
   unlabeled data to predict out-of-distribution performance. In: International
   Conference on Learning Representations (2022)
+
+\bibitem{Guillory2021DoC}
+Guillory, D., Shankar, V., Ebrahimi, S., Darrell, T., Schmidt, L.: Predicting
+  with confidence on unseen distributions. In: IEEE/CVF International
+  Conference on Computer Vision (2021)
 
 \bibitem{Han2026Exchangeability}
 Han, W., Qu, L., Li, Z., Liang, L.: The premise is the problem: Exchangeability
@@ -59,10 +74,26 @@ Iwasawa, Y., Matsuo, Y.: Test-time classifier adjustment module for
   model-agnostic domain generalization. In: Advances in Neural Information
   Processing Systems. vol.~34 (2021)
 
+\bibitem{Ke2017LightGBM}
+Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., Liu, T.Y.:
+  {LightGBM}: A highly efficient gradient boosting decision tree. In: Advances
+  in Neural Information Processing Systems. vol.~30 (2017)
+
 \bibitem{Lee2024AETTA}
 Lee, T., Chottananurak, S., Gong, T., Lee, S.J.: {AETTA}: Label-free accuracy
   estimation for test-time adaptation. In: IEEE/CVF Conference on Computer
   Vision and Pattern Recognition. pp. 28643--28652 (2024)
+
+\bibitem{Li2026ECFR}
+Li, S., Gu, Y., Zhang, H.: {ECFR}: Entropy-consistency flow rectification in
+  test-time adaptation for medical foundation models. In: Medical Image
+  Computing and Computer Assisted Intervention (2026)
+
+\bibitem{Liang2020SHOT}
+Liang, J., Hu, D., Feng, J.: Do we really need to access the source data?
+  {S}ource hypothesis transfer for unsupervised domain adaptation. In:
+  International Conference on Machine Learning. PMLR, vol.~119, pp. 6028--6039
+  (2020)
 
 \bibitem{Mahdiani2026ConformalTTA}
 Mahdiani, M.R.: Diagnosing and repairing the conformal coverage guarantee of
@@ -75,10 +106,20 @@ Nam, G., Kim, T., Jeong, J., Yang, E.: Towards reliable test-time adaptation:
   on Applications of Computer Vision. pp. 3088--3097 (2026).
   \doi{10.1109/WACV61042.2026.00302}
 
+\bibitem{Nielen2026DSBR}
+Nielen, T., Ambekar, S., Kiechle, J., Lang, D.M., Schnabel, J.A.: Entropy
+  minimization without model collapse: Mitigating prediction bias in medical
+  imaging. arXiv preprint arXiv:2606.02339 (2026)
+
 \bibitem{Niu2023SAR}
 Niu, S., Wu, J., Zhang, Y., Wen, Z., Chen, Y., Zhao, P., Tan, M.: Towards
   stable test-time adaptation in dynamic wild world. In: International
   Conference on Learning Representations (2023)
+
+\bibitem{Pham2026TCSR}
+Pham, H.D., Cao, D.P.M., Huynh, T.T.: Beyond uncertainty: Generalizable failure
+  monitoring for surgical segmentation under acquisition degradation. arXiv
+  preprint arXiv:2608.16748 (2026)
 
 \bibitem{Podkopaev2022RiskMonitoring}
 Podkopaev, A., Ramdas, A.: Tracking the risk of a deployed model and detecting
@@ -100,9 +141,23 @@ Schneider, S., Rusak, E., Eck, L., Bringmann, O., Brendel, W., Bethge, M.:
   Improving robustness against common corruptions by covariate shift
   adaptation. In: Advances in Neural Information Processing Systems (2020)
 
+\bibitem{Tschandl2018HAM}
+Tschandl, P., Rosendahl, C., Kittler, H.: The {HAM10000} dataset, a large
+  collection of multi-source dermatoscopic images of common pigmented skin
+  lesions. Scientific Data  \textbf{5},  180161 (2018)
+
+\bibitem{Vovk2005ALRW}
+Vovk, V., Gammerman, A., Shafer, G.: Algorithmic Learning in a Random World.
+  Springer, New York (2005)
+
 \bibitem{Wang2021Tent}
 Wang, D., Shelhamer, E., Liu, S., Olshausen, B., Darrell, T.: Tent: Fully
   test-time adaptation by entropy minimization. In: International Conference on
   Learning Representations (2021)
+
+\bibitem{Yang2023MedMNIST}
+Yang, J., Shi, R., Wei, D., Liu, Z., Zhao, L., Ke, B., Pfister, H., Ni, B.:
+  {MedMNIST} v2 -- a large-scale lightweight benchmark for 2d and 3d biomedical
+  image classification. Scientific Data  \textbf{10}, ~41 (2023)
 
 \end{thebibliography}

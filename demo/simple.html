@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Valid but Blind demo</title><style>
+:root{--ink:#14213D;--mut:#5B6475;--ok:#0F7B4F;--bad:#C81E2B;--or:#C9501F;--bl:#1E63B8;--bg:#F4F5F8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:20px/1.3 Arial,sans-serif;padding:14px 22px}
+h1{font-size:28px;margin:0}.top{display:flex;align-items:center;gap:10px;margin-bottom:12px}button{font:700 24px Arial;padding:10px 30px;background:var(--ink);color:#fff;border:0;border-radius:8px;cursor:pointer}button{white-space:nowrap}#go{font-size:20px;padding:10px 18px}#st{white-space:nowrap}.s{font-size:18px;padding:10px 12px;background:#fff;color:var(--ink);border:2px solid var(--ink)}button:disabled{opacity:.35;cursor:default}#st{color:var(--mut);margin-left:auto;font-size:17px;text-align:right}
+.main{display:grid;grid-template-columns:330px 1fr 1fr;gap:14px;margin-bottom:12px}.card{background:#fff;border-radius:10px;padding:14px 16px}.card h2{margin:0 0 6px;font-size:20px}
+#img{width:298px;height:298px;image-rendering:pixelated;background-repeat:no-repeat;background-size:1000% 1000%;background-color:#ddd;border-radius:6px}.truth{font-size:22px;margin-top:8px}.truth b{font-size:26px}
+.pred{font-size:38px;font-weight:700;min-height:48px;text-transform:capitalize}.conf{font-size:21px;color:var(--mut)}.res{display:inline-block;font-weight:700;font-size:26px;color:#fff;padding:3px 14px;border-radius:6px;margin:8px 0;min-height:37px}.right{background:var(--ok)}.wrong{background:var(--bad)}
+.mon{font-size:22px;font-weight:700;padding:8px 12px;border-radius:6px;background:#EEF0F4}.miss{background:var(--bad);color:#fff}.got{background:var(--ok);color:#fff}.fp{background:#F2C14E}
+.low{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}.big{font-size:42px;font-weight:700}.lab{font-size:18px;color:var(--mut)}.al{font-size:34px;font-weight:700;padding:12px;border-radius:8px;text-align:center;background:#DDF2E7;color:var(--ok);margin-top:6px}.al.on{background:var(--bad);color:#fff}
+.b{height:26px;background:#E4E6EC;border-radius:4px;overflow:hidden;margin:3px 0 8px}.b i{display:block;height:100%}svg{width:100%;height:112px;display:block}.leg{font-size:16px;color:var(--mut)}#say{font-size:20px;margin-top:6px}
+</style></head><body>
+<div class="top"><h1 style="font-size:22px;white-space:nowrap">Tent on frost images</h1><button id="go">▶ Start</button><button id="pa" class="s" disabled>⏸ Pause</button><button id="ba" class="s" disabled>◀ Back</button><button id="ne" class="s" disabled>Next ▶</button><button id="sp" class="s" disabled>■ Stop</button><span id="st">Press Start</span></div>
+<div class="main">
+<div class="card"><h2>Image coming in</h2><div id="img"></div><div class="truth">Correct answer: <b id="y">–</b></div></div>
+<div class="card"><h2 style="color:var(--or)">Tent model (adapting)</h2><div class="pred" id="pt">–</div><div class="conf" id="ct">&nbsp;</div><div class="res" id="rt"></div><div class="lab">Original monitor, reads Tent's confidence:</div><div class="mon" id="mo">–</div></div>
+<div class="card"><h2 style="color:var(--bl)">Second copy (no entropy step)</h2><div class="pred" id="pw">–</div><div class="conf" id="cw">&nbsp;</div><div class="res" id="rw"></div><div class="lab">Our fix, reads the copy and any disagreement:</div><div class="mon" id="mf">–</div></div>
+</div>
+<div class="low">
+<div class="card"><h2>What Tent is doing</h2><svg id="ch" viewBox="0 0 500 112" preserveAspectRatio="none"></svg><div class="leg"><span style="color:var(--or)">■ Tent's confidence</span> &nbsp; ■ Tent's actual accuracy</div><div id="say">Each batch, Tent updates itself to be more confident.</div></div>
+<div class="card"><h2 style="color:var(--or)">Original monitor</h2><div class="lab">Tent's errors it marked so far</div><div class="big" id="co">–</div><div class="b"><i id="bo" style="background:var(--or);width:0"></i></div><div class="al" id="ao">No alarm</div></div>
+<div class="card"><h2 style="color:var(--bl)">Our fix</h2><div class="lab">Tent's errors it marked so far</div><div class="big" id="cf">–</div><div class="b"><i id="bf" style="background:var(--bl);width:0"></i></div><div class="al" id="af">No alarm</div></div>
+</div>
+<script>
+const $=i=>document.getElementById(i);let C=[],B=[],H=[],pos=-1,status='idle',busy=false,paused=false,started=false,gen=0;
+fetch('/api/meta').then(r=>r.json()).then(m=>C=m.classes);
+const nm=x=>C[x]?C[x].replaceAll('_',' '):x;
+function clearScreen(){for(const k of ['pt','pw','y','mo','mf','co','cf'])$(k).textContent='–';for(const k of ['ct','cw','rt','rw'])$(k).textContent='';for(const k of ['rt','rw'])$(k).className='res';for(const k of ['mo','mf'])$(k).className='mon';$('img').style.backgroundImage='';$('ch').innerHTML='';$('bo').style.width='0';$('bf').style.width='0';for(const k of ['ao','af']){$(k).textContent='No alarm';$(k).className='al'}$('say').textContent='Each batch, Tent updates itself to be more confident.'}
+function controls(){const on=started;$('pa').disabled=!on||status==='stopped';$('pa').textContent=paused?'▶ Resume':'⏸ Pause';$('ba').disabled=pos<=0;$('ne').disabled=pos>=H.length-1;$('sp').disabled=!on||status==='stopped'||status==='finished';$('go').textContent=started?'↻ Restart':'▶ Start'}
+function start(){gen++;B=[];H=[];pos=-1;paused=false;started=true;status='loading';clearScreen();$('st').textContent='Starting, about 15 seconds…';controls();fetch('/api/start',{method:'POST',body:JSON.stringify({model:'Hendrycks2020AugMix_WRN',corruption:'frost',severity:5,kind:'dirichlet',draw:0,lr:'0.001',recal:'5'})})}
+$('go').onclick=start;
+$('pa').onclick=()=>{paused=!paused;label();controls()};
+$('ba').onclick=()=>{paused=true;if(pos>0){pos--;render()}controls()};
+$('ne').onclick=()=>{paused=true;if(pos<H.length-1){pos++;render()}controls()};
+$('sp').onclick=()=>{fetch('/api/control',{method:'POST',body:JSON.stringify({action:'stop'})});status='stopped';paused=true;label();controls()};
+document.addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();if(!$('pa').disabled)$('pa').click()}if(e.key==='ArrowLeft'&&!$('ba').disabled)$('ba').click();if(e.key==='ArrowRight'&&!$('ne').disabled)$('ne').click()});
+async function poll(){if(busy)return;busy=true;const g=gen;try{const s=await(await fetch('/api/state?since='+B.length)).json();if(g===gen){if(status!=='stopped')status=s.status;if(s.status==='running'&&!started&&s.batches.length)started=true;for(const b of s.batches){B.push(b);for(let i=0;i<8;i++)H.push([b,i*12%100])}if(s.status==='error')$('st').textContent='Error: '+s.message;controls()}}catch(e){$('st').textContent='Server not answering'}busy=false}
+function label(){const h=H[pos];const mode=window.RECORDED?'Recorded run':'Live on this laptop';$('st').textContent=(status==='stopped'?'Stopped':paused?'Paused':mode)+(h?' · batch '+h[0].t+' of 120':'')}
+function frame(){if(paused||pos>=H.length-1){if(!paused&&status==='finished'&&H.length)$('st').textContent='Finished: 120 of 120 batches';return}pos++;render();controls()}
+function render(){const [b,i]=H[pos];let e=0,o=0,f=0;for(const x of B){if(x.t>b.t)break;for(let k=0;k<100;k++){e+=x.E[k];o+=x.E[k]&&x.Fr[k];f+=x.E[k]&&x.Ft[k]}}const co=100*o/Math.max(e,1),cf=100*f/Math.max(e,1);$('co').textContent=co.toFixed(0)+'%';$('cf').textContent=cf.toFixed(0)+'%';$('bo').style.width=co+'%';$('bf').style.width=cf+'%';const al=(el,t)=>{$(el).textContent=t?'ALARM at batch '+t:'No alarm';$(el).className='al'+(t?' on':'')};al('ao',b.alarm_r);al('af',b.alarm_t);chart(b.t);label();
+$('img').style.backgroundImage='url(data:image/png;base64,'+b.sprite+')';$('img').style.backgroundPosition=(i%10)*100/9+'% '+Math.floor(i/10)*100/9+'%';$('y').textContent=nm(b.y[i]);
+const show=(p,c,r,pv,cv)=>{$(p).textContent=nm(pv);$(c).textContent='Confidence '+(100*cv).toFixed(0)+'%';const ok=pv===b.y[i];$(r).textContent=ok?'✓ Correct':'✕ Wrong';$(r).className='res '+(ok?'right':'wrong')};show('pt','ct','rt',b.pt[i],b.ct[i]);show('pw','cw','rw',b.pw[i],b.cw[i]);
+const mon=(el,F)=>{const w=b.E[i];$(el).textContent=w&&F?'✓ Tent wrong: marked':w?'✕ Tent wrong: NOT marked':F?'! Tent right: marked anyway':'Tent right: not marked';$(el).className='mon '+(w&&F?'got':w?'miss':F?'fp':'')};mon('mo',b.Fr[i]);mon('mf',b.Ft[i])}
+function chart(T){const X=t=>t/120*500,Y=v=>108-v*104,v=B.filter(b=>b.t<=T);const l=(f,c)=>`<polyline fill="none" stroke="${c}" stroke-width="3" vector-effect="non-scaling-stroke" points="${v.map(b=>X(b.t)+','+Y(f(b))).join(' ')}"/>`;$('ch').innerHTML=l(b=>b.conf_t,'#C9501F')+l(b=>1-b.err,'#14213D');const a=v.slice(0,5),z=v.slice(-5),m=(x,f)=>x.reduce((s,b)=>s+f(b),0)/x.length;if(v.length>=10)$('say').textContent=`Confidence went from ${(100*m(a,b=>b.conf_t)).toFixed(0)}% to ${(100*m(z,b=>b.conf_t)).toFixed(0)}%. Accuracy went from ${(100*m(a,b=>1-b.err)).toFixed(0)}% to ${(100*m(z,b=>1-b.err)).toFixed(0)}%.`;else $('say').textContent='Each batch, Tent updates itself to be more confident.'}
+setInterval(poll,500);setInterval(frame,280);
+</script></body></html>

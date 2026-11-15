@@ -1,12 +1,18 @@
 # Valid but Blind: test-time adaptation and label-free risk monitoring
 
-**Finding:** on CIFAR-100-C with strong class skew, a released label-free risk monitor missed Tent's clear failures far more often than a frozen model's (147/166 vs. 44/110). Tent's entropy step adds the misses. An entropy-free twin alarm cut misses on held-out corruptions from 94/109 to 30/115, with 5/121 false alarms. It is a detector with no guarantee, and its test on adaptation-caused failures returned NOT SHOWN under the frozen rule. Results cover one dataset and one skew setting. Novelty is not established.
+**Finding:** on CIFAR-100-C with strong class skew, a released label-free risk monitor missed Tent's clear failures far more often than a frozen model's (147/166 vs. 44/110). Tent's entropy step adds the misses. An entropy-free twin alarm cut misses on held-out corruptions from 94/109 to 30/109, with 5/121 false alarms. It is a detector with no guarantee, and its test on adaptation-caused failures returned NOT SHOWN under the frozen rule. The latest family-validated alarm has completed its frozen test: 22/272 failures missed (8.1%) at 30/399 false alarms (7.52%). The verdict is **PARTIAL**, because the 7.5% level-transfer band was exceeded. Novelty is not established.
+
+**Rights:** original project material is **all rights reserved**. Reuse requires Rohit Phaniram Sakamuri's **prior express written permission**, subject to applicable law, GitHub's platform terms and retained third-party licenses. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Public visibility does not grant an open-source or general reuse license.
+
+Current methods, saved results and reproduction boundaries are indexed in [REPRODUCIBILITY.md](REPRODUCIBILITY.md). The completed submission files are in [reports/reviews](reports/reviews/README.md).
 
 | Where | What |
 | --- | --- |
 | [`paper/`](paper/) | Manuscript (Springer LNCS), PDF preview and Overleaf zip |
+| [`reports/assessment/`](reports/assessment/README.md) | Plain black-and-white assessment report for Rohit Phaniram Sakamuri, 23BDS0051; editable Word and PDF |
+| [`reports/reviews/`](reports/reviews/README.md) | Completed Review I, II and III template-based decks, PDFs, Word summary and A3 poster for Rohit Phaniram Sakamuri, 23BDS0051; presentation content omits dates |
 | [`demo/`](demo/README.md) | Live laptop demo. Run `demo/fetch_data.sh`, then `demo/run_demo.sh` |
-| [`experiments/004-monitor-blind-spots.md`](experiments/004-monitor-blind-spots.md) | Protocols, frozen rules and all verdicts |
+| [`experiments/004-monitor-blind-spots.md`](experiments/004-monitor-blind-spots.md) | Protocols, frozen rules and all verdicts (later studies: 005–010 in the same folder) |
 | [`diagnostics/`](diagnostics/) | Run and analysis code, per-stream results and reports |
 | [`notes/novelty-review-2026-11-02/review.md`](notes/novelty-review-2026-11-02/review.md) | Literature review and its coverage limits |
 | `Valid but Blind*.pptx` | Presentation decks |
@@ -17,7 +23,7 @@ Datasets, checkpoints, saved tensors and third-party PDFs are not in this reposi
 
 # Shift-aware test-time adaptation
 
-## Current review — 2 November 2026
+## Historical review — 2 November 2026
 
 The [adversarial novelty review](notes/novelty-review-2026-11-02/review.md) narrows the monitor finding. C1 exact adapted/frozen miss-rate comparison: no matching report found within incomplete coverage. C2 fixed-threshold/entropy-versus-BN contrast: no matching accessible report found, **and locally still pending**. C3 mechanism: substantially anticipated. C4 general self-masking vulnerability: already published; universal wording unsupported. C5 independent label-free remedy: partially covered by existing methods; no exact sensitive fix established.
 
@@ -68,7 +74,33 @@ The saved-data follow-up rejected that lead: no evidence selector beat always RE
 
 **Twin alarm, 2 November 2026:** an entropy-free twin passed its frozen held-out test for an uncertified form (30/115 missed against 94/109), while its certified forms missed all violations. Its frozen test on adaptation-caused failures returned NOT SHOWN.
 
-Next step: replace the author placeholders, check the venue's rules and submit.
+**Shifted-level alarms, 3 November 2026:**
+- [Experiment 005](experiments/005-rich-detector.md): learned detectors did not beat the twin (NOT SHOWN).
+- [Experiment 006](experiments/006-twin-confirmation.md): the twin with a level set on synthetic dev streams missed 13% at 2.4% false alarms on PathMNIST, OrganAMNIST and CIFAR-100-C. The published monitor missed 49% at 2.1%. The frozen verdict was NOT CONFIRMED, because its criteria used absolute gaps at unequal false-alarm rates.
+- [Experiment 007](experiments/007-alarm-diagnosis.md) (diagnosis):
+  - at matched false-alarm rates the twin misses 67–72% fewer failures than the two criteria comparators, and has the best AUROC (0.992);
+  - ATC is close;
+  - the level transfers unevenly from dev to held-out shifts.
+
+**Paper:** updated 3 November with these results; all new numbers were verified by script. Author affiliation and email are still placeholders.
+
+**Finished, 4 November 01:38 IST:** [Experiment 008](experiments/008-shifted-level-confirmation.md), a frozen confirmation on 3,948 streams (CIFAR-100-C, OCT, OrganC, Pneumonia). Verdict **NOT CONFIRMED**:
+- ranking held: at matched 5% false alarms, twin+pattern missed 57% fewer failures than the released proxy;
+- false alarms held: 2.5%;
+- deployed misses failed: 31.9%, which is 46% fewer than the published monitor but above the 20% ceiling. The dev-calibrated level sat too high on the medical sets and missed every Pneumonia failure.
+
+Exploratory: monotone LightGBM with calibration Z reached 14.5% missed and 1.9% false alarms. It was chosen after the CIFAR partial, so it needs a fresh frozen test. All exp008 AWS resources have been deleted.
+
+Next step: the user decides whether to add exp008 to the paper, and whether to run a fresh frozen test of monotone LightGBM|Z.
+
+**Level-transfer diagnosis and fresh test, 14 November 2026:**
+- [Experiment 009](experiments/009-level-transfer-diagnosis.md) (exploratory, saved streams only): the dev-calibrated level failed because a constant level was applied to a score that Tent keeps moving, and because no single signal has power on every dataset. Leave-one-shift-family-out validation on dev streams forecast the misses (Spearman 0.73) but not the false alarms.
+- Candidate fix, the family-validated (FV) alarm: per deployment, choose between the twin, Tent's confidence with a time-resolved level, and the exp008 fusion by leave-one-family-out validation. On the already-seen exp005/006/008 streams it missed 2/86, 16/307 and 22/351. Those streams shaped the rule, so this is not evidence.
+- Exploratory mechanism read-out on exp006/exp008: Tent's confidence separates failing from safe streams with AUROC 0.98 in the first 20 batches and 0.42–0.46 in the last 20; the twin stays at 0.99.
+- [Experiment 010](experiments/010-family-validated-alarm-confirmation.md), frozen and run on unused data (TissueMNIST, OrganSMNIST, CIFAR-10-C; 4,630 streams on RunPod): verdict **PARTIAL**. FV missed 22/272 (8.1%) at 30/399 false alarms (7.5%), against 171/272 for the published monitor and 40/272 for the earlier rule. Ranking, safety and power criteria held; the level-transfer criterion failed because false alarms exceeded its 7.5% band by a fraction of one stream. The blind spot was shown for Tent and for pseudo-labels, not for information maximisation.
+- Paper reframed around the coupling between an adaptation objective and its monitor, with Tent as the worked case. The current manuscript includes the exp010 PARTIAL result and the full comparison table.
+
+Next step: the user decides how to present the PARTIAL verdict. Open scientific items: realised false alarms above the 5% target on CIFAR-10-C, TissueMNIST misses (11/55), natural shifts, and models without batch normalization. Delete `vbb-exp010-*` from the AWS console if that account is still open.
 
 ## Research status
 

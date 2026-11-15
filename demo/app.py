@@ -259,8 +259,33 @@ class Run(threading.Thread):
         self.status, self.message = "finished", ""
 
 
+class ReplayRun(threading.Thread):
+    """Plays a saved run at the live pace. The page says it is recorded."""
+
+    def __init__(self):
+        super().__init__(daemon=True)
+        self.lock = threading.Lock()
+        self.batches, self.status, self.message, self.info, self.cfg = [], "running", "", {}, {}
+        self.stop_flag = False
+
+    def control(self, action):
+        self.stop_flag = action == "stop" or self.stop_flag
+
+    def run(self):
+        saved = json.load(open(f"{ROOT}/recorded_run.json"))
+        self.info = saved["info"]
+        for b in saved["batches"]:
+            if self.stop_flag:
+                return
+            with self.lock:
+                self.batches.append(b)
+            time.sleep(2.2)
+        self.status = "finished"
+
+
 RUN = None
 HTML = None
+REPLAY = os.environ.get("REPLAY") == "1"
 
 
 class H(BaseHTTPRequestHandler):
@@ -279,9 +304,14 @@ class H(BaseHTTPRequestHandler):
     def do_GET(self):
         u = urlparse(self.path)
         if u.path == "/":
+            page = open(f"{ROOT}/simple.html", "rb").read()
+            if REPLAY:
+                page = page.replace(b"<script>", b"<script>window.RECORDED=true;", 1)
+            return self._send(page, "text/html; charset=utf-8")
+        if u.path == "/full":
             return self._send(open(f"{ROOT}/index.html", "rb").read(), "text/html; charset=utf-8")
         if u.path == "/api/meta":
-            avail = [c for c in CORRUPTIONS if os.path.exists(f"{ROOT}/data/CIFAR-100-C/{c}.npy")]
+            avail = [] if REPLAY else [c for c in CORRUPTIONS if os.path.exists(f"{ROOT}/data/CIFAR-100-C/{c}.npy")]
             return self._send(json.dumps(dict(corruptions=avail, classes=FINE, models=[m for m in ("Hendrycks2020AugMix_WRN", "Hendrycks2020AugMix_ResNeXt") if os.path.exists(f"{ROOT}/models/{m}.pt")])))
         if u.path == "/api/state":
             since = int(parse_qs(u.query).get("since", ["0"])[0])
@@ -298,7 +328,7 @@ class H(BaseHTTPRequestHandler):
         if self.path == "/api/start":
             if RUN is not None:
                 RUN.control("stop")
-            RUN = Run(body)
+            RUN = ReplayRun() if REPLAY else Run(body)
             RUN.start()
         elif self.path == "/api/control" and RUN is not None:
             RUN.control(body.get("action"))
@@ -306,7 +336,8 @@ class H(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    STORE = Store()
+    if not REPLAY:
+        STORE = Store()
     port = int(os.environ.get("PORT", 8765))
     print(f"Open http://127.0.0.1:{port}", flush=True)
     ThreadingHTTPServer(("127.0.0.1", port), H).serve_forever()

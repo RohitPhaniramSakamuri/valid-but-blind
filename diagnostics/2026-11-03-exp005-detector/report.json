@@ -1,0 +1,1132 @@
+{
+ "counts": {
+  "blood/dev/0.001": {
+   "n": 96,
+   "strict": 28,
+   "safe": 60,
+   "collapsed": 4,
+   "err": 0.222,
+   "r0": 0.020000001415610313
+  },
+  "blood/dev/0.005": {
+   "n": 96,
+   "strict": 24,
+   "safe": 62,
+   "collapsed": 4,
+   "err": 0.218,
+   "r0": 0.020000001415610313
+  },
+  "blood/held/0.001": {
+   "n": 117,
+   "strict": 45,
+   "safe": 65,
+   "collapsed": 1,
+   "err": 0.214,
+   "r0": 0.020000001415610313
+  },
+  "blood/held/0.005": {
+   "n": 117,
+   "strict": 42,
+   "safe": 70,
+   "collapsed": 2,
+   "err": 0.213,
+   "r0": 0.020000001415610313
+  },
+  "derma/dev/0.001": {
+   "n": 96,
+   "strict": 37,
+   "safe": 34,
+   "collapsed": 25,
+   "err": 0.586,
+   "r0": 0.1720000058412552
+  },
+  "derma/dev/0.005": {
+   "n": 96,
+   "strict": 28,
+   "safe": 25,
+   "collapsed": 34,
+   "err": 0.615,
+   "r0": 0.1720000058412552
+  },
+  "derma/held/0.001": {
+   "n": 117,
+   "strict": 41,
+   "safe": 37,
+   "collapsed": 33,
+   "err": 0.569,
+   "r0": 0.1720000058412552
+  },
+  "derma/held/0.005": {
+   "n": 117,
+   "strict": 37,
+   "safe": 13,
+   "collapsed": 43,
+   "err": 0.613,
+   "r0": 0.1720000058412552
+  }
+ },
+ "dev_cv": {
+  "released": {
+   "missed": [
+    32,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.896,
+   "median_first": 11.0
+  },
+  "prototype": {
+   "missed": [
+    22,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.947,
+   "median_first": 11.0
+  },
+  "twin": {
+   "missed": [
+    4,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.986,
+   "median_first": 11.0
+  },
+  "atc": {
+   "missed": [
+    37,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.667,
+   "median_first": 11.0
+  },
+  "doc": {
+   "missed": [
+    31,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.719,
+   "median_first": 11.0
+  },
+  "doc_source": {
+   "missed": [
+    106,
+    117
+   ],
+   "false_alarm": [
+    9,
+    181
+   ],
+   "auroc": 0.607,
+   "median_first": 11.0
+  },
+  "dropout": {
+   "missed": [
+    43,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.567,
+   "median_first": 11.0
+  },
+  "ridge": {
+   "missed": [
+    6,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.992,
+   "median_first": 11.0
+  },
+  "lgbm": {
+   "missed": [
+    1,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.993,
+   "median_first": 11.0
+  },
+  "stack": {
+   "missed": [
+    4,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.995,
+   "median_first": 11.0
+  },
+  "latent_lgbm": {
+   "missed": [
+    2,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.991,
+   "median_first": 11.0
+  },
+  "gru": {
+   "missed": [
+    3,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.996,
+   "median_first": 11.0
+  },
+  "per_image": {
+   "missed": [
+    46,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.949,
+   "median_first": 11.0
+  },
+  "image_plus_stream": {
+   "missed": [
+    1,
+    117
+   ],
+   "false_alarm": [
+    10,
+    181
+   ],
+   "auroc": 0.994,
+   "median_first": 11.0
+  }
+ },
+ "held": {
+  "blood/0.001": {
+   "released": {
+    "missed": [
+     2,
+     45
+    ],
+    "false_alarm": [
+     5,
+     65
+    ],
+    "auroc": 0.992,
+    "median_first": 11.0
+   },
+   "prototype": {
+    "missed": [
+     3,
+     45
+    ],
+    "false_alarm": [
+     6,
+     65
+    ],
+    "auroc": 0.986,
+    "median_first": 11.0
+   },
+   "twin": {
+    "missed": [
+     4,
+     45
+    ],
+    "false_alarm": [
+     3,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "atc": {
+    "missed": [
+     2,
+     45
+    ],
+    "false_alarm": [
+     6,
+     65
+    ],
+    "auroc": 0.993,
+    "median_first": 11.0
+   },
+   "doc": {
+    "missed": [
+     1,
+     45
+    ],
+    "false_alarm": [
+     5,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "doc_source": {
+    "missed": [
+     45,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.553,
+    "median_first": NaN
+   },
+   "dropout": {
+    "missed": [
+     2,
+     45
+    ],
+    "false_alarm": [
+     5,
+     65
+    ],
+    "auroc": 0.996,
+    "median_first": 11.0
+   },
+   "ridge": {
+    "missed": [
+     13,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "lgbm": {
+    "missed": [
+     2,
+     45
+    ],
+    "false_alarm": [
+     4,
+     65
+    ],
+    "auroc": 0.995,
+    "median_first": 11.0
+   },
+   "stack": {
+    "missed": [
+     6,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.989,
+    "median_first": 11.0
+   },
+   "latent_lgbm": {
+    "missed": [
+     5,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "gru": {
+    "missed": [
+     12,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.997,
+    "median_first": 11.0
+   },
+   "per_image": {
+    "missed": [
+     32,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.982,
+    "median_first": 11.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     13,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "released_bound": {
+    "missed": [
+     17,
+     45
+    ],
+    "false_alarm": [
+     0,
+     65
+    ],
+    "median_first": 17.0
+   },
+   "prototype_bound": {
+    "missed": [
+     3,
+     45
+    ],
+    "false_alarm": [
+     3,
+     65
+    ],
+    "median_first": 14.0
+   },
+   "twin_bound": {
+    "missed": [
+     0,
+     45
+    ],
+    "false_alarm": [
+     7,
+     65
+    ],
+    "median_first": 19.0
+   }
+  },
+  "blood/0.005": {
+   "released": {
+    "missed": [
+     14,
+     42
+    ],
+    "false_alarm": [
+     2,
+     70
+    ],
+    "auroc": 0.97,
+    "median_first": 11.0
+   },
+   "prototype": {
+    "missed": [
+     7,
+     42
+    ],
+    "false_alarm": [
+     8,
+     70
+    ],
+    "auroc": 0.954,
+    "median_first": 11.0
+   },
+   "twin": {
+    "missed": [
+     0,
+     42
+    ],
+    "false_alarm": [
+     9,
+     70
+    ],
+    "auroc": 0.981,
+    "median_first": 11.0
+   },
+   "atc": {
+    "missed": [
+     8,
+     42
+    ],
+    "false_alarm": [
+     3,
+     70
+    ],
+    "auroc": 0.973,
+    "median_first": 11.0
+   },
+   "doc": {
+    "missed": [
+     9,
+     42
+    ],
+    "false_alarm": [
+     3,
+     70
+    ],
+    "auroc": 0.973,
+    "median_first": 11.0
+   },
+   "doc_source": {
+    "missed": [
+     42,
+     42
+    ],
+    "false_alarm": [
+     0,
+     70
+    ],
+    "auroc": 0.547,
+    "median_first": NaN
+   },
+   "dropout": {
+    "missed": [
+     9,
+     42
+    ],
+    "false_alarm": [
+     3,
+     70
+    ],
+    "auroc": 0.97,
+    "median_first": 11.0
+   },
+   "ridge": {
+    "missed": [
+     17,
+     42
+    ],
+    "false_alarm": [
+     0,
+     70
+    ],
+    "auroc": 0.972,
+    "median_first": 11.0
+   },
+   "lgbm": {
+    "missed": [
+     6,
+     42
+    ],
+    "false_alarm": [
+     6,
+     70
+    ],
+    "auroc": 0.98,
+    "median_first": 11.0
+   },
+   "stack": {
+    "missed": [
+     14,
+     42
+    ],
+    "false_alarm": [
+     0,
+     70
+    ],
+    "auroc": 0.967,
+    "median_first": 11.0
+   },
+   "latent_lgbm": {
+    "missed": [
+     6,
+     42
+    ],
+    "false_alarm": [
+     3,
+     70
+    ],
+    "auroc": 0.978,
+    "median_first": 11.0
+   },
+   "gru": {
+    "missed": [
+     15,
+     42
+    ],
+    "false_alarm": [
+     0,
+     70
+    ],
+    "auroc": 0.986,
+    "median_first": 11.0
+   },
+   "per_image": {
+    "missed": [
+     30,
+     42
+    ],
+    "false_alarm": [
+     0,
+     70
+    ],
+    "auroc": 0.971,
+    "median_first": 11.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     13,
+     42
+    ],
+    "false_alarm": [
+     1,
+     70
+    ],
+    "auroc": 0.982,
+    "median_first": 11.0
+   },
+   "released_bound": {
+    "missed": [
+     30,
+     42
+    ],
+    "false_alarm": [
+     2,
+     70
+    ],
+    "median_first": 78.5
+   },
+   "prototype_bound": {
+    "missed": [
+     14,
+     42
+    ],
+    "false_alarm": [
+     4,
+     70
+    ],
+    "median_first": 25.5
+   },
+   "twin_bound": {
+    "missed": [
+     0,
+     42
+    ],
+    "false_alarm": [
+     14,
+     70
+    ],
+    "median_first": 16.0
+   }
+  },
+  "derma/0.001": {
+   "released": {
+    "missed": [
+     12,
+     41
+    ],
+    "false_alarm": [
+     2,
+     37
+    ],
+    "auroc": 0.931,
+    "median_first": 11.0
+   },
+   "prototype": {
+    "missed": [
+     2,
+     41
+    ],
+    "false_alarm": [
+     4,
+     37
+    ],
+    "auroc": 0.972,
+    "median_first": 11.0
+   },
+   "twin": {
+    "missed": [
+     5,
+     41
+    ],
+    "false_alarm": [
+     1,
+     37
+    ],
+    "auroc": 0.993,
+    "median_first": 11.0
+   },
+   "atc": {
+    "missed": [
+     7,
+     41
+    ],
+    "false_alarm": [
+     2,
+     37
+    ],
+    "auroc": 0.969,
+    "median_first": 11.0
+   },
+   "doc": {
+    "missed": [
+     4,
+     41
+    ],
+    "false_alarm": [
+     2,
+     37
+    ],
+    "auroc": 0.977,
+    "median_first": 11.0
+   },
+   "doc_source": {
+    "missed": [
+     41,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.84,
+    "median_first": NaN
+   },
+   "dropout": {
+    "missed": [
+     8,
+     41
+    ],
+    "false_alarm": [
+     3,
+     37
+    ],
+    "auroc": 0.957,
+    "median_first": 11.0
+   },
+   "ridge": {
+    "missed": [
+     5,
+     41
+    ],
+    "false_alarm": [
+     1,
+     37
+    ],
+    "auroc": 0.982,
+    "median_first": 11.0
+   },
+   "lgbm": {
+    "missed": [
+     7,
+     41
+    ],
+    "false_alarm": [
+     2,
+     37
+    ],
+    "auroc": 0.985,
+    "median_first": 11.0
+   },
+   "stack": {
+    "missed": [
+     3,
+     41
+    ],
+    "false_alarm": [
+     2,
+     37
+    ],
+    "auroc": 0.985,
+    "median_first": 11.0
+   },
+   "latent_lgbm": {
+    "missed": [
+     7,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.991,
+    "median_first": 11.0
+   },
+   "gru": {
+    "missed": [
+     7,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.991,
+    "median_first": 11.0
+   },
+   "per_image": {
+    "missed": [
+     34,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.977,
+    "median_first": 66.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     7,
+     41
+    ],
+    "false_alarm": [
+     1,
+     37
+    ],
+    "auroc": 0.988,
+    "median_first": 11.0
+   },
+   "released_bound": {
+    "missed": [
+     41,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "median_first": NaN
+   },
+   "prototype_bound": {
+    "missed": [
+     40,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "median_first": 71.0
+   },
+   "twin_bound": {
+    "missed": [
+     41,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "median_first": NaN
+   }
+  },
+  "derma/0.005": {
+   "released": {
+    "missed": [
+     30,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.721,
+    "median_first": 11.0
+   },
+   "prototype": {
+    "missed": [
+     23,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.863,
+    "median_first": 13.5
+   },
+   "twin": {
+    "missed": [
+     0,
+     37
+    ],
+    "false_alarm": [
+     2,
+     13
+    ],
+    "auroc": 0.99,
+    "median_first": 11.0
+   },
+   "atc": {
+    "missed": [
+     34,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.811,
+    "median_first": 11.0
+   },
+   "doc": {
+    "missed": [
+     35,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.869,
+    "median_first": 11.0
+   },
+   "doc_source": {
+    "missed": [
+     37,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.715,
+    "median_first": NaN
+   },
+   "dropout": {
+    "missed": [
+     34,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.838,
+    "median_first": 11.0
+   },
+   "ridge": {
+    "missed": [
+     6,
+     37
+    ],
+    "false_alarm": [
+     2,
+     13
+    ],
+    "auroc": 0.913,
+    "median_first": 11.0
+   },
+   "lgbm": {
+    "missed": [
+     12,
+     37
+    ],
+    "false_alarm": [
+     2,
+     13
+    ],
+    "auroc": 0.933,
+    "median_first": 11.0
+   },
+   "stack": {
+    "missed": [
+     5,
+     37
+    ],
+    "false_alarm": [
+     2,
+     13
+    ],
+    "auroc": 0.89,
+    "median_first": 11.0
+   },
+   "latent_lgbm": {
+    "missed": [
+     13,
+     37
+    ],
+    "false_alarm": [
+     1,
+     13
+    ],
+    "auroc": 0.909,
+    "median_first": 11.0
+   },
+   "gru": {
+    "missed": [
+     13,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.921,
+    "median_first": 11.0
+   },
+   "per_image": {
+    "missed": [
+     28,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "auroc": 0.981,
+    "median_first": 16.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     9,
+     37
+    ],
+    "false_alarm": [
+     2,
+     13
+    ],
+    "auroc": 0.946,
+    "median_first": 11.0
+   },
+   "released_bound": {
+    "missed": [
+     37,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "median_first": NaN
+   },
+   "prototype_bound": {
+    "missed": [
+     37,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "median_first": NaN
+   },
+   "twin_bound": {
+    "missed": [
+     31,
+     37
+    ],
+    "false_alarm": [
+     0,
+     13
+    ],
+    "median_first": 106.5
+   }
+  }
+ },
+ "selected": "image_plus_stream",
+ "cross": {
+  "derma->blood": {
+   "twin": {
+    "missed": [
+     1,
+     45
+    ],
+    "false_alarm": [
+     4,
+     65
+    ],
+    "auroc": 0.994,
+    "median_first": 11.0
+   },
+   "released": {
+    "missed": [
+     0,
+     45
+    ],
+    "false_alarm": [
+     8,
+     65
+    ],
+    "auroc": 0.992,
+    "median_first": 11.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     9,
+     45
+    ],
+    "false_alarm": [
+     10,
+     65
+    ],
+    "auroc": 0.933,
+    "median_first": 11.0
+   }
+  },
+  "blood->derma": {
+   "twin": {
+    "missed": [
+     8,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.993,
+    "median_first": 11.0
+   },
+   "released": {
+    "missed": [
+     27,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.931,
+    "median_first": 11.0
+   },
+   "image_plus_stream": {
+    "missed": [
+     11,
+     41
+    ],
+    "false_alarm": [
+     0,
+     37
+    ],
+    "auroc": 0.976,
+    "median_first": 11.0
+   }
+  }
+ },
+ "VERDICT": "NOT SHOWN"
+}
